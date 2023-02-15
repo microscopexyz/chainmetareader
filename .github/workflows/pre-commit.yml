@@ -10,16 +10,13 @@ jobs:
   pre-commit:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v3
-      with:
-        python-version: '3.8'
-    - uses: pre-commit/action@v3.0.0
-      with:
-        extra_args: insert-license --all-files
-    - uses: pre-commit/action@v3.0.0
-      with:
-        extra_args: isort --all-files
-    - uses: pre-commit/action@v3.0.0
-      with:
-        extra_args: black --all-files
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install pre-commit
+        run: pip install pre-commit
+      - name: Run pre-commit
+        run: pre-commit run --all-files
