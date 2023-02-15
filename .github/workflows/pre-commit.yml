@@ -12,5 +12,3 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v3
-    - name: pre commit
-      uses: ./
