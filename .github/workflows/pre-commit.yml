@@ -17,6 +17,6 @@ jobs:
         with:
           python-version: 3.8
       - name: Install pre-commit
-        run: pip install pre-commit
+        run: pip install pre-commit pyyaml isort
       - name: Run pre-commit
         run: pre-commit run --all-files
