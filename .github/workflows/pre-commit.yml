@@ -17,10 +17,10 @@ jobs:
         extra_args: insert-license --all-files
     - uses: pre-commit/action@v3.0.0
       with:
-        extra_args: seed-isort-config --all-files
+        extra_args: isort --all-files
     - uses: pre-commit/action@v3.0.0
       with:
-        extra_args: isort --all-files
+        extra_args: seed-isort-config --all-files
     - uses: pre-commit/action@v3.0.0
       with:
         extra_args: black --all-files
