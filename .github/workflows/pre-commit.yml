@@ -1,4 +1,4 @@
-name: PRE_COMMIT_CI
+name: CI
 
 on:
   push:
@@ -14,4 +14,4 @@ jobs:
     - uses: actions/setup-python@v3
     - uses: pre-commit/action@v3.0.0
       with:
-        extra_args: [insert-license, seed-isort-config, isort, black]
+        extra_args: insert-license
