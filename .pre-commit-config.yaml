@@ -1,7 +1,7 @@
 repos:
-- repo: https://github.com/Lucas-C/pre-commit-hooks
-  rev: v1.1.9
-  hooks:
+-   repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.1.9
+    hooks:
     - id: insert-license
       name: Add license for all python files
       exclude: ^(\.github|examples)/.*$
@@ -12,10 +12,7 @@ repos:
         - --license-filepath
         - templates/LICENSE.txt
         - --fuzzy-match-generates-todo
-
-- repo: https://github.com/pre-commit/mirrors-flake8
-  rev: v3.9.2
+- repo: https://github.com/PyCQA/flake8
+  rev: 3.9.2
   hooks:
     - id: flake8
-      args: [--max-line-length=120, --ignore=E203,W503]
-      exclude: ^tests/.*
