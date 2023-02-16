@@ -12,20 +12,7 @@ repos:
         - --license-filepath
         - templates/LICENSE.txt
         - --fuzzy-match-generates-todo
--   repo: https://github.com/asottile/seed-isort-config
-    rev: v1.9.1
-    hooks:
-    - id: seed-isort-config
--   repo: https://github.com/pre-commit/mirrors-isort
-    rev: v4.3.20
-    hooks:
-    - id: isort
--   repo: https://github.com/ambv/black
-    rev: 19.3b0
-    hooks:
-    - id: black
-      args: [--line-length=79]
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.2.3
-    hooks:
+- repo: https://github.com/PyCQA/flake8
+  rev: 3.9.2
+  hooks:
     - id: flake8
