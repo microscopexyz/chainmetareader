@@ -1,4 +1,4 @@
-# Copyright 2021 The Couler Authors. All rights reserved.
+# Copyright 2023 The chainmetareader Authors. All rights reserved.
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -18,7 +18,7 @@ class Validator(object):
         self.type = type
 
     def validate(self, input_address):
-        ## add the global validator logic here
+        # todo add the global validator logic here
         return False
 
     def to_string(self):
@@ -39,7 +39,7 @@ class ChaintoolValidator(Validator):
         # check the global format
         super().validate(input_address)
 
-        ## add the chaintool related format checking logic here
+        # TODO add the chaintool related format checking logic here
 
 
 class CoinBaseValidator(Validator):
@@ -53,4 +53,4 @@ class CoinBaseValidator(Validator):
         # check the global format
         super().validate(input_address)
 
-        ## add coinbase related format checking logic
+        # TODO add coinbase related format checking logic
