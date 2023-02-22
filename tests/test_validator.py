@@ -14,8 +14,7 @@ from tests.basic_test import BaseTestCase
 
 
 class ValidatorTest(BaseTestCase):
-    def check_global_validator(self, input_address):
+    def test_global_validator(self):
 
         # todo add the test for the global validator
-
         return
