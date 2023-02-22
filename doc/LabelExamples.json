@@ -2,7 +2,7 @@
     "Label Examples": [
         { "Company":"Associated with Yaroslav Vasinskyi", "Address":"35QpLWYkvD3ALhjbge5bK2kd7HfHYcDMu3(BTC)" , "Label":[
             { "Level-1":"Malicious Address", "Level-2": "Capital Crime", "Level-3": "Ransomware"}
-        ]}, 
+        ]},
         { "Company":"Chatex", "Address":"3BsyZ7qRFSi3NsaoV1Ff724qAgrEpjVUHm(BTC)" , "Label":[
             { "Level-1":"Malicious Address", "Level-2": "Illicit actor-org", "Level-3": "Sanction"}
         ]}

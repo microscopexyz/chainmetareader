@@ -11,7 +11,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from core.validator import Validator
+from chainmeta_reader.validator import Validator
 
 
 def validate_data_format(input_address, validator_type):
