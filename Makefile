@@ -4,4 +4,4 @@ init:
 
 .PHONE: pre-commit
 pre-commit:
-	pre-commit
+	pre-commit run --all-files
