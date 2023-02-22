@@ -10,7 +10,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-from core.constants import ValidatorType
+from chainmeta_reader.constants import ValidatorType
 
 
 class Validator(object):
@@ -29,9 +29,7 @@ class Validator(object):
 
 class ChaintoolValidator(Validator):
     def __init__(self, config_rules):
-        super().__init__(
-            ValidatorType.ChainTool
-        )
+        super().__init__(ValidatorType.ChainTool)
         self.rules = config_rules
 
     def validate(self, input_address):
@@ -44,9 +42,7 @@ class ChaintoolValidator(Validator):
 
 class CoinBaseValidator(Validator):
     def __init__(self, config_rules):
-        super().__init__(
-            ValidatorType.CoinBase
-        )
+        super().__init__(ValidatorType.CoinBase)
         self.rules = config_rules
 
     def validate(self, input_address):

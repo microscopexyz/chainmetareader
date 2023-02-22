@@ -10,12 +10,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-from tests.basic_test import BaseTestCase
-
-
-class ValidatorTest(BaseTestCase):
-    def check_global_validator(self, input_address):
-
-        # todo add the test for the global validator
-
-        return
