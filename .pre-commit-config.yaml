@@ -7,11 +7,11 @@ repos:
     exclude: ^(\.github|examples)/.*$
     types: [python]
     args:
-      - --comment-style
-      - "|#|"
-      - --license-filepath
-      - templates/LICENSE.txt
-      - --fuzzy-match-generates-todo
+    - --comment-style
+    - "|#|"
+    - --license-filepath
+    - templates/LICENSE.txt
+    - --fuzzy-match-generates-todo
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v4.0.1
   hooks:
@@ -22,12 +22,21 @@ repos:
 - repo: https://github.com/PyCQA/flake8
   rev: 3.9.2
   hooks:
-    - id: flake8
+  - id: flake8
 - repo: https://github.com/PyCQA/isort
   rev: 5.12.0
   hooks:
-    - id: isort
+  - id: isort
 - repo: https://github.com/psf/black
   rev: 22.3.0
   hooks:
-    - id: black
+  - id: black
+- repo: local
+  hooks:
+  - id: unittest
+    name: unittest
+    entry: python -m unittest discover
+    language: python
+    args: ["tests"]
+    pass_filenames: false
+    stages: [commit]
