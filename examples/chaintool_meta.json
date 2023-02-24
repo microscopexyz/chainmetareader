@@ -2,7 +2,8 @@
     "community": "openchainmeta",
     "provider": {
         "provider_name": "chaintool",
-        "provider_id": "ocm000001"
+        "provider_id": "ocm000001",
+        "provider_signature": "xxxxx"
     },
     "version": "v1",
     "revision": 1,
