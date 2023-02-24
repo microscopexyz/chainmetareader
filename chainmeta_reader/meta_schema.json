@@ -24,7 +24,8 @@
             "type": "object",
             "required": [
                 "provider_name",
-                "provider_id"
+                "provider_id",
+                "provider_signature"
             ],
             "properties": {
                 "provider_name": {
@@ -35,6 +36,10 @@
                     "description": "Provider's unique id",
                     "type": "string",
                     "pattern": "^ocm[0-9]{6}$"
+                },
+                "provider_signature": {
+                    "description": "Provider's signature",
+                    "type": "string"
                 }
             }
         },
