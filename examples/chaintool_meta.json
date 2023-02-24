@@ -1,0 +1,25 @@
+{
+    "community": "openchainmeta",
+    "provider": {
+        "provider_name": "chaintool",
+        "provider_id": "ocm000001",
+        "provider_signature": "xxxxx"
+    },
+    "version": "v1",
+    "revision": 1,
+    "introduction": "https://github.com/openchainmeta/chainmetareader/doc/chaintool/introduction.md",
+    "chainmetadata": {
+        "schema": "https://github.com/openchainmeta/chainmetareader/doc/chaintool/schema.md",
+        "artifact": [{
+                "artifact_type": "oss",
+                "path": "xxxxx",
+                "fileformat": "parquet",
+                "signature": "xxxxx",
+                "access_id": "xxxxx",
+                "access_key": "xxxxx",
+                "bucket": "xxxxx",
+                "endpoint": "xxxxx"
+            }
+        ]
+    }
+}
