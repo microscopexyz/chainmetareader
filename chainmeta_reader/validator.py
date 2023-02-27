@@ -50,3 +50,14 @@ class CoinBaseValidator(Validator):
         super().validate(input_address)
 
         # TODO add coinbase related format checking logic
+
+class GoPlusValidator(Validator):
+    def __init__(self, config_rules):
+        super().__init__(ValidatorType.GoPlus)
+        self.rules = config_rules
+
+    def validate(self, input_address):
+        # check the global format
+        super().validate(input_address)
+
+        # TODO add Goplus related format checking logic

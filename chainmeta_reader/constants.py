@@ -16,3 +16,4 @@ class ValidatorType(object):
     ChainTool = "ct"
     CoinBase = "cb"
     Global = "global"
+    GoPlus = "gp"
