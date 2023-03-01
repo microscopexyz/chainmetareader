@@ -86,7 +86,8 @@
                                 "description": "Type of artifact",
                                 "type": "string",
                                 "enum": [
-                                    "oss"
+                                    "oss",
+                                    "remote path"
                                 ]
                             },
                             "path": {
