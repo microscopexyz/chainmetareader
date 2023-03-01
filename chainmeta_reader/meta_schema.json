@@ -87,7 +87,7 @@
                                 "type": "string",
                                 "enum": [
                                     "oss",
-                                    "file link"
+                                    "remote path"
                                 ]
                             },
                             "path": {

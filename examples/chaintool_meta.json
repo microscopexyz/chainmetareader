@@ -11,7 +11,7 @@
     "chainmetadata": {
         "schema": "https://github.com/openchainmeta/chainmetareader/doc/chaintool/schema.md",
         "artifact": [{
-                "artifact_type": "file link",
+                "artifact_type": "remote path",
                 "path": "https://github.com/openchainmeta/chainmetareader/blob/add_chaintool_metadata/examples/chaintool_sample_100.csv",
                 "fileformat": "csv",
                 "signature": "e3aeb7c8f63d29fda476f7f96d9417ee"
