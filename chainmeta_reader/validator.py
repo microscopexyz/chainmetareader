@@ -60,4 +60,4 @@ class GoPlusValidator(Validator):
         # check the global format
         super().validate(input_address)
 
-        # TODO add Goplus related format checking logic
+        # TODO add GoPlus related format checking logic
