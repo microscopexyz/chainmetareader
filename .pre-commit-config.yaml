@@ -33,10 +33,9 @@ repos:
   - id: black
 - repo: local
   hooks:
-  - id: unittest
-    name: unittest
-    entry: python -m unittest discover
-    language: python
-    args: ["tests"]
+  - id: pytest-check
+    name: pytest-check
+    entry: pytest
+    language: system
     pass_filenames: false
-    stages: [commit]
+    always_run: true
