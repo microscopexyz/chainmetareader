@@ -9,4 +9,4 @@ pre-commit:
 
 .PHONY: test
 test:
-	pytest tests
+	pytest tests -v
