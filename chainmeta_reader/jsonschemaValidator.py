@@ -13,7 +13,7 @@ json_obj = {
     "version": "openchainmeta01",
     "revision": 1,
     "introduction":
-    "validating: https://github.com/openchainmeta/chainmetareader/blob/main/chainmeta_reader/meta_schema.json",
+    "validating: chainmeta_reader/meta_schema.json",
     "chainmetadata": {
         "schema": "111",
         "artifact": [{
@@ -21,12 +21,12 @@ json_obj = {
             "path": "http://xxxx",
             "fileformat": "csv",
             "signature": "xxxxx"
-        },{
+        }, {
             "artifact_type": "remote path",
             "path": "http://xxxx",
             "fileformat": "json",
             "signature": "xxxxx"
-        },{
+        }, {
             "artifact_type": "oss",
             "path": "http://xxxx",
             "fileformat": "parquet",
@@ -34,6 +34,7 @@ json_obj = {
         }]
     }
 }
+
 
 def main():
     try:
