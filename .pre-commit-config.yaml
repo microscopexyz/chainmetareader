@@ -31,12 +31,3 @@ repos:
   rev: 22.3.0
   hooks:
   - id: black
-- repo: local
-  hooks:
-  - id: unittest
-    name: unittest
-    entry: python -m unittest discover
-    language: python
-    args: ["tests"]
-    pass_filenames: false
-    stages: [commit]

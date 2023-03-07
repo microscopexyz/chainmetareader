@@ -2,11 +2,11 @@
 init:
 	@python3 -m pip install -r requirements.txt
 
-.PHONE: pre-commit
+.PHONY: pre-commit
 pre-commit:
 	pre-commit run --all-files
 
 
-.PHONE: test
+.PHONY: test
 test:
-	pytest tests
+	pytest tests -v

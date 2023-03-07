@@ -10,26 +10,36 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+import json
+import pathlib
+
+from jsonschema import validate as js_validate
+
 from chainmeta_reader.constants import ValidatorType
 
 
 class Validator(object):
-    def __init__(self, type=None):
-        self.type = type
+    def __init__(self, *, validator_type: ValidatorType = ValidatorType.Global):
+        self.validator_type = validator_type
+        schema_file = (
+            pathlib.Path(__file__).parent.resolve().joinpath("meta_schema.json")
+        )
 
-    def validate(self, input_address):
-        # todo add the global validator logic here
-        return False
+        with open(schema_file) as sf:
+            self.schema = json.load(sf)
+
+    def validate(self, metadata: dict):
+        js_validate(instance=metadata, schema=self.schema)
 
     def to_string(self):
         prefix = "chainmeta"
         validator = "validator"
-        '"{{%s.%s.%s}}"' % (prefix, validator, self.type)
+        '"{{%s.%s.%s}}"' % (prefix, validator, self.validator_type)
 
 
 class ChaintoolValidator(Validator):
     def __init__(self, config_rules):
-        super().__init__(ValidatorType.ChainTool)
+        super().__init__(validator_type=ValidatorType.ChainTool)
         self.rules = config_rules
 
     def validate(self, input_address):
@@ -42,7 +52,7 @@ class ChaintoolValidator(Validator):
 
 class CoinBaseValidator(Validator):
     def __init__(self, config_rules):
-        super().__init__(ValidatorType.CoinBase)
+        super().__init__(validator_type=ValidatorType.CoinBase)
         self.rules = config_rules
 
     def validate(self, input_address):
@@ -51,9 +61,10 @@ class CoinBaseValidator(Validator):
 
         # TODO add coinbase related format checking logic
 
+
 class GoPlusValidator(Validator):
     def __init__(self, config_rules):
-        super().__init__(ValidatorType.GoPlus)
+        super().__init__(validator_type=ValidatorType.GoPlus)
         self.rules = config_rules
 
     def validate(self, input_address):
