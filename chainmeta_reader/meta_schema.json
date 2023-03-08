@@ -76,7 +76,6 @@
                     "items": {
                         "type": "object",
                         "required": [
-                            "artifact_type",
                             "path",
                             "fileformat",
                             "signature"
