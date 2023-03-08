@@ -9,7 +9,7 @@
     "revision": 1,
     "introduction": "https://github.com/openchainmeta/chainmetareader/doc/coinbase/introduction.md",
     "chainmetadata": {
-        "schema": "https://github.com/openchainmeta/chainmetareader/chainmeta_reader/coinbase_schema.json",
+        "schema": "https://github.com/openchainmeta/chainmetareader/chainmeta_reader/schemas/coinbase_schema.json",
         "artifact": [
             {
                 "path": "file:///coinbase_invalid_artifact_sample.json",
