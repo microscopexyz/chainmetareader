@@ -52,7 +52,9 @@ class Validator(IValidator):
     def __init__(self):
         self.validator_type = ValidatorType.Global
         schema_file = (
-            pathlib.Path(__file__).parent.resolve().joinpath("meta_schema.json")
+            pathlib.Path(__file__)
+            .parent.resolve()
+            .joinpath("schemas", "meta_schema.json")
         )
         self._validators = [JsonValidator(schema=schema_file)]
 
