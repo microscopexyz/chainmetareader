@@ -11,40 +11,104 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import json
-from typing import List
 
-from chainmeta_reader.validator import Validator
+from chainmeta_reader.artifact import load as _load
+from chainmeta_reader.schema import resolve as _resolve
+from chainmeta_reader.validator import JsonValidator, Validator, ValidatorError
 
-# TODO: add other validators to the list
-validators: List[Validator] = [Validator()]
+global_validator = Validator()
 
 
-def validate(fp):
+def validate(
+    fp,
+    *,
+    ignore_unrecognized=True,
+    additional_schemas={},
+    artifact_base_path=None,
+    **kw
+):
     """Validate ``fp`` (a ``.read()``-supporting file-like object containing
     an open chain metadata document) against the open chain metadata rule set.
     """
-    validates(fp.read())
+    validates(
+        fp.read(),
+        ignore_unrecognized=ignore_unrecognized,
+        additional_schemas=additional_schemas,
+        artifact_base_path=artifact_base_path,
+    )
 
 
-def validates(s: str):
+def validates(
+    s: str,
+    *,
+    ignore_unrecognized=True,
+    additional_schemas={},
+    artifact_base_path=None,
+    **kw
+):
     """Validate ``s`` (a ``str``, ``bytes`` or ``bytearray`` instance containing
     an open chain metadata document) against the open chain metadata rule set.
     """
     metadata = json.loads(s)
-    for v in validators:
-        v.validate(metadata)
+
+    # Global validation
+    global_validator.validate(metadata)
+    raw_schema = metadata["chainmetadata"]["schema"]
+    artifacts = metadata["chainmetadata"]["artifact"]
+
+    # Artifact validation
+    schema = _resolve(raw_schema) or additional_schemas.get(raw_schema)
+    if not schema and not ignore_unrecognized:
+        raise ValidatorError("unrecognized artifact schema")
+    if not schema:
+        return metadata
+    artifact_validator = JsonValidator(schema=schema)
+    loaded_artifacts = []
+    for artifact in artifacts:
+        loaded_artifact = _load(
+            artifact["path"],
+            fileformat=artifact["fileformat"],
+            base_path=artifact_base_path,
+        )
+        artifact_validator.validate(loaded_artifact)
+        loaded_artifacts += [loaded_artifact]
+    if loaded_artifact:
+        metadata["chainmetadata"]["loaded_artifact"] = loaded_artifacts
+
     return metadata
 
 
-def load(fp, **kw):
+def load(
+    fp, ignore_unrecognized=True, additional_schemas={}, artifact_base_path=None, **kw
+):
     """Deserialize ``fp`` (a ``.read()``-supporting file-like object containing
     an open chain metadata document) to a Python object.
     """
-    return loads(fp.read(), **kw)
+    return loads(
+        fp.read(),
+        ignore_unrecognized=ignore_unrecognized,
+        additional_schemas=additional_schemas,
+        artifact_base_path=artifact_base_path**kw,
+    )
 
 
-def loads(s: str, **kw):
+def loads(
+    s: str,
+    *,
+    ignore_unrecognized=True,
+    additional_schemas={},
+    artifact_base_path=None,
+    **kw
+):
     """Deserialize ``s`` (a ``str``, ``bytes`` or ``bytearray`` instance containing
     an open chain metadata document) to a Python object.
     """
-    return validates(s)
+    return validates(
+        s,
+        ignore_unrecognized=ignore_unrecognized,
+        additional_schemas=additional_schemas,
+        artifact_base_path=artifact_base_path**kw,
+    )
+
+
+__all__ = ["validate", "validates", "load", "loads", "global_validator"]
