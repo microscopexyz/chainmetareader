@@ -11,18 +11,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import json
-
-# import os
 import pathlib
-
-# import sys
 from abc import ABC, abstractmethod
 
 from jsonschema import validate as js_validate
 
 from chainmeta_reader.constants import ValidatorType
-
-# sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 class IValidator(ABC):
