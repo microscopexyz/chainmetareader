@@ -11,18 +11,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import json
-
-# import os
 import pathlib
-
-# import sys
 from abc import ABC, abstractmethod
 
 from jsonschema import validate as js_validate
 
 from chainmeta_reader.constants import ValidatorType
-
-# sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 class IValidator(ABC):
@@ -78,28 +72,7 @@ class ChaintoolValidator(IValidator):
         # check the global format
         super().validate(input_address)
 
-        # Example JSON object to validate
-        json_obj_path = (
-            pathlib.Path(__file__)
-            .parent.resolve()
-            .joinpath("data", "chainmeta_jsonexample.json")
-        )
-        with open(json_obj_path, "r") as f2:
-            json_obj = json.load(f2)
-
-        try:
-            schema_path = (
-                pathlib.Path(__file__)
-                .parent.resolve()
-                .joinpath("data", "chaintool_meta.json")
-            )
-            # Load the JSON schema from an external file
-            with open(schema_path, "r") as f:
-                schema = json.load(f)
-            js_validate(json_obj, schema)
-            print("Validation successful!")
-        except ValidatorError as e:
-            print("Validation error:", e)
+        # TODO add the chaintool related format checking logic here
 
 
 class GoPlusValidator(IValidator):
