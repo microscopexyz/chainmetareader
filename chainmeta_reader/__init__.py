@@ -71,7 +71,7 @@ def validates(
             base_path=artifact_base_path,
         )
         artifact_validator.validate(loaded_artifact)
-        loaded_artifacts += [loaded_artifact]
+        loaded_artifacts += loaded_artifact["metadata"]
     if loaded_artifact:
         metadata["chainmetadata"]["loaded_artifact"] = loaded_artifacts
 
@@ -88,7 +88,8 @@ def load(
         fp.read(),
         ignore_unrecognized=ignore_unrecognized,
         additional_schemas=additional_schemas,
-        artifact_base_path=artifact_base_path**kw,
+        artifact_base_path=artifact_base_path,
+        **kw,
     )
 
 
@@ -107,7 +108,8 @@ def loads(
         s,
         ignore_unrecognized=ignore_unrecognized,
         additional_schemas=additional_schemas,
-        artifact_base_path=artifact_base_path**kw,
+        artifact_base_path=artifact_base_path,
+        **kw,
     )
 
 
