@@ -9,7 +9,9 @@ with open(artifact_base_path.joinpath("coinbase_sample.json")) as f:
     raw_metadata = metadata["chainmetadata"]["loaded_artifact"]
 
     # Translate to intermediate metadata schema
-    intermediate_metadata = normalize(metadata["chainmetadata"]["loaded_artifact"], CoinbaseTranslator)
+    intermediate_metadata = normalize(
+        metadata["chainmetadata"]["loaded_artifact"], CoinbaseTranslator
+    )
 
     # Translate back to Coinbase metadata schema
     raw_metadata2 = denormalize(intermediate_metadata, CoinbaseTranslator)
