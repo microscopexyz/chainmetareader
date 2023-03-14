@@ -11,8 +11,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import json
+from collections import defaultdict
+from collections.abc import Iterable, Iterator
+from functools import reduce
 
 from chainmeta_reader.artifact import load as _load
+from chainmeta_reader.metadata import CoinbaseTranslator, ITranslator, MetadataItem
 from chainmeta_reader.schema import resolve as _resolve
 from chainmeta_reader.validator import JsonValidator, Validator, ValidatorError
 
@@ -113,4 +117,33 @@ def loads(
     )
 
 
-__all__ = ["validate", "validates", "load", "loads", "global_validator"]
+def normalize(raw_metadata: Iterable[object], t: ITranslator) -> Iterator[MetadataItem]:
+    for m in raw_metadata:
+        for intermediate_item in t.to_intermediate(m):
+            yield intermediate_item
+
+
+def denormalize(
+    intermediate_metadata: Iterable[MetadataItem], t: ITranslator
+) -> Iterator[object]:
+    metadata_group = defaultdict(list)
+
+    def _group_f(t, s):
+        t[(s.address, s.network, s.submitted_by)] += [s]
+        return t
+
+    reduce(_group_f, intermediate_metadata, metadata_group)
+    for _, group in metadata_group.items():
+        yield t.from_intermediate(group)
+
+
+__all__ = [
+    "validate",
+    "validates",
+    "load",
+    "loads",
+    "normalize",
+    "denormalize",
+    "global_validator",
+    "CoinbaseTranslator",
+]

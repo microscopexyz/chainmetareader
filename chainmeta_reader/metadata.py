@@ -12,10 +12,14 @@
 # limitations under the License.
 
 from abc import ABC, abstractmethod
+from collections.abc import Iterable, Iterator
 from dataclasses import dataclass
 from datetime import datetime
 from enum import Enum
 from typing import List
+
+from chainmeta_reader.constants import ValidatorType
+from chainmeta_reader.validator import ValidatorError
 
 
 class Namespace(Enum):
@@ -24,7 +28,7 @@ class Namespace(Enum):
     GoPlus = 3
 
 
-@dataclass
+@dataclass(eq=True, frozen=True)
 class Network:
     """Network represents a uniquely identified blockchain network,
     e.g. ethereum mainnet, or ethereum goerli
@@ -34,7 +38,7 @@ class Network:
     name: str
 
 
-@dataclass
+@dataclass(eq=True, frozen=True)
 class Tag:
     """Tag is a generic container for any information like name,
     entity or category etc.
@@ -72,19 +76,74 @@ class MetadataItem:
 
 class ITranslator(ABC):
     @abstractmethod
-    def to_intermediate(self, raw_metadata) -> List[MetadataItem]:
+    def to_intermediate(raw_metadata) -> List[MetadataItem]:
         """Translate to intermediate representation"""
         pass
 
     @abstractmethod
-    def from_intermediate(self, intermediate_metadata: List[MetadataItem]) -> object:
+    def from_intermediate(intermediate_metadata: List[MetadataItem]) -> object:
         """Translate from intermediate representation"""
         pass
 
 
 class CoinbaseTranslator(ITranslator):
-    def to_intermediate(self, raw_metadata) -> List[MetadataItem]:
-        pass
+    # Note to developer: should try avoid string literal in code (use constant instead);
+    # they are used here because these strings (i.e. fields) are enforced by its JSON schema
 
-    def from_intermediate(self, intermediate_metadata: List[MetadataItem]) -> object:
-        pass
+    def to_intermediate(raw_metadata) -> Iterator[MetadataItem]:
+        # Translate a Coinbase formatted metadata into the common layer
+        address, network, submitted_by, last_updated = (
+            raw_metadata["address"],
+            Network(name=raw_metadata["network_name"]),
+            raw_metadata["submitted_by"],
+            raw_metadata["last_updated"],
+        )
+
+        def _build_meta(tag_type: str, tag_value: str):
+            return MetadataItem(
+                address=address,
+                network=network,
+                tag=Tag(
+                    namespace=ValidatorType.CoinBase, type=tag_type, name=tag_value
+                ),
+                submitted_by=submitted_by,
+                last_updated=last_updated,
+            )
+
+        def _build_meta_from_field(field: str):
+            return _build_meta(tag_type=field, tag_value=raw_metadata[field])
+
+        if "entity" in raw_metadata:
+            yield _build_meta_from_field(field="entity")
+        if "name" in raw_metadata:
+            yield _build_meta_from_field(field="name")
+        for category in raw_metadata.get("categories", []):
+            yield _build_meta(tag_type="category", tag_value=category)
+
+    def from_intermediate(intermediate_metadata: Iterable[MetadataItem]) -> object:
+        # Translate from common layer metadata into a Coinbase formatted metadata
+
+        if not intermediate_metadata:
+            return
+        network_address = set((m.address, m.network) for m in intermediate_metadata)
+        if len(network_address) > 1:
+            raise ValidatorError("not all records belong to same address")
+
+        coinbase_metadata = {"categories": []}
+        for m in intermediate_metadata:
+            if m.tag.namespace != ValidatorType.CoinBase:
+                continue
+
+            coinbase_metadata["address"] = m.address
+            coinbase_metadata["network_name"] = m.network
+            coinbase_metadata["submitted_by"] = m.submitted_by
+            coinbase_metadata["last_updated"] = m.last_updated
+
+            if m.tag.type == "entity":
+                coinbase_metadata["entity"] = m.tag.name
+            if m.tag.type == "name":
+                coinbase_metadata["name"] = m.tag.name
+            if m.tag.type == "category":
+                coinbase_metadata["categories"] += [m.tag.name]
+
+        return coinbase_metadata
