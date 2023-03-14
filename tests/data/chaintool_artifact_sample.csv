@@ -1,0 +1,101 @@
+submitted_by	address	chain	entity_name	name	categories	attributes	tagged_on
+Chaintool	0x4d77a1144dc74f26838b69391a6d3b1e403d0990	ETH	huobi	Huobi 32	Exchange		2022-12-01
+Chaintool	0xb9a4873d8d2c22e56b8574e8605644d08e047549	ETH	huobi	Huobi: Old Address 14	Exchange		2022-12-01
+Chaintool	0x2f47a1c2db4a3b78cda44eade915c3b19107ddcc	ETH	binance	Binance: Eth2 Depositor	Exchange		2022-12-01
+Chaintool	0xf16e9b0d03470827a95cdfd0cb8a8a3b46969b91	ETH	kucoin	KuCoin 9	Exchange		2022-12-01
+Chaintool	0x9eebb2815dba2166d8287afa9a2c89336ba9deaa	ETH	huobi	Huobi: Old Address 27	Exchange		2022-12-01
+Chaintool	0xb3f923eabaf178fc1bd8e13902fc5c61d3ddef5b	ETH	binance	Binance	Exchange		2022-12-01
+Chaintool	0x91dfa9d9e062a50d2f351bfba0d35a9604993dac	ETH	huobi	Huobi: Old Address 12	Exchange		2022-12-01
+Chaintool	0x229b5c097f9b35009ca1321ad2034d4b3d5070f6	ETH	huobi	Huobi 18	Exchange		2022-12-01
+Chaintool	0x1692e170361cefd1eb7240ec13d048fd9af6d667	ETH	kucoin	KuCoin 5	Exchange		2022-12-01
+Chaintool	0x0b95993a39a363d99280ac950f5e4536ab5c5566	ETH	binance	Binance: Contract	Exchange		2022-12-01
+Chaintool	0xfd54078badd5653571726c3370afb127351a6f26	ETH	huobi	Huobi: Deposit Funder	Exchange		2022-12-01
+Chaintool	0xe59cd29be3be4461d79c0881d238cbe87d64595a	ETH	kucoin	KuCoin 7	Exchange		2022-12-01
+Chaintool	0xeec606a66edb6f497662ea31b5eb1610da87ab5f	ETH	huobi	Huobi 16	Exchange		2022-12-01
+Chaintool	0xd10e08325c0e95d59c607a693483680fe5b755b3	ETH	huobi	Huobi: Old Address 28	Exchange		2022-12-01
+Chaintool	0x60b45f993223dcb8bdf05e3391f7630e5a51d787	ETH	huobi	Huobi: Old Address 25	Exchange		2022-12-01
+Chaintool	0xe93381fb4c4f14bda253907b18fad305d799241a	ETH	huobi	Huobi 10	Exchange		2022-12-01
+Chaintool	0x2602669a92fccf44e5319ff51b0f453aab9db021	ETH	kucoin	KuCoin Contract	Exchange		2022-12-01
+Chaintool	0xd3a2f775e973c1671f2047e620448b8662dcd3ca	ETH	huobi	Huobi: Old Address 23	Exchange		2022-12-01
+Chaintool	0x25c6459e5c5b01694f6453e8961420ccd1edf3b1	ETH	huobi	Huobi: Old Address 7	Exchange		2022-12-01
+Chaintool	0xea0cfef143182d7b9208fbfeda9d172c2aced972	ETH	huobi	Huobi: Old Address 10	Exchange		2022-12-01
+Chaintool	0x49517ca7b7a50f592886d4c74175f4c07d460a70	ETH	huobi	Huobi 38	Exchange		2022-12-01
+Chaintool	0x871baed4088b863fd6407159f3672d70cd34837d	ETH	ftx	FTX: 3X Long Ethereum Token	Exchange		2022-12-01
+Chaintool	0x8aabba0077f1565df73e9d15dd3784a2b0033dad	ETH	huobi	Huobi: Old Address 22	Exchange		2022-12-01
+Chaintool	0x170af0a02339743687afd3dc8d48cffd1f660728	ETH	huobi	Huobi: Old Address 15	Exchange		2022-12-01
+Chaintool	0xf056f435ba0cc4fcd2f1b17e3766549ffc404b94	ETH	huobi	Huobi 23	Exchange		2022-12-01
+Chaintool	0x899b5d52671830f567bf43a14684eb14e1f945fe	ETH	kucoin	KuCoin 8	Exchange		2022-12-01
+Chaintool	0xadb2b42f6bd96f5c65920b9ac88619dce4166f94	ETH	huobi	Huobi 7	Exchange		2022-12-01
+Chaintool	0x4ad64983349c49defe8d7a4686202d24b25d0ce8	ETH	kucoin	KuCoin 4	Exchange		2022-12-01
+Chaintool	0x5861b8446a2f6e19a067874c133f04c578928727	ETH	huobi	Huobi 14	Exchange		2022-12-01
+Chaintool	0x90e9ddd9d8d5ae4e3763d0cf856c97594dea7325	ETH	huobi	Huobi 20	Exchange		2022-12-01
+Chaintool	0x58c2cb4a6bee98c309215d0d2a38d7f8aa71211c	ETH	huobi	Huobi 39	Exchange		2022-12-01
+Chaintool	0x0a98fb70939162725ae66e626fe4b52cff62c2e5	ETH	huobi	Huobi 36	Exchange		2022-12-01
+Chaintool	0x5401dbf7da53e1c9dbf484e3d69505815f2f5e6e	ETH	huobi	Huobi 25	Exchange		2022-12-01
+Chaintool	0xa66daa57432024023db65477ba87d4e7f5f95213	ETH	huobi	Huobi Pool Token	Exchange		2022-12-01
+Chaintool	0x1d1e10e8c66b67692f4c002c0cb334de5d485e41	ETH	huobi	Huobi: Old Address 1	Exchange		2022-12-01
+Chaintool	0x1c515eaa87568c850043a89c2d2c2e8187adb056	ETH	huobi	Huobi: Old Address 24	Exchange		2022-12-01
+Chaintool	0xcac725bef4f114f728cbcfd744a731c2a463c3fc	ETH	huobi	Huobi 34	Exchange		2022-12-01
+Chaintool	0x1b93129f05cc2e840135aab154223c75097b69bf	ETH	huobi	Huobi: Old Address 2	Exchange		2022-12-01
+Chaintool	0xa23d7dd4b8a1060344caf18a29b42350852af481	ETH	huobi	Huobi: Old Address 26	Exchange		2022-12-01
+Chaintool	0xfa4b5be3f2f84f56703c42eb22142744e95a2c58	ETH	huobi	Huobi 11	Exchange		2022-12-01
+Chaintool	0x61189da79177950a7272c88c6058b96d4bcd6be2	ETH	binance	Binance US	Exchange		2022-12-01
+Chaintool	0xc837f51a0efa33f8eca03570e3d01a4b2cf97ffd	ETH	huobi	Huobi: Old Address 29	Exchange		2022-12-01
+Chaintool	0x016ee7373248a80bde1fd6baa001311d233b3cfa	ETH	ftx	FTX: 3X Short Bitcoin Token	Exchange		2022-12-01
+Chaintool	0x04645af26b54bd85dc02ac65054e87362a72cb22	ETH	huobi	Huobi: Old Address 8	Exchange		2022-12-01
+Chaintool	0x7ef35bb398e0416b81b019fea395219b65c52164	ETH	huobi	Huobi 17	Exchange		2022-12-01
+Chaintool	0xb2a48f542dc56b89b24c04076cbe565b3dc58e7b	ETH	huobi	Huobi: Old Address 9	Exchange		2022-12-01
+Chaintool	0xa8660c8ffd6d578f657b72c0c811284aef0b735e	ETH	huobi	Huobi 8	Exchange		2022-12-01
+Chaintool	0xdc76cd25977e0a5ae17155770273ad58648900d3	ETH	huobi	Huobi 6	Exchange		2022-12-01
+Chaintool	0xdf95de30cdff4381b69f9e4fa8dddce31a0128df	ETH	huobi	Huobi: Old Address 6	Exchange		2022-12-01
+Chaintool	0xf2b16510270a214130c6b17ff0e9bf87585126bd	ETH	kucoin	KuCoin: Deployer	Exchange		2022-12-01
+Chaintool	0x039b5649a59967e3e936d7471f9c3700100ee1ab	ETH	kucoin	KuCoin: Old KCS Token	Exchange		2022-12-01
+Chaintool	0x5c985e89dde482efe97ea9f1950ad149eb73829b	ETH	huobi	Huobi 5	Exchange		2022-12-01
+Chaintool	0xf66852bc122fd40bfecc63cd48217e88bda12109	ETH	huobi	Huobi 37	Exchange		2022-12-01
+Chaintool	0x2b5634c42055806a59e9107ed44d43c426e58258	ETH	kucoin	KuCoin	Exchange		2022-12-01
+Chaintool	0x32598293906b5b17c27d657db3ad2c9b3f3e4265	ETH	huobi	Huobi 13	Exchange		2022-12-01
+Chaintool	0x73f8fc2e74302eb2efda125a326655acf0dc2d1b	ETH	huobi	Huobi 35	Exchange		2022-12-01
+Chaintool	0x0316eb71485b0ab14103307bf65a021042c6d380	ETH	huobi	Huobi: HBTC Token	Exchange		2022-12-01
+Chaintool	0x6edb9d6547befc3397801c94bb8c97d2e8087e2f	ETH	huobi	Huobi: Old Address 21	Exchange		2022-12-01
+Chaintool	0x2f5e2c9002c058c063d21a06b6cabb50950130c8	ETH	ftx	FTX: 3X Short Ethereum Token	Exchange		2022-12-01
+Chaintool	0x926fc576b7facf6ae2d08ee2d4734c134a743988	ETH	huobi	Huobi 15	Exchange		2022-12-01
+Chaintool	0xe3314bbf3334228b257779e28228cfb86fa4261b	ETH	huobi	Huobi: Old Address 20	Exchange		2022-12-01
+Chaintool	0x90f49e24a9554126f591d28174e157ca267194ba	ETH	huobi	Huobi: Old Address 19	Exchange		2022-12-01
+Chaintool	0x6f259637dcd74c767781e37bc6133cd6a68aa161	ETH	huobi	Huobi Token	Exchange		2022-12-01
+Chaintool	0xf775a9a0ad44807bc15936df0ee68902af1a0eee	ETH	huobi	Huobi: Old Address 16	Exchange		2022-12-01
+Chaintool	0x0577a79cfc63bbc0df38833ff4c4a3bf2095b404	ETH	huobi	Huobi 27	Exchange		2022-12-01
+Chaintool	0xd8a83b72377476d0a66683cde20a8aad0b628713	ETH	huobi	Huobi 19	Exchange		2022-12-01
+Chaintool	0x50d1c9771902476076ecfc8b2a83ad6b9355a4c9	ETH	ftx	FTX: FTT Token	Exchange		2022-12-01
+Chaintool	0xeb6d43fe241fb2320b5a3c9be9cdfd4dd8226451	ETH	huobi	Huobi: Old Address 3	Exchange		2022-12-01
+Chaintool	0xf7a8af16acb302351d7ea26ffc380575b741724c	ETH	huobi	Huobi: Old Address 30	Exchange		2022-12-01
+Chaintool	0xfdb16996831753d5331ff813c29a93c76834a0ad	ETH	huobi	Huobi 3	Exchange		2022-12-01
+Chaintool	0x794d28ac31bcb136294761a556b68d2634094153	ETH	huobi	Huobi 29	Exchange		2022-12-01
+Chaintool	0x18916e1a2933cb349145a280473a5de8eb6630cb	ETH	huobi	Huobi: Deposit Funder 2	Exchange		2022-12-01
+Chaintool	0xb4cd0386d2db86f30c1a11c2b8c4f4185c1dade9	ETH	huobi	Huobi 31	Exchange		2022-12-01
+Chaintool	0x48ab9f29795dfb44b36587c50da4b30c0e84d3ed	ETH	huobi	Huobi: Old Address 18	Exchange		2022-12-01
+Chaintool	0x1062a747393198f70f71ec65a582423dba7e5ab3	ETH	huobi	Huobi 9	Exchange		2022-12-01
+Chaintool	0xecd8b3877d8e7cd0739de18a5b545bc0b3538566	ETH	huobi	Huobi: Old Address 33	Exchange		2022-12-01
+Chaintool	0x8e8bc99b79488c276d6f3ca11901e9abd77efea4	ETH	huobi	Huobi: Old Address 13	Exchange		2022-12-01
+Chaintool	0x689c56aef474df92d44a1b70850f808488f9769c	ETH	kucoin	KuCoin 2	Exchange		2022-12-01
+Chaintool	0x46705dfff24256421a05d056c29e81bdc09723b8	ETH	huobi	Huobi 12	Exchange		2022-12-01
+Chaintool	0x137ad9c4777e1d36e4b605e745e8f37b2b62e9c5	ETH	huobi	Huobi 24	Exchange		2022-12-01
+Chaintool	0x956e0dbecc0e873d34a5e39b25f364b2ca036730	ETH	huobi	Huobi: Old Address 4	Exchange		2022-12-01
+Chaintool	0x0c6c34cdd915845376fb5407e0895196c9dd4eec	ETH	huobi	Huobi 28	Exchange		2022-12-01
+Chaintool	0x6f48a3e70f0251d1e83a989e62aaa2281a6d5380	ETH	huobi	Huobi 22	Exchange		2022-12-01
+Chaintool	0x9a755332d874c893111207b0b220ce2615cd036f	ETH	huobi	Huobi: Old Address 32	Exchange		2022-12-01
+Chaintool	0x636b76ae213358b9867591299e5c62b8d014e372	ETH	huobi	Huobi: Old Address 31	Exchange		2022-12-01
+Chaintool	0x28ffe35688ffffd0659aee2e34778b0ae4e193ad	ETH	huobi	Huobi 33	Exchange		2022-12-01
+Chaintool	0x6f50c6bff08ec925232937b204b0ae23c488402a	ETH	huobi	Huobi: Old Address 5	Exchange		2022-12-01
+Chaintool	0x68eb95dc9934e19b86687a10df8e364423240e94	ETH	ftx	FTX: 3X Long Bitcoin Token	Exchange		2022-12-01
+Chaintool	0x0c92efa186074ba716d0e2156a6ffabd579f8035	ETH	Huobi: Old Address 11	huobi	Exchange		2022-12-01
+Chaintool	0xa1d8d972560c2f8144af871db508f0b0b10a3fbf	ETH	kucoin	KuCoin 3	Exchange		2022-12-01
+Chaintool	0x034f854b44d28e26386c1bc37ff9b20c6380b00d	ETH	huobi	Huobi 26	Exchange		2022-12-01
+Chaintool	0xef54f559b5e3b55b783c7bc59850f83514b6149c	ETH	huobi	Huobi: Old Address 34	Exchange		2022-12-01
+Chaintool	0xeee28d484628d41a82d01e21d12e2e78d69920da	ETH	huobi	Huobi 4	Exchange		2022-12-01
+Chaintool	0xb8c77482e45f1f44de1745f52c74426c631bdd52	ETH	binance	Binance: BNB Token	Exchange		2022-12-01
+Chaintool	0xcad621da75a66c7a8f4ff86d30a2bf981bfc8fdd	ETH	kucoin	KuCoin 10	Exchange		2022-12-01
+Chaintool	0xd6216fc19db775df9774a6e33526131da7d19a2c	ETH	kucoin	KuCoin 6	Exchange		2022-12-01
+Chaintool	0xf34960d9d60be18cc1d5afc1a6f012a723a28811	ETH	kucoin	KuCoin: KCS Token	Exchange		2022-12-01
+Chaintool	0xc9a2c4868f0f96faaa739b59934dc9cb304112ec	ETH	binance	Binance: BGBP Token	Exchange		2022-12-01
+Chaintool	0x4fabb145d64652a948d72533023f6e7a623c7c53	ETH	binance	Binance USD	Exchange		2022-12-01
+Chaintool	0x6748f50f686bfbca6fe8ad62b22228b87f31ff2b	ETH	huobi	Huobi 2	Exchange		2022-12-01

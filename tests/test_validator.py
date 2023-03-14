@@ -29,7 +29,8 @@ from chainmeta_reader.validator import (
     [
         ("empty.json", False),
         ("missing_community.json", False),
-        ("chaintool_meta.json", True),
+        ("chaintool_sample.json", True),
+        ("chaintool_invalid_sample.json", False),
         ("coinbase_sample.json", True),
         ("coinbase_invalid_sample.json", False),
     ],
