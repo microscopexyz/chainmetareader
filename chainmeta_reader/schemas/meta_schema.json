@@ -85,8 +85,9 @@
                                 "description": "Type of artifact",
                                 "type": "string",
                                 "enum": [
-                                    "oss",
-                                    "remote path"
+                                    "s3",
+                                    "remote path",
+                                    "local file"
                                 ]
                             },
                             "path": {

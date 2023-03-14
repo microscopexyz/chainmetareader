@@ -1,0 +1,21 @@
+{
+    "community": "openchainmeta",
+    "provider": {
+        "provider_name": "chaintool",
+        "provider_id": "ocm000001",
+        "provider_signature": "xxxxx"
+    },
+    "version": "v1",
+    "revision": 1,
+    "introduction": "https://github.com/openchainmeta/chainmetareader/doc/chaintool/introduction.md",
+    "chainmetadata": {
+        "schema": "https://github.com/openchainmeta/chainmetareader/chainmeta_reader/schemas/chaintool_schema.json",
+        "artifact": [{
+                "artifact_type": "local file",
+                "path": "file:///chaintool_invalid_artifact_sample.csv",
+                "fileformat": "csv",
+                "signature": "e3aeb7c8f63d29fda476f7f96d9417ee"
+            }
+        ]
+    }
+}

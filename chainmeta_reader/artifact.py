@@ -41,7 +41,25 @@ def json_parser(c: str) -> object:
 
 
 def csv_parser(c: str) -> object:
-    pass
+    result = {}
+    try:
+        # first line is header, the separator between fields is '\t'
+        rows = c.split("\n")
+        filed_names = rows[0].split("\t")
+        meta_data = []
+        for i in range(1, len(rows)):
+            row = rows[i]
+            if not row:
+                continue
+            dic = {}
+            arr = row.split("\t")
+            for j in range(0, len(filed_names)):
+                dic[filed_names[j]] = arr[j]
+            meta_data.append(dic)
+        # The validates function in the "__init__.py" file requires "metadata" as the key
+        result["metadata"] = meta_data
+    finally:
+        return result
 
 
 parsers = {
