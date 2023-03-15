@@ -147,3 +147,12 @@ class CoinbaseTranslator(ITranslator):
                 coinbase_metadata["categories"] += [m.tag.name]
 
         return coinbase_metadata
+
+
+# TODO add ChaintoolTranslator
+class ChaintoolTranslator(ITranslator):
+    def to_intermediate(raw_metadata) -> Iterator[MetadataItem]:
+        # Translate a Chaintool formatted metadata into the common layer
+
+    def from_intermediate(intermediate_metadata: Iterable[MetadataItem]) -> object:
+        # Translate from common layer metadata into a Chaintool formatted metadata
