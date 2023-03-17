@@ -150,24 +150,24 @@ class CoinbaseTranslator(ITranslator):
 
 
 class ChaintoolTranslator(ITranslator):
+    # Translate a Chaintool formatted metadata into the common layer
     def to_intermediate(raw_metadata) -> Iterator[MetadataItem]:
-        address, chain, submitted_by, tagged_on, attribute = (
+        address, network, submitted_by, last_updated = (
             raw_metadata["address"],
             Network(name=raw_metadata["chain"]),
             raw_metadata["submitted_by"],
             raw_metadata["tagged_on"],
-            raw_metadata["attributes"],
         )
 
         def _build_meta(tag_type: str, tag_value: str):
             return MetadataItem(
                 address=address,
-                network=chain,
+                network=network,
                 tag=Tag(
                     namespace=ValidatorType.ChainTool, type=tag_type, name=tag_value
                 ),
                 submitted_by=submitted_by,
-                last_updated=tagged_on,
+                last_updated=last_updated,
             )
 
         def _build_meta_from_field(field: str):
@@ -177,27 +177,30 @@ class ChaintoolTranslator(ITranslator):
             yield _build_meta_from_field(field="entity_name")
         if "name" in raw_metadata:
             yield _build_meta_from_field(field="name")
-        for category in raw_metadata.get("categories", []):
-            yield _build_meta(tag_type="category", tag_value=category)
-        for attribute in raw_metadata.get("attributes", []):
-            yield _build_meta(tag_type="attribute", tag_value=attribute)
-
-        # Translate a Chaintool formatted metadata into the common layer
+        for category in raw_metadata.get("categories", "").split(","):
+            if category:
+                yield _build_meta(tag_type="category", tag_value=category)
+        for attribute in raw_metadata.get("attributes", "").split(","):
+            if attribute:
+                yield _build_meta(tag_type="attribute", tag_value=attribute)
 
     def from_intermediate(intermediate_metadata: Iterable[MetadataItem]) -> object:
+        # Translate from common layer metadata into a Chaintool formatted metadata
         if not intermediate_metadata:
             return
-        network_address = set((m.address, m.chain) for m in intermediate_metadata)
+        network_address = set((m.address, m.network) for m in intermediate_metadata)
         if len(network_address) > 1:
             raise ValidatorError("not all records belong to same address")
 
-        chaintool_metadata = {"categories": [], "attributes": []}
+        chaintool_metadata = {"categories": "", "attributes": ""}
+        categories = []
+        attributes = []
         for m in intermediate_metadata:
             if m.tag.namespace != ValidatorType.ChainTool:
                 continue
 
             chaintool_metadata["address"] = m.address
-            chaintool_metadata["network_name"] = m.network
+            chaintool_metadata["network_name"] = m.network.name
             chaintool_metadata["submitted_by"] = m.submitted_by
             chaintool_metadata["tagged_on"] = m.last_updated
 
@@ -206,9 +209,11 @@ class ChaintoolTranslator(ITranslator):
             if m.tag.type == "name":
                 chaintool_metadata["name"] = m.tag.name
             if m.tag.type == "category":
-                chaintool_metadata["categories"] += [m.tag.name]
+                categories.append(m.tag.name)
             if m.tag.type == "attribute":
-                chaintool_metadata["attributes"] += [m.tag.name]
+                attributes.append(m.tag.name)
+
+        chaintool_metadata["categories"] = ",".join(categories)
+        chaintool_metadata["attributes"] += ",".join(attributes)
 
         return chaintool_metadata
-        # Translate from common layer metadata into a Chaintool formatted metadata
