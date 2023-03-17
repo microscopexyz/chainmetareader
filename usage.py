@@ -1,6 +1,12 @@
 import pathlib
 
-from chainmeta_reader import CoinbaseTranslator, ChaintoolTranslator, denormalize, load, normalize
+from chainmeta_reader import (
+    ChaintoolTranslator,
+    CoinbaseTranslator,
+    denormalize,
+    load,
+    normalize,
+)
 
 artifact_base_path = pathlib.Path("./examples")
 with open(artifact_base_path.joinpath("coinbase_sample.json")) as f:
