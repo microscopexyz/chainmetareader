@@ -15,9 +15,7 @@ import pathlib
 import pytest
 
 import chainmeta_reader
-from chainmeta_reader.metadata import (
-    ChaintoolTranslator,
-)
+from chainmeta_reader.metadata import ChaintoolTranslator
 
 
 @pytest.mark.parametrize(
@@ -40,7 +38,9 @@ def test_chaintool_translator(input_file: str):
         )
 
         # Translate back to Chaintool metadata schema
-        raw_metadata2 = chainmeta_reader.denormalize(intermediate_metadata, ChaintoolTranslator)
+        raw_metadata2 = chainmeta_reader.denormalize(
+            intermediate_metadata, ChaintoolTranslator
+        )
         raw_metadata2_dict = {}
         for item in raw_metadata2:
             raw_metadata2_dict[item["address"]] = item
@@ -50,4 +50,6 @@ def test_chaintool_translator(input_file: str):
         for raw_item in raw_metadata:
             address = raw_item["address"]
             for filed_name in dict(raw_item).keys():
-                assert raw_item[filed_name] == raw_metadata2_dict.get(address)[filed_name]
+                assert (
+                    raw_item[filed_name] == raw_metadata2_dict.get(address)[filed_name]
+                )
