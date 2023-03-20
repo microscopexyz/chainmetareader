@@ -200,7 +200,7 @@ class ChaintoolTranslator(ITranslator):
                 continue
 
             chaintool_metadata["address"] = m.address
-            chaintool_metadata["network_name"] = m.network.name
+            chaintool_metadata["chain"] = m.network.name
             chaintool_metadata["submitted_by"] = m.submitted_by
             chaintool_metadata["tagged_on"] = m.last_updated
 
