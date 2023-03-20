@@ -14,18 +14,16 @@ import pathlib
 
 import pytest
 
-from chainmeta_reader import (
+import chainmeta_reader
+from chainmeta_reader.metadata import (
     ChaintoolTranslator,
-    denormalize,
-    load,
-    normalize,
 )
 
 
 @pytest.mark.parametrize(
     "input_file",
     [
-        ("chaintool_sample.json"),
+        "chaintool_sample.json",
     ],
 )
 def test_chaintool_translator(input_file: str):
@@ -33,16 +31,16 @@ def test_chaintool_translator(input_file: str):
     resolved_input_file = data_folder.joinpath(input_file)
     with open(resolved_input_file) as f:
         # Load Chaintool artifact
-        metadata = load(f, artifact_base_path=data_folder)
+        metadata = chainmeta_reader.load(f, artifact_base_path=data_folder)
         raw_metadata = metadata["chainmetadata"]["loaded_artifact"]
 
         # Translate to intermediate metadata schema
-        intermediate_metadata = normalize(
+        intermediate_metadata = chainmeta_reader.normalize(
             metadata["chainmetadata"]["loaded_artifact"], ChaintoolTranslator
         )
 
-        # Translate back to Coinbase metadata schema
-        raw_metadata2 = denormalize(intermediate_metadata, ChaintoolTranslator)
+        # Translate back to Chaintool metadata schema
+        raw_metadata2 = chainmeta_reader.denormalize(intermediate_metadata, ChaintoolTranslator)
         raw_metadata2_dict = {}
         for item in raw_metadata2:
             raw_metadata2_dict[item["address"]] = item

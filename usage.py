@@ -32,5 +32,5 @@ with open(artifact_base_path.joinpath("chaintool_sample.json")) as f:
         metadata["chainmetadata"]["loaded_artifact"], ChaintoolTranslator
     )
 
-    # Translate back to Coinbase metadata schema
+    # Translate back to Chaintool metadata schema
     raw_metadata2 = denormalize(intermediate_metadata, ChaintoolTranslator)
