@@ -16,7 +16,12 @@ from collections.abc import Iterable, Iterator
 from functools import reduce
 
 from chainmeta_reader.artifact import load as _load
-from chainmeta_reader.metadata import CoinbaseTranslator, ITranslator, MetadataItem
+from chainmeta_reader.metadata import (
+    ChaintoolTranslator,
+    CoinbaseTranslator,
+    ITranslator,
+    MetadataItem,
+)
 from chainmeta_reader.schema import resolve as _resolve
 from chainmeta_reader.validator import JsonValidator, Validator, ValidatorError
 
@@ -146,4 +151,5 @@ __all__ = [
     "denormalize",
     "global_validator",
     "CoinbaseTranslator",
+    "ChaintoolTranslator",
 ]
