@@ -1,0 +1,4 @@
+# About GoPlus
+GoPlus is working as the "Security Infrastructure" for Web3 by providing open, permissionless, user-driven Security Services. It is building on the Security Data Infrastructure and Security Service Platform, making a safer Web3 Ecosystem.
+Currently, GoPlus has developed a real-time, dynamic, and automated security detecting platform, including Token Security, NFT Security , Malicious Address , Approval Security , dApp Security Info and Signature Data Decode APIs, with around 5 million data calls every day. GoPlus has also launched the Security Ecosystem in 2023.
+We would love to offer the best Web3 security data integration to protect both projects and users in the crypto world. We are also seeking similar-minded partners and influencers for cooperation. Please feel free to contact us if you are interested in accessing GoPlus API, or any other cooperation possibilities.
