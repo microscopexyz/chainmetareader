@@ -1,0 +1,35 @@
+{
+    "metadata": [
+        {
+            "address": "0x333f2e9f074de56d3ed6a0518c3d0df418692b63",
+            "submitted_by": "GoPlus",
+            "chain": "ETH",
+            "categories": [
+                "Address Related to Honeypot",
+                "Phishing Activities",
+                "Stealing Attack"
+            ],
+            "updated_at": "2023-02-14 16:00:09"
+        },
+        {
+            "address": "0xec117f9066a8ad1caef190372ee7560f04d997dd",
+            "submitted_by": "GoPlus",
+            "chain": "ETH",
+            "categories": [
+                "Address Related to Honeypot",
+                "Phishing Activities",
+                "Other"
+            ],
+            "updated_at": "2023-03-06 06:41:44"
+        },
+        {
+            "address": "0x333f2e9f074de56d3ed6a0518c3d0df418692b63",
+            "submitted_by": "GoPlus",
+            "chain": "ETH",
+            "categories": [
+                "Address Related to Honeypot"
+            ],
+            "updated_at": "2023-03-21 20:45:21"
+        }
+    ]
+}
