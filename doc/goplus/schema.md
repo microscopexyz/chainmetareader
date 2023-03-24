@@ -3,7 +3,7 @@
 |----------------|---------------|:-------------------------------------------------------:|:------------------------------------------:|
 | submitted_by   | String        |                     Provider's name                     |                   GoPlus                   |
 | address        | String        |                         Address                         | 0x333f2e9f074de56d3ed6a0518c3d0df418692b63 |
-| entity         | String        |              Whether the address is risky               |             High Risk Address              |
+| chain          | String        |                Cryptocurrency chain type                |                    ETH                     |
 | categories     | Array         | The risk type of the address，maybe have multiple values |      ["Address Related to Honeypot"]       |
 | updated_at     | Datetime      |              The last update time of data               |                 2023-03-01                 |
 

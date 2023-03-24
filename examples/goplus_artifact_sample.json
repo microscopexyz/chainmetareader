@@ -3,7 +3,7 @@
         {
             "address": "0x333f2e9f074de56d3ed6a0518c3d0df418692b63",
             "submitted_by": "GoPlus",
-            "entity": "High Risk Address",
+            "chain": "ETH",
             "categories": [
                 "Address Related to Honeypot",
                 "Phishing Activities",
@@ -14,7 +14,7 @@
         {
             "address": "0xec117f9066a8ad1caef190372ee7560f04d997dd",
             "submitted_by": "GoPlus",
-            "entity": "High Risk Address",
+            "chain": "ETH",
             "categories": [
                 "Address Related to Honeypot",
                 "Phishing Activities",
@@ -25,7 +25,7 @@
         {
             "address": "0x333f2e9f074de56d3ed6a0518c3d0df418692b63",
             "submitted_by": "GoPlus",
-            "entity": "High Risk Address",
+            "chain": "ETH",
             "categories": [
                 "Address Related to Honeypot"
             ],
