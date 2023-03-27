@@ -28,3 +28,15 @@
 >>> list(raw_metadata)
 [{'categories': ['defi', 'dex'], 'address': '0xf177aa7b0602f787f6f01c65f4b2e267336fd349', 'network_name': Network(name='ethereum-mainnet'), 'submitted_by': 'coinbase', 'last_updated': '2022-09-21 00:00:00', 'entity': 'Uniswap', 'name': 'Uniswap V2: Hmf'}, {'categories': ['defi', 'dex', 'erc20 token'], 'address': '0xd62f1beba129440c5c07e4fb597ec1f61260d26b', 'network_name': Network(name='ethereum-mainnet'), 'submitted_by': 'coinbase', 'last_updated': '2022-09-21 00:00:00', 'entity': 'Uniswap', 'name': 'Uniswap V2: $Ashiba'}]
 ```
+
+## Local Development
+
+Install Python dependencies
+```bash
+pip install -r requirements.txt
+```
+
+Run database locally
+```bash
+docker compose up --build
+```
