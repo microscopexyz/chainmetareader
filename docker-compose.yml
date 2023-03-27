@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: test
+    networks:
+      - db_network
+    volumes:
+      - sql_data_volume:/var/lib/mysql
+  db_migration:
+    build: .
+    networks:
+      - db_network
+    depends_on:
+      - db
+    restart: on-failure
+
+networks:
+  db_network:
+
+volumes:
+  sql_data_volume:
