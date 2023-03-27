@@ -14,18 +14,34 @@ import json
 from collections import defaultdict
 from collections.abc import Iterable, Iterator
 from functools import reduce
+from typing import Generator
 
 from chainmeta_reader.artifact import load as _load
+from chainmeta_reader.db import add_chainmeta, init_db
+from chainmeta_reader.db import search_chainmeta as _search_chainmeta
+from chainmeta_reader.logger import logger
 from chainmeta_reader.metadata import (
+    ChainmetaItem,
     ChaintoolTranslator,
     CoinbaseTranslator,
     ITranslator,
-    MetadataItem,
 )
 from chainmeta_reader.schema import resolve as _resolve
 from chainmeta_reader.validator import JsonValidator, Validator, ValidatorError
 
 global_validator = Validator()
+_session_maker = None
+_default_artifact_base_path = None
+
+
+def set_connection_string(connection_string):
+    global _session_maker
+    _session_maker = init_db(connection_string)
+
+
+def set_artifact_base_path(artifact_base_path):
+    global _default_artifact_base_path
+    _default_artifact_base_path = artifact_base_path
 
 
 def validate(
@@ -39,6 +55,10 @@ def validate(
     """Validate ``fp`` (a ``.read()``-supporting file-like object containing
     an open chain metadata document) against the open chain metadata rule set.
     """
+    artifact_base_path = (
+        _default_artifact_base_path if not artifact_base_path else artifact_base_path
+    )
+
     validates(
         fp.read(),
         ignore_unrecognized=ignore_unrecognized,
@@ -58,6 +78,9 @@ def validates(
     """Validate ``s`` (a ``str``, ``bytes`` or ``bytearray`` instance containing
     an open chain metadata document) against the open chain metadata rule set.
     """
+    artifact_base_path = (
+        _default_artifact_base_path if not artifact_base_path else artifact_base_path
+    )
     metadata = json.loads(s)
 
     # Global validation
@@ -93,6 +116,10 @@ def load(
     """Deserialize ``fp`` (a ``.read()``-supporting file-like object containing
     an open chain metadata document) to a Python object.
     """
+
+    artifact_base_path = (
+        _default_artifact_base_path if not artifact_base_path else artifact_base_path
+    )
     return loads(
         fp.read(),
         ignore_unrecognized=ignore_unrecognized,
@@ -113,6 +140,9 @@ def loads(
     """Deserialize ``s`` (a ``str``, ``bytes`` or ``bytearray`` instance containing
     an open chain metadata document) to a Python object.
     """
+    artifact_base_path = (
+        _default_artifact_base_path if not artifact_base_path else artifact_base_path
+    )
     return validates(
         s,
         ignore_unrecognized=ignore_unrecognized,
@@ -122,24 +152,46 @@ def loads(
     )
 
 
-def normalize(raw_metadata: Iterable[object], t: ITranslator) -> Iterator[MetadataItem]:
+def normalize(
+    raw_metadata: Iterable[object], t: ITranslator
+) -> Iterator[ChainmetaItem]:
     for m in raw_metadata:
-        for intermediate_item in t.to_intermediate(m):
+        for intermediate_item in t.to_common_schema(m):
             yield intermediate_item
 
 
 def denormalize(
-    intermediate_metadata: Iterable[MetadataItem], t: ITranslator
+    intermediate_metadata: Iterable[ChainmetaItem], t: ITranslator
 ) -> Iterator[object]:
     metadata_group = defaultdict(list)
 
     def _group_f(t, s):
-        t[(s.address, s.network, s.submitted_by)] += [s]
+        t[(s.address, s.chain, s.submitted_by)] += [s]
         return t
 
     reduce(_group_f, intermediate_metadata, metadata_group)
     for _, group in metadata_group.items():
-        yield t.from_intermediate(group)
+        yield t.from_common_schema(group)
+
+
+def upload_chainmeta(metadata: Iterable[ChainmetaItem]) -> int:
+    """Upload metadata to database."""
+
+    if not _session_maker:
+        logger.warning("Run `set_connection_string()` first")
+        return 0
+
+    return add_chainmeta(_session_maker, metadata)
+
+
+def search_chainmeta(*, filter: dict = None) -> Generator[ChainmetaItem, None, None]:
+    """Search metadata from database."""
+
+    if not _session_maker:
+        logger.warning("Run `set_connection_string()` first")
+        return 0
+
+    return _search_chainmeta(_session_maker, filter=filter)
 
 
 __all__ = [
@@ -149,7 +201,10 @@ __all__ = [
     "loads",
     "normalize",
     "denormalize",
-    "global_validator",
+    "upload_chainmeta",
+    "search_chainmeta",
     "CoinbaseTranslator",
     "ChaintoolTranslator",
+    "set_artifact_base_path",
+    "set_connection_string",
 ]

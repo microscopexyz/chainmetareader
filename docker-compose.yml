@@ -10,12 +10,22 @@ services:
     volumes:
       - sql_data_volume:/var/lib/mysql
   db_migration:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: db_migration
     networks:
       - db_network
     depends_on:
       - db
     restart: on-failure
+  development:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    networks:
+      - db_network
 
 networks:
   db_network:
