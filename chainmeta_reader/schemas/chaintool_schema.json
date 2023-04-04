@@ -17,10 +17,10 @@
                     "submitted_by",
                     "address",
                     "chain",
+                    "entity",
                     "entity_name",
-                    "name",
                     "categories",
-                    "attributes",
+                    "source",
                     "tagged_on"
                 ],
                 "properties": {
@@ -37,19 +37,18 @@
                         "type": "string",
                         "format": "[a-zA-Z_]*"
                     },
-                    "entity_name": {
+                    "entity": {
                         "type": "string"
                     },
-                    "name": {
+                    "entity_name": {
                         "type": "string"
                     },
                     "categories": {
                         "type": "string",
                         "format": "^[a-zA-Z\\s,]*[a-zA-Z]$"
                     },
-                    "attributes": {
-                        "type": "string",
-                        "format": "^[a-zA-Z\\s,]*[a-zA-Z]$"
+                    "source": {
+                        "type": "string"
                     },
                     "tagged_on": {
                         "type": "string",

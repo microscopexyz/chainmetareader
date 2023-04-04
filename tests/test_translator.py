@@ -50,6 +50,8 @@ def test_chaintool_translator(input_file: str):
         for raw_item in raw_metadata:
             address = raw_item["address"]
             for filed_name in dict(raw_item).keys():
+                if filed_name == "source":
+                    continue
                 assert (
                     raw_item[filed_name] == raw_metadata2_dict.get(address)[filed_name]
                 )

@@ -173,16 +173,13 @@ class ChaintoolTranslator(ITranslator):
         def _build_meta_from_field(field: str):
             return _build_meta(tag_type=field, tag_value=raw_metadata[field])
 
+        if "entity" in raw_metadata:
+            yield _build_meta_from_field(field="entity")
         if "entity_name" in raw_metadata:
             yield _build_meta_from_field(field="entity_name")
-        if "name" in raw_metadata:
-            yield _build_meta_from_field(field="name")
         for category in raw_metadata.get("categories", "").split(","):
             if category:
                 yield _build_meta(tag_type="category", tag_value=category)
-        for attribute in raw_metadata.get("attributes", "").split(","):
-            if attribute:
-                yield _build_meta(tag_type="attribute", tag_value=attribute)
 
     def from_common_schema(intermediate_metadata: Iterable[ChainmetaItem]) -> object:
         # Translate from common layer metadata into a Chaintool formatted metadata
@@ -192,9 +189,8 @@ class ChaintoolTranslator(ITranslator):
         if len(network_address) > 1:
             raise ValidatorError("not all records belong to same address")
 
-        chaintool_metadata = {"categories": "", "attributes": ""}
+        chaintool_metadata = {"categories": ""}
         categories = []
-        attributes = []
         for m in intermediate_metadata:
             if m.tag.namespace != ValidatorType.ChainTool:
                 continue
@@ -204,16 +200,13 @@ class ChaintoolTranslator(ITranslator):
             chaintool_metadata["submitted_by"] = m.submitted_by
             chaintool_metadata["tagged_on"] = m.submitted_on
 
+            if m.tag.scope == "entity":
+                chaintool_metadata["entity"] = m.tag.name
             if m.tag.scope == "entity_name":
                 chaintool_metadata["entity_name"] = m.tag.name
-            if m.tag.scope == "name":
-                chaintool_metadata["name"] = m.tag.name
             if m.tag.scope == "category":
                 categories.append(m.tag.name)
-            if m.tag.scope == "attribute":
-                attributes.append(m.tag.name)
 
         chaintool_metadata["categories"] = ",".join(categories)
-        chaintool_metadata["attributes"] += ",".join(attributes)
 
         return chaintool_metadata
