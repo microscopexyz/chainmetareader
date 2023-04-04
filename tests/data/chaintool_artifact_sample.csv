@@ -1,101 +1,870 @@
-submitted_by	address	chain	entity_name	name	categories	attributes	tagged_on
-Chaintool	0x4d77a1144dc74f26838b69391a6d3b1e403d0990	ETH	huobi	Huobi 32	Exchange		2022-12-01
-Chaintool	0xb9a4873d8d2c22e56b8574e8605644d08e047549	ETH	huobi	Huobi: Old Address 14	Exchange		2022-12-01
-Chaintool	0x2f47a1c2db4a3b78cda44eade915c3b19107ddcc	ETH	binance	Binance: Eth2 Depositor	Exchange		2022-12-01
-Chaintool	0xf16e9b0d03470827a95cdfd0cb8a8a3b46969b91	ETH	kucoin	KuCoin 9	Exchange		2022-12-01
-Chaintool	0x9eebb2815dba2166d8287afa9a2c89336ba9deaa	ETH	huobi	Huobi: Old Address 27	Exchange		2022-12-01
-Chaintool	0xb3f923eabaf178fc1bd8e13902fc5c61d3ddef5b	ETH	binance	Binance	Exchange		2022-12-01
-Chaintool	0x91dfa9d9e062a50d2f351bfba0d35a9604993dac	ETH	huobi	Huobi: Old Address 12	Exchange		2022-12-01
-Chaintool	0x229b5c097f9b35009ca1321ad2034d4b3d5070f6	ETH	huobi	Huobi 18	Exchange		2022-12-01
-Chaintool	0x1692e170361cefd1eb7240ec13d048fd9af6d667	ETH	kucoin	KuCoin 5	Exchange		2022-12-01
-Chaintool	0x0b95993a39a363d99280ac950f5e4536ab5c5566	ETH	binance	Binance: Contract	Exchange		2022-12-01
-Chaintool	0xfd54078badd5653571726c3370afb127351a6f26	ETH	huobi	Huobi: Deposit Funder	Exchange		2022-12-01
-Chaintool	0xe59cd29be3be4461d79c0881d238cbe87d64595a	ETH	kucoin	KuCoin 7	Exchange		2022-12-01
-Chaintool	0xeec606a66edb6f497662ea31b5eb1610da87ab5f	ETH	huobi	Huobi 16	Exchange		2022-12-01
-Chaintool	0xd10e08325c0e95d59c607a693483680fe5b755b3	ETH	huobi	Huobi: Old Address 28	Exchange		2022-12-01
-Chaintool	0x60b45f993223dcb8bdf05e3391f7630e5a51d787	ETH	huobi	Huobi: Old Address 25	Exchange		2022-12-01
-Chaintool	0xe93381fb4c4f14bda253907b18fad305d799241a	ETH	huobi	Huobi 10	Exchange		2022-12-01
-Chaintool	0x2602669a92fccf44e5319ff51b0f453aab9db021	ETH	kucoin	KuCoin Contract	Exchange		2022-12-01
-Chaintool	0xd3a2f775e973c1671f2047e620448b8662dcd3ca	ETH	huobi	Huobi: Old Address 23	Exchange		2022-12-01
-Chaintool	0x25c6459e5c5b01694f6453e8961420ccd1edf3b1	ETH	huobi	Huobi: Old Address 7	Exchange		2022-12-01
-Chaintool	0xea0cfef143182d7b9208fbfeda9d172c2aced972	ETH	huobi	Huobi: Old Address 10	Exchange		2022-12-01
-Chaintool	0x49517ca7b7a50f592886d4c74175f4c07d460a70	ETH	huobi	Huobi 38	Exchange		2022-12-01
-Chaintool	0x871baed4088b863fd6407159f3672d70cd34837d	ETH	ftx	FTX: 3X Long Ethereum Token	Exchange		2022-12-01
-Chaintool	0x8aabba0077f1565df73e9d15dd3784a2b0033dad	ETH	huobi	Huobi: Old Address 22	Exchange		2022-12-01
-Chaintool	0x170af0a02339743687afd3dc8d48cffd1f660728	ETH	huobi	Huobi: Old Address 15	Exchange		2022-12-01
-Chaintool	0xf056f435ba0cc4fcd2f1b17e3766549ffc404b94	ETH	huobi	Huobi 23	Exchange		2022-12-01
-Chaintool	0x899b5d52671830f567bf43a14684eb14e1f945fe	ETH	kucoin	KuCoin 8	Exchange		2022-12-01
-Chaintool	0xadb2b42f6bd96f5c65920b9ac88619dce4166f94	ETH	huobi	Huobi 7	Exchange		2022-12-01
-Chaintool	0x4ad64983349c49defe8d7a4686202d24b25d0ce8	ETH	kucoin	KuCoin 4	Exchange		2022-12-01
-Chaintool	0x5861b8446a2f6e19a067874c133f04c578928727	ETH	huobi	Huobi 14	Exchange		2022-12-01
-Chaintool	0x90e9ddd9d8d5ae4e3763d0cf856c97594dea7325	ETH	huobi	Huobi 20	Exchange		2022-12-01
-Chaintool	0x58c2cb4a6bee98c309215d0d2a38d7f8aa71211c	ETH	huobi	Huobi 39	Exchange		2022-12-01
-Chaintool	0x0a98fb70939162725ae66e626fe4b52cff62c2e5	ETH	huobi	Huobi 36	Exchange		2022-12-01
-Chaintool	0x5401dbf7da53e1c9dbf484e3d69505815f2f5e6e	ETH	huobi	Huobi 25	Exchange		2022-12-01
-Chaintool	0xa66daa57432024023db65477ba87d4e7f5f95213	ETH	huobi	Huobi Pool Token	Exchange		2022-12-01
-Chaintool	0x1d1e10e8c66b67692f4c002c0cb334de5d485e41	ETH	huobi	Huobi: Old Address 1	Exchange		2022-12-01
-Chaintool	0x1c515eaa87568c850043a89c2d2c2e8187adb056	ETH	huobi	Huobi: Old Address 24	Exchange		2022-12-01
-Chaintool	0xcac725bef4f114f728cbcfd744a731c2a463c3fc	ETH	huobi	Huobi 34	Exchange		2022-12-01
-Chaintool	0x1b93129f05cc2e840135aab154223c75097b69bf	ETH	huobi	Huobi: Old Address 2	Exchange		2022-12-01
-Chaintool	0xa23d7dd4b8a1060344caf18a29b42350852af481	ETH	huobi	Huobi: Old Address 26	Exchange		2022-12-01
-Chaintool	0xfa4b5be3f2f84f56703c42eb22142744e95a2c58	ETH	huobi	Huobi 11	Exchange		2022-12-01
-Chaintool	0x61189da79177950a7272c88c6058b96d4bcd6be2	ETH	binance	Binance US	Exchange		2022-12-01
-Chaintool	0xc837f51a0efa33f8eca03570e3d01a4b2cf97ffd	ETH	huobi	Huobi: Old Address 29	Exchange		2022-12-01
-Chaintool	0x016ee7373248a80bde1fd6baa001311d233b3cfa	ETH	ftx	FTX: 3X Short Bitcoin Token	Exchange		2022-12-01
-Chaintool	0x04645af26b54bd85dc02ac65054e87362a72cb22	ETH	huobi	Huobi: Old Address 8	Exchange		2022-12-01
-Chaintool	0x7ef35bb398e0416b81b019fea395219b65c52164	ETH	huobi	Huobi 17	Exchange		2022-12-01
-Chaintool	0xb2a48f542dc56b89b24c04076cbe565b3dc58e7b	ETH	huobi	Huobi: Old Address 9	Exchange		2022-12-01
-Chaintool	0xa8660c8ffd6d578f657b72c0c811284aef0b735e	ETH	huobi	Huobi 8	Exchange		2022-12-01
-Chaintool	0xdc76cd25977e0a5ae17155770273ad58648900d3	ETH	huobi	Huobi 6	Exchange		2022-12-01
-Chaintool	0xdf95de30cdff4381b69f9e4fa8dddce31a0128df	ETH	huobi	Huobi: Old Address 6	Exchange		2022-12-01
-Chaintool	0xf2b16510270a214130c6b17ff0e9bf87585126bd	ETH	kucoin	KuCoin: Deployer	Exchange		2022-12-01
-Chaintool	0x039b5649a59967e3e936d7471f9c3700100ee1ab	ETH	kucoin	KuCoin: Old KCS Token	Exchange		2022-12-01
-Chaintool	0x5c985e89dde482efe97ea9f1950ad149eb73829b	ETH	huobi	Huobi 5	Exchange		2022-12-01
-Chaintool	0xf66852bc122fd40bfecc63cd48217e88bda12109	ETH	huobi	Huobi 37	Exchange		2022-12-01
-Chaintool	0x2b5634c42055806a59e9107ed44d43c426e58258	ETH	kucoin	KuCoin	Exchange		2022-12-01
-Chaintool	0x32598293906b5b17c27d657db3ad2c9b3f3e4265	ETH	huobi	Huobi 13	Exchange		2022-12-01
-Chaintool	0x73f8fc2e74302eb2efda125a326655acf0dc2d1b	ETH	huobi	Huobi 35	Exchange		2022-12-01
-Chaintool	0x0316eb71485b0ab14103307bf65a021042c6d380	ETH	huobi	Huobi: HBTC Token	Exchange		2022-12-01
-Chaintool	0x6edb9d6547befc3397801c94bb8c97d2e8087e2f	ETH	huobi	Huobi: Old Address 21	Exchange		2022-12-01
-Chaintool	0x2f5e2c9002c058c063d21a06b6cabb50950130c8	ETH	ftx	FTX: 3X Short Ethereum Token	Exchange		2022-12-01
-Chaintool	0x926fc576b7facf6ae2d08ee2d4734c134a743988	ETH	huobi	Huobi 15	Exchange		2022-12-01
-Chaintool	0xe3314bbf3334228b257779e28228cfb86fa4261b	ETH	huobi	Huobi: Old Address 20	Exchange		2022-12-01
-Chaintool	0x90f49e24a9554126f591d28174e157ca267194ba	ETH	huobi	Huobi: Old Address 19	Exchange		2022-12-01
-Chaintool	0x6f259637dcd74c767781e37bc6133cd6a68aa161	ETH	huobi	Huobi Token	Exchange		2022-12-01
-Chaintool	0xf775a9a0ad44807bc15936df0ee68902af1a0eee	ETH	huobi	Huobi: Old Address 16	Exchange		2022-12-01
-Chaintool	0x0577a79cfc63bbc0df38833ff4c4a3bf2095b404	ETH	huobi	Huobi 27	Exchange		2022-12-01
-Chaintool	0xd8a83b72377476d0a66683cde20a8aad0b628713	ETH	huobi	Huobi 19	Exchange		2022-12-01
-Chaintool	0x50d1c9771902476076ecfc8b2a83ad6b9355a4c9	ETH	ftx	FTX: FTT Token	Exchange		2022-12-01
-Chaintool	0xeb6d43fe241fb2320b5a3c9be9cdfd4dd8226451	ETH	huobi	Huobi: Old Address 3	Exchange		2022-12-01
-Chaintool	0xf7a8af16acb302351d7ea26ffc380575b741724c	ETH	huobi	Huobi: Old Address 30	Exchange		2022-12-01
-Chaintool	0xfdb16996831753d5331ff813c29a93c76834a0ad	ETH	huobi	Huobi 3	Exchange		2022-12-01
-Chaintool	0x794d28ac31bcb136294761a556b68d2634094153	ETH	huobi	Huobi 29	Exchange		2022-12-01
-Chaintool	0x18916e1a2933cb349145a280473a5de8eb6630cb	ETH	huobi	Huobi: Deposit Funder 2	Exchange		2022-12-01
-Chaintool	0xb4cd0386d2db86f30c1a11c2b8c4f4185c1dade9	ETH	huobi	Huobi 31	Exchange		2022-12-01
-Chaintool	0x48ab9f29795dfb44b36587c50da4b30c0e84d3ed	ETH	huobi	Huobi: Old Address 18	Exchange		2022-12-01
-Chaintool	0x1062a747393198f70f71ec65a582423dba7e5ab3	ETH	huobi	Huobi 9	Exchange		2022-12-01
-Chaintool	0xecd8b3877d8e7cd0739de18a5b545bc0b3538566	ETH	huobi	Huobi: Old Address 33	Exchange		2022-12-01
-Chaintool	0x8e8bc99b79488c276d6f3ca11901e9abd77efea4	ETH	huobi	Huobi: Old Address 13	Exchange		2022-12-01
-Chaintool	0x689c56aef474df92d44a1b70850f808488f9769c	ETH	kucoin	KuCoin 2	Exchange		2022-12-01
-Chaintool	0x46705dfff24256421a05d056c29e81bdc09723b8	ETH	huobi	Huobi 12	Exchange		2022-12-01
-Chaintool	0x137ad9c4777e1d36e4b605e745e8f37b2b62e9c5	ETH	huobi	Huobi 24	Exchange		2022-12-01
-Chaintool	0x956e0dbecc0e873d34a5e39b25f364b2ca036730	ETH	huobi	Huobi: Old Address 4	Exchange		2022-12-01
-Chaintool	0x0c6c34cdd915845376fb5407e0895196c9dd4eec	ETH	huobi	Huobi 28	Exchange		2022-12-01
-Chaintool	0x6f48a3e70f0251d1e83a989e62aaa2281a6d5380	ETH	huobi	Huobi 22	Exchange		2022-12-01
-Chaintool	0x9a755332d874c893111207b0b220ce2615cd036f	ETH	huobi	Huobi: Old Address 32	Exchange		2022-12-01
-Chaintool	0x636b76ae213358b9867591299e5c62b8d014e372	ETH	huobi	Huobi: Old Address 31	Exchange		2022-12-01
-Chaintool	0x28ffe35688ffffd0659aee2e34778b0ae4e193ad	ETH	huobi	Huobi 33	Exchange		2022-12-01
-Chaintool	0x6f50c6bff08ec925232937b204b0ae23c488402a	ETH	huobi	Huobi: Old Address 5	Exchange		2022-12-01
-Chaintool	0x68eb95dc9934e19b86687a10df8e364423240e94	ETH	ftx	FTX: 3X Long Bitcoin Token	Exchange		2022-12-01
-Chaintool	0x0c92efa186074ba716d0e2156a6ffabd579f8035	ETH	Huobi: Old Address 11	huobi	Exchange		2022-12-01
-Chaintool	0xa1d8d972560c2f8144af871db508f0b0b10a3fbf	ETH	kucoin	KuCoin 3	Exchange		2022-12-01
-Chaintool	0x034f854b44d28e26386c1bc37ff9b20c6380b00d	ETH	huobi	Huobi 26	Exchange		2022-12-01
-Chaintool	0xef54f559b5e3b55b783c7bc59850f83514b6149c	ETH	huobi	Huobi: Old Address 34	Exchange		2022-12-01
-Chaintool	0xeee28d484628d41a82d01e21d12e2e78d69920da	ETH	huobi	Huobi 4	Exchange		2022-12-01
-Chaintool	0xb8c77482e45f1f44de1745f52c74426c631bdd52	ETH	binance	Binance: BNB Token	Exchange		2022-12-01
-Chaintool	0xcad621da75a66c7a8f4ff86d30a2bf981bfc8fdd	ETH	kucoin	KuCoin 10	Exchange		2022-12-01
-Chaintool	0xd6216fc19db775df9774a6e33526131da7d19a2c	ETH	kucoin	KuCoin 6	Exchange		2022-12-01
-Chaintool	0xf34960d9d60be18cc1d5afc1a6f012a723a28811	ETH	kucoin	KuCoin: KCS Token	Exchange		2022-12-01
-Chaintool	0xc9a2c4868f0f96faaa739b59934dc9cb304112ec	ETH	binance	Binance: BGBP Token	Exchange		2022-12-01
-Chaintool	0x4fabb145d64652a948d72533023f6e7a623c7c53	ETH	binance	Binance USD	Exchange		2022-12-01
-Chaintool	0x6748f50f686bfbca6fe8ad62b22228b87f31ff2b	ETH	huobi	Huobi 2	Exchange		2022-12-01
+submitted_by	address	chain	entity	entity_name	categories	source	tagged_on
+Chaintool	bc1q6rvk70wm8kdh28k0nanrzdwa3xm7c6yr90uuhe	BTC	UniJoin		Mixer	ground truth	2023-04-04
+Chaintool	1PULndPPtCDWeM94dcGvgGAHBsM3RAei4Q	BTC	CoinJoin		Mixer	ground truth	2023-04-04
+Chaintool	1GW7Bfg1hAN43yGyahATmwfuZPrMe9mfot	BTC	Yo!Mix		Mixer	ground truth	2023-04-04
+Chaintool	3PJyUXkC2FY2ZBM2kUCqKmhYwWcfK7F8B8	BTC	BitcoinMix		Mixer	ground truth	2023-04-04
+Chaintool	bc1qgyqdd50pkvm2r0vym7ru2457cars5s39shz9rp	BTC	CryptoMixer		Mixer	ground truth	2023-04-04
+Chaintool	bc1qhs24sn8gzrzl0hsrh4qxmrhmz3nm8a7asf6vfk	BTC	Coinmixer.me		Mixer	ground truth	2023-04-04
+Chaintool	1DJM9voQXYp8sBM1t2ZeYnZ8wzqf8Te5hP	BTC	MyCryptoMixer		Mixer	ground truth	2023-04-04
+Chaintool	1PPfe5b7BC9d5iPrnRFwAfnuep2ig2j8Af	BTC	Yo!Mix		Mixer	ground truth	2023-04-04
+Chaintool	bc1qphwadnreyl8zx6wszpyuxmge2jvvwpfwwgkdh8	BTC	CryptoMixer		Mixer	ground truth	2023-04-04
+Chaintool	18ypugkyEdNBUfoue7vyJwJDYhWXs3N11o	BTC	MyCryptoMixer		Mixer	ground truth	2023-04-04
+Chaintool	bc1qfetcsakst2yn40wtw4fwpeykqwk9pj3mj76mj6	BTC	UniJoin		Mixer	ground truth	2023-04-04
+Chaintool	1GrUyMKzvztQm4SmNAGP3QpxuynZQw3kdi	BTC	Bestmixer		Mixer	ground truth	2023-04-04
+Chaintool	34B8K5WkzktGJAXbuxM4VcPaGYfd3PTS7B	BTC	CoinJoin		Mixer	ground truth	2023-04-04
+Chaintool	36Ghrwy8cbPRR9sh2eEDU9cWLMhL7jAqq2	BTC	Mixtum		Mixer	ground truth	2023-04-04
+Chaintool	bc1q27j5mn9yxkwfunfsvdz087dlff04nx4phtpg0w	BTC	Bitcoin Laundry		Mixer	ground truth	2023-04-04
+Chaintool	bc1q0ns4xuff55l306qe88v96qhj3qezkfzz02j42f	BTC	Bitcoin Laundry		Mixer	ground truth	2023-04-04
+Chaintool	bc1q27s8mc8ewahses2xtt6v9606t20gls56nq3ghf	BTC	Bitcoin Laundry		Mixer	ground truth	2023-04-04
+Chaintool	bc1q0tyl3z5nqcjrdw54jalyxwn4tzlxmnwvklnze6	BTC	BTC Blender		Mixer	ground truth	2023-04-04
+Chaintool	3MFGf91hLtmy2BnjDMEaDxagRep1RkkFP5	BTC	WebMixer		Mixer	ground truth	2023-04-04
+Chaintool	bc1qezy033h6a93qucm5k8ye4gnwj0mzpxwyd0uufs	BTC	Bitcoin Laundry		Mixer	ground truth	2023-04-04
+Chaintool	0xd73330336d084FaDF67cF8DE0EF4fB138cD642C9	ETH	Arina Land Tycoon		Gaming	ground truth	2023-04-04
+Chaintool	0x22365168c8705e95b2d08876c23a8c13e3ad72e2	ETH	Gods Unchained		Gaming	third party verified	2023-04-04
+Chaintool	0x02ed6a253e406b8aff61dfbc808f57c98493c19d	ETH	My Crypto Heroes		Gaming	third party verified	2023-04-04
+Chaintool	0x8027Add04029e6Bccd5eFe2109cD2Be7bD169Ba8	ETH	Tycoons		Gaming	ground truth	2023-04-04
+Chaintool	0x138a35ee20e40f019e7e7c00386ab2ef42d66d1e	ETH	My Crypto Heroes		Gaming	third party verified	2023-04-04
+Chaintool	0x314495517f380ceb7c498a35739e40864240adcf	ETH	Gods Unchained		Gaming	third party verified	2023-04-04
+Chaintool	0x2b053438ec2ac37dbf912bcde32edfc956350fc5	ETH	Dragonereum		Gaming	third party verified	2023-04-04
+Chaintool	0x4faf57e84a06f1d218094456831CA76513c34eA5	ETH	Tycoons		Gaming	ground truth	2023-04-04
+Chaintool	0xBFa5C2F2B2Ea28d7CAD06D8A5aD796425Ab999C5	ETH	Tycoons		Gaming	ground truth	2023-04-04
+Chaintool	0xfec769e54c266de2bc3fa5df7d9f0fe2a1e39461	ETH	Ethermon		Gaming	third party verified	2023-04-04
+Chaintool	0x84487e50db6317e5e834d89d0e81fd873462ea47	ETH	Gods Unchained		Gaming	third party verified	2023-04-04
+Chaintool	0x9e7e799a8af24e5ab6064c9d516037bfe6cc9b8d	ETH	Ethermon		Gaming	third party verified	2023-04-04
+Chaintool	0x11372a7418d58b162d1120e9e65e5aa74936ed71	ETH	Blockchain Cuties		Gaming	third party verified	2023-04-04
+Chaintool	0x312cb5dfc8e5414422568d017b475a40a5fc4faf	ETH	Blockchain Cuties		Gaming	third party verified	2023-04-04
+Chaintool	0xDC6f40c9Bb2d48889537b2C7407d3A30471539B2	ETH	Arina Land Tycoon		Gaming	ground truth	2023-04-04
+Chaintool	0xeb0860422043a0b8541356a7b6f671cba9e8f85a	ETH	My Crypto Heroes		Gaming	third party verified	2023-04-04
+Chaintool	0x482cf6a9d6b23452c81d4d0f0f139c1414963f89	ETH	Gods Unchained		Gaming	third party verified	2023-04-04
+Chaintool	0x896421e9c5cc2c5a66019dba2457450b88a8e11b	ETH	Blockchain Cuties		Gaming	third party verified	2023-04-04
+Chaintool	0x08dbf4f942ba8cd7871c13addefdffef3e5a8035	ETH	Gods Unchained		Gaming	third party verified	2023-04-04
+Chaintool	0x960f401aed58668ef476ef02b2a2d43b83c261d8	ETH	Dragonereum		Gaming	third party verified	2023-04-04
+Chaintool	0xf3E5E76dabc9f4c479C258B4d7BB2F8250A8819C	ETH	Totle		Marketplace Aggregator	ground truth	2023-04-04
+Chaintool	0x77b26c9f9b87668b66db65dce7cc2b392ff59966	ETH	Totle		Marketplace Aggregator	ground truth	2023-04-04
+Chaintool	0xc095976BD18181f28626c5D48372DebD7a8Ce8d4	ETH	Totle		Marketplace Aggregator	ground truth	2023-04-04
+Chaintool	0xcd2053679De3BCf2b7E2C2EfB6B499C57701222c	ETH	Totle		Marketplace Aggregator	ground truth	2023-04-04
+Chaintool	0x716156326b3dd55ed5e795ac5f19afdaab866daf	ETH	Totle		Marketplace Aggregator	ground truth	2023-04-04
+Chaintool	0xDf145332D6ac527C35879245b5A4fFd0Ea6c897b	ETH	Totle		Marketplace Aggregator	ground truth	2023-04-04
+Chaintool	0x77208a6000691E440026bEd1b178EF4661D37426	ETH	Totle		Marketplace Aggregator	ground truth	2023-04-04
+Chaintool	0x3BD3DdAdFF7a66612dF199154E682bC6B20733fF	ETH	Totle		Marketplace Aggregator	ground truth	2023-04-04
+Chaintool	0x91F3935ed7a4ee8d15023c5Df26895B26aE98015	ETH	Totle		Marketplace Aggregator	ground truth	2023-04-04
+Chaintool	0x2840411594cFFEf97df411bf5f0dbF042feF6D21	ETH	Totle		Marketplace Aggregator	ground truth	2023-04-04
+Chaintool	0x3fF1445BE5674F0594f1614dB8606428342732D4	ETH	Totle		Marketplace Aggregator	ground truth	2023-04-04
+Chaintool	0x74758AcFcE059f503a7E6B0fC2c8737600f9F2c4	ETH	Totle		Marketplace Aggregator	ground truth	2023-04-04
+Chaintool	0xe6b4C185e286905Cf34b53527F0338bfFb9759D0	ETH	Totle		Marketplace Aggregator	ground truth	2023-04-04
+Chaintool	0x4825f6b8645e0eed902c98cfe743f947dcf84903	ETH	Amber Group		Financial Services	third party verified	2023-04-04
+Chaintool	0x12b7625407c3c19178a8f710d1e3c0132ff9b700	ETH	Amber Group		Financial Services	ground truth	2023-04-04
+Chaintool	0x55a4de0138158f214aab989355e148f8bbbd9bf3	ETH	Amber Group		Financial Services	ground truth	2023-04-04
+Chaintool	0x69ed33037233ffe0223a662a2e13f25ca23e6f24	ETH	Amber Group		Financial Services	third party verified	2023-04-04
+Chaintool	0xb32fd4ba4eb77368f65f28e71f4b3bf4119dcccd	ETH	Amber Group		Financial Services	ground truth	2023-04-04
+Chaintool	0x6585ed7e6b55d416c5b0e6c577c885d635ff1669	ETH	Amber Group		Financial Services	ground truth	2023-04-04
+Chaintool	0x98c344f09ac625ebe1bde500aaa539be196a7ead	ETH	Amber Group		Financial Services	ground truth	2023-04-04
+Chaintool	0xedf32a51c317c1f9dcbe99bbe0850993551a4f17	ETH	Amber Group		Financial Services	ground truth	2023-04-04
+Chaintool	0xb5f59a6d2969d0058866f1950940f9b1e0e3e2ed	ETH	Amber Group		Financial Services	ground truth	2023-04-04
+Chaintool	0xaf99cce66b182d2b04dc1cc055915fb557f5f7d9	ETH	Amber Group		Financial Services	third party verified	2023-04-04
+Chaintool	0xc67b13a23f771455a968030b0e627ec9f63a3c75	ETH	Amber Group		Financial Services	ground truth	2023-04-04
+Chaintool	0x7618a93ba527f03779703b32bd8c5393d9c2df6f	ETH	Amber Group		Financial Services	ground truth	2023-04-04
+Chaintool	0x0503443c83db4bfd4a70a1a3d661dbecd4836d6f	ETH	Amber Group		Financial Services	ground truth	2023-04-04
+Chaintool	0x2f2410d882af96e54fe8a092bb616b1c8bec0da8	ETH	Amber Group		Financial Services	ground truth	2023-04-04
+Chaintool	0xdb8b83cb89ce52ed39bdb0c16b3da7c2ca6e1d25	ETH	Amber Group		Financial Services	ground truth	2023-04-04
+Chaintool	0xc53e4942da5b83b196e628af7bc7af3c4159bb5b	ETH	Amber Group		Financial Services	third party verified	2023-04-04
+Chaintool	0x9370c31f4cb935995d1060f8a4ad7232392379b9	ETH	Amber Group		Financial Services	third party verified	2023-04-04
+Chaintool	0xb1ebde73868e9ef5afa27abe9cc4c4de612a6c2d	ETH	Amber Group		Financial Services	ground truth	2023-04-04
+Chaintool	0x9ed99f95bb6e3d43700567310c061c46116cec47	ETH	Amber Group		Financial Services	ground truth	2023-04-04
+Chaintool	0x6e6c986f2b5518e2af33038da52dfd8543c949dd	ETH	Amber Group		Financial Services	ground truth	2023-04-04
+Chaintool	0x375bddc7ac354724c1c32603a6ca758af79256f7	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0xbc58daa1ad5dccaf21054c02cdac0e8d1d792025	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0x28c6a4414bda79e4769570022084a4d99a674f33	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0xdf7f4bd55c1ead1f45d51dfc9f3128169054d400	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0x3cf3c3c95b5be7865ffbf61b2903b4d1b685add3	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0x944812e8dee85731ac4e774a9514348054b4ac11	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0xb5ff08731bde262425cbb24b9c0cc63897e2d387	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0xd90a1ba0cbaaaabfdc6c814cdf1611306a26e1f8	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0xa5eb623e9fca559937ab0de7ab15357f15c1cdba	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0xa2051a6befd7a43bde76a47b5e5b521bacf4188f	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0x723774bd05128025799660dc563b27b704cd3a20	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0x35921d747463a7b98a9de26f599cf8c19d169eef	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0xb725734cdb945e4255e4bd9ca9f6b57a62589daa	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0x0728b839bb6d13d3d733f6d665d34ae92edfb38e	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0xbe1d4b745320af425a3d0c58439980bb10ff9857	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0x8d5ee9597df232854a971dc69588eb4009828876	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0xf2edead62015c31f98c9bade965c657a34fa8ddf	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0x3697a4d212d25afc4bb174c802b13ab5e0dccdf8	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0x768386a872605f9755047295638367579c1e4727	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0xecf142a0a51595d708ba2201280d44f51c5778c9	ETH	Uniswap		DEX,Erc20 token	third party verified	2023-04-04
+Chaintool	0x2C242d2138b408E8Df00ea885dc1DbB524ef5591	ETH	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	0x12b5A417129efb5CdacA23359e35784f43d8E101	ETH	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	0x5f6b6378B3900b02d24316369c2B5C6396B88876	ETH	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	0x3C43F8BaAEEC13B74E6DF22168d72f426a5c9dd5	ETH	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	0x464A1A3eEB5784bb412A44f1E25975B49B8D78a5	ETH	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	0x9C9c3Bd7E205E339Bd769842D4bf13Ff2C814EA2	ETH	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	0x1d949B30B035e976127fAb4e3476C70412fD1e3A	ETH	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	0x6b1A1AE3357843ae003c52CFFC5E0a3d35a1E82e	ETH	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	0xAAF5467E970b6e0eBba8ac7c07E286D88C4A513d	ETH	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	0x939c8d89ebc11fa45e576215e2353673ad0ba18a	ETH	OpenSea		NFT	third party verified	2023-04-04
+Chaintool	0x81243681078bee8e251d02ee6872b1eaa6dd982a	ETH	Rarible		NFT	third party verified	2023-04-04
+Chaintool	0x0000a26b00c1f0df003000390027140000faa719	ETH	OpenSea		NFT	third party verified	2023-04-04
+Chaintool	0x86f909f70813cdb1bc733f4d97dc6b03b8e7e8f3	ETH	LooksRare		NFT	third party verified	2023-04-04
+Chaintool	0x00000000006c3852cbef3e08e8df289169ede581	ETH	OpenSea		NFT	ground truth	2023-04-04
+Chaintool	0xfdff6b56cce39482032b27140252ff4f16432785	ETH	Rarible		NFT	third party verified	2023-04-04
+Chaintool	0x34ba0f2379bf9b81d09f7259892e26a8b0885095	ETH	OpenSea		NFT	third party verified	2023-04-04
+Chaintool	0x8de9c5a032463c561423387a9648c5c7bcc5bc90	ETH	OpenSea		NFT	third party verified	2023-04-04
+Chaintool	0xd07dc4262bcdbf85190c01c996b4c06a461d2430	ETH	Rarible		NFT	third party verified	2023-04-04
+Chaintool	0xc881addf409ee2c4b6bbc8b607c2c5cafab93d25	ETH	LooksRare		NFT	third party verified	2023-04-04
+Chaintool	0xbcd7254a1d759efa08ec7c3291b2e85c5dcc12ce	ETH	LooksRare		NFT	third party verified	2023-04-04
+Chaintool	0x59728544b08ab483533076417fbbb2fd0b17ce3a	ETH	LooksRare		NFT	ground truth	2023-04-04
+Chaintool	0x55010472a93921a117aad9b055c141060c8d8022	ETH	LooksRare		NFT	third party verified	2023-04-04
+Chaintool	0xa5409ec958c83c3f309868babaca7c86dcb077c1	ETH	OpenSea		NFT	third party verified	2023-04-04
+Chaintool	0xff6c307226343fcf96af2f6b5b05f63f717e68cb	ETH	LooksRare		NFT	third party verified	2023-04-04
+Chaintool	0xa35dce3e0e6ceb67a30b8d7f4aee721c949b5970	ETH	LooksRare		NFT	third party verified	2023-04-04
+Chaintool	0xb66a603f4cfe17e3d27b87a8bfcad319856518b8	ETH	Rarible		NFT	third party verified	2023-04-04
+Chaintool	0x58d83536d3efedb9f7f2a1ec3bdaad2b1a4dd98c	ETH	LooksRare		NFT	third party verified	2023-04-04
+Chaintool	0x56244bb70cbd3ea9dc8007399f61dfc065190031	ETH	LooksRare		NFT	third party verified	2023-04-04
+Chaintool	0x9757f2d2b135150bbeb65308d4a91804107cd8d6	ETH	Rarible		NFT	ground truth	2023-04-04
+Chaintool	0xb43d7a63391bc768d5981b0d91152eb76dee9a6a	ETH	WBTC		Bridging	third party verified	2023-04-04
+Chaintool	0xe3031c1bfaa7825813c562cbdcc69d96fcad2087	ETH	WBTC		Bridging	third party verified	2023-04-04
+Chaintool	0xc038c8850f73c4a8453dbf7c59447b397978d7ea	ETH	WBTC		Bridging	third party verified	2023-04-04
+Chaintool	0xa5bd5c661f373256c0ccfbc628fd52de74f9bb55	ETH	Nomad		Bridging	third party verified	2023-04-04
+Chaintool	0x9bdd76b2a69db43fa695a10f5977b8fd891225f3	ETH	Nomad		Bridging	third party verified	2023-04-04
+Chaintool	0xc2cad8f49cf18475b6893acb209ee4884e7fc2a8	ETH	Nomad		Bridging	third party verified	2023-04-04
+Chaintool	0xbec897d7e4969c59993bfe9ad7b4c571a29aa381	ETH	WBTC		Bridging	third party verified	2023-04-04
+Chaintool	0x0967aea99754974a4cc4dbf29009155a49588171	ETH	WBTC		Bridging	third party verified	2023-04-04
+Chaintool	0xacf9e2469fbc57e6ad391f97a41f8aad4d68b097	ETH	WBTC		Bridging	third party verified	2023-04-04
+Chaintool	0x572f17ecfff768f9c31881f66bd97b18a651fc20	ETH	WBTC		Bridging	third party verified	2023-04-04
+Chaintool	0xa2b1a32cc725d32936e0e81f79f0d41c44cc5cfa	ETH	WBTC		Bridging	third party verified	2023-04-04
+Chaintool	0xfdf28bf25779ed4ca74e958d54653260af604c20	ETH	WBTC		Bridging	third party verified	2023-04-04
+Chaintool	0x25270d2e6980c5b343c4866aea904a9a9bca733f	ETH	Nomad		Bridging	third party verified	2023-04-04
+Chaintool	0xda2f881f7f4e9d2b9559f97c7670472a85c1986a	ETH	Nomad		Bridging	third party verified	2023-04-04
+Chaintool	0xab0614ce8d53ea2c67b87f8ad4d8fac7a4a516e5	ETH	Nomad		Bridging	third party verified	2023-04-04
+Chaintool	0x93277b8f5939975b9e6694d5fd2837143afbf68a	ETH	Nomad		Bridging	third party verified	2023-04-04
+Chaintool	0x3854dd5e2657d18e686707c2b652928f6f6aaa51	ETH	WBTC		Bridging	third party verified	2023-04-04
+Chaintool	0xc69b66cc2811b509829448fbffb2553c4cbb627e	ETH	Nomad		Bridging	third party verified	2023-04-04
+Chaintool	0x06adaff9c864eb59ade310bc21150a8f4d5d4ab4	ETH	WBTC		Bridging	third party verified	2023-04-04
+Chaintool	0x83865712c50f702fa4650c7faded90a54242046e	ETH	Nomad		Bridging	third party verified	2023-04-04
+Chaintool	0x1d24838b35a9c138ac157a852e19e948ad6323d7	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0x8e871de3d7e48d7a058602b52deca63579ef66c5	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0x182ebf4c80b28efc45ad992ecbb9f730e31e8c7f	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0xf96d54e490317c557a967abfa5d6e33006be69b3	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0x6a23f4940bd5ba117da261f98aae51a8bffa210a	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0x3984fc4ceeef1739135476f625d36d6c35c40dc3	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0xb5af4138f0f33be0d6414eb25271b9c2dc245fb5	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0x505f8c2ee81f1c6fa0d88e918ef0491222e05818	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0x5fe3565db7f1dd8d6a9e968d45bd2aee3836a1d4	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0x21146b872d3a95d2cf9afed03ee5a783dae9a89a	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0x72d9dfa25f75a5f2c27b7336e643a559ae6aeb8e	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0x1161f84e66fd7e810f0bd81c9d17d19007b13dc9	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0x8dddb96cf36ac8860f1de5c7c4698fd499fab405	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0x3a9543d4767b2c914ea22fd0b07e17b0901aaebf	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0x58b6a8a3302369daec383334672404ee733ab239	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0x5b1ce829384eebfa30286f12d1e7a695ca45f5d2	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0xc89fe48382f8fda6992dc590786a84275bcd1c57	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0x525419ff5707190389bfb5c87c375d710f5fcb0e	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0x511bc4556d823ae99630ae8de28b9b80df90ea2e	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0x8e306b005773bee6ba6a6e8972bc79d766cc15c8	ETH	Livepeer		Streaming	third party verified	2023-04-04
+Chaintool	0xe1e83825613de12e8f0502da939523558f0b819e	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0x31932e6e45012476ba3a3a4953cba62aee77fbbe	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0x0e1177e47151be72e5992e0975000e73ab5fd9d4	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0xd03056323b7a63e2095ae97fa1ad92e4820ff045	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0x903de5b04b9878696ffa08bd300cc06b260fc5c9	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0x80154a49dc3217e5b1ef313f9f45293e95b91030	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0x18e30f61797f47c30695464a2a17f6e68a236c96	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0x3df5a355457db3a4b5c744b8623a7721bf56df78	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0x996668c46fc0b764afda88d83eb58afc933a1626	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0x4cbd58469c964f999a380fd8180e1c645de35801	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0x3f60e5f9437b79ea30135eb75d3a907944eef303	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0x0cf30dc0d48604a301df8010cdc028c055336b2e	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0xa64ed1b66cb2838ef2a198d8345c0ce6967a2a3c	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0x575409f8d77c12b05fed8b455815f0e54797381c	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0xc9ce759c809e8026c8fc1b66536031d81d6c3d1c	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0xd27001d1aaed5f002c722ad729de88a91239ff29	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0x539b6c906244ac34e348bbe77885cdfa994a3776	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0x245cc372c84b3645bf0ffe6538620b04a217988b	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0x36994486c6e97c170065899d8659a28d7371c800	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0x7464a65aa3fc15a625e2adfb8b340277d804d90d	ETH	OlympusDAO		DAO,Defi	third party verified	2023-04-04
+Chaintool	0x0E5F231CEBF281877016EAe74d1d2645E30B538f	ETH	Anonymous Mixer		Mixer	ground truth	2023-04-04
+Chaintool	0xC3982Aac4F3B70866665cD7731987566D65094ac	ETH	Ethereum Mixer	eth-mixer-obfuscator	Mixer	ground truth	2023-04-04
+Chaintool	0x71796561fe2fdBdEa12cc1F0f2E44a66E444E873	ETH	Ethereum Mixer	eth-mixer-obfuscator	Mixer	ground truth	2023-04-04
+Chaintool	0x51eDecA4D2d91532B4d08FA42c48b70373d573D1	ETH	Anonymous Mixer		Mixer	ground truth	2023-04-04
+Chaintool	0x60a15637a6EA7db10b5adEEc1Cb3C4b714D2E63E	ETH	Mixer Ethers		Mixer	ground truth	2023-04-04
+Chaintool	0x7772d6C7D7e7F476b4CF8F4aE18DDCf66cF03B27	ETH	Anonymous Mixer		Mixer	ground truth	2023-04-04
+Chaintool	0x83ce4f4372C709E8d7B773242612eB3867fc987c	ETH	Anonymous Mixer		Mixer	ground truth	2023-04-04
+Chaintool	0x441ba668c181Fd9d5998C0cf770b389a9C4C2bB3	ETH	Ethereum Mixer	eth-mixer-obfuscator	Mixer	ground truth	2023-04-04
+Chaintool	0xCB80d1216d5717AF6A3cF54e1Ce487d1158ce379	ETH	Mixer Ethers		Mixer	ground truth	2023-04-04
+Chaintool	0x0dD850866239b66c74e4057c8Ae9714f268C6cc0	ETH	Bestmixer		Mixer	ground truth	2023-04-04
+Chaintool	0xE413B0E91aFBD4938412954A3C74f699c318fef7	ETH	Anonymous Mixer		Mixer	ground truth	2023-04-04
+Chaintool	0x40AB6E3b794dF63164F63330A7d56852f402B4fC	ETH	Anonymous Mixer		Mixer	ground truth	2023-04-04
+Chaintool	0xd810116f9180C873c4E6Ee2C1FDf976668D1F930	ETH	Anonymous Mixer		Mixer	ground truth	2023-04-04
+Chaintool	0x4df4c407Bf64f79367019f33aEc63A95d15a8071	ETH	Bestmixer		Mixer	ground truth	2023-04-04
+Chaintool	0xd71359041859d1e6FF22AD09035C540b641dCC66	ETH	Ethereum Mixer	eth-mixer-obfuscator	Mixer	ground truth	2023-04-04
+Chaintool	0x170a61d15a54637cAA1359Eaefd68A9f1c622BA9	ETH	Mixer Ethers		Mixer	ground truth	2023-04-04
+Chaintool	0xD4dd2da08B4C62aE0f82A2A3cD50396441d99ee0	ETH	Anonymous Mixer		Mixer	ground truth	2023-04-04
+Chaintool	0xca3CDd5b7a9906CB1F816481398823bFeB40b949	ETH	Mixer Ethers		Mixer	ground truth	2023-04-04
+Chaintool	0x9eb43987116F36594b296675B0EeE019379B969F	ETH	Bestmixer		Mixer	ground truth	2023-04-04
+Chaintool	0xc4f346fb2EE44e32A89b67Da8fB57121Df84c8F9	ETH	Ethereum Mixer	eth-mixer-obfuscator	Mixer	ground truth	2023-04-04
+Chaintool	0x066b7660b2003793fb2ffd0b8152158c016fbfef	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0xeb739e889e74383562695d94c495f5f69f9e2559	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0x2d6c5b9ff886bb4eefed33b2065366f4caa0e6fe	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0xc466ec062d554beb42f1766488f7345261c63616	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0x1960afc89ff98f4ee64d29a5082eb5002b376e35	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0x4317d259fcce32ebbb508c27b12f4afaca074ae3	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0x580836540ca183ab71aa4c58253f5eeaad2552dc	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0x3252efd4ea2d6c78091a1f43982ee2c3659cc3d1	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0x84ead9ce2e36b3e6cdf41c94d5397e5056b3d8d6	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0x81f16e6b58738daaa4c5d493a240cca49c240f04	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0x562423f830582b6f704e175c439e132e59058284	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0xed30dd7e50edf3581ad970efc5d9379ce2614adb	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0xa9a9300ab9a70c43c19d6f42e3308be24d73d885	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0x8f1155447ee97b5ae147a01a5c420b0fddf0370d	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0xa85333da5e5a48498f0a65a1a6521e0ceadd3efd	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0xd1902581868163bef61776cfd27228ee5074be8f	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0x38b25c0a9e61e226023b700ce4a6a4134ecaeedf	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0x3043b623632ff1ac88b3a17113e39c0b964381c5	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0xf2057de81eb26c09d4421cb6b0c222b9a656f8f3	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	0xebfd7b965e1b4c5719a006de1acaf82a7c3a142c	ETH	Arcx		Derivatives	third party verified	2023-04-04
+Chaintool	1pDLXJw6D3Trur2yphWSqepU476A8Nvm8	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	1EQAHi5QrTUJufqYGW6potcS6Z4Rfv9zg6	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	1Fd126Lfxzcn9Fp7Jb3c2n2FWE9yB4YvQw	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	37dtFDsaKmzA4ESEtr3CFFC46FxFkje9Pt	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	19wUWFMi3asZJzSnGwnPrNFeNDtsUMTf9a	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	1fWfa2Hwe1omhMYgC1CgNAXFWy4QDgBTW	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	1Es1QRxkarmy4FQPMecsKCGmdpwV4FvZAZ	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	1SGT5biFsJSKqyQVQzGVL5CVc78mzauMx	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	13tp6k3xu6hSpGJZSZKBWwmTCKBwR9SQgW	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	1HcAMvUBDDsoTLfpNkaN9mamVBcGLaDee2	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	1ER1Sjx6kJ14k1UkP9PFkbRZpWy6Z8uuF8	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	1HR3xGhJ4hErBfdr3jXFYFbHKtvgSwZLDw	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	15PD61S6szJcZBrUbuLXvuecoDR8Y3PfVo	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	1NTWtrGoq5uLWwC29DfMou4WFHsVtTsXPg	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	1MNSMNewySbGwZfTqU7vDsYTTgRPbEdH8q	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	1JVWyxUb7ts6fJ7z7TCRcctRHv6aMnucqS	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	12MtdNoxujnaooJSXwsrcgVt259Crn7rXt	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	15dRwus6X2HhNKXoasnvkZ2QkuM49kKk7q	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	1GhSobvVvL2s5vfjH8LeqqHmJsCEFsV6LF	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	35VrdaZ1mMBmY1P5fbYk97ExGKnwHsp4rR	BTC	Ripio		Wallet	third party verified	2023-04-04
+Chaintool	0x1c60963561075a26d68566c254133212a6918c5c	ETH	MetaMask		Wallet	third party verified	2023-04-04
+Chaintool	0x380796afe5d78cd68fc566510b1cd255a407dc85	ETH	MetaMask		Wallet	ground truth	2023-04-04
+Chaintool	0x6d1f1f4eadfa4503765e6fc6f71bb724ae5ff333	ETH	MetaMask		Wallet	third party verified	2023-04-04
+Chaintool	0xdbc8dfee1850a44a7886a3b4703b81b2d8973fb8	ETH	MetaMask		Wallet	third party verified	2023-04-04
+Chaintool	0x41f066a8a5009d1e164fe4b187bfdf4535dae7f1	ETH	MetaMask		Wallet	ground truth	2023-04-04
+Chaintool	0x42af56c5546e5fd049258c745ed8737919d2c1c0	ETH	MetaMask		Wallet	third party verified	2023-04-04
+Chaintool	0x89e5caf69d44f457e2ec3365d040ac4a818ff01a	ETH	MetaMask		Wallet	ground truth	2023-04-04
+Chaintool	0xa667095770d8875af45a7188a9dbdfd99b236bf7	ETH	MetaMask		Wallet	third party verified	2023-04-04
+Chaintool	0x6a8368782eca875a8ed5511bc63121814ec9ae16	ETH	MetaMask		Wallet	third party verified	2023-04-04
+Chaintool	0x5c53c611ee3bfe6d61cf96457722f15b9065b4f9	ETH	MetaMask		Wallet	ground truth	2023-04-04
+Chaintool	0xa1d903939863be9554cb84a1046760c6806214d5	ETH	MetaMask		Wallet	ground truth	2023-04-04
+Chaintool	0x012c095c8c5615c6f3dff5e7607b2006b4550cf2	ETH	MetaMask		Wallet	third party verified	2023-04-04
+Chaintool	0xb1cc841a3bc56e9989d5544311924f642d18cbc2	ETH	MetaMask		Wallet	ground truth	2023-04-04
+Chaintool	0x0a0fbcb21cd208865a0ebb6a675265d5fc6bae97	ETH	MetaMask		Wallet	third party verified	2023-04-04
+Chaintool	0xaf162bf5c9a8413a8628e630f961273d7f3270ab	ETH	MetaMask		Wallet	third party verified	2023-04-04
+Chaintool	0x3c9bab743a31193c24df7e12dd817c0a428a5775	ETH	MetaMask		Wallet	third party verified	2023-04-04
+Chaintool	0xe7967a0b9f1202c0374960cf98b5c371507ec1fe	ETH	MetaMask		Wallet	third party verified	2023-04-04
+Chaintool	0x02585c437ff309443b182ab455939150814ddb62	ETH	MetaMask		Wallet	third party verified	2023-04-04
+Chaintool	0x3abd1ace7a303c4f0d34ddc5fcdf00f5163034f9	ETH	MetaMask		Wallet	ground truth	2023-04-04
+Chaintool	0x0f278c56b52b4c0e2a69b30a0b591d237c783907	ETH	MetaMask		Wallet	third party verified	2023-04-04
+Chaintool	0x0d8563d3b8b3fec542aae50a530c606dac4d1c4f	ETH	Across Protocol		Bridging,Defi	third party verified	2023-04-04
+Chaintool	0x428ab2ba90eba0a4be7af34c9ac451ab061ac010	ETH	Across Protocol		Bridging,Defi	third party verified	2023-04-04
+Chaintool	0x527e872a5c3f0c7c24fe33f2593cfb890a285084	ETH	Across Protocol		Bridging,Defi	third party verified	2023-04-04
+Chaintool	0x7db69eb9f52ed773e9b03f5068a1ea0275b2fd9d	ETH	Across Protocol		Bridging,Defi	third party verified	2023-04-04
+Chaintool	0xc186fa914353c44b2e33ebe05f21846f1048beda	ETH	Across Protocol		Bridging,Defi	third party verified	2023-04-04
+Chaintool	0x3e94e8d4316a1ebfb2245e45e6f0b8724094ce1a	ETH	Across Protocol		Bridging,Defi	third party verified	2023-04-04
+Chaintool	0x22ed83a9ee26236486f57ce8385a247e5bfb71ff	ETH	Across Protocol		Bridging,Defi	third party verified	2023-04-04
+Chaintool	0x3b03509645713718b78951126e0a6de6f10043f5	ETH	Across Protocol		Bridging,Defi	third party verified	2023-04-04
+Chaintool	0x48d990abda20afa1fd1da713abc041b60a922c65	ETH	Across Protocol		Bridging,Defi	third party verified	2023-04-04
+Chaintool	0x937958992799bf4a9a656e6596fd10d7da5c2216	ETH	Across Protocol		Bridging,Defi	third party verified	2023-04-04
+Chaintool	0x33b0ec794c15d6cc705818e70d4cace7bcfb5af3	ETH	Across Protocol		Bridging,Defi	third party verified	2023-04-04
+Chaintool	0x4060dba72344da74edaeeae51a71a57f7e96b6b4	ETH	Across Protocol		Bridging,Defi	third party verified	2023-04-04
+Chaintool	0xaab27b150451726ec7738aa1d0a94505c8729bd1	ETH	MEV Builder		Infra	third party verified	2023-04-04
+Chaintool	0xbd852165a6ff4a4c04c1e378bdc90d6801929457	ETH	Sybil.org	sybil-delegate	Infra	third party verified	2023-04-04
+Chaintool	0x6777529d538c57d6cc6d46da4610758245470dab	ETH	Sybil.org	sybil-delegate	Infra	third party verified	2023-04-04
+Chaintool	0x36220d1fc55d0afb0c3c58b6c1224875547c9f36	ETH	Sybil.org	sybil-delegate	Infra	third party verified	2023-04-04
+Chaintool	0x3b499ac151097dc9d32e056074e1e541a1ba9e2d	ETH	Sybil.org	sybil-delegate	Infra	third party verified	2023-04-04
+Chaintool	0xe1dc8cea0bec8a0638e4dd26d9092edab9f60f9b	ETH	Sybil.org	sybil-delegate	Infra	third party verified	2023-04-04
+Chaintool	0x4306d8e8ac2a9c893ac1cd137a0cd6966fa6b6ff	ETH	Sybil.org	sybil-delegate	Infra	third party verified	2023-04-04
+Chaintool	0xc343a10b34637960b6dd7b9f7d80826d44588f34	ETH	Sybil.org	sybil-delegate	Infra	third party verified	2023-04-04
+Chaintool	0xd03614c920a0c334b842320999398e1387791bf8	ETH	Sybil.org	sybil-delegate	Infra	third party verified	2023-04-04
+Chaintool	0x84bb5196f0085d61a7c9ac5b903a26d7f009ac13	ETH	Sybil.org	sybil-delegate	Infra	third party verified	2023-04-04
+Chaintool	0x08a7ad00dac20aaaeb0612ef3b96b737fe742d4f	ETH	Sybil.org	sybil-delegate	Infra	third party verified	2023-04-04
+Chaintool	0x799315838a9d9c458c7f46a4f9d375880741dfd3	ETH	Sybil.org	sybil-delegate	Infra	third party verified	2023-04-04
+Chaintool	0x49addc76569402cf893c015ac69a177aaf4e822b	ETH	Multichain		Infra	third party verified	2023-04-04
+Chaintool	0xc1612dc56c3e7e00d86c668df03904b7e59616c5	ETH	MEV Builder		Infra	third party verified	2023-04-04
+Chaintool	0xef8305e140ac520225daf050e2f71d5fbcc543e7	ETH	Sybil.org	sybil-delegate	Infra	third party verified	2023-04-04
+Chaintool	0xf99d58e463a2e07e5692127302c20a191861b4d6	ETH	Multichain		Infra	third party verified	2023-04-04
+Chaintool	0xa018feb6840781436e5440de92f91659bce036b6	ETH	Sybil.org	sybil-delegate	Infra	third party verified	2023-04-04
+Chaintool	0x30fe0d8d2d81ea568ff60b6e28ab74eb7e548cb0	ETH	Sybil.org	sybil-delegate	Infra	third party verified	2023-04-04
+Chaintool	0x96418995b6ff0560ff7b0a8eacbf59f38d465346	ETH	Sybil.org	sybil-delegate	Infra	third party verified	2023-04-04
+Chaintool	0x0716266cc5d3c443e30b0c4e9c72afa33778e1de	ETH	Sybil.org	sybil-delegate	Infra	third party verified	2023-04-04
+Chaintool	0x9a6aa7d170ecd757b6993e6eaf42190edc7dbaf4	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0xec8b363164cf453bdaadfad4094b566dada41f4d	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0x2dcb6f84cc76a888aed21efc86ac7492879866c3	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0x4f833a24e1f95d70f028921e27040ca56e09ab0b	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0x696a89e6dfa39b1c8ecf9ad86e826205ed17a8d8	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0xcf20dfb8b66fcfb4a1dfcc00f45cfb3c6d852996	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0x48c80f1f4d53d5951e5d5438b54cba84f29f32a5	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0xc4e749db586f50183c6d5c6d3f54f488d308ec16	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0x208e41fb445f1bb1b6780d58356e81405f3e6127	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0xf9fbaefde7112f78fa9bfe813341f0f49f888cb3	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0x0301256716f6a18666db5a6009c2bff7c98fdde9	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0xe3b37b6a88df57acc55ac920200354e416ddc27c	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0x5554e04e76533e1d14c52f05beef6c9d329e1e30	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0xcbb836780fd33c0164df0071efa49dc2bc7a012d	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0x7b9181828995c38db82436c09503f85b23741a24	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0x30211f7de9bf35334c7f61545e8ed09bf9d9cc15	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0x1985365e9f78359a9b6ad760e32412f4a445e862	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0x7afc2d5107af94c462a194d2c21b5bdd238709d6	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0x4bebdd7312e81b184274d75e4c37a6d4a4d23163	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0xe269e891a2ec8585a378882ffa531141205e92e9	ETH	Old contract		Smart Contract	third party verified	2023-04-04
+Chaintool	0x4e45cf0d3a1549007d5629f7a6ef793840326380	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0xd4d23c9980873f9530ed94d4a67b73056edfc8f7	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0x5691b347d296128e16266d0c131229edf43accec	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0x77f94bf7522bd70612e2b3973cf2a42d335bb939	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0x57a7682b4f1e8fe1d5f64c0264ceef51d7764224	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0x2b534716ea7e4e93e25816d45a4e89b6f37e125d	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0x1da3d57c0cad995a27b3f79ddcf6a5efd9834096	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0xa66762a64d624de06b059696892655c60364e272	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0x59c6671418407f40b8d3e669f0bbb011c8f41b70	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0xcb431e88fd3516a0f3e109a8463a47afa2b8a5fd	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0xbb9c7234ad0b02240a99bb541016546ff8049808	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0x035fa797f8405f8b1dfcb77df15279911296773a	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0x3386e995243c13f460e233d80ea10bae9acf8852	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0xb8607c1e770005accd03c4060a6e0558eca81f5b	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0x5be5371118e46e00ba52f3b24c6ba81e26d3ba92	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0x22a7bcbfcf78084d3797ea2cb393a7b2afcf778f	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0xef05a4fa7e7dbb5141783e2121265da18dbdff79	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0x547cdf93b26d1d7cccb1d1b9c5fc618879f5c5c7	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0xbf647942151e6dd56dcf6430299b8ac75d727da3	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0x6653dc78917ce186bd9cefd486f9ba38c660148d	ETH	Uniswap		DEX,Erc20 Token	third party verified	2023-04-04
+Chaintool	0x4f9fbb3f1e99b56e0fe2892e623ed36a76fc605d	ETH	Liquity		Lending	third party verified	2023-04-04
+Chaintool	0x9b436168dd080f1f95d1919258c64590263c0dae	ETH	Celsius Network		Lending	third party verified	2023-04-04
+Chaintool	0x9555b042f969e561855e5f28cb1230819149a8d9	ETH	Liquity		Lending	third party verified	2023-04-04
+Chaintool	0x317625234562b1526ea2fac4030ea499c5291de4	ETH	Aave		Lending	third party verified	2023-04-04
+Chaintool	0x5089afdb4328c2e90d4bbeb2b62421f51a687430	ETH	Celsius Network		Lending	third party verified	2023-04-04
+Chaintool	0x3d32e8b97ed5881324241cf03b2da5e2ebce5521	ETH	Liquity		Lending	third party verified	2023-04-04
+Chaintool	0x8b47ed08fd5f134c57b826fbd33e1de121de880d	ETH	Celsius Network		Lending	third party verified	2023-04-04
+Chaintool	0x6d903f6003cca6255d85cca4d3b5e5146dc33925	ETH	Compound		Lending	third party verified	2023-04-04
+Chaintool	0x66017d22b0f8556afdd19fc67041899eb65a21bb	ETH	Liquity		Lending	third party verified	2023-04-04
+Chaintool	0x32a3256a4b15badd4a6e072a03d23404d925a5cf	ETH	Celsius Network		Lending	third party verified	2023-04-04
+Chaintool	0x7d2d3688df45ce7c552e19c27e007673da9204b8	ETH	Aave		Lending	third party verified	2023-04-04
+Chaintool	0x24a42fd28c976a61df5d00d0599c34c4f90748c8	ETH	Aave		Lending	third party verified	2023-04-04
+Chaintool	0xb46f8cf42e504efe8bef895f848741daa55e9f1d	ETH	Unit Protocol		Lending	third party verified	2023-04-04
+Chaintool	0x6dea81c8171d0ba574754ef6f8b412f2ed88c54d	ETH	Liquity		Lending	third party verified	2023-04-04
+Chaintool	0x8aceab8167c80cb8b3de7fa6228b889bb1130ee8	ETH	Celsius Network		Lending	third party verified	2023-04-04
+Chaintool	0x721e3d8aa92d1f26936f6945f176415f66a88588	ETH	Celsius Network		Lending	third party verified	2023-04-04
+Chaintool	0x3a3a65aab0dd2a17e3f1947ba16138cd37d08c04	ETH	Aave		Lending	third party verified	2023-04-04
+Chaintool	0x1456688345527be1f37e9e627da0837d6f08c925	ETH	Unit Protocol		Lending	third party verified	2023-04-04
+Chaintool	0x2abf9f753d0af02cca358f98d633bad81cc555ed	ETH	Celsius Network		Lending	third party verified	2023-04-04
+Chaintool	0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9	ETH	Aave		Lending	third party verified	2023-04-04
+Chaintool	0x53d244fb46357568dbef082225ccc87cbd94aae8	ETH	Synthetix		Defi	third party verified	2023-04-04
+Chaintool	0x44fbebd2f576670a6c33f6fc0b00aa8c5753b322	ETH	Cream Finance		Defi	third party verified	2023-04-04
+Chaintool	0x1a122348b73b58ea39f822a89e6ec67950c2bbd0	ETH	Cream Finance		Defi	third party verified	2023-04-04
+Chaintool	0xcdd2bd61d07b8d42843175dd097a4858a8f764e7	ETH	Value DeFi		Defi	third party verified	2023-04-04
+Chaintool	0xd51f062104d7c8ee7db100878a454451adfd2811	ETH	mStable		Defi	third party verified	2023-04-04
+Chaintool	0x1d0986fb43985c88ffa9ad959cc24e6a087c7e35	ETH	Cream Finance		Defi	third party verified	2023-04-04
+Chaintool	0x00815e0e9d118769542ce24be95f8e21c60e5561	ETH	Rari Capital		Defi	third party verified	2023-04-04
+Chaintool	0x4ee15f44c6f0d8d1136c83efd2e8e4ac768954c6	ETH	Cream Finance		Defi	third party verified	2023-04-04
+Chaintool	0x0eeb86aa7e7b0d846ffef65d93147f22cde44c7c	ETH	Unicrypt		Defi	third party verified	2023-04-04
+Chaintool	0x6367bb496390ddf0ef508db2992f53dbf376b1f4	ETH	Enzyme Finance		Defi	third party verified	2023-04-04
+Chaintool	0x627cd0dbd5ee33f8456aa8143acd68a13d641588	ETH	Instadapp		Defi	third party verified	2023-04-04
+Chaintool	0xa6b5e74466edc95d0b6e65c5cbfca0a676d893a4	ETH	Synthetix		Defi	third party verified	2023-04-04
+Chaintool	0x0ec3008da9641bf80c0c82b37e05f59c58c6fcd7	ETH	Idle Finance		Defi	third party verified	2023-04-04
+Chaintool	0x05461124c86c0ad7c5d8e012e1499fd9109ffb7d	ETH	Kyber Network		Defi	third party verified	2023-04-04
+Chaintool	0xc9608b8dcee2006a5ab57b1cde0b1aa2e40391b0	ETH	Value DeFi		Defi	third party verified	2023-04-04
+Chaintool	0x7c4414aa6b0c6cb1bc7e5bfb7433138426ac637a	ETH	Idle Finance		Defi	third party verified	2023-04-04
+Chaintool	0x545973f28950f50fc6c7f52aab4ad214a27c0564	ETH	Synthetix		Defi	third party verified	2023-04-04
+Chaintool	0x806e16ec797c69afa8590a55723ce4cc1b54050e	ETH	Abracadabra		Defi	third party verified	2023-04-04
+Chaintool	0x945facb997494cc2570096c74b5f66a3507330a1	ETH	mStable		Defi	third party verified	2023-04-04
+Chaintool	0xd18140b4b819b895a3dba5442f959fa44994af50	ETH	Convex Finance		Defi	third party verified	2023-04-04
+Chaintool	0x46c9999a2edcd5aa177ed7e8af90c68b7d75ba46	ETH	Juicebox		DAO,Infra	third party verified	2023-04-04
+Chaintool	0xa9537cc42555564206d4e57c0eb6943d56e83a30	ETH	Juicebox		DAO,Infra	third party verified	2023-04-04
+Chaintool	0xf507b2a1dd7439201eb07f11e1d62afb29216e2e	ETH	Juicebox		DAO,Infra	third party verified	2023-04-04
+Chaintool	0x9b5a4053ffbb11ca9cd858aaee43cc95ab435418	ETH	Juicebox		DAO,Infra	third party verified	2023-04-04
+Chaintool	0xb9e4b658298c7a36bdf4c2832042a5d6700c3ab8	ETH	Juicebox		DAO,Infra	third party verified	2023-04-04
+Chaintool	0xab47304d987390e27ce3bc0fa4fe31e3a98b0db2	ETH	Juicebox		DAO,Infra	third party verified	2023-04-04
+Chaintool	0xee2ebccb7cdb34a8a822b589f9e8427c24351bfc	ETH	Juicebox		DAO,Infra	third party verified	2023-04-04
+Chaintool	0x6d6da471703647fd8b84ffb1a29e037686dbd8b2	ETH	Juicebox		DAO,Infra	third party verified	2023-04-04
+Chaintool	0xac43e14c018490d045a774008648c701cda8c6b3	ETH	Juicebox		DAO,Infra	third party verified	2023-04-04
+Chaintool	0xef7480b6e7ced228ffb0854fe49a428f562a8982	ETH	Juicebox		DAO,Infra	third party verified	2023-04-04
+Chaintool	0xde30da39c46104798bb5aa3fe8b9e0e1f348163f	ETH	Gitcoin Grants		Charity	third party verified	2023-04-04
+Chaintool	0xdf869fad6db91f437b59f1edefab319493d4c4ce	ETH	Gitcoin Grants		Charity	third party verified	2023-04-04
+Chaintool	0xde21f729137c5af1b01d73af1dc21effa2b8a0d6	ETH	Gitcoin Grants		Charity	third party verified	2023-04-04
+Chaintool	0x00de4b13153673bcae2616b67bf822500d325fc3	ETH	Gitcoin Grants		Charity	third party verified	2023-04-04
+Chaintool	0xf2354570be2fb420832fb7ff6ff0ae0df80cf2c6	ETH	Gitcoin Grants		Charity	third party verified	2023-04-04
+Chaintool	0x358bcf43fe7ec2659ad829f3604c72781fc93a9e	ETH	Gitcoin Grants		Charity	third party verified	2023-04-04
+Chaintool	0x9d37f793e5ed4ebd66d62d505684cd9f756504f6	ETH	Gitcoin Grants		Charity	third party verified	2023-04-04
+Chaintool	0x7d655c57f71464b6f83811c55d84009cd9f5221c	ETH	Gitcoin Grants		Charity	third party verified	2023-04-04
+Chaintool	0x3de2deaab314d5738c1eaf611b86f8003a13794c	ETH	TimeX		DEX,Exchange	ground truth	2023-04-04
+Chaintool	0x1c1d1d619e1f0e09ffe03cc33d5e7589191c6cfc	ETH	TimeX		DEX,Exchange	ground truth	2023-04-04
+Chaintool	0xc5ccf3dd16056977dc7f015cb29ffeb91d200b51	ETH	TimeX		DEX,Exchange	ground truth	2023-04-04
+Chaintool	0x2175a1be992642d2be82ac1525cbb179dcb110cf	ETH	TimeX		DEX,Exchange	ground truth	2023-04-04
+Chaintool	0x8bd75f96efa089aecf6ac4cd0b671e2428f4b2af	ETH	Opium Team		Defi,Derivatives	third party verified	2023-04-04
+Chaintool	0x56c54b408c44b12f6c9219c9c73fcda4e783fc20	ETH	Opium Team		Defi,Derivatives	third party verified	2023-04-04
+Chaintool	0x6f4b04634a5b334cbcce569fa6b5ad597a7a70ea	ETH	Opium Team		Defi,Derivatives	third party verified	2023-04-04
+Chaintool	0xc955f3c0d5a87710996d13b1f9aa3a77552d7a7e	ETH	Opium Team		Defi,Derivatives	third party verified	2023-04-04
+Chaintool	0x3a943c50bcde3e357916ce6e109626213fd36105	ETH	Opium Team		Defi,Derivatives	third party verified	2023-04-04
+Chaintool	0xafda317cb15967c2fd379885de227ca236e59cd3	ETH	Opium Team		Defi,Derivatives	third party verified	2023-04-04
+Chaintool	0xe1f05686606088c2f6e3456c1dd1e4c39fc817e3	ETH	Opium Team		Defi,Derivatives	third party verified	2023-04-04
+Chaintool	0x30dc4e9e26f24acefa8067e71e1cd4363a05001e	ETH	Opium Team		Defi,Derivatives	third party verified	2023-04-04
+Chaintool	0xb69890912e40a7849fca058bb118cfe7d70932c4	ETH	Opium Team		Defi,Derivatives	third party verified	2023-04-04
+Chaintool	0x5ebda6ff471a9d523c1f6d7520179dded99753e1	ETH	Opium Team		Defi,Derivatives	third party verified	2023-04-04
+Chaintool	0xecc45d06fd4c23f9958a74f254507016b1dfc329	ETH	Opium Team		Defi,Derivatives	third party verified	2023-04-04
+Chaintool	0xba2e7fed597fd0e3e70f5130bcdbbfe06bb94fe1	ETH	Yearn Finance		DeFi	third party verified	2023-04-04
+Chaintool	0x2c3a2558e9b91e893e53bce94de3457a29f6b262	ETH	Yearn Finance		DeFi	third party verified	2023-04-04
+Chaintool	0x83f798e925bcd4017eb265844fddabb448f1707d	ETH	Yearn Finance		DeFi	third party verified	2023-04-04
+Chaintool	0xa069e33994dcc24928d99f4bbeda83aaef00b5f3	ETH	Yearn Finance		DeFi	third party verified	2023-04-04
+Chaintool	0x73a052500105205d34daf004eab301916da8190f	ETH	Yearn Finance		DeFi	third party verified	2023-04-04
+Chaintool	0x16de59092dae5ccf4a1e6439d611fd0653f0bd01	ETH	Yearn Finance		DeFi	third party verified	2023-04-04
+Chaintool	0x04bc0ab673d88ae9dbc9da2380cb6b79c4bca9ae	ETH	Yearn Finance		DeFi	third party verified	2023-04-04
+Chaintool	0xf61718057901f84c4eec4339ef8f0d86d2b45600	ETH	Yearn Finance		DeFi	third party verified	2023-04-04
+Chaintool	0xd6ad7a6750a7593e092a9b218d66c0a814a3436e	ETH	Yearn Finance		DeFi	third party verified	2023-04-04
+Chaintool	0x93a62da5a14c80f265dabc077fcee437b1a0efde	ETH	Yearn Finance		DeFi	third party verified	2023-04-04
+Chaintool	0xed03415e5705c5abbf8e94c491b715df526cad55	ETH	Yearn Finance		DeFi	third party verified	2023-04-04
+Chaintool	0x975f1bc238303593efab00d63cf0fc5f519a8de0	ETH	Yearn Finance		DeFi	third party verified	2023-04-04
+Chaintool	0xbb0e17ef65f82ab018d8edd776e8dd940327b28b	ETH	Axie Infinity		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0x9503de24f4210da79c5e5bccd198b2727387a519	ETH	Brave Frontier Heroes		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0x6bf2592c92aef0b2dd16e25cab3114c99ebd8c4e	ETH	CryptoSpells		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0xec0a0915a7c3443862b678b0d4721c7ab133fdcf	ETH	Axie Infinity		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0xa8abf045fe1a9ef0583e436393a6e4e0b483f717	ETH	CryptoSpells		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0x335944b36b02401fb35ca3aa64cc9468e5eb3742	ETH	Brave Frontier Heroes		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0xd1e3dbd2476d374f97b93ad7f686eacbebd8f56d	ETH	CryptoSpells		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0x01aac5236ad205ebbe4f6819bc64ef5bef40b71c	ETH	Axie Infinity		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0x9f90324b0da6adee99aebb467faf20278767d76a	ETH	Brave Frontier Heroes		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0xf5997bea71e1b66434eff247b3c584508df69895	ETH	Axie Infinity		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0xcc8fa225d80b9c7d42f96e9570156c65d6caaa25	ETH	Axie Infinity		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0xa425feccc7e0114e735141c30a1c6f6891633a27	ETH	CryptoSpells		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0xaebe641fb55e45488511ef7d9446e8c7c3d9ad28	ETH	Brave Frontier Heroes		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0xe02367242b348caca4bf39fd1249b212a88adcec	ETH	Brave Frontier Heroes		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0x65919fb2fea8a131129badec56e126ecc1bea979	ETH	Axie Infinity		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0x01bf1d7c5e192313c26414e134584275f46271cf	ETH	Axie Infinity		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0xaa06e5c117dbe8bc52dbaa18aaf447eda556b13c	ETH	Brave Frontier Heroes		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0xb9e4b4c25449ed746d188385d064773011db806b	ETH	CryptoSpells		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0x97390a8fa25b2e69a34d50d289e7c0eb87b1c5c8	ETH	Brave Frontier Heroes		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0x030c09afd8a0e756d114bfb8c8446fbb80e38311	ETH	CryptoSpells		Gaming,NFT	third party verified	2023-04-04
+Chaintool	0xacc425f126e8488780d9c955b0eb834a0bfa312e	ETH	Stake		Gambling	third party verified	2023-04-04
+Chaintool	0x09b2cdd7175dfede1a8df6d6c6d73066dfbe6235	ETH	Stake		Gambling	ground truth	2023-04-04
+Chaintool	0x443fb9ddca89b92bd9c7873965041df4d055ea5f	ETH	Roobet		Gambling	third party verified	2023-04-04
+Chaintool	0xdf5dcb581554954ee658d4c701aa769ca73ae14c	ETH	RollBit		Gambling	third party verified	2023-04-04
+Chaintool	0x7671a0cb1d6cf4a86d9c998dc3b3bf66dfc356f4	ETH	Stake		Gambling	third party verified	2023-04-04
+Chaintool	0x37059318033f2c3fce348ad613431258448c3e09	ETH	Stake		Gambling	third party verified	2023-04-04
+Chaintool	0xb00803a2219baaa1d325e824eb6013b1db731ed5	ETH	Roobet		Gambling	ground truth	2023-04-04
+Chaintool	0xbc00e65be250636e1d8644ea97eb766ca57d01bd	ETH	Roobet		Gambling	ground truth	2023-04-04
+Chaintool	0x579a7b5796fa6150cb064c53995781d997af5a6f	ETH	Bovada		Gambling	third party verified	2023-04-04
+Chaintool	0xa416dc9ad10625fee0a466d7a177905ed7889583	ETH	Stake		Gambling	third party verified	2023-04-04
+Chaintool	0x8b889eb73091534c84594292116d31f7c54ddcf8	ETH	Stake		Gambling	third party verified	2023-04-04
+Chaintool	0x9fcd75ed39223ebe98720978c630ecbe09e3f2e1	ETH	RollBit		Gambling	third party verified	2023-04-04
+Chaintool	0x0a8c9deab60aba8ff639786a88b6cba41758e3dc	ETH	Stake		Gambling	ground truth	2023-04-04
+Chaintool	0x17b21a880b4db3dea90e5ba8a47793b9a638ea96	ETH	Stake		Gambling	third party verified	2023-04-04
+Chaintool	0xc260098b9972b6ce04d7c016a467d74c5c27abe3	ETH	Stake		Gambling	third party verified	2023-04-04
+Chaintool	0x17f6a1d67ce5dac7eaf463f2e33e59c989a3e809	ETH	RollBit		Gambling	third party verified	2023-04-04
+Chaintool	0xb528e9b598a9e8b38943d782ab32abff9f0aaec9	ETH	Stake		Gambling	ground truth	2023-04-04
+Chaintool	0x05ff79724989f088a7341f95c14399c13c4690e5	ETH	Stake		Gambling	third party verified	2023-04-04
+Chaintool	0x91335e5b3f22151de30826b0394d99edd0299d9a	ETH	Stake		Gambling	ground truth	2023-04-04
+Chaintool	0x1d779c07e9cec5e523b6927640228e3b39465bf0	ETH	Bovada		Gambling	ground truth	2023-04-04
+Chaintool	36urMNsNn2snBvwQJAVRz9caKdnu9RgtrT	BTC	Coinbase		Exchange	third party verified	2023-04-04
+Chaintool	39yv6RqMSgvW36EZw672fa3SL296u2UNgV	BTC	Coinbase		Exchange	third party verified	2023-04-04
+Chaintool	3HRc1pWPGiyakANzV7mZwu38R2RUrau6DK	BTC	Coinbase		Exchange	third party verified	2023-04-04
+Chaintool	3NMXchcwfzKZUw1HLpteUcuBUBTLghUWMz	BTC	Coinbase		Exchange	third party verified	2023-04-04
+Chaintool	3FnXoPBokRxfYR2Z1RE3TdPDsUotzALQiv	BTC	Coinbase		Exchange	third party verified	2023-04-04
+Chaintool	14xxxMAYnWzWKGGoWME1odHpynzvFoVU1N	BTC	Binance		Exchange	third party verified	2023-04-04
+Chaintool	37VR7sN4Tbv53sU5UXCnQtUAxHzwk6o8hA	BTC	Coinbase		Exchange	third party verified	2023-04-04
+Chaintool	3PZfgzbx4RRYtFqdCKuXwK5e8Ejub9U1Ck	BTC	Coinbase		Exchange	third party verified	2023-04-04
+Chaintool	3GYW2dWHZZPGduqJ1s7yPhHbeiP4oLUX2h	BTC	Coinbase		Exchange	third party verified	2023-04-04
+Chaintool	3EuZ8B1mPBYmMwqm6Eu6NkfaZFxKAbPJ3t	BTC	Coinbase		Exchange	third party verified	2023-04-04
+Chaintool	3QkdqScQBT2aLm5tQXLBD7UG3JVctmVaNe	BTC	Coinbase		Exchange	third party verified	2023-04-04
+Chaintool	39WbvWx76NCP3sSeMfvgquK6QdRcAyMFbS	BTC	Coinbase		Exchange	third party verified	2023-04-04
+Chaintool	1PbhesLtCAD6V7uy5r1WYZXQisEmfRThCu	BTC	Bittrex		Exchange	third party verified	2023-04-04
+Chaintool	3HiRAyds8yYC8SY3KNJQU6SyVjTi6xBnXd	BTC	Luno		Exchange	third party verified	2023-04-04
+Chaintool	3GFE5qtuQQK4gDs2RZ8HN62My13bEBPKcB	BTC	Coinbase		Exchange	third party verified	2023-04-04
+Chaintool	bc1qsv4gvrpfphh6kwkvyqfft0dzrf959w2dlq62yl	BTC	Coinbase		Exchange	third party verified	2023-04-04
+Chaintool	3NA3kj3b6F4ovcfZjaVs3wzFLxuqVZbdeZ	BTC	Coinbase		Exchange	third party verified	2023-04-04
+Chaintool	1B7mznD2ZYM1FnYCcLFUongz2x8do5e6Ef	BTC	OKX		Exchange	third party verified	2023-04-04
+Chaintool	3F3das1zTbJGQ9dowzrvcyGwkPMKphAqt6	BTC	Coinbase		Exchange	third party verified	2023-04-04
+Chaintool	3C8qH7mcCcV8J5BfkSCj6bBU6htLKdtpCj	BTC	Coinbase		Exchange	third party verified	2023-04-04
+Chaintool	0x7eefbd48fd63d441ec7435d024ec7c5131019add	ETH	0x		DEX,Infra	third party verified	2023-04-04
+Chaintool	0xa3ac9844514b96bb502627ca9dceb57c4be289e3	ETH	0x		DEX,Infra	third party verified	2023-04-04
+Chaintool	0x3517b88c19508c08650616019062b898ab65ed29	ETH	0x		DEX,Infra	third party verified	2023-04-04
+Chaintool	0x38a795580d0f687e399913a00ddef6a17612c722	ETH	0x		DEX,Infra	third party verified	2023-04-04
+Chaintool	0x45797531b873fd5e519477a070a955764c1a5b07	ETH	0x		DEX,Infra	third party verified	2023-04-04
+Chaintool	0x61935cbdd02287b511119ddb11aeb42f1593b7ef	ETH	0x		DEX,Infra	third party verified	2023-04-04
+Chaintool	0xf740b67da229f2f10bcbd38a7979992fcc71b8eb	ETH	0x		DEX,Infra	third party verified	2023-04-04
+Chaintool	0xccc2431a7335f21d9268ba62f0b32b0f2efc463f	ETH	0x		DEX,Infra	third party verified	2023-04-04
+Chaintool	0xdef1c0ded9bec7f1a1670819833240f027b25eff	ETH	0x		DEX,Infra	ground truth	2023-04-04
+Chaintool	0x7d3455421bbc5ed534a83c88fd80387dc8271392	ETH	0x		DEX,Infra	third party verified	2023-04-04
+Chaintool	0x453939dDbb64A8cE1dA8b0648281CA281DFaA2eF	ETH	Spinwin		Gambling,NFT	ground truth	2023-04-04
+Chaintool	0xb654457bAB03011531eF939Cb31f76Eb36e2ddf3	ETH	Spinwin		Gambling,NFT	ground truth	2023-04-04
+Chaintool	0xF9478F9a6B9A5e7685c226b09C56B78602B65422	ETH	Spinwin		Gambling,NFT	ground truth	2023-04-04
+Chaintool	0x9C03F5e26363b2D6981Ae633db1faFb04b0b1BBc	ETH	Spinwin		Gambling,NFT	ground truth	2023-04-04
+Chaintool	0x11A267697B777cF0353AF94Fdce71e1904317f9e	ETH	Spinwin		Gambling,NFT	ground truth	2023-04-04
+Chaintool	0x97c858Fcdbc95Cf9Ba0a0c86aF55B888cac2Fc0c	ETH	Spinwin		Gambling,NFT	ground truth	2023-04-04
+Chaintool	0xb42f5366792ed7c08995451C1A93780B7554762B	ETH	Spinwin		Gambling,NFT	ground truth	2023-04-04
+Chaintool	0xeA1853f9162Ba2B6594fc18d60C66BF4b6211E0d	ETH	Spinwin		Gambling,NFT	ground truth	2023-04-04
+Chaintool	0x1a4b46696b2bb4794eb3d4c26f1c55f9170fa4c5	ETH	BitDAO		DAO	third party verified	2023-04-04
+Chaintool	0xc5d291607600044348e5014404cc18394bd1d57d	ETH	Oracle DAO		DAO	third party verified	2023-04-04
+Chaintool	0x117c7c3835e7465926ae4ebc3f4e5a3c5afe108d	ETH	BitDAO		DAO	third party verified	2023-04-04
+Chaintool	0xf405127e31e96216f6214983546e7a2de2b9881b	ETH	BitDAO		DAO	third party verified	2023-04-04
+Chaintool	0xf6032c7c15bf4b56bfc5d69208f9ce47f5958512	ETH	BitDAO		DAO	third party verified	2023-04-04
+Chaintool	0x02c2e03c5f241794909d953f5b8fa630856f172c	ETH	BitDAO		DAO	third party verified	2023-04-04
+Chaintool	0x5c549dd85c80abf6f7860ab4bb8139004b716e29	ETH	BitDAO		DAO	third party verified	2023-04-04
+Chaintool	0x273e82c4b0661b3d656e9353f7c8643723f93ca2	ETH	Oracle DAO		DAO	third party verified	2023-04-04
+Chaintool	0xdf590a63b91e8278a9102bee9aafd444f8a4b780	ETH	Oracle DAO		DAO	third party verified	2023-04-04
+Chaintool	0x3329fbcda16f15c4ed1d6847bf18e9d045ee941f	ETH	BitDAO		DAO	third party verified	2023-04-04
+Chaintool	0x3a9b1da81ca44febc97a713242f6a3feeec7c891	ETH	BitDAO		DAO	third party verified	2023-04-04
+Chaintool	0xd9107d1d077c2516e83cb41f41883570d904f050	ETH	BitDAO		DAO	third party verified	2023-04-04
+Chaintool	0x95ffccd818e469844ccd94b96ed0d325aaeb87a2	ETH	Oracle DAO		DAO	third party verified	2023-04-04
+Chaintool	0xe5791f93b997c7fc90753a1f2711e479773a2a87	ETH	BitDAO		DAO	third party verified	2023-04-04
+Chaintool	0x2c6c5809a257ea74a2df6d20aee6119196d4bea0	ETH	Oracle DAO		DAO	third party verified	2023-04-04
+Chaintool	0xc20c13d2303eeaeeaeb7f73babf7014bce6d130a	ETH	BitDAO		DAO	third party verified	2023-04-04
+Chaintool	0x751683968fd078341c48b90bc657d6babc2339f7	ETH	Oracle DAO		DAO	third party verified	2023-04-04
+Chaintool	0x78605df79524164911c144801f41e9811b7db73d	ETH	BitDAO		DAO	third party verified	2023-04-04
+Chaintool	0xaf820bb236fde6f084641c74a4c62fa61d10b293	ETH	Oracle DAO		DAO	third party verified	2023-04-04
+Chaintool	0xa2e5e8a607562b7bda05d5820e569c290b43be6d	ETH	BitDAO		DAO	third party verified	2023-04-04
+Chaintool	0x10739f09f6e62689c0aa8a1878816de9e166d6f9	ETH	Metis		Infra,L2	third party verified	2023-04-04
+Chaintool	0x9ed4739afd706122591e75f215208ecf522c0fd3	ETH	Metis		Infra,L2	third party verified	2023-04-04
+Chaintool	0xf3d58d1794f2634d6649a978f2dc093898feebc0	ETH	Metis		Infra,L2	third party verified	2023-04-04
+Chaintool	0xf51b9c9a1c12e7e48bec15dc358d0c1f0d7eb3be	ETH	Metis		Infra,L2	third party verified	2023-04-04
+Chaintool	0x918778e825747a892b17c66fe7d24c618262867d	ETH	Metis		Infra,L2	third party verified	2023-04-04
+Chaintool	0x56a76bcc92361f6df8d75476fed8843edc70e1c9	ETH	Metis		Infra,L2	third party verified	2023-04-04
+Chaintool	0x9e32b13ce7f2e80a01932b42553652e053d6ed8e	ETH	Metis		Infra,L2	third party verified	2023-04-04
+Chaintool	0xf209815e595cdf3ed0aaf9665b1772e608ab9380	ETH	Metis		Infra,L2	third party verified	2023-04-04
+Chaintool	0x38473feb3a6366757a249db2ca4fbb2c663416b7	ETH	Metis		Infra,L2	third party verified	2023-04-04
+Chaintool	0x7532c59c69828d4e756832bae27b79fb28145c44	ETH	Metis		Infra,L2	third party verified	2023-04-04
+Chaintool	0x8bf439ef7167023f009e24b21719ca5f768ecb36	ETH	Metis		Infra,L2	third party verified	2023-04-04
+Chaintool	0xdd6ffc7d9a4fb420b637747edc6456340d12d377	ETH	Metis		Infra,L2	third party verified	2023-04-04
+Chaintool	0x081d1101855bd523ba69a9794e0217f0db6323ff	ETH	Metis		Infra,L2	third party verified	2023-04-04
+Chaintool	0xa91ea6f5d1eda8e6686639d6c88b309cf35d2e57	ETH	Metis		Infra,L2	third party verified	2023-04-04
+Chaintool	0xc8953ca384b4adc8b1b11b030afe2f05471664b0	ETH	Metis		Infra,L2	third party verified	2023-04-04
+Chaintool	0xc1a900ae76db21dc5aa8e418ac0f4e888a4c7431	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0x32296969ef14eb0c6d29669c550d4a0449130230	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0x0d97e876ad14db2b183cfeeb8aa1a5c788eb1831	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0xe19fc582dd93fa876cf4061eb5456f310144f57b	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0xdb149235b6f40dc08810aa69869783be101790e7	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0x55bc991b2edf3ddb4c520b222be4f378418ff0fa	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0x55032650b14df07b85bf18a3a3ec8e0af2e028d5	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0x75ff3dd673ef9fc459a52e1054db5df2a1101212	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0xf9339de629973c60c4d2b76749c81e6f40960e3a	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0xb9e5cbb9ca5b0d659238807e84d0176930753d86	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0x442af784a788a5bd6f42a01ebe9f287a871243fb	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0xdb46c277da1599390eab394327602889e9546296	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0x6140182b2536ae7b6cfcfb2d2bab0f6fe0d7b58e	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0xae7ab96520de3a18e5e111b5eaab095312d7fe84	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0x2e59a20f205bb85a89c53f1936454680651e618e	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0x1dd909cddf3dbe61ac08112dc0fdf2ab949f79d8	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0xab55bf4dfbf469ebfe082b7872557d1f87692fe6	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0x9895f0f17cc1d1891b6f18ee0b483b6f221b37bb	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0x1220cccdc9bba5cf626a84586c74d6f940932342	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0x753d5167c31fbeb5b49624314d74a957eb271709	ETH	Lido		Defi,Liquid Staking	third party verified	2023-04-04
+Chaintool	0xd6669ee16824c206a6c97926746de404fb047375	ETH	QuantumTECH		NFT,Services	third party verified	2023-04-04
+Chaintool	0x90bf1e866a1b4681e1a82c377b4839859f97dab7	ETH	QuantumTECH		NFT,Services	third party verified	2023-04-04
+Chaintool	0x4c480854658716379a1b74454c2420452de06c1b	ETH	QuantumTECH		NFT,Services	third party verified	2023-04-04
+Chaintool	0x6756b7216013d52cb7646b6bac0fe67fd54c33bd	ETH	QuantumTECH		NFT,Services	third party verified	2023-04-04
+Chaintool	0x32b7f655b94e30975f98da13d6cf31f0479c3802	ETH	QuantumTECH		NFT,Services	third party verified	2023-04-04
+Chaintool	0x6517eac63d4a522c1367ace4fe71275c3317cd4e	ETH	QuantumTECH		NFT,Services	third party verified	2023-04-04
+Chaintool	0x7df05b684e3e66c30287e0c0c4c8954ed26ede97	ETH	QuantumTECH		NFT,Services	third party verified	2023-04-04
+Chaintool	0xee26b0a85a65c8b0e96cedd9862d501282c63f28	ETH	QuantumTECH		NFT,Services	third party verified	2023-04-04
+Chaintool	0xf4810e5445d4d49a985846dec2a3e9214949afbc	ETH	QuantumTECH		NFT,Services	third party verified	2023-04-04
+Chaintool	0x86a8a293fb94048189f76552eba5ec47bc272223	ETH	QuantumTECH		NFT,Services	third party verified	2023-04-04
+Chaintool	0xe7c39ef167a9e1413a31acf85b5ba93d49e2f285	ETH	QuantumTECH		NFT,Services	third party verified	2023-04-04
+Chaintool	0x21f4a9780a52c7a8ca5e30bac89a6b0e2722bf65	ETH	QuantumTECH		NFT,Services	third party verified	2023-04-04
+Chaintool	0x5613803c24d24e32dad401f292d59d0943aeaf8e	ETH	QuantumTECH		NFT,Services	third party verified	2023-04-04
+Chaintool	0x29235e6dde31a94bfebbba187dc8a53af2219389	ETH	QuantumTECH		NFT,Services	third party verified	2023-04-04
+Chaintool	0xeb862ff4b8104d4bae22427367a9a3a16694b486	ETH	QuantumTECH		NFT,Services	third party verified	2023-04-04
+Chaintool	0x50eb12bf8911f792f41b94c60584c30372661df1	ETH	QuantumTECH		NFT,Services	third party verified	2023-04-04
+Chaintool	0xf6204fc14665c5f6a3307a842d68dedd01cca83b	ETH	Shakepay		Exchange	ground truth	2023-04-04
+Chaintool	0x9a3d50f4fe419703bba50bd208523671cd43a5b7	ETH	FTX		Exchange	ground truth	2023-04-04
+Chaintool	0xa6cbdcfdf3b0ffeca06c5059c403539cc1a60c4f	ETH	Binance		Exchange	ground truth	2023-04-04
+Chaintool	0x6ae53b96257606831e64951da67b4d26159ff653	ETH	Shakepay		Exchange	ground truth	2023-04-04
+Chaintool	0xe1e8208cfa699d4b7e42bcbd4b73e01361c435d7	ETH	Binance		Exchange	ground truth	2023-04-04
+Chaintool	0x140fdaba7fb559422863935c13d47f184f5b6cf3	ETH	Crypto.com		Exchange	ground truth	2023-04-04
+Chaintool	0xc2eccc0b7da01113cc5bcc1e1ef831230766e70e	ETH	KuCoin		Exchange	third party verified	2023-04-04
+Chaintool	0x595f8f53c0a374f6468c6b6819a338832d525424	ETH	CoinEx		Exchange	third party verified	2023-04-04
+Chaintool	0xafa8dc74b3b905449fb69ef97ae45af75101cd2a	ETH	OKEX		Exchange	ground truth	2023-04-04
+Chaintool	0x702552e5a8a453ed7833003c2d189397ff7cbb55	ETH	KuCoin		Exchange	third party verified	2023-04-04
+Chaintool	0xc92cc96ccea4291aea1dfa6e25eea98a91ea1231	ETH	FTX		Exchange	ground truth	2023-04-04
+Chaintool	0xc0b0bdb21da433d870b8aa115b8806c87c7ede90	ETH	ProBit		Exchange	third party verified	2023-04-04
+Chaintool	0xcb37a52a36ef47683cc8f7944314a414c1fcb402	ETH	Binance		Exchange	ground truth	2023-04-04
+Chaintool	0x20f7e04022eee2a2b365e8afa8b4c75b693f13a7	ETH	Binance		Exchange	ground truth	2023-04-04
+Chaintool	0xfaea40bc77f2c67598d0231b043434b3c7c69fde	ETH	Bitrue		Exchange	third party verified	2023-04-04
+Chaintool	0x8cd246684b0bf2ec3569d26d9621a7713bfb3e8a	ETH	Binance		Exchange	ground truth	2023-04-04
+Chaintool	0x9a9efa71addbea588f6911023114c1788b6429f8	ETH	Binance		Exchange	ground truth	2023-04-04
+Chaintool	0x9f37252443c18baed33fe1387596650f703da259	ETH	Binance		Exchange	ground truth	2023-04-04
+Chaintool	0x638396b2154241f4bf36bdb6f0a58520e487e06f	ETH	BitMart		Exchange	ground truth	2023-04-04
+Chaintool	0x9ee37a78c3986c9432305420d8c38b9b234b06b7	ETH	KuCoin		Exchange	ground truth	2023-04-04
+Chaintool	3EYQfDRfHQtECHDJEGqqNwXGMoqKj5td5K	BTC	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	3DHCct63docPZBQBuuWvNo5nakfY5ty9Ed	BTC	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	3K28ch7p5D6qkkEKYD1Y3HRD6jfpGUZaRx	BTC	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	32rdvRpR8aYGxMqr34o2DvBf5ERfGxczuc	BTC	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	32N7HFP6toAVUvL99fXajcJjgN6V6LNmGv	BTC	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	384VeHztdGuYJm5jgH8Ag2g1tCPKvtTBsf	BTC	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	3CXr12jaXnjqrpGM81iCiNq4MWcAQvPVyV	BTC	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	3JHUYNgJrwd4tqfu8FfRPo1T5cQe1uGQRq	BTC	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	3GVpRSbh2YkYANvuiRzcvP8eV72eoufar9	BTC	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	32DR3LPsFE3F8U3gVbAu1YnNG464EdHX17	BTC	WASHCOIN		Merchant	ground truth	2023-04-04
+Chaintool	0x571b7313b36af37e61359635157657dbab6ec240	ETH	Gitcoin Grantee		Services	third party verified	2023-04-04
+Chaintool	0x80442058811da23f71313581f3ae2e56fdf7bed4	ETH	Gitcoin Grantee		Services	third party verified	2023-04-04
+Chaintool	0xa5aa7454ab373a8d1287a232f3cee46149fbde0e	ETH	Snapshot		Services	third party verified	2023-04-04
+Chaintool	0xdd4d4d88dcbfb975e28a9398131cad26286fa955	ETH	Snapshot		Services	third party verified	2023-04-04
+Chaintool	0x459efddb7da23472374eb6860d237f2feb696903	ETH	Snapshot		Services	third party verified	2023-04-04
+Chaintool	0x1156bf625b37623a86d004e66e0a01ec4b17e051	ETH	Snapshot		Services	third party verified	2023-04-04
+Chaintool	0x815fd2ba302de5fa849469b1511e34e9d8fbb51d	ETH	Snapshot		Services	third party verified	2023-04-04
+Chaintool	0x5648f602609cffd4553cd6cac0cfd8b35225ef92	ETH	Snapshot		Services	third party verified	2023-04-04
+Chaintool	0x116867ea60307626e091146cb7e925ec6ddee277	ETH	Snapshot		Services	third party verified	2023-04-04
+Chaintool	0xa28d81bf8e4823cf4d6cc2767507dee271994e1a	ETH	Atom Solutions		Services	third party verified	2023-04-04
+Chaintool	0x9c8bdd1d327d90ef6f6f66e9b7313e7d4b6f8a4b	ETH	Gitcoin Grantee		Services	third party verified	2023-04-04
+Chaintool	0xe6ce4e57b6cbcd4012ffbfd8487e776eb524fcbe	ETH	Gitcoin Grantee		Services	third party verified	2023-04-04
+Chaintool	0x7ef97ce7554ee6ba104a9ecbf57429e03c36c356	ETH	Gitcoin Grantee		Services	third party verified	2023-04-04
+Chaintool	0x08ab4e5199a5e8bd9575bba899a9561a7cfe8fd6	ETH	Snapshot		Services	third party verified	2023-04-04
+Chaintool	0x4804ad002ce301af61af43661c27cb441d4ac1fd	ETH	Atom Solutions		Services	third party verified	2023-04-04
+Chaintool	0x6c8219172a9eeea5d0a7a9a9dedf0b6d517abd48	ETH	MEDIKEY		Services	third party verified	2023-04-04
+Chaintool	0xc21b25479ce9fed4a5bb9c66833e33c50b0e044a	ETH	Gitcoin Grantee		Services	third party verified	2023-04-04
+Chaintool	0x5e11a833d112e973661040e062f1aedfb2bcec1d	ETH	Snapshot		Services	third party verified	2023-04-04
+Chaintool	0xe985a1a1248b995266869258cd965f1de11111ec	ETH	Snapshot		Services	third party verified	2023-04-04
+Chaintool	0xdd9c7bc159dacb19c9f6b9d7e23948c87aa2397f	ETH	Decentraland		Services	third party verified	2023-04-04
+Chaintool	0x44a54941E572C526a599B0ebe27A14A5BF159333	ETH	XY Finance		DEX,Defi,Lending	ground truth	2023-04-04
+Chaintool	0x7c8161545717a334f3196e765d9713f8042ef338	ETH	Wormhole		DEX,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x41f7b8b9b897276b7aae926a9016935280b44e97	ETH	Wormhole		DEX,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x3243278E0F93cD6F88FC918E0714baF7169AFaB8	ETH	XY Finance		DEX,Defi,Lending	ground truth	2023-04-04
+Chaintool	0x3689D3B912d4D73FfcAad3a80861e7caF2d4F049	ETH	XY Finance		DEX,Defi,Lending	ground truth	2023-04-04
+Chaintool	0x7DE7B07c9FF24A35C70FeA573d429d6223c3F8b0	ETH	XY Finance		DEX,Defi,Lending	ground truth	2023-04-04
+Chaintool	0x7b4b0b9b024109d182dcf3831222fbda81369423	ETH	Wormhole		DEX,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x7c9f4c87d911613fe9ca58b579f737911aad2d43	ETH	Wormhole		DEX,Defi,Lending	third party verified	2023-04-04
+Chaintool	0xe617dd80c621a5072bd8cba65e9d76c07327004d	ETH	Wormhole		DEX,Defi,Lending	third party verified	2023-04-04
+Chaintool	0xa693b19d2931d498c5b318df961919bb4aee87a5	ETH	Wormhole		DEX,Defi,Lending	third party verified	2023-04-04
+Chaintool	0xb9f747162ab1e95d07361f9048bcdf6edda9eea7	ETH	Wormhole		DEX,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x756bfb452cfe36a5bc82e4f5f4261a89a18c242b	ETH	Wormhole		DEX,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x418d75f65a02b3d53b2418fb8e1fe493759c7605	ETH	Wormhole		DEX,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x566957ef80f9fd5526cd2bef8be67035c0b81130	ETH	Wormhole		DEX,Defi,Lending	third party verified	2023-04-04
+Chaintool	0xdD8B0995Cc92c7377c7bce2A097EC70f45A192D5	ETH	XY Finance		DEX,Defi,Lending	ground truth	2023-04-04
+Chaintool	0x2f6Ccc4a900Ee42f822892b8c024aAA08af89701	ETH	XY Finance		DEX,Defi,Lending	ground truth	2023-04-04
+Chaintool	0x73Ce60416035B8D7019f6399778c14ccf5C9c7A1	ETH	XY Finance		DEX,Defi,Lending	ground truth	2023-04-04
+Chaintool	0xd31a59c85ae9d8edefec411d448f90841571b89c	ETH	Wormhole		DEX,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x1cdd2eab61112697626f7b4bb0e23da4febf7b7c	ETH	Wormhole		DEX,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x85f138bfee4ef8e540890cfb48f620571d67eda3	ETH	Wormhole		DEX,Defi,Lending	third party verified	2023-04-04
+Chaintool	0xa7ac3feac5f368ddde61affbf5934da84979ad14	ETH	Switchain		Exchange,NO KYC	ground truth	2023-04-04
+Chaintool	0x7207a18997a68ce134709e151a9c35eef7124956	ETH	Switchain		Exchange,NO KYC	ground truth	2023-04-04
+Chaintool	0x363a8bb19b3b0d0662d3d57e47c188f2d548372b	ETH	Switchain		Exchange,NO KYC	ground truth	2023-04-04
+Chaintool	0x96541f90e43e04501262bef2e7a8a32daaabfeeb	ETH	Switchain		Exchange,NO KYC	ground truth	2023-04-04
+Chaintool	0x549d66f5a74f1377f4bdd4e1ff7a694de2052a39	ETH	Switchain		Exchange,NO KYC	ground truth	2023-04-04
+Chaintool	0xd6e9232b3fcebe165f39acfa4843f49e7d3c31d5	ETH	Switchain		Exchange,NO KYC	ground truth	2023-04-04
+Chaintool	0xbf0e7718cf08a51587890ed501129575b84c063c	ETH	Switchain		Exchange,NO KYC	third party verified	2023-04-04
+Chaintool	0xcfdabac0f2a6160743394b53a70f4bfba40664bf	ETH	Switchain		Exchange,NO KYC	third party verified	2023-04-04
+Chaintool	0x327a33d850ff909b0b37ea631299b815a22bc14f	ETH	Switchain		Exchange,NO KYC	ground truth	2023-04-04
+Chaintool	0x47fc10c712837ebd8389dc6b9d344219611602c5	ETH	Switchain		Exchange,NO KYC	ground truth	2023-04-04
+Chaintool	0x68b2d57bb79b864f4e481caf3c7f8e40a87275eb	ETH	Switchain		Exchange,NO KYC	ground truth	2023-04-04
+Chaintool	0xd21cf1387bf45fa3ac4f44e57aedb1677ae474c5	ETH	Switchain		Exchange,NO KYC	third party verified	2023-04-04
+Chaintool	0x71d23d61ba4d4de45365a27065736e878f14154c	ETH	Switchain		Exchange,NO KYC	ground truth	2023-04-04
+Chaintool	0xc677c86a07a5bdfa89019cec2314eebfe490c839	ETH	Switchain		Exchange,NO KYC	third party verified	2023-04-04
+Chaintool	0x926ef867343717ff8bbef11b767ac345294b53cd	ETH	Switchain		Exchange,NO KYC	ground truth	2023-04-04
+Chaintool	0xda13c9bf739137054694bd9d63aa39a31d521617	ETH	Switchain		Exchange,NO KYC	ground truth	2023-04-04
+Chaintool	0xdf8087afd44d233a01dd22bd7e3db3f5868f84e0	ETH	Switchain		Exchange,NO KYC	third party verified	2023-04-04
+Chaintool	0x6cf1b9fe766745ba5ff6de20217427f0db3963d2	ETH	Switchain		Exchange,NO KYC	third party verified	2023-04-04
+Chaintool	0xa0bf8c59e4ee7a44f58dcc52690ed44f5d40e152	ETH	Switchain		Exchange,NO KYC	ground truth	2023-04-04
+Chaintool	0x902e90ffc30911eb58d1c257250636acbe6e7ef2	ETH	Switchain		Exchange,NO KYC	ground truth	2023-04-04
+Chaintool	0x0bdb7976c34ab05e5a9031f258b8956f68ee29cf	ETH	Armor		Insurance	third party verified	2023-04-04
+Chaintool	0x1337def11d788e62a253fea846a505ee1b57623f	ETH	Armor		Insurance	third party verified	2023-04-04
+Chaintool	0x01acad2228f18598cd2b8611acd37992bf27313c	ETH	Armor		Insurance	third party verified	2023-04-04
+Chaintool	0x1776651f58a17a50098d31ba3c3cd259c1903f7a	ETH	Nexus Mutual		Insurance	third party verified	2023-04-04
+Chaintool	0x01bfd82675dbcc7762c84019ca518e701c0cd07e	ETH	Nexus Mutual		Insurance	third party verified	2023-04-04
+Chaintool	0xfc64382c9ce89ba1c21692a68000366a35ff0336	ETH	Nexus Mutual		Insurance	third party verified	2023-04-04
+Chaintool	0x5407381b6c251cfd498ccd4a1d877739cb7960b8	ETH	Nexus Mutual		Insurance	third party verified	2023-04-04
+Chaintool	0xdf50a17bf58dea5039b73683a51c4026f3c7224e	ETH	Nexus Mutual		Insurance	third party verified	2023-04-04
+Chaintool	0xa659e66e116d354e779d8dbb35319af67171ffb4	ETH	Armor		Insurance	third party verified	2023-04-04
+Chaintool	0x7cbe5682be6b648cc1100c76d4f6c96997f753d6	ETH	Nexus Mutual		Insurance	third party verified	2023-04-04
+Chaintool	0xf991f1e1b8acd657661c89b5cd452d86de76a8c1	ETH	Armor		Insurance	third party verified	2023-04-04
+Chaintool	0x2ec5d566bd104e01790b13de33fd51876d57c495	ETH	Nexus Mutual		Insurance	third party verified	2023-04-04
+Chaintool	0xeff1cdc3cc01afab104b00a7d9cd09619b94ae8f	ETH	Armor		Insurance	third party verified	2023-04-04
+Chaintool	0x1f28ed9d4792a567dad779235c2b766ab84d8e33	ETH	Armor		Insurance	third party verified	2023-04-04
+Chaintool	0xfdf5709d44b26a7dd112556dd1b1ce53c0eaf454	ETH	Armor		Insurance	third party verified	2023-04-04
+Chaintool	0x548bf2610c1f15ec6bb78914aa7f90c59a82f492	ETH	Nexus Mutual		Insurance	third party verified	2023-04-04
+Chaintool	0xd7b8ef47c08f824cea3d837afa61484e81d14bfb	ETH	Armor		Insurance	third party verified	2023-04-04
+Chaintool	0xd7c49cee7e9188cca6ad8ff264c1da2e69d4cf3b	ETH	Nexus Mutual		Insurance	third party verified	2023-04-04
+Chaintool	0x9dae0663f252d05314b7352403fa9c16f16f25ee	ETH	Nexus Mutual		Insurance	third party verified	2023-04-04
+Chaintool	0xfd61352232157815cf7b71045557192bf0ce1884	ETH	Nexus Mutual		Insurance	third party verified	2023-04-04
+Chaintool	0xa15c7ebe1f07caf6bff097d8a589fb8ac49ae5b3	ETH	Pundi X		Payments	third party verified	2023-04-04
+Chaintool	0x175f470e30913417410d6deb8f005dd1cade244a	ETH	Coinbase Commerce		Payments	ground truth	2023-04-04
+Chaintool	0x2c25ccbd6fd31dbd71b5ded14b281acec74cb349	ETH	Coinbase Commerce		Payments	ground truth	2023-04-04
+Chaintool	0x829df6d912150796d388ac791fe703447c257965	ETH	Coinbase Commerce		Payments	third party verified	2023-04-04
+Chaintool	0xd21b7bc23ec37e4c15b55897df83b86b37f980dc	ETH	Coinbase Commerce		Payments	third party verified	2023-04-04
+Chaintool	0x3e2fe3813b2e6afbf9ffe46b495f4a55767427e3	ETH	Coinbase Commerce		Payments	third party verified	2023-04-04
+Chaintool	0x5f7164a47d5cfce1604c6e1a0db7aa61f2c9073a	ETH	Coinbase Commerce		Payments	ground truth	2023-04-04
+Chaintool	0xe00224f2641df40fc777b72d6d58b564b90ccb37	ETH	Coinbase Commerce		Payments	ground truth	2023-04-04
+Chaintool	0xe7d75411604c0caaa887112c94986b8adfe7a934	ETH	Coinbase Commerce		Payments	ground truth	2023-04-04
+Chaintool	0xcbe3e959c1a27637f28f76655e4b5abb6f03174d	ETH	Coinbase Commerce		Payments	ground truth	2023-04-04
+Chaintool	0x108719f450ec4c0128d82cc01df6c099219ba05b	ETH	Coinbase Commerce		Payments	ground truth	2023-04-04
+Chaintool	0x4fb8a3d83624982a8b0cb62d943e9f334ec11466	ETH	Coinbase Commerce		Payments	ground truth	2023-04-04
+Chaintool	0xf65348fdd8af8c362d41c1d9ef0926568c05af73	ETH	Coinbase Commerce		Payments	ground truth	2023-04-04
+Chaintool	0x7c1689eb9e902466f9fc866edc480e859778081e	ETH	Coinbase Commerce		Payments	ground truth	2023-04-04
+Chaintool	0x4c918f7010a1416d1e11ac722b47f376a76f2f19	ETH	Coinbase Commerce		Payments	ground truth	2023-04-04
+Chaintool	0xf6e7d0277cdfbe8b280edc370b73c8462efa700d	ETH	Coinbase Commerce		Payments	ground truth	2023-04-04
+Chaintool	0xa6b280ec5a149ca27341d857d14c952edbb8d11d	ETH	Coinbase Commerce		Payments	third party verified	2023-04-04
+Chaintool	0xc09fe1636ebf06686a45b53f3120dd6828a81ab9	ETH	Coinbase Commerce		Payments	third party verified	2023-04-04
+Chaintool	0x52253389196ad696b358ec4064e452c091e12f2c	ETH	Coinbase Commerce		Payments	third party verified	2023-04-04
+Chaintool	0xa8646b95bf773bed986cd628f74ebb0208730aa3	ETH	Coinbase Commerce		Payments	third party verified	2023-04-04
+Chaintool	0x6ba1c79fb5cf34c9fab3944bf15f15bd796223bd	ETH	Balancer		DEX,Defi	third party verified	2023-04-04
+Chaintool	0xd18af22f6315eef8979253c8747439dd1d49428d	ETH	MaskEx		DEX,Defi	ground truth	2023-04-04
+Chaintool	0x64b5499e2e5ee09eb7b5f01098e781c3fe57577f	ETH	MaskEx		DEX,Defi	ground truth	2023-04-04
+Chaintool	0x4ffb2cf7eca55ad81b1ff94fbb8e333b9689878d	ETH	Balancer		DEX,Defi	third party verified	2023-04-04
+Chaintool	0xcaab2680d81df6b3e2ece585bb45cee97bf30cd7	ETH	Balancer	balancer-vested-shareholders	DEX,Defi	third party verified	2023-04-04
+Chaintool	0x3cd46f9c026a7ae015243b8a643c04ddcc9372f7	ETH	MaskEx		DEX,Defi	ground truth	2023-04-04
+Chaintool	0x3cc315c4c6d3ad7710f4f98014a1804c21ee5bb7	ETH	Balancer		DEX,Defi	third party verified	2023-04-04
+Chaintool	0x40981f7e56b4dd9e13e63dcaa451f27571e5b4a3	ETH	MaskEx		DEX,Defi	third party verified	2023-04-04
+Chaintool	0x29ce63ffd3d357a2705ccd4cdd4a585dbf474c7a	ETH	MaskEx		DEX,Defi	ground truth	2023-04-04
+Chaintool	0x55031f623152cfb63c60a152238b9b3b28c568b0	ETH	Balancer	balancer-vested-shareholders	DEX,Defi	third party verified	2023-04-04
+Chaintool	0xe6be7391b20ff67dbb38af75e81810689b5e2d1c	ETH	MaskEx		DEX,Defi	ground truth	2023-04-04
+Chaintool	0xb6e4b141f19ebd2fbb48b029a9beb6129ee828d8	ETH	MaskEx		DEX,Defi	ground truth	2023-04-04
+Chaintool	0xe467a636970a4d34e1601d4cd8d0aa56a0bf6597	ETH	MaskEx		DEX,Defi	ground truth	2023-04-04
+Chaintool	0x9c503ce27fda882ae68199b849b255642c1b0cd8	ETH	MaskEx		DEX,Defi	ground truth	2023-04-04
+Chaintool	0x224e906efe965dbe8ceb71e3cf1d5536c9ce196d	ETH	Balancer		DEX,Defi	third party verified	2023-04-04
+Chaintool	0x256b094d0eb013a319896026bf5d1f7557e1ed42	ETH	MaskEx		DEX,Defi	ground truth	2023-04-04
+Chaintool	0x0a79031948474a258ef18fc8060095b62dbd67f4	ETH	MaskEx		DEX,Defi	ground truth	2023-04-04
+Chaintool	0x0b177b7f10faeadd6eee6d2cc46d783f460566c8	ETH	Balancer	balancer-vested-shareholders	DEX,Defi	third party verified	2023-04-04
+Chaintool	0x27b9ab2a60e7c53d77fbae77ce19c2d673dcf0d0	ETH	Balancer		DEX,Defi	third party verified	2023-04-04
+Chaintool	0xaebfe1e1bd01d4b6baf4b998e7b8dc93182d40e0	ETH	Balancer	balancer-vested-shareholders	DEX,Defi	third party verified	2023-04-04
+Chaintool	0x6851d6fdfafd08c0295c392436245e5bc78b0185	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0x50e55af101c777ba7a1d560a774a82ef002ced9f	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0x8d29be29923b68abfdd21e541b9374737b49cdad	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0xd4b7b161e4779629c2717385114bf78d612aea72	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0x59ad6735bcd8152b84860cb256dd9e96b85f69da	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0x96b71e2551915d98d22c448b040a3bc4801ea4ff	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0x1d4f25bc16b68c50b78e1040bc430a8097fd6f45	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0x29067f28306419923bcff96e37f95e0f58abdbbe	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0x76e2cfc1f5fa8f6a5b3fc4c8f4788f0116861f9b	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0x3e5c63644e683549055b9be8653de26e0b4cd36e	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0xd7df5bf3b8d2bd159664df54a30101d7faf6ca26	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0x7cbb62eaa69f79e6873cd1ecb2392971036cfaa4	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0xd9db270c1b5e3bd161e8c8503c55ceabee709552	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0x12302fe9c02ff50939baaaaf415fc226c078613c	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0xf48f2b2d2a534e402487b3ee7c18c33aec0fe5e4	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0x1a56ae690ab0818af5ca349b7d21f1d7e76a3d36	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0xd20db445a971598688e5c02bd577e21fd3577f04	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0x40a930851bd2e590bd5a5c981b436de25742e980	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0xa238cbeb142c10ef7ad8442c6d1f9e89e07e7761	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	0xa6b71e26c5e0845f74c812102ca7114b6a896ab2	ETH	Safe	safe-formerly-gnosis-safe	Multisig,Wallet	third party verified	2023-04-04
+Chaintool	bc1q2w26h6sjh0v4nl5nzfusdf45qy7sgjarvtmpy7xsx4877pzpdlsqw89spk	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	3DoyvR66bL3rRuhvntNfVJVFmMGrEkPhdd	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	3NZVdi7FMSjPZbRsdc9cEZsZFJJepScHEG	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	3PnGY6uy8uEttEVWzJ8ZsC1Jf7wM7zHT9d	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	bc1qtp9kmrzftwlg24xqpyjd24443g7mqlucwwy6l9e9sa0zvupj24ms7mjwxa	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	3894LTjwoP3iBMh5AiHuM24MAdxoHn6s1o	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	3GMGgYHWyun3jvPFongJuZwsJjLB8iNSsX	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	bc1qy0kun9lwcygktltz8eqcdyquguz7k6axckgspmflh0pgem8x3trqr3vmu3	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	3DbS9A3SuER6EwpxRBBD2nugfh1Mx7TCiF	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	3GjmijhBpFnsJYzh78fRedmUQu3k2ip3KL	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	34Md664Na3EUSVn3b2sz3RxY6ShQ4wL6z1	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	3DCDcay4C2tBGNAXqbi5TTGCQkRwGWqjUm	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	3EvTi9SSJ6sFu4ikAvvjZYv7B8efu4Kh4j	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	3QfscG9ndhnoZWFgZFJS2mm1RHs1Zpe7To	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	bc1qan2p2vhtqkes66yjznfs5fggrw3nvvhrqpkdk3yf83fxn2x9dnaqnxn8p3	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	39oT6UDDdVCsVjsEd7FexpMhx4ikYcTAxj	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	3CpFXyW34BiVqpXVLZyNb1EeivLF5ACoxR	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	3K8W3qYV67fNpt8GDvQk8bzRaSf94vh8Hk	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	bc1qq8f4tx9pl0a6gnefchltxl5m95jw7y62acxsgs388dd03xgrmm5qg7n3qr	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	34jPA3LVZ1CF7s4rE2knbLUAnkoyi57a9r	BTC	Bspin		Gambling	third party verified	2023-04-04
+Chaintool	0xc2cdf3457819a61720166d524f6e320c5451092c	ETH	Nest Protocol		Defi,Infra	third party verified	2023-04-04
+Chaintool	0x923f80828663e44e0ffd5eb499686dc1ccc78476	ETH	Nest Protocol		Defi,Infra	third party verified	2023-04-04
+Chaintool	0x561d0d6c498a379574eaaa4a5f2532b223ffaebf	ETH	Nest Protocol		Defi,Infra	third party verified	2023-04-04
+Chaintool	0x03904f4b9fb54c61aaf96d0acdd2e42a46c99102	ETH	Nest Protocol		Defi,Infra	third party verified	2023-04-04
+Chaintool	0x04abeda201850ac0124161f037efd70c74ddc74c	ETH	Nest Protocol		Defi,Infra	third party verified	2023-04-04
+Chaintool	0x385111f23a00aed181b0774e6900c846c0336dd4	ETH	Nest Protocol		Defi,Infra	third party verified	2023-04-04
+Chaintool	0x43121397631551357ea511e62163b76e39d44852	ETH	Nest Protocol		Defi,Infra	third party verified	2023-04-04
+Chaintool	0xc3591ce63edd202bf3b583e559b7257c1c2f76e3	ETH	Nest Protocol		Defi,Infra	third party verified	2023-04-04
+Chaintool	0xf67b829397dc05751a98f243dbde5db63f86e7f6	ETH	Nest Protocol		Defi,Infra	third party verified	2023-04-04
+Chaintool	0x6cd5698e8854fb6879d6b1c694223b389b465dea	ETH	Nest Protocol		Defi,Infra	third party verified	2023-04-04
+Chaintool	0xae2d09d7974a933c6ddc06b8039cf09783f4bae8	ETH	Nest Protocol		Defi,Infra	third party verified	2023-04-04
+Chaintool	0xbfdc37499d99046710a9c567016791c71cd25cf6	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0x4f273f4efa9ecf5dd245a338fad9fe0bab63b350	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0x9abb27581c2e46a114f8c367355851e0580e9703	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0xafcf4ca5826ed76189ea227bd863916abf43a6da	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0x9011f2133a705fe72226647b5b246086c6b72140	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0x1ede971f31f7630bae9f14d349273621a5145381	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0x657b70fe0b8d49e5af63b2f874e403a291358165	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0xf386d276d648e84cbb7013db97d952fdd0092dbc	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0x64fe6d2279c09646bd6d265483a414d79b3d00b0	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0x089e3422f23a57fd07ae68a4ffb7268b3bd78fa2	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0x602b50091b0b351ca179e87ad6e006aeceb2a6ad	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0x3a00bc08f4ee12568231db85d077864275a495b3	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0x81d6f46981b4fe4a6fafadda716ee561a17761ae	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0x5920cb60b1c62dc69467bf7c6edfcfb3f98548c0	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0x48d49466cb2efbf05faa5fa5e69f2984edc8d1d7	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0xd3c8ce2793c60c9e8464fc08ec7691613057c43c	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0xdf69c895e7490d90b14a278add8aa4ec844a696a	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0xf61f5830e14cd418893b216c7bfd356c200f1b40	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0x6399c842dd2be3de30bf99bc7d1bbf6fa3650e70	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0xf5aae75d1ad6fdd62cce66137f2674c96feda854	ETH	Premia		DEX,Derivatives	third party verified	2023-04-04
+Chaintool	0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b	ETH	MakerDAO		DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0xde8ea5253cc1326e90aad1ee951dd4e243b7640c	ETH	MakerDAO	maker-vault-owner	DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x1dcb18b74e66e7c67c715ceb0598751c19f3d5e1	ETH	MakerDAO	maker-vault-owner	DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x6de1d63281a9a4796c52c8f38a528ee2cb6bacb4	ETH	MakerDAO	maker-vault-owner	DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x4188a7dca2757ebc7d9a5bd39134a15b9f3c6402	ETH	MakerDAO	maker-vault-owner	DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0xfbae74d6b7b0802debccd3411597cd4bda5b3064	ETH	MakerDAO	maker-vault-owner	DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x069b2fb501b6f16d1f5fe245b16f6993808f1008	ETH	MakerDAO		DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0xad37fd42185ba63009177058208dd1be4b136e6b	ETH	MakerDAO		DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x9757eb864142edeca83f86ffb36d88eea4b25537	ETH	MakerDAO	maker-vault-owner	DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x8ee7d9235e01e6b42345120b5d270bdb763624c7	ETH	MakerDAO		DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x23d7c58b5a8e1149b38d2309b0c84b86a27df8af	ETH	MakerDAO	maker-vault-owner	DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x373238337bfe1146fb49989fc222523f83081ddb	ETH	MakerDAO		DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x9b0f70df76165442ca6092939132bbaea77f2d7a	ETH	MakerDAO		DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x6477599d5fef5441829462b35a305c9be5cde95e	ETH	MakerDAO	maker-vault-owner	DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0xd1b706060b20d75b04c391dda0a7257a06923cff	ETH	MakerDAO	maker-vault-owner	DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0xc7f3a1d58714a2982bebe6ae0a762960ddb9ceff	ETH	MakerDAO	maker-vault-owner	DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0xdd12a74607e8ed332e3dd37ec2b987fdbdfc59d5	ETH	MakerDAO	maker-vault-owner	DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x945f0bdb38085e95c2dd52276b4757df789aeb18	ETH	MakerDAO	maker-vault-owner	DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0xeb5ff183356d834598752580ba73266ebfe4250f	ETH	MakerDAO	maker-vault-owner	DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x72c2fc6963cd8e7577ce3a125afd1153c88ed7b5	ETH	MakerDAO	maker-vault-owner	DAO,Defi,Lending	third party verified	2023-04-04
+Chaintool	0x5ef41ba2073bd87c4b8c46b733a87dadfef3258d	ETH	Uniswap		DEX	ground truth	2023-04-04
+Chaintool	0x3981932f5e17540d863868c5d7c4e617e1334acd	ETH	Uniswap		DEX	ground truth	2023-04-04
+Chaintool	0xa356867fDCEa8e71AEaF87805808803806231FdC	ETH	DODO		DEX	ground truth	2023-04-04
+Chaintool	0xb8aa52b194874427165917d2e123cef28ce0b509	ETH	Uniswap		DEX	ground truth	2023-04-04
+Chaintool	0xf91b57cd1faed8b9210d0439106dfd7c50787c16	ETH	Uniswap		DEX	ground truth	2023-04-04
+Chaintool	0x740ccc8a1eccfbf558201d94a6ae2d5757ab4fa4	ETH	Uniswap		DEX	ground truth	2023-04-04
+Chaintool	0xdd60feabc16bbc79ec558fd4b852fe1ed9f030e8	ETH	Uniswap		DEX	ground truth	2023-04-04
+Chaintool	0x9360c2a158f9dce481b738345c1e31536f16b5c7	ETH	Tokenlon		DEX	third party verified	2023-04-04
+Chaintool	0x395b7c2fdf41ec7bba0e04c20e23feb0aa13b87d	ETH	Uniswap		DEX	ground truth	2023-04-04
+Chaintool	0x921bfbd0df75c55353564c7fd0ce30829aaaaf26	ETH	Uniswap		DEX	ground truth	2023-04-04
+Chaintool	0x180b93d88e19bff7abde971408716131ed7e2186	ETH	Uniswap		DEX	ground truth	2023-04-04
+Chaintool	0xa6bda40260762a48f94bd027a8566d0d5b312ec8	ETH	Polkastarter		DEX	third party verified	2023-04-04
+Chaintool	0x9631959ba6e2624f004302af262cc5f8c81c9058	ETH	Uniswap		DEX	ground truth	2023-04-04
+Chaintool	0xaef9b172ac5c7e2d3058de906ec00a4499d2b62c	ETH	Uniswap		DEX	ground truth	2023-04-04
+Chaintool	0xc5ea58a9632e789f1711e624460dd46c622e011d	ETH	Uniswap		DEX	ground truth	2023-04-04
+Chaintool	0x5683f7142247e5f9f61e6e74770e3279017df21d	ETH	Polkastarter		DEX	third party verified	2023-04-04
+Chaintool	0x2f5a1de9149f74a9401676d74428c6a3d7cc70e6	ETH	Uniswap		DEX	ground truth	2023-04-04
+Chaintool	0xf6a0e98be0153e64b34693ba62c10009c697c95a	ETH	Uniswap		DEX	ground truth	2023-04-04
+Chaintool	0x35d72ec6d8287527816dd19ab6e7bd6414872cc6	ETH	Uniswap		DEX	ground truth	2023-04-04
+Chaintool	0x384e75ce70ccf0890fb28a4f87ca99450ebab4fe	ETH	Uniswap		DEX	ground truth	2023-04-04
+Chaintool	0x0c0d37e12583bb752a9670266df707b7a1e4e014	ETH	Augmented Finance		Defi,Lending	third party verified	2023-04-04
+Chaintool	0x1ab80f7fb46b25b7e0b2cfac23fc88ac37aaf4e9	ETH	Aura Finance		Defi,Lending	third party verified	2023-04-04
+Chaintool	0xe56695938b6dbd0fb691156a3c5031bd00216b49	ETH	Augmented Finance		Defi,Lending	third party verified	2023-04-04
+Chaintool	0x774961cce0a8053fbf5b745231dab2878887c395	ETH	Augmented Finance		Defi,Lending	third party verified	2023-04-04
+Chaintool	0xed409c9ff60f3020abf9012bcd45fc294f5608ff	ETH	Compound	compound-governance	Defi,Lending	third party verified	2023-04-04
+Chaintool	0xde2af899040536884e062d3a334f2dd36f34b4a4	ETH	Inverse Finance		Defi,Lending	third party verified	2023-04-04
+Chaintool	0xfaaf18e9fe739cdf5230b37cf3692b1909fcf6da	ETH	Augmented Finance		Defi,Lending	third party verified	2023-04-04
+Chaintool	0xf9fcb157f2f86a34762d42c4685d4d010f02226e	ETH	Augmented Finance		Defi,Lending	third party verified	2023-04-04
+Chaintool	0xf25f26a42adcb153b1966a4bf5df6d0c9e27197f	ETH	Compound	compound-governance	Defi,Lending	third party verified	2023-04-04
+Chaintool	0x21c464af99159ab6b220dc169ff3f57fe1cdfaf4	ETH	TrustToken		Defi,Lending	third party verified	2023-04-04
+Chaintool	0x697b4acaa24430f254224eb794d2a85ba1fa1fb8	ETH	Inverse Finance		Defi,Lending	third party verified	2023-04-04
+Chaintool	0x2dcdca085af2e258654e47204e483127e0d8b277	ETH	Inverse Finance		Defi,Lending	third party verified	2023-04-04
+Chaintool	0x4b228d99b9e5bed831b8d7d2bcc88882279a16bb	ETH	Inverse Finance		Defi,Lending	third party verified	2023-04-04
+Chaintool	0xc6f769a0c46cffa57d91e87ed3bc0cd338ce6361	ETH	Augmented Finance		Defi,Lending	third party verified	2023-04-04
+Chaintool	0x79167b30ae9d49194ed9fdcdc011b22ed1bf0ae1	ETH	Augmented Finance		Defi,Lending	third party verified	2023-04-04
+Chaintool	0x616e8bfa43f920657b3497dbf40d6b1a02d4608d	ETH	Aura Finance		Defi,Lending	third party verified	2023-04-04
+Chaintool	0x55e8c9903e6bfb6561b507d986846253187b7e81	ETH	Augmented Finance		Defi,Lending	third party verified	2023-04-04
+Chaintool	0x07dee4c654a7c50c1d5341cccf7af39f4ef8ae38	ETH	Augmented Finance		Defi,Lending	third party verified	2023-04-04
+Chaintool	0x0000000000085d4780b73119b644ae5ecd22b376	ETH	TrustToken		Defi,Lending	third party verified	2023-04-04
+Chaintool	0x5e5ea2048475854a5702f5b8468a51ba1296efcc	ETH	Aura Finance		Defi,Lending	third party verified	2023-04-04
+Chaintool	0x8c1944fac705ef172f21f905b5523ae260f76d62	ETH	Heist		Theft	third party verified	2023-04-04
+Chaintool	0x53ea709e81eefa48a311b2a582ad8057d45d4acc	ETH	Parity bug		Theft	third party verified	2023-04-04
+Chaintool	0x2d108740a7839bc0d62cb61cce2205a32a56fd38	ETH	Upbit hack		Theft	third party verified	2023-04-04
+Chaintool	0xb624e2b10b84a41687caec94bdd484e48d76b212	ETH	Heist		Theft	third party verified	2023-04-04
+Chaintool	0x9e586ef78aea14673c3d560b558108b5680a2399	ETH	Upbit hack		Theft	third party verified	2023-04-04
+Chaintool	0xc2baa6b8dfb3ca561619a9f9518e1f9652103d63	ETH	Upbit hack		Theft	third party verified	2023-04-04
+Chaintool	0xc0b420c5c47d1b6c594579c1103ac0ff6f73fc70	ETH	Upbit hack		Theft	third party verified	2023-04-04
+Chaintool	0x0c3275e9c107f857d465021156b5a707e216e926	ETH	Upbit hack		Theft	third party verified	2023-04-04
+Chaintool	0x6492780dc59598c6f8a4984c6deffd4600ba0003	ETH	Parity bug		Theft	third party verified	2023-04-04
+Chaintool	0x886358f9296de461d12e791bc9ef6f5a03410c64	ETH	Heist		Theft	third party verified	2023-04-04
+Chaintool	0xb3396d65a4e9b9979cb50b35b3da5e5dcb0ea809	ETH	Upbit hack		Theft	third party verified	2023-04-04
+Chaintool	0x558c7fe59cff5b39e17be3de8e66a0e2e11be127	ETH	Upbit hack		Theft	third party verified	2023-04-04
+Chaintool	0x29cfe5ac061afd3626f0a249f0fdceba07190d92	ETH	Upbit hack		Theft	third party verified	2023-04-04
+Chaintool	0xa14703b1da572e3ddf4803113eb32159209199db	ETH	Parity bug		Theft	third party verified	2023-04-04
+Chaintool	0x21dfc99a0fcc62ddc220be6a98518718fd85f46a	ETH	Upbit hack		Theft	third party verified	2023-04-04
+Chaintool	0x2aa222a9de884eb543edd905ff11b823bbb2bec1	ETH	Upbit hack		Theft	third party verified	2023-04-04
+Chaintool	0x9409d7ea71294fc5561e5fdd47d4a9f5993948c5	ETH	Upbit hack		Theft	third party verified	2023-04-04
+Chaintool	0xc28918e71a8868ffdd48838633933286d057033b	ETH	Upbit hack		Theft	third party verified	2023-04-04
+Chaintool	0x0d6c24d85680a89152012f9dc81e406183489c1f	ETH	Parity bug		Theft	third party verified	2023-04-04
+Chaintool	0xbe1a25b67b12e494d43cf39b4255d5be212ccbe0	ETH	Upbit hack		Theft	third party verified	2023-04-04
