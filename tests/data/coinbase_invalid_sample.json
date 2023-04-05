@@ -12,7 +12,7 @@
         "schema": "https://github.com/openchainmeta/chainmetareader/chainmeta_reader/schemas/coinbase_schema.json",
         "artifact": [
             {
-                "path": "file:///coinbase_invalid_artifact_sample.json",
+                "path": "file:///artifacts/coinbase_invalid_artifact_sample.json",
                 "fileformat": "json",
                 "signature": "0fdae0be76072b2c98a098d0b2df8079"
             }

@@ -12,7 +12,7 @@
         "schema": "https://github.com/openchainmeta/chainmetareader/chainmeta_reader/schemas/chaintool_schema.json",
         "artifact": [{
                 "artifact_type": "local file",
-                "path": "file:///chaintool_artifact_sample.csv",
+                "path": "file:///artifacts/chaintool_artifact_sample.csv",
                 "fileformat": "csv",
                 "signature": "5c5616fce97c56cd4c170a296ad88426"
             }
