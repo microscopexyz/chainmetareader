@@ -170,7 +170,7 @@
         "description": "A derivatives entity is an organization that specializes in trading cryptocurrency derivatives, such as futures, options, and swaps."
     },
     {
-        "key": "e-commerce",
+        "key": "e_commerce",
         "display_name": "E-Commerce",
         "description": "An e-commerce entity is an organization that uses cryptocurrency as a payment method for goods and services."
     },
