@@ -1,0 +1,442 @@
+[
+    {
+        "key": "cold_storage",
+        "display_name": "Cold Storage",
+        "description": "An offline wallet used to securely store large amounts of cryptocurrency for extended periods of time."
+    },
+    {
+        "key": "hot_wallet",
+        "display_name": "Hot wallet",
+        "description": "An online wallet that offers easy and quick access to cryptocurrency funds for everyday use."
+    },
+    {
+        "key": "deprecated",
+        "display_name": "Deprecated",
+        "description": "A smart contract that is no longer in use and has been deprecated by the protocol or development team."
+    },
+    {
+        "key": "multisig",
+        "display_name": "Multisig",
+        "description": "An address that requires approval from multiple parties to access cryptocurrency funds, providing an additional layer of security. Commonly used by exchanges and institutional investors."
+    },
+    {
+        "key": "vault",
+        "display_name": "Vault",
+        "description": "A smart contract-based system that automatically invests cryptocurrency funds to generate yield for users, commonly used in decentralized finance (DeFi) applications and managed by the protocol or community."
+    },
+    {
+        "key": "vulnerable",
+        "display_name": "Vulnerable",
+        "description": "An address whose private keys have been compromised or are publicly available, exposing it to the risk of unauthorized access or theft."
+    },
+    {
+        "key": "smart_contract",
+        "display_name": "Smart Contract",
+        "description": "An address used by developers or teams to deploy smart contracts on a blockchain for decentralized applications or other projects."
+    },
+    {
+        "key": "nft",
+        "display_name": "NFT",
+        "description": "An address controlled by an NFT marketplace that facilitates the buying, selling, or trading of non-fungible tokens."
+    },
+    {
+        "key": "dex",
+        "display_name": "DEX",
+        "description": "An address or wallet used in decentralized exchanges to facilitate peer-to-peer trading of cryptocurrencies without a central authority."
+    },
+    {
+        "key": "cex",
+        "display_name": "CEX",
+        "description": "A centralized exchange (CEX) that allows users to trade cryptocurrencies in exchange for fiat or other cryptocurrencies."
+    },
+    {
+        "key": "atm",
+        "display_name": "ATM",
+        "description": "Related to a cryptocurrency ATM that allows users to buy or sell cryptocurrencies using cash or debit/credit cards."
+    },
+    {
+        "key": "auction",
+        "display_name": "Auction",
+        "description": "Related to an auction that can be held by a variety of entities, including law enforcement agencies (LEA)."
+    },
+    {
+        "key": "gambling",
+        "display_name": "Gambling",
+        "description": "Related to a gambling website that allows users to place bets on various games using cryptocurrencies."
+    },
+    {
+        "key": "gaming",
+        "display_name": "Gaming",
+        "description": "Related to a gaming platform or game that allows users to buy, sell or trade digital assets or in-game items."
+    },
+    {
+        "key": "le",
+        "display_name": "LE (Law Enforcement)",
+        "description": "An address or wallet certified to belong to a law enforcement agency (LE)."
+    },
+    {
+        "key": "lending",
+        "display_name": "Lending",
+        "description": "Related to lending or borrowing activities in the crypto space, such as those belonging to lending platforms or peer-to-peer lending services."
+    },
+    {
+        "key": "merchant",
+        "display_name": "Merchant",
+        "description": "Addresses or wallets that are associated with merchants who accept payment in cryptocurrencies."
+    },
+    {
+        "key": "mixer",
+        "display_name": "Mixer",
+        "description": "Addresses or wallets that are associated with crypto mixers or tumblers, which are services that mix multiple transactions together in order to obfuscate the origin of the funds."
+    },
+    {
+        "key": "payment_processor",
+        "display_name": "Payment Processor",
+        "description": "Related to a business that facilitates transactions between buyers and sellers using cryptocurrency as payment."
+    },
+    {
+        "key": "business_or_services",
+        "display_name": "Business or Services, Other",
+        "description": "Related to a business or service that operates within the crypto ecosystem but does not fit into any of the other categories."
+    },
+    {
+        "key": "token_team",
+        "display_name": "Token Team",
+        "description": "An address or wallet that is controlled by the team responsible for creating and maintaining a particular cryptocurrency token."
+    },
+    {
+        "key": "weapons",
+        "display_name": "Weapons",
+        "description": "An address or wallet that is involved in the sale or exchange of weapons using cryptocurrency."
+    },
+    {
+        "key": "marketplace_aggregator",
+        "display_name": "Marketplace Aggregator",
+        "description": "Related to a business or service that consolidates data from multiple decentralized exchanges or NFT markets in order to provide users with a comprehensive view of the market."
+    },
+    {
+        "key": "l2",
+        "display_name": "L2",
+        "description": "An address or wallet associated with a layer 2 scaling solution built on top of the Ethereum network."
+    },
+    {
+        "key": "insurance",
+        "display_name": "Insurance",
+        "description": "Related to A business or service that provides insurance coverage for cryptocurrency assets stored on the blockchain."
+    },
+    {
+        "key": "asset_management",
+        "display_name": "Asset Management",
+        "description": "Related to A business or service that manages cryptocurrency assets on behalf of clients."
+    },
+    {
+        "key": "streaming",
+        "display_name": "Streaming",
+        "description": "Related to A business or service that provides streaming media content using cryptocurrency payments."
+    },
+    {
+        "key": "infra",
+        "display_name": "Infra",
+        "description": "Related to A business or service that provides infrastructure services to support the operation of blockchain networks."
+    },
+    {
+        "key": "oracle",
+        "display_name": "Oracle",
+        "description": "Related to A service that provides off-chain data to smart contracts. Oracles allow smart contracts to interact with external data sources, making them more versatile and useful."
+    },
+    {
+        "key": "dao",
+        "display_name": "DAO",
+        "description": "Related to A DAO is an organization that is run by rules encoded as computer programs called smart contracts."
+    },
+    {
+        "key": "yield",
+        "display_name": "Yield",
+        "description": "Related to a yield service allows users to earn interest on their cryptocurrency deposits."
+    },
+    {
+        "key": "wallet",
+        "display_name": "Wallet",
+        "description": "A wallet is a software or hardware device used to store cryptocurrency private keys and sign transactions."
+    },
+    {
+        "key": "fund",
+        "display_name": "Fund",
+        "description": "A fund is an entity that pools capital from multiple investors and uses it to invest in a variety of assets, including cryptocurrencies."
+    },
+    {
+        "key": "derivatives",
+        "display_name": "Derivatives",
+        "description": "A derivatives entity is an organization that specializes in trading cryptocurrency derivatives, such as futures, options, and swaps."
+    },
+    {
+        "key": "e-commerce",
+        "display_name": "E-Commerce",
+        "description": "An e-commerce entity is an organization that uses cryptocurrency as a payment method for goods and services."
+    },
+    {
+        "key": "identity",
+        "display_name": "Identity",
+        "description": "An identity entity is an organization that provides on-chain identity-related products, such as decentralized identifiers (DIDs) and verifiable credentials."
+    },
+    {
+        "key": "mining_pool",
+        "display_name": "Mining Pool",
+        "description": "An organization that brings together multiple miners to collectively mine cryptocurrency."
+    },
+    {
+        "key": "liquid_staking",
+        "display_name": "Liquid Staking",
+        "description": "Companies that allow users to stake their PoS tokens and receive liquid staking derivatives in exchange."
+    },
+    {
+        "key": "payments",
+        "display_name": "Payments",
+        "description": "Associated with companies providing on-chain payment processing services, allowing users to send and receive cryptocurrency payments on the blockchain."
+    },
+    {
+        "key": "sidechain",
+        "display_name": "Sidechain",
+        "description": "Associated with sidechain solutions built on top of the Ethereum blockchain, allowing developers to deploy decentralized applications with increased throughput and scalability."
+    },
+    {
+        "key": "router",
+        "display_name": "Router",
+        "description": "Associated with router services that allow users to swap tokens across multiple liquidity pools."
+    },
+    {
+        "key": "coinswapper",
+        "display_name": "Coinswapper",
+        "description": "Associated with services that allow users to swap one cryptocurrency for another without requiring users to deposit funds into the service wallet first."
+    },
+    {
+        "key": "sport",
+        "display_name": "Sport",
+        "description": "Associated with sport-related products or services, including fantasy sports, sports betting, and collectibles."
+    },
+    {
+        "key": "privacy",
+        "display_name": "Privacy (not Mixer)",
+        "description": "Associated with products or services that provide privacy solutions on the blockchain."
+    },
+    {
+        "key": "validator",
+        "display_name": "Validator",
+        "description": "Associated with validators that help secure Proof-of-Stake (PoS) blockchain networks."
+    },
+    {
+        "key": "charity",
+        "display_name": "Charity",
+        "description": "Controlled by an organization that accepts crypto donations for charitable causes"
+    },
+    {
+        "key": "donation",
+        "display_name": "Donation",
+        "description": "Controlled by an organization that accepts crypto donations for any purpose"
+    },
+    {
+        "key": "deployer",
+        "display_name": "Deployer",
+        "description": "Addresses that has been used to deploy smart contracts"
+    },
+    {
+        "key": "company_funds",
+        "display_name": "Company Funds",
+        "description": "Addresses managed by companies, projects or foundations, which are usually used for treasury management, paying salaries or other expenses"
+    },
+    {
+        "key": "eth_2_staker",
+        "display_name": "Eth 2 staker",
+        "description": "Addresses that have staked Ether at the Ethereum 2.0 Beacon Chain to help secure the network and earn rewards"
+    },
+    {
+        "key": "yield_farming",
+        "display_name": "Yield Farming",
+        "description": "Addresses used for yield farming strategies where users can deposit cryptocurrencies to earn rewards and/or fees on a decentralized platform"
+    },
+    {
+        "key": "ico",
+        "display_name": "ICO",
+        "description": "Addresses used to receive funds during an initial coin offering (ICO) or other crowdfunding mechanisms"
+    },
+    {
+        "key": "stablecoin",
+        "display_name": "Stablecoin",
+        "description": "Addresses used for stablecoin projects, including centralized and decentralized stablecoins"
+    },
+    {
+        "key": "staking",
+        "display_name": "Staking",
+        "description": "Addresses used for staking, where users can lock up their cryptocurrency to help secure a network and earn rewards"
+    },
+    {
+        "key": "token_sale",
+        "display_name": "Token Sale",
+        "description": "Addresses used during a token sale where users can buy tokens at an initial price, including initial coin offerings (ICO) and initial dex offerings (IDO)"
+    },
+    {
+        "key": "defi",
+        "display_name": "Defi",
+        "description": "Addresses used for decentralized finance (DeFi) projects, including decentralized exchanges, yield farming, lending, and more"
+    },
+    {
+        "key": "advertising",
+        "display_name": "Advertising",
+        "description": "Addresses used for advertising-related activities in the crypto environment."
+    },
+    {
+        "key": "energy",
+        "display_name": "Energy",
+        "description": "Addresses used by entities that are bringing energy-related products into the blockchain."
+    },
+    {
+        "key": "fiat",
+        "display_name": "FIAT",
+        "description": "Addresses controlled by businesses that allow customers to trade fiat currencies."
+    },
+    {
+        "key": "kyc",
+        "display_name": "KYC",
+        "description": "Used for exchanges or other service that require customers to provide a valid ID document to trade fiat-to-crypto or crypto-to-crypto."
+    },
+    {
+        "key": "no_kyc",
+        "display_name": "NO KYC",
+        "description": "Used for exchanges or other service that do not require customers to provide a valid ID document to trade fiat-to-crypto or crypto-to-crypto."
+    },
+    {
+        "key": "darknet",
+        "display_name": "Darknet",
+        "description": "Addresses belonging to services hosted on the dark web, or being involved in dark web transactions."
+    },
+    {
+        "key": "money_laundering",
+        "display_name": "Money Laundering",
+        "description": "Addresses certified belonging to money laundering activities."
+    },
+    {
+        "key": "malware",
+        "display_name": "Malware",
+        "description": "Addresses belonging to malware campaigns."
+    },
+    {
+        "key": "ransom",
+        "display_name": "Ransom",
+        "description": "Addresses that have been identified as being involved in ransomware attacks."
+    },
+    {
+        "key": "scam",
+        "display_name": "Scam",
+        "description": "Addresses that have been identified as being involved in fraudulent activities or scams."
+    },
+    {
+        "key": "terrorism",
+        "display_name": "Terrorism",
+        "description": "Addresses that have been identified as being involved in financing terrorism."
+    },
+    {
+        "key": "theft",
+        "display_name": "Theft",
+        "description": "Addresses that have been identified as being involved in theft or hacking of cryptocurrencies."
+    },
+    {
+        "key": "sanctioned",
+        "display_name": "Sanctioned",
+        "description": "Addresses that have been sanctioned by some government in the world (excluding the US)."
+    },
+    {
+        "key": "phishing",
+        "display_name": "Phishing",
+        "description": "Addresses related to phishing scams"
+    },
+    {
+        "key": "ponzi",
+        "display_name": "Ponzi",
+        "description": "Addresses related to Ponzi schemes"
+    },
+    {
+        "key": "spam",
+        "display_name": "Spam",
+        "description": "Addresses related to spamming"
+    },
+    {
+        "key": "fake_kyc",
+        "display_name": "Fake KYC",
+        "description": "Addresses related to fake KYC procedures"
+    },
+    {
+        "key": "malicious_mining_activities",
+        "display_name": "Malicious Mining Activities",
+        "description": "Addresses used for mining cryptocurrencies with malware or botnets"
+    },
+    {
+        "key": "financial_crime",
+        "display_name": "Financial Crime, Other",
+        "description": "Addresses related to financial crimes such as money laundering, fraud, and tax evasion"
+    },
+    {
+        "key": "cybercrime",
+        "display_name": "Cybercrime",
+        "description": "Addresses related to cybercrimes such as hacking, data theft, and ransomware"
+    },
+    {
+        "key": "honeypot",
+        "display_name": "Honeypot",
+        "description": "Addresses related to fake tokens or ICOs that are designed to scam investors or traders"
+    },
+    {
+        "key": "black_mail_activities",
+        "display_name": "Black Mail Activities",
+        "description": "Addresses that threaten to reveal sensitive information or personal data in exchange for ransom payments"
+    },
+    {
+        "key": "constrained_by_service",
+        "display_name": "Constrained by Service",
+        "description": "Addresses that have been restricted or blocked from using centralized or decentralized exchanges due to suspicious activities or high risk status"
+    },
+    {
+        "key": "high_risk",
+        "display_name": "High Risk, Other",
+        "description": "Addresses that are associated with suspicious, fraudulent, or illigal activities that are not covered by other categories"
+    },
+    {
+        "key": "dapp",
+        "display_name": "Dapp, Other",
+        "description": "Addresses used by decentralized applications (dApps) to interact with smart contracts and blockchain networks"
+    },
+    {
+        "key": "bridging",
+        "display_name": "Bridging",
+        "description": "Addresses used by platforms or projects that provide interoperability solutions to connect different blockchain networks"
+    },
+    {
+        "key": "multichain",
+        "display_name": "Multichain",
+        "description": "Addresses used by platforms or projects that enable communication and transfer of assets between multiple blockchain networks"
+    },
+    {
+        "key": "factory_contract",
+        "display_name": "Factory Contract",
+        "description": "Smart contracts used to create and deploy multiple instances of other smart contracts"
+    },
+    {
+        "key": "fraud_proof",
+        "display_name": "Fraud Proof",
+        "description": "Smart contracts used to prove fraudulent activities or invalid state transitions on layer 2 protocols"
+    },
+    {
+        "key": "genesis",
+        "display_name": "Genesis",
+        "description": "Genesis addresses used to mint/burn"
+    },
+    {
+        "key": "mev_bot",
+        "display_name": "MEV Bot",
+        "description": "Addresses used by MEV bots for transaction extraction and prioritization"
+    },
+    {
+        "key": "proxy",
+        "display_name": "Proxy",
+        "description": "Contract that acts as a proxy to another contract and is used to upgrade the logic of the target contract without changing its address"
+    }
+]

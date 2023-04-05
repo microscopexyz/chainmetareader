@@ -1,0 +1,18 @@
+[
+    {
+        "key": "ground_truth",
+        "display_name": "Ground Truth"
+    },
+    {
+        "key": "heuristic",
+        "display_name": "Heuristic"
+    },
+    {
+        "key": "machine_learning",
+        "display_name": "Machine Learning"
+    },
+    {
+        "key": "external",
+        "display_name": "External"
+    }
+]

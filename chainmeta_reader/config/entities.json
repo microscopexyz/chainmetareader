@@ -1,0 +1,1642 @@
+[
+    {
+        "key": "0xgames",
+        "display_name": "0xGames"
+    },
+    {
+        "key": "7tron",
+        "display_name": "7Tron"
+    },
+    {
+        "key": "888bet",
+        "display_name": "888Bet"
+    },
+    {
+        "key": "aax",
+        "display_name": "AAX"
+    },
+    {
+        "key": "abcc",
+        "display_name": "ABCC"
+    },
+    {
+        "key": "ace",
+        "display_name": "ACE"
+    },
+    {
+        "key": "aex",
+        "display_name": "AEX"
+    },
+    {
+        "key": "aave",
+        "display_name": "Aave"
+    },
+    {
+        "key": "abracadabra",
+        "display_name": "Abracadabra"
+    },
+    {
+        "key": "acorn_finance",
+        "display_name": "Acorn Finance"
+    },
+    {
+        "key": "across_protocol",
+        "display_name": "Across Protocol"
+    },
+    {
+        "key": "airswap",
+        "display_name": "AirSwap"
+    },
+    {
+        "key": "alchemist_coin",
+        "display_name": "Alchemist Coin"
+    },
+    {
+        "key": "altcointrader",
+        "display_name": "AltCoinTrader"
+    },
+    {
+        "key": "amber_group",
+        "display_name": "Amber Group"
+    },
+    {
+        "key": "anonymous_mixer",
+        "display_name": "Anonymous Mixer"
+    },
+    {
+        "key": "any_cash",
+        "display_name": "Any.Cash"
+    },
+    {
+        "key": "apeswap",
+        "display_name": "ApeSwap"
+    },
+    {
+        "key": "apeswap",
+        "display_name": "Apeswap"
+    },
+    {
+        "key": "arcx",
+        "display_name": "Arcx"
+    },
+    {
+        "key": "arina_land_tycoon",
+        "display_name": "Arina Land Tycoon"
+    },
+    {
+        "key": "arken_finance",
+        "display_name": "Arken Finance"
+    },
+    {
+        "key": "armor",
+        "display_name": "Armor"
+    },
+    {
+        "key": "ascendex",
+        "display_name": "AscendEX"
+    },
+    {
+        "key": "atom_solutions",
+        "display_name": "Atom Solutions"
+    },
+    {
+        "key": "atomex",
+        "display_name": "Atomex"
+    },
+    {
+        "key": "augmented_finance",
+        "display_name": "Augmented Finance"
+    },
+    {
+        "key": "aura_finance",
+        "display_name": "Aura Finance"
+    },
+    {
+        "key": "authereum",
+        "display_name": "Authereum"
+    },
+    {
+        "key": "axie_infinity",
+        "display_name": "Axie Infinity"
+    },
+    {
+        "key": "bkex",
+        "display_name": "BKEX"
+    },
+    {
+        "key": "btc_blender",
+        "display_name": "BTC Blender"
+    },
+    {
+        "key": "btse",
+        "display_name": "BTSE"
+    },
+    {
+        "key": "baby_doge_swap",
+        "display_name": "Baby Doge Swap"
+    },
+    {
+        "key": "badbit_games",
+        "display_name": "Badbit Games"
+    },
+    {
+        "key": "balancer",
+        "display_name": "Balancer"
+    },
+    {
+        "key": "bancor",
+        "display_name": "Bancor"
+    },
+    {
+        "key": "bancor_network",
+        "display_name": "Bancor Network"
+    },
+    {
+        "key": "barbooth_bet",
+        "display_name": "Barbooth.Bet"
+    },
+    {
+        "key": "beglobal",
+        "display_name": "BeGlobal"
+    },
+    {
+        "key": "bear_escape",
+        "display_name": "Bear Escape"
+    },
+    {
+        "key": "belt_finance",
+        "display_name": "Belt Finance"
+    },
+    {
+        "key": "bestmixer",
+        "display_name": "Bestmixer"
+    },
+    {
+        "key": "betswirl",
+        "display_name": "BetSwirl"
+    },
+    {
+        "key": "bettown",
+        "display_name": "Bettown"
+    },
+    {
+        "key": "bgogo",
+        "display_name": "Bgogo"
+    },
+    {
+        "key": "bibox",
+        "display_name": "Bibox"
+    },
+    {
+        "key": "bigone",
+        "display_name": "BigONE"
+    },
+    {
+        "key": "binance",
+        "display_name": "Binance"
+    },
+    {
+        "key": "bingbon",
+        "display_name": "Bingbon"
+    },
+    {
+        "key": "bingo_cash_finance",
+        "display_name": "Bingo Cash Finance"
+    },
+    {
+        "key": "bitbase",
+        "display_name": "BitBase"
+    },
+    {
+        "key": "bitdao",
+        "display_name": "BitDAO"
+    },
+    {
+        "key": "bitflyer",
+        "display_name": "BitFlyer"
+    },
+    {
+        "key": "bitforex",
+        "display_name": "BitForex"
+    },
+    {
+        "key": "bitkan",
+        "display_name": "BitKan"
+    },
+    {
+        "key": "bitkeep",
+        "display_name": "BitKeep"
+    },
+    {
+        "key": "bitmex",
+        "display_name": "BitMEX"
+    },
+    {
+        "key": "bitmart",
+        "display_name": "BitMart"
+    },
+    {
+        "key": "bitmix",
+        "display_name": "BitMix"
+    },
+    {
+        "key": "bitcoin_blender",
+        "display_name": "Bitcoin Blender"
+    },
+    {
+        "key": "bitcoin_laundry",
+        "display_name": "Bitcoin Laundry"
+    },
+    {
+        "key": "bitcoin_mixer",
+        "display_name": "Bitcoin Mixer"
+    },
+    {
+        "key": "bitcoinmix",
+        "display_name": "BitcoinMix"
+    },
+    {
+        "key": "bitfinex",
+        "display_name": "Bitfinex"
+    },
+    {
+        "key": "bitget",
+        "display_name": "Bitget"
+    },
+    {
+        "key": "bithumb",
+        "display_name": "Bithumb"
+    },
+    {
+        "key": "bitkub",
+        "display_name": "Bitkub"
+    },
+    {
+        "key": "bitopro",
+        "display_name": "BitoPro"
+    },
+    {
+        "key": "bitpie",
+        "display_name": "Bitpie"
+    },
+    {
+        "key": "bitrue",
+        "display_name": "Bitrue"
+    },
+    {
+        "key": "bitso",
+        "display_name": "Bitso"
+    },
+    {
+        "key": "bitstamp",
+        "display_name": "Bitstamp"
+    },
+    {
+        "key": "bittrex",
+        "display_name": "Bittrex"
+    },
+    {
+        "key": "bitverk",
+        "display_name": "Bitverk"
+    },
+    {
+        "key": "bitzlato",
+        "display_name": "Bitzlato"
+    },
+    {
+        "key": "blinkpay",
+        "display_name": "BlinkPay"
+    },
+    {
+        "key": "blockchain_cuties",
+        "display_name": "Blockchain Cuties"
+    },
+    {
+        "key": "blockfolio_ftx",
+        "display_name": "Blockfolio_FTX"
+    },
+    {
+        "key": "bogged_finance",
+        "display_name": "Bogged Finance"
+    },
+    {
+        "key": "bounce",
+        "display_name": "Bounce"
+    },
+    {
+        "key": "bovada",
+        "display_name": "Bovada"
+    },
+    {
+        "key": "brave_frontier_heroes",
+        "display_name": "Brave Frontier Heroes"
+    },
+    {
+        "key": "bspin",
+        "display_name": "Bspin"
+    },
+    {
+        "key": "btcturk",
+        "display_name": "BtcTurk"
+    },
+    {
+        "key": "bull_vs_bear",
+        "display_name": "Bull vs Bear"
+    },
+    {
+        "key": "bunicorn",
+        "display_name": "Bunicorn"
+    },
+    {
+        "key": "bybit",
+        "display_name": "Bybit"
+    },
+    {
+        "key": "cex_io",
+        "display_name": "CEX.IO"
+    },
+    {
+        "key": "cobinhood",
+        "display_name": "COBINHOOD"
+    },
+    {
+        "key": "coss",
+        "display_name": "COSS"
+    },
+    {
+        "key": "cache_gold",
+        "display_name": "Cache Gold"
+    },
+    {
+        "key": "candle_genie",
+        "display_name": "Candle Genie"
+    },
+    {
+        "key": "cashierest",
+        "display_name": "Cashierest"
+    },
+    {
+        "key": "celsius",
+        "display_name": "Celsius"
+    },
+    {
+        "key": "celsius_network",
+        "display_name": "Celsius Network"
+    },
+    {
+        "key": "changenow",
+        "display_name": "ChangeNOW"
+    },
+    {
+        "key": "chimpyswap",
+        "display_name": "ChimpySwap"
+    },
+    {
+        "key": "cow_swap",
+        "display_name": "CoW Swap"
+    },
+    {
+        "key": "cobo",
+        "display_name": "Cobo"
+    },
+    {
+        "key": "cofix",
+        "display_name": "Cofix"
+    },
+    {
+        "key": "coincola",
+        "display_name": "CoinCola"
+    },
+    {
+        "key": "coindcx",
+        "display_name": "CoinDCX"
+    },
+    {
+        "key": "coinex",
+        "display_name": "CoinEx"
+    },
+    {
+        "key": "coinjoin",
+        "display_name": "CoinJoin"
+    },
+    {
+        "key": "cointiger",
+        "display_name": "CoinTiger"
+    },
+    {
+        "key": "coinw",
+        "display_name": "CoinW"
+    },
+    {
+        "key": "coinbase",
+        "display_name": "Coinbase"
+    },
+    {
+        "key": "coinbase_commerce",
+        "display_name": "Coinbase Commerce"
+    },
+    {
+        "key": "coincheck",
+        "display_name": "Coincheck"
+    },
+    {
+        "key": "coinhako",
+        "display_name": "Coinhako"
+    },
+    {
+        "key": "coinmetro",
+        "display_name": "Coinmetro"
+    },
+    {
+        "key": "coinmixer_me",
+        "display_name": "Coinmixer.me"
+    },
+    {
+        "key": "coinomize",
+        "display_name": "Coinomize"
+    },
+    {
+        "key": "coinone",
+        "display_name": "Coinone"
+    },
+    {
+        "key": "compound",
+        "display_name": "Compound"
+    },
+    {
+        "key": "convex_finance",
+        "display_name": "Convex Finance"
+    },
+    {
+        "key": "crazy_dogs_live",
+        "display_name": "Crazy Dogs Live"
+    },
+    {
+        "key": "cream_finance",
+        "display_name": "Cream Finance"
+    },
+    {
+        "key": "crex24",
+        "display_name": "Crex24"
+    },
+    {
+        "key": "crypto_tycoons_2",
+        "display_name": "Crypto Tycoons 2"
+    },
+    {
+        "key": "crypto_com",
+        "display_name": "Crypto.com"
+    },
+    {
+        "key": "cryptomixer",
+        "display_name": "CryptoMixer"
+    },
+    {
+        "key": "cryptospells",
+        "display_name": "CryptoSpells"
+    },
+    {
+        "key": "cryptonator",
+        "display_name": "Cryptonator"
+    },
+    {
+        "key": "cryptopay",
+        "display_name": "Cryptopay"
+    },
+    {
+        "key": "crystal",
+        "display_name": "Crystal"
+    },
+    {
+        "key": "currency_com",
+        "display_name": "Currency.com"
+    },
+    {
+        "key": "curve_fi",
+        "display_name": "Curve.fi"
+    },
+    {
+        "key": "dddx",
+        "display_name": "DDDX"
+    },
+    {
+        "key": "dodo",
+        "display_name": "DODO"
+    },
+    {
+        "key": "defi_saver",
+        "display_name": "DeFi Saver"
+    },
+    {
+        "key": "decentral_games",
+        "display_name": "Decentral Games"
+    },
+    {
+        "key": "decentraland",
+        "display_name": "Decentraland"
+    },
+    {
+        "key": "deri_protocol_bsc",
+        "display_name": "Deri Protocol BSC"
+    },
+    {
+        "key": "deribit",
+        "display_name": "Deribit"
+    },
+    {
+        "key": "derive_finance",
+        "display_name": "Derive Finance"
+    },
+    {
+        "key": "deversifi",
+        "display_name": "Deversifi"
+    },
+    {
+        "key": "digifinex",
+        "display_name": "DigiFinex"
+    },
+    {
+        "key": "dopple",
+        "display_name": "Dopple"
+    },
+    {
+        "key": "double_protocol",
+        "display_name": "Double Protocol"
+    },
+    {
+        "key": "dragon_7",
+        "display_name": "Dragon 7"
+    },
+    {
+        "key": "dragon_castle",
+        "display_name": "Dragon Castle"
+    },
+    {
+        "key": "dragonball_finance",
+        "display_name": "DragonBall Finance"
+    },
+    {
+        "key": "dragonereum",
+        "display_name": "Dragonereum"
+    },
+    {
+        "key": "erc1155",
+        "display_name": "ERC1155"
+    },
+    {
+        "key": "exmo",
+        "display_name": "EXMO"
+    },
+    {
+        "key": "egg_dex",
+        "display_name": "Egg Dex"
+    },
+    {
+        "key": "enme",
+        "display_name": "Enme"
+    },
+    {
+        "key": "enzyme_finance",
+        "display_name": "Enzyme Finance"
+    },
+    {
+        "key": "ethbattle",
+        "display_name": "Ethbattle"
+    },
+    {
+        "key": "ethereum_mixer",
+        "display_name": "Ethereum Mixer"
+    },
+    {
+        "key": "ethermon",
+        "display_name": "Ethermon"
+    },
+    {
+        "key": "ethex_bet",
+        "display_name": "Ethex.Bet"
+    },
+    {
+        "key": "ethorse",
+        "display_name": "Ethorse"
+    },
+    {
+        "key": "ftx",
+        "display_name": "FTX"
+    },
+    {
+        "key": "fairgrounds",
+        "display_name": "FairGrounds"
+    },
+    {
+        "key": "falconx",
+        "display_name": "FalconX"
+    },
+    {
+        "key": "fei_protocol",
+        "display_name": "Fei Protocol"
+    },
+    {
+        "key": "finnexus",
+        "display_name": "FinNexus"
+    },
+    {
+        "key": "finnexus",
+        "display_name": "Finnexus"
+    },
+    {
+        "key": "firebird_finance",
+        "display_name": "Firebird Finance"
+    },
+    {
+        "key": "firi",
+        "display_name": "Firi"
+    },
+    {
+        "key": "fishing_master",
+        "display_name": "Fishing Master"
+    },
+    {
+        "key": "flash_liquidity",
+        "display_name": "Flash Liquidity"
+    },
+    {
+        "key": "flipsies",
+        "display_name": "Flipsies"
+    },
+    {
+        "key": "fortube",
+        "display_name": "ForTube"
+    },
+    {
+        "key": "foxmixer",
+        "display_name": "FoxMixer"
+    },
+    {
+        "key": "freewallet",
+        "display_name": "Freewallet"
+    },
+    {
+        "key": "gopax",
+        "display_name": "GOPAX"
+    },
+    {
+        "key": "gamex_swap",
+        "display_name": "GameX Swap"
+    },
+    {
+        "key": "garantex",
+        "display_name": "Garantex"
+    },
+    {
+        "key": "gate_io",
+        "display_name": "Gate.io"
+    },
+    {
+        "key": "gearbox_protocol",
+        "display_name": "Gearbox Protocol"
+    },
+    {
+        "key": "gemini",
+        "display_name": "Gemini"
+    },
+    {
+        "key": "gitcoin_grantee",
+        "display_name": "Gitcoin Grantee"
+    },
+    {
+        "key": "gitcoin_grants",
+        "display_name": "Gitcoin Grants"
+    },
+    {
+        "key": "gods_unchained",
+        "display_name": "Gods Unchained"
+    },
+    {
+        "key": "grand_casino",
+        "display_name": "Grand Casino"
+    },
+    {
+        "key": "heist",
+        "display_name": "Heist"
+    },
+    {
+        "key": "hit4digits",
+        "display_name": "Hit4digits"
+    },
+    {
+        "key": "hitbtc",
+        "display_name": "HitBTC"
+    },
+    {
+        "key": "hotbit",
+        "display_name": "Hotbit"
+    },
+    {
+        "key": "huobi",
+        "display_name": "Huobi"
+    },
+    {
+        "key": "hyperpay",
+        "display_name": "HyperPay"
+    },
+    {
+        "key": "indodax",
+        "display_name": "INDODAX"
+    },
+    {
+        "key": "iconbet",
+        "display_name": "Iconbet"
+    },
+    {
+        "key": "idle_finance",
+        "display_name": "Idle Finance"
+    },
+    {
+        "key": "instadapp",
+        "display_name": "Instadapp"
+    },
+    {
+        "key": "inverse_finance",
+        "display_name": "Inverse Finance"
+    },
+    {
+        "key": "juicebox",
+        "display_name": "Juicebox"
+    },
+    {
+        "key": "justmoney",
+        "display_name": "JustMoney"
+    },
+    {
+        "key": "justmoney_exchange",
+        "display_name": "JustMoney Exchange"
+    },
+    {
+        "key": "justswap",
+        "display_name": "JustSwap"
+    },
+    {
+        "key": "kakidex",
+        "display_name": "KakiDex"
+    },
+    {
+        "key": "keep2r",
+        "display_name": "Keep2r"
+    },
+    {
+        "key": "kingswap",
+        "display_name": "KingSwap"
+    },
+    {
+        "key": "kraken",
+        "display_name": "Kraken"
+    },
+    {
+        "key": "kryptono",
+        "display_name": "Kryptono"
+    },
+    {
+        "key": "kucoin",
+        "display_name": "KuCoin"
+    },
+    {
+        "key": "kuna_io",
+        "display_name": "Kuna.io"
+    },
+    {
+        "key": "kyber_network",
+        "display_name": "Kyber Network"
+    },
+    {
+        "key": "kyberswap",
+        "display_name": "KyberSwap"
+    },
+    {
+        "key": "lbank",
+        "display_name": "LBank"
+    },
+    {
+        "key": "last_pixel",
+        "display_name": "Last Pixel"
+    },
+    {
+        "key": "latoken",
+        "display_name": "Latoken"
+    },
+    {
+        "key": "latteswap",
+        "display_name": "LatteSwap"
+    },
+    {
+        "key": "leonicorn_swap",
+        "display_name": "Leonicorn Swap"
+    },
+    {
+        "key": "lido",
+        "display_name": "Lido"
+    },
+    {
+        "key": "linkswap",
+        "display_name": "LinkSwap"
+    },
+    {
+        "key": "liquid",
+        "display_name": "Liquid"
+    },
+    {
+        "key": "liquity",
+        "display_name": "Liquity"
+    },
+    {
+        "key": "livepeer",
+        "display_name": "Livepeer"
+    },
+    {
+        "key": "looksrare",
+        "display_name": "LooksRare"
+    },
+    {
+        "key": "loopring",
+        "display_name": "Loopring"
+    },
+    {
+        "key": "luaswap",
+        "display_name": "Luaswap"
+    },
+    {
+        "key": "luminous",
+        "display_name": "Luminous"
+    },
+    {
+        "key": "luno",
+        "display_name": "Luno"
+    },
+    {
+        "key": "max",
+        "display_name": "MAX"
+    },
+    {
+        "key": "mdex",
+        "display_name": "MDEX"
+    },
+    {
+        "key": "medikey",
+        "display_name": "MEDIKEY"
+    },
+    {
+        "key": "mev_builder",
+        "display_name": "MEV Builder"
+    },
+    {
+        "key": "makerdao",
+        "display_name": "MakerDAO"
+    },
+    {
+        "key": "mantra",
+        "display_name": "Mantra"
+    },
+    {
+        "key": "maskex",
+        "display_name": "MaskEx"
+    },
+    {
+        "key": "matrixport",
+        "display_name": "Matrixport"
+    },
+    {
+        "key": "maxbet",
+        "display_name": "Maxbet"
+    },
+    {
+        "key": "metamask",
+        "display_name": "MetaMask"
+    },
+    {
+        "key": "metis",
+        "display_name": "Metis"
+    },
+    {
+        "key": "mirror_protocol",
+        "display_name": "Mirror Protocol"
+    },
+    {
+        "key": "mixer_ethers",
+        "display_name": "Mixer Ethers"
+    },
+    {
+        "key": "mixer_money",
+        "display_name": "Mixer.money"
+    },
+    {
+        "key": "mixero",
+        "display_name": "Mixero"
+    },
+    {
+        "key": "mixin",
+        "display_name": "Mixin"
+    },
+    {
+        "key": "mixtum",
+        "display_name": "Mixtum"
+    },
+    {
+        "key": "mixtura_money",
+        "display_name": "Mixtura.money"
+    },
+    {
+        "key": "multichain",
+        "display_name": "Multichain"
+    },
+    {
+        "key": "mxc",
+        "display_name": "Mxc"
+    },
+    {
+        "key": "my_crypto_heroes",
+        "display_name": "My Crypto Heroes"
+    },
+    {
+        "key": "mycryptomixer",
+        "display_name": "MyCryptoMixer"
+    },
+    {
+        "key": "nbx",
+        "display_name": "NBX"
+    },
+    {
+        "key": "nest_protocol",
+        "display_name": "Nest Protocol"
+    },
+    {
+        "key": "nexus_mutual",
+        "display_name": "Nexus Mutual"
+    },
+    {
+        "key": "nomad",
+        "display_name": "Nomad"
+    },
+    {
+        "key": "nuo",
+        "display_name": "Nuo"
+    },
+    {
+        "key": "ocdapp",
+        "display_name": "OCDapp"
+    },
+    {
+        "key": "okex",
+        "display_name": "OKEX"
+    },
+    {
+        "key": "okx",
+        "display_name": "OKX"
+    },
+    {
+        "key": "old_contract",
+        "display_name": "Old contract"
+    },
+    {
+        "key": "olympusdao",
+        "display_name": "OlympusDAO"
+    },
+    {
+        "key": "opensea",
+        "display_name": "OpenSea"
+    },
+    {
+        "key": "opium_team",
+        "display_name": "Opium Team"
+    },
+    {
+        "key": "oracle_dao",
+        "display_name": "Oracle DAO"
+    },
+    {
+        "key": "p4rty",
+        "display_name": "P4rty"
+    },
+    {
+        "key": "plusqo",
+        "display_name": "PLUSQO"
+    },
+    {
+        "key": "prdt",
+        "display_name": "PRDT"
+    },
+    {
+        "key": "paribu",
+        "display_name": "Paribu"
+    },
+    {
+        "key": "parity_bug",
+        "display_name": "Parity bug"
+    },
+    {
+        "key": "paxful",
+        "display_name": "Paxful"
+    },
+    {
+        "key": "pionex",
+        "display_name": "Pionex"
+    },
+    {
+        "key": "pirate_dice",
+        "display_name": "Pirate Dice"
+    },
+    {
+        "key": "pixel_farm",
+        "display_name": "Pixel Farm"
+    },
+    {
+        "key": "play_royal",
+        "display_name": "Play Royal"
+    },
+    {
+        "key": "playtowin",
+        "display_name": "PlayToWin"
+    },
+    {
+        "key": "plenty",
+        "display_name": "Plenty"
+    },
+    {
+        "key": "plotx",
+        "display_name": "PlotX"
+    },
+    {
+        "key": "poker_dice",
+        "display_name": "Poker Dice"
+    },
+    {
+        "key": "pokerwin",
+        "display_name": "PokerWin"
+    },
+    {
+        "key": "polkastarter",
+        "display_name": "Polkastarter"
+    },
+    {
+        "key": "poloni_dex",
+        "display_name": "Poloni DEX"
+    },
+    {
+        "key": "poloniex",
+        "display_name": "Poloniex"
+    },
+    {
+        "key": "polydex",
+        "display_name": "PolyDEX"
+    },
+    {
+        "key": "polyflip",
+        "display_name": "Polyflip"
+    },
+    {
+        "key": "polyroll",
+        "display_name": "Polyroll"
+    },
+    {
+        "key": "pooltogether",
+        "display_name": "PoolTogether"
+    },
+    {
+        "key": "pop_game",
+        "display_name": "Pop Game"
+    },
+    {
+        "key": "prediction_wtf",
+        "display_name": "Prediction WTF"
+    },
+    {
+        "key": "predictiondex",
+        "display_name": "PredictionDEX"
+    },
+    {
+        "key": "premia",
+        "display_name": "Premia"
+    },
+    {
+        "key": "probit",
+        "display_name": "ProBit"
+    },
+    {
+        "key": "proxima",
+        "display_name": "Proxima"
+    },
+    {
+        "key": "pundi_x",
+        "display_name": "Pundi X"
+    },
+    {
+        "key": "puppyswaps",
+        "display_name": "Puppyswaps"
+    },
+    {
+        "key": "quantumtech",
+        "display_name": "QuantumTECH"
+    },
+    {
+        "key": "quipuswap",
+        "display_name": "Quipuswap"
+    },
+    {
+        "key": "rari_capital",
+        "display_name": "Rari Capital"
+    },
+    {
+        "key": "rarible",
+        "display_name": "Rarible"
+    },
+    {
+        "key": "redchillies",
+        "display_name": "RedChillies"
+    },
+    {
+        "key": "redacted_cartel",
+        "display_name": "Redacted Cartel"
+    },
+    {
+        "key": "reflexer_finance",
+        "display_name": "Reflexer Finance"
+    },
+    {
+        "key": "remitano",
+        "display_name": "Remitano"
+    },
+    {
+        "key": "ren",
+        "display_name": "Ren"
+    },
+    {
+        "key": "revest_finance",
+        "display_name": "Revest Finance"
+    },
+    {
+        "key": "ribbon_finance",
+        "display_name": "Ribbon Finance"
+    },
+    {
+        "key": "rimauswap",
+        "display_name": "RimauSwap"
+    },
+    {
+        "key": "ripio",
+        "display_name": "Ripio"
+    },
+    {
+        "key": "rocket_pool",
+        "display_name": "Rocket Pool"
+    },
+    {
+        "key": "rollbit",
+        "display_name": "RollBit"
+    },
+    {
+        "key": "roobet",
+        "display_name": "Roobet"
+    },
+    {
+        "key": "royal_online_vegas",
+        "display_name": "Royal Online Vegas"
+    },
+    {
+        "key": "scgames",
+        "display_name": "SCGames"
+    },
+    {
+        "key": "spokpark",
+        "display_name": "SPOKpark"
+    },
+    {
+        "key": "saddle_finance",
+        "display_name": "Saddle Finance"
+    },
+    {
+        "key": "safe",
+        "display_name": "Safe"
+    },
+    {
+        "key": "sakeswap",
+        "display_name": "SakeSwap"
+    },
+    {
+        "key": "set_protocol",
+        "display_name": "Set Protocol"
+    },
+    {
+        "key": "shakepay",
+        "display_name": "Shakepay"
+    },
+    {
+        "key": "shapeshift",
+        "display_name": "ShapeShift"
+    },
+    {
+        "key": "shell",
+        "display_name": "Shell"
+    },
+    {
+        "key": "shibanovadex",
+        "display_name": "ShibaNovaDEX"
+    },
+    {
+        "key": "siberianswap",
+        "display_name": "SiberianSwap"
+    },
+    {
+        "key": "sinbad_io",
+        "display_name": "Sinbad.io"
+    },
+    {
+        "key": "snapshot",
+        "display_name": "Snapshot"
+    },
+    {
+        "key": "sololink",
+        "display_name": "SoloLink"
+    },
+    {
+        "key": "solv_protocol",
+        "display_name": "Solv Protocol"
+    },
+    {
+        "key": "spicyswap",
+        "display_name": "SpicySwap"
+    },
+    {
+        "key": "spinwin",
+        "display_name": "Spinwin"
+    },
+    {
+        "key": "sportx",
+        "display_name": "SportX"
+    },
+    {
+        "key": "stake",
+        "display_name": "Stake"
+    },
+    {
+        "key": "stormgain",
+        "display_name": "StormGain"
+    },
+    {
+        "key": "streamity",
+        "display_name": "Streamity"
+    },
+    {
+        "key": "sushiswap",
+        "display_name": "SushiSwap"
+    },
+    {
+        "key": "swerve_finance",
+        "display_name": "Swerve Finance"
+    },
+    {
+        "key": "swipeswap",
+        "display_name": "SwipeSwap"
+    },
+    {
+        "key": "switchain",
+        "display_name": "Switchain"
+    },
+    {
+        "key": "switcheo",
+        "display_name": "Switcheo"
+    },
+    {
+        "key": "sybil_org",
+        "display_name": "Sybil.org"
+    },
+    {
+        "key": "synthetix",
+        "display_name": "Synthetix"
+    },
+    {
+        "key": "tagz",
+        "display_name": "TAGZ"
+    },
+    {
+        "key": "tron_up",
+        "display_name": "TRON UP"
+    },
+    {
+        "key": "tt_prize",
+        "display_name": "TT Prize"
+    },
+    {
+        "key": "ttswap",
+        "display_name": "TTSwap"
+    },
+    {
+        "key": "thunderbridge",
+        "display_name": "ThunderBridge"
+    },
+    {
+        "key": "tidex",
+        "display_name": "Tidex"
+    },
+    {
+        "key": "timex",
+        "display_name": "TimeX"
+    },
+    {
+        "key": "tofudefi",
+        "display_name": "TofuDeFi"
+    },
+    {
+        "key": "tokenpocket",
+        "display_name": "TokenPocket"
+    },
+    {
+        "key": "tokenlon",
+        "display_name": "Tokenlon"
+    },
+    {
+        "key": "tomowin",
+        "display_name": "Tomowin"
+    },
+    {
+        "key": "totle",
+        "display_name": "Totle"
+    },
+    {
+        "key": "trade_io",
+        "display_name": "Trade.io"
+    },
+    {
+        "key": "tradeogre",
+        "display_name": "TradeOgre"
+    },
+    {
+        "key": "trafi",
+        "display_name": "Trafi"
+    },
+    {
+        "key": "treasurekey",
+        "display_name": "TreasureKey"
+    },
+    {
+        "key": "trich",
+        "display_name": "Trich"
+    },
+    {
+        "key": "tron_emerald",
+        "display_name": "Tron Emerald"
+    },
+    {
+        "key": "tron_heist",
+        "display_name": "Tron Heist"
+    },
+    {
+        "key": "tron_hi",
+        "display_name": "Tron Hi"
+    },
+    {
+        "key": "tron_lounge",
+        "display_name": "Tron Lounge"
+    },
+    {
+        "key": "tronblock",
+        "display_name": "TronBlock"
+    },
+    {
+        "key": "tronchip",
+        "display_name": "TronChip"
+    },
+    {
+        "key": "tronoy",
+        "display_name": "TronOY"
+    },
+    {
+        "key": "tronoscar",
+        "display_name": "TronOscar"
+    },
+    {
+        "key": "tronreign",
+        "display_name": "TronReign"
+    },
+    {
+        "key": "tronsolo",
+        "display_name": "TronSolo"
+    },
+    {
+        "key": "trontrade",
+        "display_name": "TronTrade"
+    },
+    {
+        "key": "tronwow",
+        "display_name": "TronWoW"
+    },
+    {
+        "key": "tronace",
+        "display_name": "Tronace"
+    },
+    {
+        "key": "trondice1",
+        "display_name": "Trondice1"
+    },
+    {
+        "key": "trongame",
+        "display_name": "Trongame"
+    },
+    {
+        "key": "tronjack",
+        "display_name": "Tronjack"
+    },
+    {
+        "key": "tronlot",
+        "display_name": "Tronlot"
+    },
+    {
+        "key": "tronsuperstars",
+        "display_name": "Tronsuperstars"
+    },
+    {
+        "key": "trontopia",
+        "display_name": "Trontopia"
+    },
+    {
+        "key": "trontu",
+        "display_name": "Trontu"
+    },
+    {
+        "key": "tronvegas",
+        "display_name": "Tronvegas"
+    },
+    {
+        "key": "tronwin",
+        "display_name": "Tronwin"
+    },
+    {
+        "key": "trusttoken",
+        "display_name": "TrustToken"
+    },
+    {
+        "key": "turingmachine",
+        "display_name": "Turingmachine"
+    },
+    {
+        "key": "twindex",
+        "display_name": "Twindex"
+    },
+    {
+        "key": "tyche_lottery",
+        "display_name": "Tyche Lottery"
+    },
+    {
+        "key": "tycoons",
+        "display_name": "Tycoons"
+    },
+    {
+        "key": "typhoon_cash",
+        "display_name": "Typhoon Cash"
+    },
+    {
+        "key": "unijoin",
+        "display_name": "UniJoin"
+    },
+    {
+        "key": "unibright",
+        "display_name": "Unibright"
+    },
+    {
+        "key": "unicrypt",
+        "display_name": "Unicrypt"
+    },
+    {
+        "key": "uniswap",
+        "display_name": "Uniswap"
+    },
+    {
+        "key": "unit_protocol",
+        "display_name": "Unit Protocol"
+    },
+    {
+        "key": "unydex",
+        "display_name": "Unydex"
+    },
+    {
+        "key": "upbit",
+        "display_name": "Upbit"
+    },
+    {
+        "key": "upbit_hack",
+        "display_name": "Upbit hack"
+    },
+    {
+        "key": "uphold",
+        "display_name": "Uphold"
+    },
+    {
+        "key": "uranium_finance",
+        "display_name": "Uranium Finance"
+    },
+    {
+        "key": "valr",
+        "display_name": "VALR"
+    },
+    {
+        "key": "value_defi",
+        "display_name": "Value DeFi"
+    },
+    {
+        "key": "vdice",
+        "display_name": "Vdice"
+    },
+    {
+        "key": "vesper_finance",
+        "display_name": "Vesper Finance"
+    },
+    {
+        "key": "washcoin",
+        "display_name": "WASHCOIN"
+    },
+    {
+        "key": "wbtc",
+        "display_name": "WBTC"
+    },
+    {
+        "key": "webmixer",
+        "display_name": "WebMixer"
+    },
+    {
+        "key": "whitebit",
+        "display_name": "WhiteBIT"
+    },
+    {
+        "key": "wormhole",
+        "display_name": "Wormhole"
+    },
+    {
+        "key": "wowswap",
+        "display_name": "Wowswap"
+    },
+    {
+        "key": "xt_com",
+        "display_name": "XT.com"
+    },
+    {
+        "key": "xy_finance",
+        "display_name": "XY Finance"
+    },
+    {
+        "key": "xapo_bank",
+        "display_name": "Xapo Bank"
+    },
+    {
+        "key": "yearn_finance",
+        "display_name": "Yearn Finance"
+    },
+    {
+        "key": "yo_mix",
+        "display_name": "Yo!Mix"
+    },
+    {
+        "key": "yobit_net",
+        "display_name": "YoBit.Net"
+    },
+    {
+        "key": "yoloswap",
+        "display_name": "Yoloswap"
+    },
+    {
+        "key": "youswap",
+        "display_name": "YouSwap"
+    },
+    {
+        "key": "zb_com",
+        "display_name": "ZB.COM"
+    },
+    {
+        "key": "zapper_fi",
+        "display_name": "Zapper.fi"
+    },
+    {
+        "key": "zerion",
+        "display_name": "Zerion"
+    },
+    {
+        "key": "zethyr",
+        "display_name": "Zethyr"
+    },
+    {
+        "key": "zethyr_swap",
+        "display_name": "Zethyr Swap"
+    },
+    {
+        "key": "hoo",
+        "display_name": "hoo"
+    },
+    {
+        "key": "imtoken",
+        "display_name": "imToken"
+    },
+    {
+        "key": "itbit",
+        "display_name": "itBit"
+    },
+    {
+        "key": "mstable",
+        "display_name": "mStable"
+    }
+]
