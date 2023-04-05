@@ -14,7 +14,7 @@ make test
 
 Run database and db migration
 ```bash
-docker exec -it chainmetareader_development_1 bash
+docker-compose up
 ```
 
 Run usage examples interactively
