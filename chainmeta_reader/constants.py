@@ -11,9 +11,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from enum import Enum
 
-class ValidatorType(object):
-    ChainTool = "ct"
-    CoinBase = "cb"
-    Global = "global"
-    GoPlus = "gp"
+
+class Namespace(Enum):
+    CHAINTOOL = "ct"
+    COINBASE = "cb"
+    GOPLUS = "gp"
+
+
+class Field(Enum):
+    CATEGORY = "category"
+    ENTITY = "entity"
+    SOURCE = "source"
+    CHAIN = "chain"

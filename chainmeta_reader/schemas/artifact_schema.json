@@ -1,0 +1,81 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "ChainMeta Artifact",
+    "description": "An object designed to uniformly describe blockchain metadata artifacts from different providers",
+    "type": "object",
+    "required": [
+        "metadata"
+    ],
+    "properties": {
+        "metadata": {
+            "description": "",
+            "type": "array",
+            "items": {
+                "description": "",
+                "type": "object",
+                "required": [
+                    "chain",
+                    "address",
+                    "entity",
+                    "categories",
+                    "source",
+                    "submitted_by",
+                    "submitted_on"
+                ],
+                "properties": {
+                    "chain": {
+                        "$ref": "/schemas/chain"
+                    },
+                    "address": {
+                        "$ref": "/schemas/address"
+                    },
+                    "entity": {
+                        "$ref": "/schemas/entity"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "categories": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "/schemas/category"
+                        }
+                    },
+                    "source": {
+                        "$ref": "/schemas/source"
+                    },
+                    "submitted_by": {
+                        "type": "string"
+                    },
+                    "submitted_on": {
+                        "type": "string",
+                        "format": "date-time"
+                    }
+                }
+            }
+        }
+    },
+    "$defs": {
+        "chain": {
+            "$id": "/schemas/chain",
+            "type": "chain"
+        },
+        "address": {
+            "$id": "/schemas/address",
+            "type": "string"
+        },
+        "entity": {
+            "$id": "/schemas/entity",
+            "type": "entity"
+        },
+        "category": {
+            "$id": "/schemas/category",
+            "type": "category"
+        },
+        "source": {
+            "$id": "/schemas/source",
+            "type": "source"
+        }
+    }
+
+}
