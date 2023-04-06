@@ -205,8 +205,8 @@
         "description": "Associated with router services that allow users to swap tokens across multiple liquidity pools."
     },
     {
-        "key": "coinswapper",
-        "display_name": "Coinswapper",
+        "key": "coin_swapper",
+        "display_name": "Coin Swapper",
         "description": "Associated with services that allow users to swap one cryptocurrency for another without requiring users to deposit funds into the service wallet first."
     },
     {
@@ -397,7 +397,7 @@
     {
         "key": "high_risk",
         "display_name": "High Risk, Other",
-        "description": "Addresses that are associated with suspicious, fraudulent, or illigal activities that are not covered by other categories"
+        "description": "Addresses that are associated with suspicious, fraudulent, or illegal activities that are not covered by other categories"
     },
     {
         "key": "dapp",
@@ -438,5 +438,10 @@
         "key": "proxy",
         "display_name": "Proxy",
         "description": "Contract that acts as a proxy to another contract and is used to upgrade the logic of the target contract without changing its address"
+    },
+    {
+        "key": "exchange",
+        "display_name": "Exchange",
+        "description": "Addresses used by centralized or decentralized exchanges to interact with smart contracts and blockchain networks"
     }
 ]

@@ -21,6 +21,13 @@ from typing import Set
 @dataclass
 class KeyedItem:
     key: str
+    display_name: str
+
+    def __hash__(self) -> int:
+        return hash(self.key)
+
+    def __eq__(self, __value: object) -> bool:
+        return self.key == __value or self.key == __value.key
 
     def validate(self):
         """Validate the key, return True if valid, False otherwise"""
@@ -39,30 +46,18 @@ class Category(KeyedItem):
     description: str
 
     def __hash__(self) -> int:
-        return hash(self.key)
+        return super().__hash__()
 
-
-@dataclass
-class Entity(KeyedItem):
-    display_name: str
-
-    def __hash__(self) -> int:
-        return hash(self.key)
-
-
-@dataclass
-class Source(KeyedItem):
-    display_name: str
-
-    def __hash__(self) -> int:
-        return hash(self.key)
+    def __eq__(self, __value: object) -> bool:
+        return super().__eq__(__value)
 
 
 @dataclass
 class Config:
     Categories: Set[Category]
-    Entities: Set[Entity]
-    Sources: Set[Source]
+    Entities: Set[KeyedItem]
+    Sources: Set[KeyedItem]
+    Chains: Set[KeyedItem]
 
 
 def validate_config(config: Config):
@@ -80,6 +75,10 @@ def validate_config(config: Config):
         if not source.validate():
             raise ValueError(f"Invalid source key: {source.key}")
 
+    for chain in config.Chains:
+        if not chain.validate():
+            raise ValueError(f"Invalid chain key: {chain.key}")
+
 
 def load_config() -> Config:
     """Load the config from the json files"""
@@ -92,12 +91,16 @@ def load_config() -> Config:
             for i in json.load(open(dir_path + "/categories.json"))
         ),
         set(
-            Entity(i["key"], i["display_name"])
+            KeyedItem(i["key"], i["display_name"])
             for i in json.load(open(dir_path + "/entities.json"))
         ),
         set(
-            Source(i["key"], i["display_name"])
+            KeyedItem(i["key"], i["display_name"])
             for i in json.load(open(dir_path + "/sources.json"))
+        ),
+        set(
+            KeyedItem(i["key"], i["display_name"])
+            for i in json.load(open(dir_path + "/chains.json"))
         ),
     )
 
@@ -105,4 +108,6 @@ def load_config() -> Config:
     return config
 
 
-__all__ = [load_config]
+default_config = load_config()
+
+__all__ = [Config, default_config]

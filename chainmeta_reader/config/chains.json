@@ -1,0 +1,10 @@
+[
+    {
+        "key": "ethereum_mainnet",
+        "display_name": "Ethereum Mainnet"
+    },
+    {
+        "key": "bitcoin_mainnet",
+        "display_name": "Bitcoin Mainnet"
+    }
+]
