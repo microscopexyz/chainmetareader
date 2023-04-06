@@ -16,12 +16,6 @@ import pytest
 from jsonschema import ValidationError
 
 import chainmeta_reader
-from chainmeta_reader.validator import (
-    ChaintoolValidator,
-    GoPlusValidator,
-    IValidator,
-    Validator,
-)
 
 
 @pytest.mark.parametrize(
@@ -46,15 +40,3 @@ def test_validate(input_file: str, is_valid: bool):
             assert is_valid is False
         else:
             assert is_valid
-
-
-@pytest.mark.parametrize(
-    "validator, s",
-    [
-        (Validator(), "chainmeta.validator.global"),
-        (ChaintoolValidator(None), "chainmeta.validator.ct"),
-        (GoPlusValidator(None), "chainmeta.validator.gp"),
-    ],
-)
-def test_to_string(validator: IValidator, s: str):
-    assert validator.to_string() == s

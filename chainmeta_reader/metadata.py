@@ -15,17 +15,10 @@ from abc import ABC, abstractmethod
 from collections.abc import Iterable, Iterator
 from dataclasses import dataclass
 from datetime import datetime
-from enum import Enum
 from typing import List
 
-from chainmeta_reader.constants import ValidatorType
+from chainmeta_reader.constants import Namespace
 from chainmeta_reader.validator import ValidatorError
-
-
-class Namespace(Enum):
-    ChainTool = 1
-    Coinbase = 2
-    GoPlus = 3
 
 
 @dataclass(eq=True, frozen=True)
@@ -103,9 +96,7 @@ class CoinbaseTranslator(ITranslator):
             return ChainmetaItem(
                 address=address,
                 chain=network,
-                tag=Tag(
-                    namespace=ValidatorType.CoinBase, scope=tag_type, name=tag_value
-                ),
+                tag=Tag(namespace=Namespace.CoinBase, scope=tag_type, name=tag_value),
                 submitted_by=submitted_by,
                 submitted_on=last_updated,
             )
@@ -131,7 +122,7 @@ class CoinbaseTranslator(ITranslator):
 
         coinbase_metadata = {"categories": []}
         for m in intermediate_metadata:
-            if m.tag.namespace != ValidatorType.CoinBase:
+            if m.tag.namespace != Namespace.CoinBase:
                 continue
 
             coinbase_metadata["address"] = m.address
@@ -163,9 +154,7 @@ class ChaintoolTranslator(ITranslator):
             return ChainmetaItem(
                 address=address,
                 chain=network,
-                tag=Tag(
-                    namespace=ValidatorType.ChainTool, scope=tag_type, name=tag_value
-                ),
+                tag=Tag(namespace=Namespace.CHAINTOOL, scope=tag_type, name=tag_value),
                 submitted_by=submitted_by,
                 submitted_on=last_updated,
             )
@@ -192,7 +181,7 @@ class ChaintoolTranslator(ITranslator):
         chaintool_metadata = {"categories": ""}
         categories = []
         for m in intermediate_metadata:
-            if m.tag.namespace != ValidatorType.ChainTool:
+            if m.tag.namespace != Namespace.CHAINTOOL:
                 continue
 
             chaintool_metadata["address"] = m.address
