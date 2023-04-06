@@ -11,8 +11,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from chainmeta_reader.config import load_config
-
 
 def test_config():
-    load_config()
+    from chainmeta_reader.config import default_config
+
+    assert default_config is not None
