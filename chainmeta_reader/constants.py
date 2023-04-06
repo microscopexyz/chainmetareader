@@ -25,3 +25,8 @@ class Field(Enum):
     ENTITY = "entity"
     SOURCE = "source"
     CHAIN = "chain"
+
+
+MetaSchemaFile = "meta_schema.json"
+ArtifactSchemaFile = "artifact_schema.json"
+SchemasFolder = "schemas"

@@ -16,7 +16,12 @@ import pathlib
 from jsonschema import Draft7Validator, validators
 
 from chainmeta_reader.config import Config, default_config
-from chainmeta_reader.constants import Field
+from chainmeta_reader.constants import (
+    ArtifactSchemaFile,
+    Field,
+    MetaSchemaFile,
+    SchemasFolder,
+)
 
 
 def value_checker(valid_values):
@@ -57,10 +62,17 @@ class Validator:
         schema_file = (
             pathlib.Path(__file__)
             .parent.resolve()
-            .joinpath("schemas", "meta_schema.json")
+            .joinpath(SchemasFolder, MetaSchemaFile)
         )
         self._validators = [JsonValidator(config=default_config, schema=schema_file)]
 
     def validate(self, metadata: dict):
         for v in self._validators:
             v.validate(metadata)
+
+
+common_artifact_validator = JsonValidator(
+    schema=pathlib.Path(__file__)
+    .parent.resolve()
+    .joinpath(SchemasFolder, ArtifactSchemaFile)
+)

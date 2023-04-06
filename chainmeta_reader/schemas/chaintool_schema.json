@@ -2,59 +2,50 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Chaintool Open Chain Meta",
     "description": "Chaintool's Open Chain Metadata Schema",
-    "type": "object",
-    "required": [
-        "metadata"
-    ],
-    "properties": {
-        "metadata": {
-            "description": "",
-            "type": "array",
-            "items": {
-                "description": "",
-                "type": "object",
-                "required": [
-                    "submitted_by",
-                    "address",
-                    "chain",
-                    "entity",
-                    "entity_name",
-                    "categories",
-                    "source",
-                    "tagged_on"
-                ],
-                "properties": {
-                    "submitted_by": {
-                        "type": "string",
-                        "enum": [
-                            "Chaintool"
-                        ]
-                    },
-                    "address": {
-                        "type": "string"
-                    },
-                    "chain": {
-                        "type": "string",
-                        "format": "[a-zA-Z_]*"
-                    },
-                    "entity": {
-                        "type": "string"
-                    },
-                    "entity_name": {
-                        "type": "string"
-                    },
-                    "categories": {
-                        "type": "string",
-                        "format": "^[a-zA-Z\\s,]*[a-zA-Z]$"
-                    },
-                    "source": {
-                        "type": "string"
-                    },
-                    "tagged_on": {
-                        "type": "string",
-                        "format": "date-time"
-                    }
-                }
+    "type": "array",
+    "items": {
+        "description": "",
+        "type": "object",
+        "required": [
+            "submitted_by",
+            "address",
+            "chain",
+            "entity",
+            "entity_name",
+            "categories",
+            "source",
+            "tagged_on"
+        ],
+        "properties": {
+            "submitted_by": {
+                "type": "string",
+                "enum": [
+                    "Chaintool"
+                ]
+            },
+            "address": {
+                "type": "string"
+            },
+            "chain": {
+                "type": "string",
+                "format": "[a-zA-Z_]*"
+            },
+            "entity": {
+                "type": "string"
+            },
+            "entity_name": {
+                "type": "string"
+            },
+            "categories": {
+                "type": "string",
+                "format": "^[a-zA-Z\\s,]*[a-zA-Z]$"
+            },
+            "source": {
+                "type": "string"
+            },
+            "tagged_on": {
+                "type": "string",
+                "format": "date-time"
             }
         }
     }

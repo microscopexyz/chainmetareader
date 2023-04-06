@@ -103,8 +103,8 @@ def validates(
             base_path=artifact_base_path,
         )
         artifact_validator.validate(loaded_artifact)
-        loaded_artifacts += loaded_artifact["metadata"]
-    if loaded_artifact:
+        loaded_artifacts += loaded_artifact
+    if loaded_artifacts:
         metadata["chainmetadata"]["loaded_artifact"] = loaded_artifacts
 
     return metadata

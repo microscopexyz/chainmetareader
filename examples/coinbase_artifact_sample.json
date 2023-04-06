@@ -1,29 +1,67 @@
-{
-    "metadata": [
-        {
-            "address": "0xf177aa7b0602f787f6f01c65f4b2e267336fd349",
-            "network_name": "ethereum-mainnet",
-            "entity": "Uniswap",
-            "name": "Uniswap V2: Hmf",
-            "categories": [
-                "defi",
-                "dex"
-            ],
-            "submitted_by": "coinbase",
-            "last_updated": "2022-09-21 00:00:00"
-        },
-        {
-            "address": "0xd62f1beba129440c5c07e4fb597ec1f61260d26b",
-            "network_name": "ethereum-mainnet",
-            "entity": "Uniswap",
-            "name": "Uniswap V2: $Ashiba",
-            "categories": [
-                "defi",
-                "dex",
-                "erc20 token"
-            ],
-            "submitted_by": "coinbase",
-            "last_updated": "2022-09-21 00:00:00"
-        }
-    ]
-}
+[
+    {
+        "address": "0xf177aa7b0602f787f6f01c65f4b2e267336fd349",
+        "chain": "ethereum_mainnet",
+        "entity": "uniswap",
+        "name": "Uniswap V2: Hmf",
+        "categories": [
+            "defi",
+            "dex"
+        ],
+        "source": "ground_truth",
+        "submitted_by": "coinbase",
+        "submitted_on": "2022-09-21 00:00:00"
+    },
+    {
+        "address": "0xd62f1beba129440c5c07e4fb597ec1f61260d26b",
+        "chain": "ethereum_mainnet",
+        "entity": "uniswap",
+        "name": "Uniswap V2: $Ashiba",
+        "categories": [
+            "defi",
+            "dex"
+        ],
+        "source": "ground_truth",
+        "submitted_by": "coinbase",
+        "submitted_on": "2022-09-21 00:00:00"
+    },
+    {
+        "address": "0x0db4078fa4fc916fc2b881aca99039ccdde6fa46",
+        "chain": "ethereum_mainnet",
+        "entity": "binance",
+        "name": "Binance",
+        "categories": [
+            "exchange",
+            "no_kyc"
+        ],
+        "source": "ground_truth",
+        "submitted_by": "coinbase",
+        "submitted_on": "2022-12-17 00:00:00.000000000"
+    },
+    {
+        "address": "0x1c5db575e2ff833e46a2e9864c22f4b22e0b37c2",
+        "chain": "ethereum_mainnet",
+        "entity": "ren",
+        "name": "Ren: Renzec Token",
+        "categories": [
+            "bridging",
+            "dapp"
+        ],
+        "source": "ground_truth",
+        "submitted_by": "coinbase",
+        "submitted_on": "2022-09-21 00:00:00.000000000"
+    },
+    {
+        "address": "0xd5da8cef79c430d337fdb4d7a5b6646132395a86",
+        "chain": "ethereum_mainnet",
+        "entity": "balancer",
+        "name": "Balancer: Safe2/Eth/Cover/Dai/10/40/10",
+        "categories": [
+            "defi",
+            "dex"
+        ],
+        "source": "ground_truth",
+        "submitted_by": "coinbase",
+        "submitted_on": "2022-09-21 00:00:00.000000000"
+    }
+]
