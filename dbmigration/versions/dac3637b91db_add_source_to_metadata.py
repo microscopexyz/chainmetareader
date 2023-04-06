@@ -11,23 +11,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from enum import Enum
+"""add source to metadata
+
+Revision ID: dac3637b91db
+Revises: 170c6b0a379d
+Create Date: 2023-04-06 00:04:54.158753
+
+"""
+import sqlalchemy as sa
+from alembic import op
+
+# revision identifiers, used by Alembic.
+revision = "dac3637b91db"
+down_revision = "170c6b0a379d"
+branch_labels = None
+depends_on = None
 
 
-class Namespace(Enum):
-    CHAINTOOL = "ct"
-    COINBASE = "cb"
-    GLOBAL = "global"
-    GOPLUS = "gp"
+def upgrade() -> None:
+    op.add_column("chainmeta", sa.Column("source", sa.VARCHAR(64), nullable=False))
 
 
-class Field(Enum):
-    CATEGORY = "category"
-    ENTITY = "entity"
-    SOURCE = "source"
-    CHAIN = "chain"
-
-
-MetaSchemaFile = "meta_schema.json"
-ArtifactSchemaFile = "artifact_schema.json"
-SchemasFolder = "schemas"
+def downgrade() -> None:
+    op.drop_column("chainmeta", "source")

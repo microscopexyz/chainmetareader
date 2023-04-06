@@ -20,12 +20,7 @@ from chainmeta_reader.artifact import load as _load
 from chainmeta_reader.db import add_chainmeta, init_db
 from chainmeta_reader.db import search_chainmeta as _search_chainmeta
 from chainmeta_reader.logger import logger
-from chainmeta_reader.metadata import (
-    ChainmetaItem,
-    ChaintoolTranslator,
-    CoinbaseTranslator,
-    ITranslator,
-)
+from chainmeta_reader.metadata import ChainmetaItem, ChaintoolTranslator, Translator
 from chainmeta_reader.schema import resolve as _resolve
 from chainmeta_reader.validator import JsonValidator, Validator, ValidatorError
 
@@ -152,16 +147,14 @@ def loads(
     )
 
 
-def normalize(
-    raw_metadata: Iterable[object], t: ITranslator
-) -> Iterator[ChainmetaItem]:
+def normalize(raw_metadata: Iterable[object], t: Translator) -> Iterator[ChainmetaItem]:
     for m in raw_metadata:
         for intermediate_item in t.to_common_schema(m):
             yield intermediate_item
 
 
 def denormalize(
-    intermediate_metadata: Iterable[ChainmetaItem], t: ITranslator
+    intermediate_metadata: Iterable[ChainmetaItem], t: Translator
 ) -> Iterator[object]:
     metadata_group = defaultdict(list)
 
@@ -203,8 +196,8 @@ __all__ = [
     "denormalize",
     "upload_chainmeta",
     "search_chainmeta",
-    "CoinbaseTranslator",
     "ChaintoolTranslator",
+    "Translator",
     "set_artifact_base_path",
     "set_connection_string",
 ]

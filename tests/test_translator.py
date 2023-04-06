@@ -34,12 +34,12 @@ def test_chaintool_translator(input_file: str):
 
         # Translate to intermediate metadata schema
         intermediate_metadata = chainmeta_reader.normalize(
-            metadata["chainmetadata"]["loaded_artifact"], ChaintoolTranslator
+            metadata["chainmetadata"]["loaded_artifact"], ChaintoolTranslator()
         )
 
         # Translate back to Chaintool metadata schema
         raw_metadata2 = chainmeta_reader.denormalize(
-            intermediate_metadata, ChaintoolTranslator
+            intermediate_metadata, ChaintoolTranslator()
         )
         raw_metadata2_dict = {}
         for item in raw_metadata2:
@@ -52,6 +52,8 @@ def test_chaintool_translator(input_file: str):
             for filed_name in dict(raw_item).keys():
                 if filed_name == "source":
                     continue
-                assert (
-                    raw_item[filed_name] == raw_metadata2_dict.get(address)[filed_name]
+                assert ChaintoolTranslator.normalize_key(
+                    raw_item[filed_name]
+                ) == ChaintoolTranslator.normalize_key(
+                    raw_metadata2_dict.get(address)[filed_name]
                 )

@@ -12,12 +12,17 @@ make test
 
 ## Local Development
 
-Run database and db migration
+Run database locally
 ```bash
-docker-compose up
+make db
+```
+
+Run db migration
+```bash
+make db-migrate
 ```
 
 Run usage examples interactively
 ```bash
-docker exec -it chainmetareader_development_1 python -i usage.py
+python -i usage.py
 ```

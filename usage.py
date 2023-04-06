@@ -3,7 +3,7 @@ import pathlib
 
 from chainmeta_reader import (
     ChaintoolTranslator,
-    CoinbaseTranslator,
+    Translator,
     denormalize,
     load,
     normalize,
@@ -17,7 +17,7 @@ from chainmeta_reader import (
 logging.basicConfig(level=logging.INFO)
 
 # Set database connection string and artifact base path
-set_connection_string("mysql+pymysql://root:test@db/mysql")
+set_connection_string("mysql+pymysql://root:test@localhost/mysql")
 set_artifact_base_path(pathlib.Path("./examples"))
 
 # Load metadata from file with Coinbase schema
@@ -28,7 +28,7 @@ with open("./examples/coinbase_sample.json") as f:
 
     # Translate to common schema
     common_metadata_generator = normalize(
-        metadata["chainmetadata"]["loaded_artifact"], CoinbaseTranslator
+        metadata["chainmetadata"]["loaded_artifact"], Translator()
     )
     common_metadata = [i for i in common_metadata_generator]
     logging.info("1. Metadata in common schema")
@@ -53,7 +53,7 @@ with open("./examples/coinbase_sample.json") as f:
     result = search_chainmeta(
         filter={
             "address": "0xf177aa7b0602f787f6f01c65f4b2e267336fd349",
-            "chain": "ethereum-mainnet",
+            "chain": "ethereum_mainnet",
         }
     )
     for item in result:
@@ -68,9 +68,9 @@ with open("./examples/chaintool_sample.json") as f:
 
     # Translate to common schema
     common_metadata = normalize(
-        metadata["chainmetadata"]["loaded_artifact"], ChaintoolTranslator
+        metadata["chainmetadata"]["loaded_artifact"], ChaintoolTranslator()
     )
 
     # Translate back to Chaintool schema
-    raw_metadata = denormalize(common_metadata, ChaintoolTranslator)
+    raw_metadata = denormalize(common_metadata, ChaintoolTranslator())
     logging.info([i for i in raw_metadata])
