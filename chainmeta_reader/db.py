@@ -14,7 +14,7 @@
 from datetime import datetime
 from typing import Generator, Iterable
 
-from sqlalchemy import Column, DateTime, Integer, String, create_engine, func
+from sqlalchemy import Column, DateTime, Integer, String, create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
 from chainmeta_reader.logger import logger
@@ -35,15 +35,9 @@ class ChainmetaTable(Base):
     namespace = Column(String(64), nullable=False)
     scope = Column(String(64), nullable=False)
     tag = Column(String(64), nullable=False)
+    source = Column(String(64), nullable=False)
     submitted_by = Column(String(64), nullable=False)
     submitted_on = Column(DateTime(), nullable=False)
-
-    def __repr__(self):
-        submitted_on = func.to_char(self.submitted_on, "%Y-%m-%d %H:%M")
-
-        return f"<Chainmeta(id={self.id}, chain='{self.chain}', address='{self.address}', \
-            namespace='{self.namespace}', scope='{self.scope}', tag='{self.tag}', \
-                submitted_by='{self.submitted_by}', submitted_on='{submitted_on}')>"
 
 
 def init_db(connection_string: str) -> callable:
@@ -72,6 +66,7 @@ def add_chainmeta(
             namespace=item.tag.namespace,
             scope=item.tag.scope,
             tag=item.tag.name,
+            source=item.source,
             submitted_by=item.submitted_by,
             submitted_on=datetime.now(),
         )
@@ -135,6 +130,7 @@ def search_chainmeta(
                 r.chain,
                 r.address,
                 Tag(r.namespace, r.scope, r.tag),
+                r.source,
                 r.submitted_by,
                 r.submitted_on,
             )
