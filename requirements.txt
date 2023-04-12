@@ -28,7 +28,7 @@ distlib==0.3.6
     # via virtualenv
 exceptiongroup==1.1.1
     # via pytest
-filelock==3.10.6
+filelock==3.11.0
     # via virtualenv
 identify==2.5.22
     # via pre-commit
@@ -50,7 +50,7 @@ mypy-extensions==1.0.0
     #   mypy
 nodeenv==1.7.0
     # via pre-commit
-packaging==23.0
+packaging==23.1
     # via
     #   black
     #   build
@@ -85,7 +85,7 @@ ruamel-yaml==0.17.21
     # via pre-commit-hooks
 ruamel-yaml-clib==0.2.7
     # via ruamel-yaml
-sqlalchemy==2.0.7
+sqlalchemy==2.0.9
     # via alembic
 tomli==2.0.1
     # via
@@ -101,6 +101,8 @@ typing-extensions==4.5.0
     #   black
     #   mypy
     #   sqlalchemy
+unsync==1.4.0
+    # via -r requirements.in
 virtualenv==20.21.0
     # via pre-commit
 wheel==0.40.0
