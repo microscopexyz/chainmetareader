@@ -15,7 +15,8 @@ from datetime import datetime
 from typing import Generator, Iterable
 
 from sqlalchemy import Column, DateTime, Integer, String, create_engine
-from sqlalchemy.orm import declarative_base, sessionmaker
+from sqlalchemy.orm import declarative_base, scoped_session, sessionmaker
+from unsync import unsync
 
 from chainmeta_reader.logger import logger
 from chainmeta_reader.metadata import ChainmetaItem, Tag
@@ -47,35 +48,72 @@ def init_db(connection_string: str) -> callable:
     Engine = create_engine(connection_string)
 
     # Create a sessionmaker object to interact with the database
-    return sessionmaker(bind=Engine)
+    session_factory = sessionmaker(bind=Engine)
+    return scoped_session(session_factory)
+
+
+@unsync
+def add_chainmeta_single_batch(
+    session_maker: callable, items: Iterable[ChainmetaItem]
+) -> int:
+    """Add a batch of chain metadata to database."""
+    logger.info(f"Adding {len(items)} items to database")
+    with session_maker() as session:
+        total = 0
+        for item in items:
+            meta_item = ChainmetaTable(
+                chain=item.chain.name,
+                address=item.address,
+                namespace=item.tag.namespace,
+                scope=item.tag.scope,
+                tag=item.tag.name,
+                source=item.source,
+                submitted_by=item.submitted_by,
+                submitted_on=datetime.now(),
+            )
+
+            if (
+                session.query(ChainmetaTable)
+                .filter_by(
+                    chain=item.chain.name,
+                    address=item.address,
+                    namespace=item.tag.namespace,
+                    scope=item.tag.scope,
+                    tag=item.tag.name,
+                    source=item.source,
+                    submitted_by=item.submitted_by,
+                )
+                .first()
+                is None
+            ):
+                total += 1
+                session.add(meta_item)
+        session.commit()
+        return total
 
 
 def add_chainmeta(
-    session_maker: callable, items: Iterable[ChainmetaItem], batch_size: int = 100
+    session_maker: callable,
+    items: Iterable[ChainmetaItem],
+    batch_size: int = 50,
+    max_concurrency: int = 10,
 ) -> int:
-    """Add chain metadata to database.
+    """Add chain metadata to database."""
+    total, batch, tasks = 0, [], []
+    for item in items:
+        batch += [item]
+        if len(batch) >= batch_size:
+            tasks += [add_chainmeta_single_batch(session_maker, batch)]
+            batch = []
+            if len(tasks) >= max_concurrency:
+                total += sum(task.result() for task in tasks)
+                tasks = []
 
-    Note: This function will not check for duplicate items.
-    """
-    session = session_maker()
-    total = 0
-    for i, item in enumerate(items):
-        meta_item = ChainmetaTable(
-            chain=item.chain.name,
-            address=item.address,
-            namespace=item.tag.namespace,
-            scope=item.tag.scope,
-            tag=item.tag.name,
-            source=item.source,
-            submitted_by=item.submitted_by,
-            submitted_on=datetime.now(),
-        )
-        total += 1
-        session.add(meta_item)
-        if (i + 1) % batch_size == 0:
-            session.commit()
-    session.commit()
-    session.close()
+    if batch:
+        tasks += [add_chainmeta_single_batch(session_maker, batch)]
+    if tasks:
+        total += sum(task.result() for task in tasks)
+
     return total
 
 
