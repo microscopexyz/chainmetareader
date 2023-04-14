@@ -443,5 +443,15 @@
         "key": "exchange",
         "display_name": "Exchange",
         "description": "Addresses used by centralized or decentralized exchanges to interact with smart contracts and blockchain networks"
+    },
+    {
+        "key": "stealing_attack",
+        "display_name": "Stealing Attack",
+        "description": "Stealing Attack It describes whether this address has implemented stealing attacks."
+    },
+    {
+        "key": "darkweb_transactions",
+        "display_name": "Darkweb Transactions",
+        "description": "Darkweb Transactions It describes whether this address is involved in darkweb transactions."
     }
 ]
