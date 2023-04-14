@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "{{name}} Open Chain Meta",
+    "description": "{{name}}'s Open Chain Metadata Schema",
+    "type": "array",
+    "items": {
+        "description": "",
+        "type": "object",
+        "required": [
+            "field_name"
+        ],
+        "properties": {
+            "field_name": {
+                "type": "string"
+            }
+        }
+    }
+}
