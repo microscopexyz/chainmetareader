@@ -34,6 +34,9 @@ _session_maker: Optional[Callable] = None
 mapper_registry: registry = registry()
 
 
+err_msg = "Database is not initialized.Set CHAINMETA_DB_CONN environment variable or call set_connection_string() first."  # noqa: E501
+
+
 @mapper_registry.mapped
 class ChainmetaRecord:
     """Define the table schema for Chainmeta.
@@ -207,7 +210,7 @@ def upload_chainmeta(
     """
 
     if _session_maker is None:
-        raise RuntimeError("Database is not initialized")
+        raise RuntimeError(err_msg)
 
     total, batch, tasks = 0, [], []
     for item in items:
@@ -240,7 +243,7 @@ def search_chainmeta(*, filter: dict = {}) -> Generator[ChainmetaItem, None, Non
     """
 
     if _session_maker is None:
-        raise RuntimeError("Database is not initialized")
+        raise RuntimeError(err_msg)
 
     def _apply_filter(query, filter: dict):
         """Apply filter to query."""

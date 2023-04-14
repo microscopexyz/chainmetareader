@@ -15,14 +15,12 @@ import json
 from pathlib import Path
 from typing import Optional, no_type_check
 
-from chainmeta_reader.validator import ValidatorError
-
 file_prefix = "file:///"
 
 
 def local_loader(uri: str, *, base_path: Optional[Path] = None) -> str:
     if not base_path:
-        raise ValidatorError("missing artifact base path for local artifact file")
+        raise ValueError("missing artifact base path for local artifact file")
     relative_path = uri[len(file_prefix) :]
     resolved_path = base_path.joinpath(relative_path)
     with open(resolved_path) as f:
@@ -76,4 +74,4 @@ def load(uri: str, fileformat: str, *, base_path: Optional[Path] = None) -> obje
     parser = parsers.get(fileformat)
     if loader and parser:
         return parser(loader(uri, base_path=base_path))
-    raise RuntimeError("unsupported artifact type")
+    raise ValueError("unsupported artifact type")

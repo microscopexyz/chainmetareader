@@ -1,37 +1,23 @@
 import logging
-import pathlib
 
-from chainmeta_reader import (
-    ChaintoolTranslator,
-    Translator,
-    denormalize,
-    load,
-    normalize,
-    search_chainmeta,
-    set_artifact_base_path,
-    set_connection_string,
-    upload_chainmeta,
-)
+from chainmeta_reader import load, search_chainmeta, upload_chainmeta
 
 # Set logging level
 logging.basicConfig(level=logging.INFO)
 
-# Set database connection string and artifact base path
-set_connection_string("mysql+pymysql://root:test@localhost/mysql")
-set_artifact_base_path(pathlib.Path("./examples"))
-
 # Load metadata from file with Coinbase schema
 with open("./examples/coinbase_sample.json") as f:
-    # Load Coinbase artifact
-    metadata = load(f)
-    raw_metadata = metadata["chainmetadata"]["loaded_artifact"]
+    # Load artifact
+    logging.info("1. Load Metadata")
+    metadata = load(f, artifact_base_path="./examples")
 
-    # Translate to common schema
-    common_metadata_generator = normalize(
-        metadata["chainmetadata"]["loaded_artifact"], Translator()
-    )
-    common_metadata = [i for i in common_metadata_generator]
-    logging.info("1. Metadata in common schema")
+    # Raw metadata
+    raw_metadata = metadata["chainmetadata"]["raw_artifact"]
+    for item in raw_metadata:
+        logging.info(item)
+
+    # Common schema metadata
+    common_metadata = metadata["chainmetadata"]["artifact"]
     for item in common_metadata:
         logging.info(item)
 
@@ -63,15 +49,23 @@ with open("./examples/coinbase_sample.json") as f:
 logging.info("5. Translate between schemas")
 with open("./examples/chaintool_sample.json") as f:
     # Load Chaintool artifact
-    metadata = load(f)
-    raw_metadata = metadata["chainmetadata"]["loaded_artifact"]
+    metadata = load(f, artifact_base_path="./examples")
 
-    # Translate to common schema
-    common_metadata_generator = normalize(
-        metadata["chainmetadata"]["loaded_artifact"], ChaintoolTranslator()
-    )
+    # Raw metadata
+    raw_metadata = metadata["chainmetadata"]["raw_artifact"]
+    for item in raw_metadata:
+        logging.info(item)
+
+    # Common schema metadata
+    common_metadata = metadata["chainmetadata"]["artifact"]
+    for item in common_metadata:
+        logging.info(item)
 
     # Translate back to Chaintool schema
-    common_metadata = [i for i in common_metadata_generator]
-    raw_metadata = denormalize(common_metadata, ChaintoolTranslator())
-    logging.info([i for i in raw_metadata])
+    from chainmeta_reader.contrib.chaintool import ChaintoolTranslator
+
+    raw_metadata = [
+        ChaintoolTranslator().from_common_schema(i) for i in common_metadata
+    ]
+    for item in raw_metadata:
+        logging.info(item)

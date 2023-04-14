@@ -30,4 +30,5 @@ class Field(Enum):
 
 MetaSchemaFile = "meta_schema.json"
 ArtifactSchemaFile = "artifact_schema.json"
-SchemasFolder = "schemas"
+SchemaFolder = "schema"
+ContribFolder = "contrib"
