@@ -39,4 +39,5 @@ def downgrade() -> None:
     op.drop_constraint(
         op.f("uq_chainmeta_chain_address_namespace_scope_tag_source_submitted_by"),
         "chainmeta",
+        "unique",
     )

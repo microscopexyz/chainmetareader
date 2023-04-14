@@ -42,7 +42,7 @@
             },
             "submitted_on": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date"
             }
         }
     },

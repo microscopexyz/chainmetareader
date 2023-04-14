@@ -27,7 +27,10 @@ class KeyedItem:
         return hash(self.key)
 
     def __eq__(self, __value: object) -> bool:
-        return self.key == __value or self.key == __value.key
+        if hasattr(__value, "key"):
+            return self.key == __value.key
+        else:
+            return self.key == __value
 
     def validate(self):
         """Validate the key, return True if valid, False otherwise"""

@@ -43,7 +43,9 @@ mako==1.2.4
 markupsafe==2.1.2
     # via mako
 mypy==1.0.1
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   sqlalchemy
 mypy-extensions==1.0.0
     # via
     #   black
@@ -79,14 +81,20 @@ pyrsistent==0.19.3
     # via jsonschema
 pytest==7.2.2
     # via -r requirements.in
+python-dateutil==2.8.2
+    # via -r requirements.in
 pyyaml==6.0
     # via pre-commit
 ruamel-yaml==0.17.21
     # via pre-commit-hooks
 ruamel-yaml-clib==0.2.7
     # via ruamel-yaml
-sqlalchemy==2.0.9
-    # via alembic
+six==1.16.0
+    # via python-dateutil
+sqlalchemy[mypy]==2.0.9
+    # via
+    #   -r requirements.in
+    #   alembic
 tomli==2.0.1
     # via
     #   black
@@ -95,6 +103,10 @@ tomli==2.0.1
     #   pre-commit-hooks
     #   pyproject-hooks
     #   pytest
+types-jsonschema==4.17.0.7
+    # via -r requirements.in
+types-python-dateutil==2.8.19.12
+    # via -r requirements.in
 typing-extensions==4.5.0
     # via
     #   alembic

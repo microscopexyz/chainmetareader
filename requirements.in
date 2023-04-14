@@ -9,4 +9,8 @@ pre-commit-hooks==4.4.0
 pre-commit==3.0.4
 pymysql==1.0.2
 pytest==7.2.2
+python-dateutil==2.8.2
+sqlalchemy[mypy]==2.0.9
+types-jsonschema==4.17.0.7
+types-python-dateutil==2.8.19.12
 unsync==1.4.0

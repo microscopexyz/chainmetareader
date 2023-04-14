@@ -11,7 +11,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import json
-import pathlib
+from pathlib import Path
 
 from jsonschema import Draft7Validator, validators
 
@@ -31,7 +31,7 @@ def value_checker(valid_values):
 
 
 class JsonValidator(object):
-    def __init__(self, *, config: Config = default_config, schema: dict):
+    def __init__(self, *, config: Config = default_config, schema: Path):
         type_checker = Draft7Validator.TYPE_CHECKER.redefine_many(
             {
                 Field.CATEGORY.value: value_checker(config.Categories),
@@ -47,7 +47,7 @@ class JsonValidator(object):
             )
             self.validator = custom_validator(schema=json.load(sf))
 
-    def validate(self, metadata: dict):
+    def validate(self, metadata: object):
         self.validator.validate(metadata)
 
 
@@ -60,9 +60,7 @@ class ValidatorError(ValueError):
 class Validator:
     def __init__(self):
         schema_file = (
-            pathlib.Path(__file__)
-            .parent.resolve()
-            .joinpath(SchemasFolder, MetaSchemaFile)
+            Path(__file__).parent.resolve().joinpath(SchemasFolder, MetaSchemaFile)
         )
         self._validators = [JsonValidator(config=default_config, schema=schema_file)]
 
@@ -72,7 +70,5 @@ class Validator:
 
 
 common_artifact_validator = JsonValidator(
-    schema=pathlib.Path(__file__)
-    .parent.resolve()
-    .joinpath(SchemasFolder, ArtifactSchemaFile)
+    schema=Path(__file__).parent.resolve().joinpath(SchemasFolder, ArtifactSchemaFile)
 )

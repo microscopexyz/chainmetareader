@@ -38,7 +38,7 @@ def upgrade() -> None:
         sa.Column("scope", sa.VARCHAR(64), nullable=False),
         sa.Column("tag", sa.VARCHAR(64), nullable=False),
         sa.Column("submitted_by", sa.VARCHAR(64), nullable=False),
-        sa.Column("submitted_on", sa.DateTime(), nullable=False),
+        sa.Column("submitted_on", sa.Date(), nullable=False),
         sa.PrimaryKeyConstraint("id"),
     )
 

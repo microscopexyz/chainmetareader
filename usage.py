@@ -67,10 +67,11 @@ with open("./examples/chaintool_sample.json") as f:
     raw_metadata = metadata["chainmetadata"]["loaded_artifact"]
 
     # Translate to common schema
-    common_metadata = normalize(
+    common_metadata_generator = normalize(
         metadata["chainmetadata"]["loaded_artifact"], ChaintoolTranslator()
     )
 
     # Translate back to Chaintool schema
+    common_metadata = [i for i in common_metadata_generator]
     raw_metadata = denormalize(common_metadata, ChaintoolTranslator())
     logging.info([i for i in raw_metadata])
