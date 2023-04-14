@@ -12,52 +12,32 @@
 # limitations under the License.
 
 import re
+from abc import ABC
 from dataclasses import dataclass
 from datetime import datetime
 from typing import List
 
-from chainmeta_reader.constants import Namespace
-from chainmeta_reader.validator import ValidatorError, common_artifact_validator
-
-
-@dataclass(eq=True, frozen=True)
-class Chain:
-    """Chain represents a uniquely identified blockchain,
-    e.g. ethereum mainnet, or ethereum goerli
-    """
-
-    # The string representation of the network
-    name: str
-
-
-@dataclass(eq=True, frozen=True)
-class Tag:
-    """Tag is a generic container for any information like name,
-    entity or category etc.
-    """
-
-    # Namespace this tag belongs to
-    namespace: Namespace
-
-    # Scope of the tag, e.g. entity, category or attribute
-    scope: str
-
-    # The string representation of the tag
-    name: str
-
 
 @dataclass
 class ChainmetaItem:
-    """Intermediate representation of the metadata."""
+    """ChainmetaItem is the common schema for all chain metadata items.
+    Reference: /chainmeta_reader/schema/artifact_schema.json
+    """
 
     # Chain identification
-    chain: Chain
+    chain: str
 
     # Wallet or contract address
     address: str
 
-    # Single piece of metadata
-    tag: Tag
+    # Entity id of the address
+    entity: str
+
+    # name of the address
+    name: str
+
+    # Category ids of the address
+    categories: List[str]
 
     # Source of the metadata
     source: str
@@ -69,64 +49,12 @@ class ChainmetaItem:
     submitted_on: datetime
 
 
-class Translator:
-    def to_common_schema(self, raw_metadata) -> List[ChainmetaItem]:
-        common_artifact_validator.validate([raw_metadata])
+class Translator(ABC):
+    def to_common_schema(self, raw_metadata) -> ChainmetaItem:
+        return ChainmetaItem(**raw_metadata)
 
-        address, network, source, submitted_by, last_updated = (
-            raw_metadata["address"],
-            Chain(name=raw_metadata["chain"]),
-            raw_metadata["source"],
-            raw_metadata["submitted_by"],
-            raw_metadata["submitted_on"],
-        )
-
-        def _build_meta(tag_type: str, tag_value: str):
-            return ChainmetaItem(
-                address=address,
-                chain=network,
-                tag=Tag(namespace=Namespace.GLOBAL, scope=tag_type, name=tag_value),
-                source=source,
-                submitted_by=submitted_by,
-                submitted_on=last_updated,
-            )
-
-        def _build_meta_from_field(field: str):
-            return _build_meta(tag_type=field, tag_value=raw_metadata[field])
-
-        if "entity" in raw_metadata:
-            yield _build_meta_from_field(field="entity")
-        if "name" in raw_metadata:
-            yield _build_meta_from_field(field="name")
-        for category in raw_metadata.get("categories", []):
-            yield _build_meta(tag_type="category", tag_value=category)
-
-    def from_common_schema(self, common_schema_metadata: List[ChainmetaItem]) -> object:
-        if not common_schema_metadata:
-            return
-        network_address = set((m.address, m.chain) for m in common_schema_metadata)
-        if len(network_address) > 1:
-            raise ValidatorError("not all records belong to same address")
-
-        raw_metadata = {"categories": []}
-        for m in common_schema_metadata:
-            if m.tag.namespace != Namespace.GLOBAL:
-                continue
-
-            raw_metadata["chain"] = m.chain
-            raw_metadata["address"] = m.address
-            raw_metadata["source"] = m.source
-            raw_metadata["submitted_by"] = m.submitted_by
-            raw_metadata["submitted_on"] = m.submitted_on
-
-            if m.tag.scope == "entity":
-                raw_metadata["entity"] = m.tag.name
-            if m.tag.scope == "name":
-                raw_metadata["name"] = m.tag.name
-            if m.tag.scope == "category":
-                raw_metadata["categories"] += [m.tag.name]
-
-        return raw_metadata
+    def from_common_schema(self, common_schema_metadata: ChainmetaItem) -> object:
+        return common_schema_metadata.__dict__
 
 
 class ChaintoolTranslator(Translator):
@@ -148,9 +76,9 @@ class ChaintoolTranslator(Translator):
 
         return ChaintoolTranslator.normalize_key(source)
 
-    def to_common_schema(self, raw_metadata: object) -> List[ChainmetaItem]:
+    def to_common_schema(self, raw_metadata: object) -> ChainmetaItem:
         # Translate Chaintool formatted metadata into the common schema
-        intermediate = {
+        common_schema_metadata = {
             "chain": ChaintoolTranslator.normalize_chain(raw_metadata["chain"]),
             "address": raw_metadata["address"],
             "entity": ChaintoolTranslator.normalize_key(raw_metadata["entity"]),
@@ -163,23 +91,18 @@ class ChaintoolTranslator(Translator):
             "submitted_by": raw_metadata["submitted_by"],
             "submitted_on": raw_metadata["tagged_on"],
         }
+        return ChainmetaItem(**common_schema_metadata)
 
-        return super().to_common_schema(intermediate)
-
-    def from_common_schema(
-        self,
-        common_schema_metadata: List[ChainmetaItem],
-    ) -> object:
+    def from_common_schema(self, common_schema_metadata: ChainmetaItem) -> object:
         # Translate from common schema into Chaintool formatted metadata
 
-        intermediate = super().from_common_schema(common_schema_metadata)
         return {
-            "chain": intermediate["chain"].name,
-            "address": intermediate["address"],
-            "entity": intermediate["entity"],
-            "entity_name": intermediate["name"],
-            "categories": ",".join(intermediate["categories"]),
-            "source": intermediate["source"],
-            "submitted_by": intermediate["submitted_by"],
-            "tagged_on": intermediate["submitted_on"],
+            "chain": common_schema_metadata.chain,
+            "address": common_schema_metadata.address,
+            "entity": common_schema_metadata.entity,
+            "entity_name": common_schema_metadata.name,
+            "categories": ",".join(common_schema_metadata.categories),
+            "source": common_schema_metadata.source,
+            "submitted_by": common_schema_metadata.submitted_by,
+            "tagged_on": common_schema_metadata.submitted_on,
         }

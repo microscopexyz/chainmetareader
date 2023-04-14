@@ -110,4 +110,4 @@ def load_config() -> Config:
 
 default_config = load_config()
 
-__all__ = [Config, default_config]
+__all__ = ["Config", "default_config"]
