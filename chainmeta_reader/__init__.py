@@ -11,15 +11,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import json
-from collections import defaultdict
 from collections.abc import Iterable, Iterator
-from functools import reduce
 from typing import Generator
 
 from chainmeta_reader.artifact import load as _load
-from chainmeta_reader.db import add_chainmeta, init_db
-from chainmeta_reader.db import search_chainmeta as _search_chainmeta
-from chainmeta_reader.logger import logger
+from chainmeta_reader.db import init_db
+from chainmeta_reader.db import search_chainmeta as search_chainmeta
+from chainmeta_reader.db import upload_chainmeta
 from chainmeta_reader.metadata import ChainmetaItem, ChaintoolTranslator, Translator
 from chainmeta_reader.schema import resolve as _resolve
 from chainmeta_reader.validator import JsonValidator, Validator, ValidatorError
@@ -147,44 +145,20 @@ def loads(
     )
 
 
-def normalize(raw_metadata: Iterable[object], t: Translator) -> Iterator[ChainmetaItem]:
+def normalize(
+    raw_metadata: Iterable[object], t: Translator
+) -> Generator[ChainmetaItem, None, None]:
+    if not raw_metadata:
+        return
     for m in raw_metadata:
-        for intermediate_item in t.to_common_schema(m):
-            yield intermediate_item
+        yield t.to_common_schema(m)
 
 
 def denormalize(
     intermediate_metadata: Iterable[ChainmetaItem], t: Translator
 ) -> Iterator[object]:
-    metadata_group = defaultdict(list)
-
-    def _group_f(t, s):
-        t[(s.address, s.chain, s.submitted_by)] += [s]
-        return t
-
-    reduce(_group_f, intermediate_metadata, metadata_group)
-    for _, group in metadata_group.items():
-        yield t.from_common_schema(group)
-
-
-def upload_chainmeta(metadata: Iterable[ChainmetaItem]) -> int:
-    """Upload metadata to database."""
-
-    if not _session_maker:
-        logger.warning("Run `set_connection_string()` first")
-        return 0
-
-    return add_chainmeta(_session_maker, metadata)
-
-
-def search_chainmeta(*, filter: dict = None) -> Generator[ChainmetaItem, None, None]:
-    """Search metadata from database."""
-
-    if not _session_maker:
-        logger.warning("Run `set_connection_string()` first")
-        return 0
-
-    return _search_chainmeta(_session_maker, filter=filter)
+    for m in intermediate_metadata:
+        yield t.from_common_schema(m)
 
 
 __all__ = [

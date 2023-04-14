@@ -11,23 +11,35 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from datetime import datetime
-from typing import Generator, Iterable
+from collections import defaultdict
+from functools import reduce as functional_reduce
+from typing import Generator, Iterable, List
 
 from sqlalchemy import Column, DateTime, Integer, String, create_engine
 from sqlalchemy.orm import declarative_base, scoped_session, sessionmaker
 from unsync import unsync
 
+from chainmeta_reader.constants import Namespace
 from chainmeta_reader.logger import logger
-from chainmeta_reader.metadata import ChainmetaItem, Tag
+from chainmeta_reader.metadata import ChainmetaItem
+
+"""This module defines the database schema and provides the functions to interact with the database.
+"""
+
 
 # Define the database connection
-Engine = None
-Base = declarative_base()
+_session_maker: callable = None
+_base = declarative_base()
 
 
-# Define the table using declarative ORM
-class ChainmetaTable(Base):
+"""Define the table using declarative ORM
+
+Chainmeta is stored in the database as a flattened list of records, where
+entity, name, and each categories are all stored as separate records.
+"""
+
+
+class ChainmetaRecord(_base):
     __tablename__ = "chainmeta"
 
     id = Column(Integer, primary_key=True)
@@ -42,85 +54,183 @@ class ChainmetaTable(Base):
 
 
 def init_db(connection_string: str) -> callable:
-    global Engine
+    global _session_maker
 
     # Initialize the database connection
-    Engine = create_engine(connection_string)
+    engine = create_engine(connection_string, echo=False)
 
     # Create a sessionmaker object to interact with the database
-    session_factory = sessionmaker(bind=Engine)
-    return scoped_session(session_factory)
+    session_factory = sessionmaker(bind=engine)
+    _session_maker = scoped_session(session_factory)
+
+
+def flatten(metadata_list: List[ChainmetaItem]) -> List[ChainmetaRecord]:
+    """Flatten the list of ChainmetaItem into a list of ChainmetaRecord.
+
+    Function flatten() translates chain metadata in common schema to database records.
+    """
+
+    flattened_records: List[ChainmetaRecord] = []
+    for metadata in metadata_list:
+        address, network, source, submitted_by, last_updated = (
+            metadata.address,
+            metadata.chain,
+            metadata.source,
+            metadata.submitted_by,
+            metadata.submitted_on,
+        )
+
+        def _build_record(tag_type: str, tag_value: str):
+            if not tag_value:
+                return None
+
+            return ChainmetaRecord(
+                address=address,
+                chain=network,
+                namespace=Namespace.GLOBAL.value,
+                scope=tag_type,
+                tag=tag_value,
+                source=source,
+                submitted_by=submitted_by,
+                submitted_on=last_updated,
+            )
+
+        flattened_records.append(
+            _build_record(tag_type="entity", tag_value=metadata.entity)
+        )
+        flattened_records.append(
+            _build_record(tag_type="name", tag_value=metadata.name)
+        )
+        flattened_records += [
+            _build_record(tag_type="category", tag_value=category)
+            for category in metadata.categories
+        ]
+    return [r for r in flattened_records if r]
+
+
+def reduce(record_list: List[ChainmetaRecord]) -> List[ChainmetaItem]:
+    """Reduce the list of ChainmetaRecord into a list of ChainmetaItem.
+
+    Function reduce() translates database records to chain metadata in common schema.
+    """
+
+    def _group_by(metadata_groups: dict, record: ChainmetaRecord):
+        k = (record.address, record.chain, record.source, record.submitted_by)
+        metadata_groups[k].append(record)
+        return metadata_groups
+
+    def _build_meta(group: List[ChainmetaRecord]) -> ChainmetaItem:
+        metadata = ChainmetaItem(
+            chain=group[0].chain,
+            address=group[0].address,
+            entity=None,
+            name=None,
+            categories=[],
+            source=group[0].source,
+            submitted_by=group[0].submitted_by,
+            submitted_on=group[0].submitted_on,
+        )
+
+        for record in group:
+            if record.namespace != Namespace.GLOBAL.value:
+                continue
+
+            metadata.submitted_on = max(metadata.submitted_on, record.submitted_on)
+            if record.scope == "entity":
+                metadata.entity = record.tag
+            elif record.scope == "name":
+                metadata.name = record.tag
+            elif record.scope == "category":
+                metadata.categories.append(record.tag)
+        return metadata
+
+    metadata_groups = defaultdict(list)
+    functional_reduce(_group_by, record_list, metadata_groups)
+
+    reduced_list: List[ChainmetaItem] = []
+    for v in metadata_groups.values():
+        reduced_list.append(_build_meta(v))
+    return reduced_list
 
 
 @unsync
-def add_chainmeta_single_batch(
-    session_maker: callable, items: Iterable[ChainmetaItem]
+def _upload_chainmeta_single_batch(
+    items: Iterable[ChainmetaItem], *, skip_check: bool
 ) -> int:
-    """Add a batch of chain metadata to database."""
-    logger.info(f"Adding {len(items)} items to database")
-    with session_maker() as session:
-        total = 0
-        for item in items:
-            meta_item = ChainmetaTable(
-                chain=item.chain.name,
-                address=item.address,
-                namespace=item.tag.namespace,
-                scope=item.tag.scope,
-                tag=item.tag.name,
-                source=item.source,
-                submitted_by=item.submitted_by,
-                submitted_on=datetime.now(),
-            )
+    """Upload a single batch of chain metadata to database."""
 
-            if (
-                session.query(ChainmetaTable)
+    with _session_maker() as session:
+
+        def _item_not_exist(record):
+            """Check if the record already exists in the database."""
+            if skip_check:
+                return True
+            found = (
+                session.query(ChainmetaRecord)
                 .filter_by(
-                    chain=item.chain.name,
-                    address=item.address,
-                    namespace=item.tag.namespace,
-                    scope=item.tag.scope,
-                    tag=item.tag.name,
-                    source=item.source,
-                    submitted_by=item.submitted_by,
+                    chain=record.chain,
+                    address=record.address,
+                    namespace=record.namespace,
+                    scope=record.scope,
+                    tag=record.tag,
+                    source=record.source,
+                    submitted_by=record.submitted_by,
                 )
                 .first()
-                is None
-            ):
-                total += 1
-                session.add(meta_item)
+            )
+            return found is None
+
+        total = 0
+        for item in items:
+            for record in flatten([item]):
+                if _item_not_exist(record):
+                    total += 1
+                    session.add(record)
         session.commit()
         return total
 
 
-def add_chainmeta(
-    session_maker: callable,
+def upload_chainmeta(
     items: Iterable[ChainmetaItem],
+    *,
     batch_size: int = 50,
     max_concurrency: int = 10,
+    skip_check: bool = False,
 ) -> int:
-    """Add chain metadata to database."""
+    """Upload chain metadata to database.
+
+    The upload is done in batches to avoid overloading the database.
+    """
+
+    if sessionmaker is None:
+        raise RuntimeError("Database is not initialized")
+
     total, batch, tasks = 0, [], []
     for item in items:
         batch += [item]
         if len(batch) >= batch_size:
-            tasks += [add_chainmeta_single_batch(session_maker, batch)]
+            tasks += [_upload_chainmeta_single_batch(batch, skip_check=skip_check)]
             batch = []
             if len(tasks) >= max_concurrency:
                 total += sum(task.result() for task in tasks)
                 tasks = []
 
     if batch:
-        tasks += [add_chainmeta_single_batch(session_maker, batch)]
+        tasks += [_upload_chainmeta_single_batch(batch, skip_check=skip_check)]
     if tasks:
         total += sum(task.result() for task in tasks)
 
     return total
 
 
-def search_chainmeta(
-    session_maker: callable, *, filter: dict = None
-) -> Generator[ChainmetaItem, None, None]:
-    """Search chain metadata from database."""
+def search_chainmeta(*, filter: dict = None) -> Generator[ChainmetaItem, None, None]:
+    """Search chain metadata from database.
+
+    The query is done with pagination to avoid overloading the database.
+    """
+
+    if sessionmaker is None:
+        raise RuntimeError("Database is not initialized")
 
     def _apply_filter(query: object, filter: dict) -> object:
         """Apply filter to query."""
@@ -128,51 +238,61 @@ def search_chainmeta(
         if not filter:
             return query
 
-        if filter.keys() == set(["chain"]):
-            return query.filter_by(chain=filter["chain"])
-
-        if filter.keys() == set(["chain", "address"]):
-            return query.filter_by(chain=filter["chain"], address=filter["address"])
-
-        if filter.keys() == set(["chain", "namespace", "scope", "tag"]):
-            return query.filter_by(
-                chain=filter["chain"],
-                namespace=filter["namespace"],
-                scope=filter["scope"],
-                tag=filter["tag"],
-            )
-
-        if filter.keys() == set(["submitted_by"]):
-            return query.filter_by(submitted_by=filter["submitted_by"])
-
-        logger.warning(f"Unsupported filter: {filter}")
+        for k, v in filter.items():
+            if k in ["chain", "address", "submitted_by"]:
+                query = query.filter(getattr(ChainmetaRecord, k) == v)
+            else:
+                logger.warning(f"Unsupported filter: {k}={v}")
         return query
 
-    session = session_maker()
-    page_size = 100
-    page_num = 1
-    is_empty = True
-    while True:
-        query = _apply_filter(session.query(ChainmetaTable), filter)
-        results = (
-            query.order_by(ChainmetaTable.address)
-            .limit(page_size)
-            .offset((page_num - 1) * page_size)
-            .all()
-        )
-        if not results:
-            break
-        for r in results:
-            is_empty = False
-            yield ChainmetaItem(
-                r.chain,
-                r.address,
-                Tag(r.namespace, r.scope, r.tag),
-                r.source,
-                r.submitted_by,
-                r.submitted_on,
+    def _key(r: ChainmetaRecord):
+        return (r.chain, r.address, r.source, r.submitted_by)
+
+    with _session_maker() as session:
+        page_size = 100
+        is_empty = True
+        remaining_results = []
+        cursor = None
+        while True:
+            query = _apply_filter(session.query(ChainmetaRecord), filter)
+            if cursor:
+                query = query.filter(ChainmetaRecord.id > cursor)
+            batch_results = (
+                query.order_by(
+                    ChainmetaRecord.chain,
+                    ChainmetaRecord.address,
+                    ChainmetaRecord.source,
+                    ChainmetaRecord.submitted_by,
+                    ChainmetaRecord.id,
+                )
+                .limit(page_size)
+                .all()
             )
-        page_num += 1
-    if is_empty:
-        return
-    session.close()
+            if not batch_results:
+                break
+
+            if len(batch_results) < page_size:
+                remaining_results += batch_results
+                break
+            last_record = batch_results[-1]
+            cursor = last_record.id
+            last_key = (
+                last_record.chain,
+                last_record.address,
+                last_record.source,
+                last_record.submitted_by,
+            )
+
+            batch_results = remaining_results + batch_results
+            for r in reduce([r for r in batch_results if _key(r) != last_key]):
+                is_empty = False
+                yield r
+            remaining_results = [r for r in batch_results if _key(r) == last_key]
+
+        if remaining_results:
+            for r in reduce(remaining_results):
+                is_empty = False
+                yield r
+
+        if is_empty:
+            return
