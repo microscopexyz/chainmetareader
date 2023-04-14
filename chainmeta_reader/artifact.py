@@ -12,14 +12,15 @@
 # limitations under the License.
 
 import json
-import pathlib
+from pathlib import Path
+from typing import Optional, no_type_check
 
 from chainmeta_reader.validator import ValidatorError
 
 file_prefix = "file:///"
 
 
-def local_loader(uri: str, *, base_path: pathlib.Path = None) -> str:
+def local_loader(uri: str, *, base_path: Optional[Path] = None) -> str:
     if not base_path:
         raise ValidatorError("missing artifact base path for local artifact file")
     relative_path = uri[len(file_prefix) :]
@@ -28,10 +29,12 @@ def local_loader(uri: str, *, base_path: pathlib.Path = None) -> str:
         return f.read()
 
 
+@no_type_check
 def s3_loader(uri: str, **kw) -> str:
     pass
 
 
+@no_type_check
 def http_loader(uri: str, **kw) -> str:
     pass
 
@@ -68,8 +71,9 @@ parsers = {
 }
 
 
-def load(uri: str, fileformat: str, *, base_path: pathlib.Path = None) -> object:
+def load(uri: str, fileformat: str, *, base_path: Optional[Path] = None) -> object:
     loader = local_loader if uri.lower().startswith(file_prefix) else None
     parser = parsers.get(fileformat)
     if loader and parser:
         return parser(loader(uri, base_path=base_path))
+    raise RuntimeError("unsupported artifact type")

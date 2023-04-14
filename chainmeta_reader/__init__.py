@@ -23,13 +23,11 @@ from chainmeta_reader.schema import resolve as _resolve
 from chainmeta_reader.validator import JsonValidator, Validator, ValidatorError
 
 global_validator = Validator()
-_session_maker = None
 _default_artifact_base_path = None
 
 
 def set_connection_string(connection_string):
-    global _session_maker
-    _session_maker = init_db(connection_string)
+    init_db(connection_string)
 
 
 def set_artifact_base_path(artifact_base_path):
@@ -88,7 +86,7 @@ def validates(
     if not schema:
         return metadata
     artifact_validator = JsonValidator(schema=schema)
-    loaded_artifacts = []
+    loaded_artifacts: list = []
     for artifact in artifacts:
         loaded_artifact = _load(
             artifact["path"],
@@ -96,7 +94,8 @@ def validates(
             base_path=artifact_base_path,
         )
         artifact_validator.validate(loaded_artifact)
-        loaded_artifacts += loaded_artifact
+        if isinstance(loaded_artifact, list):
+            loaded_artifacts += loaded_artifact
     if loaded_artifacts:
         metadata["chainmetadata"]["loaded_artifact"] = loaded_artifacts
 
