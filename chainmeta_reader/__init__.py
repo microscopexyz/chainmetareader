@@ -11,49 +11,36 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import json
-from collections.abc import Iterable, Iterator
-from typing import Generator
+import os
+from pathlib import Path
+from typing import Optional, Union
 
-from chainmeta_reader.artifact import load as _load
+from chainmeta_reader.artifact import load as artifact_load
 from chainmeta_reader.db import init_db
 from chainmeta_reader.db import search_chainmeta as search_chainmeta
 from chainmeta_reader.db import upload_chainmeta
-from chainmeta_reader.metadata import ChainmetaItem, ChaintoolTranslator, Translator
-from chainmeta_reader.schema import resolve as _resolve
-from chainmeta_reader.validator import JsonValidator, Validator, ValidatorError
-
-global_validator = Validator()
-_default_artifact_base_path = None
+from chainmeta_reader.schema import resolve as schema_resolve
+from chainmeta_reader.validator import common_metadata_validator
 
 
-def set_connection_string(connection_string):
-    init_db(connection_string)
+def set_connection_string(connection_string: Optional[str] = None):
+    if not connection_string:
+        connection_string = os.environ.get("CHAINMETA_DB_CONN")
 
-
-def set_artifact_base_path(artifact_base_path):
-    global _default_artifact_base_path
-    _default_artifact_base_path = artifact_base_path
+    if connection_string:
+        init_db(connection_string)
 
 
 def validate(
-    fp,
-    *,
-    ignore_unrecognized=True,
-    additional_schemas={},
-    artifact_base_path=None,
-    **kw
+    fp, *, ignore_unrecognized=True, artifact_base_path: Union[str, Path, None], **kw
 ):
     """Validate ``fp`` (a ``.read()``-supporting file-like object containing
     an open chain metadata document) against the open chain metadata rule set.
     """
-    artifact_base_path = (
-        _default_artifact_base_path if not artifact_base_path else artifact_base_path
-    )
 
     validates(
         fp.read(),
         ignore_unrecognized=ignore_unrecognized,
-        additional_schemas=additional_schemas,
         artifact_base_path=artifact_base_path,
     )
 
@@ -62,60 +49,58 @@ def validates(
     s: str,
     *,
     ignore_unrecognized=True,
-    additional_schemas={},
-    artifact_base_path=None,
-    **kw
+    artifact_base_path: Union[str, Path, None],
+    **kw,
 ):
     """Validate ``s`` (a ``str``, ``bytes`` or ``bytearray`` instance containing
     an open chain metadata document) against the open chain metadata rule set.
     """
-    artifact_base_path = (
-        _default_artifact_base_path if not artifact_base_path else artifact_base_path
-    )
+
     metadata = json.loads(s)
 
     # Global validation
-    global_validator.validate(metadata)
+    common_metadata_validator.validate(metadata)
     raw_schema = metadata["chainmetadata"]["schema"]
     artifacts = metadata["chainmetadata"]["artifact"]
 
     # Artifact validation
-    schema = _resolve(raw_schema) or additional_schemas.get(raw_schema)
+    schema = schema_resolve(raw_schema)
+
     if not schema and not ignore_unrecognized:
-        raise ValidatorError("unrecognized artifact schema")
+        raise ValueError(f"schema {raw_schema} not registered")
     if not schema:
         return metadata
-    artifact_validator = JsonValidator(schema=schema)
+
     loaded_artifacts: list = []
+
+    base_path: Optional[Path] = Path(artifact_base_path) if artifact_base_path else None
     for artifact in artifacts:
-        loaded_artifact = _load(
+        loaded_artifact = artifact_load(
             artifact["path"],
             fileformat=artifact["fileformat"],
-            base_path=artifact_base_path,
+            base_path=base_path,
         )
-        artifact_validator.validate(loaded_artifact)
+        schema.validator.validate(loaded_artifact)
         if isinstance(loaded_artifact, list):
             loaded_artifacts += loaded_artifact
-    if loaded_artifacts:
-        metadata["chainmetadata"]["loaded_artifact"] = loaded_artifacts
+    metadata["chainmetadata"]["raw_artifact"] = loaded_artifacts
+    metadata["chainmetadata"]["artifact"] = [
+        schema.translator.to_common_schema(a) for a in loaded_artifacts
+    ]
 
     return metadata
 
 
 def load(
-    fp, ignore_unrecognized=True, additional_schemas={}, artifact_base_path=None, **kw
+    fp, *, ignore_unrecognized=True, artifact_base_path: Union[str, Path, None], **kw
 ):
     """Deserialize ``fp`` (a ``.read()``-supporting file-like object containing
     an open chain metadata document) to a Python object.
     """
 
-    artifact_base_path = (
-        _default_artifact_base_path if not artifact_base_path else artifact_base_path
-    )
     return loads(
         fp.read(),
         ignore_unrecognized=ignore_unrecognized,
-        additional_schemas=additional_schemas,
         artifact_base_path=artifact_base_path,
         **kw,
     )
@@ -125,52 +110,29 @@ def loads(
     s: str,
     *,
     ignore_unrecognized=True,
-    additional_schemas={},
-    artifact_base_path=None,
-    **kw
+    artifact_base_path: Union[str, Path, None],
+    **kw,
 ):
     """Deserialize ``s`` (a ``str``, ``bytes`` or ``bytearray`` instance containing
     an open chain metadata document) to a Python object.
     """
-    artifact_base_path = (
-        _default_artifact_base_path if not artifact_base_path else artifact_base_path
-    )
     return validates(
         s,
         ignore_unrecognized=ignore_unrecognized,
-        additional_schemas=additional_schemas,
         artifact_base_path=artifact_base_path,
         **kw,
     )
 
 
-def normalize(
-    raw_metadata: Iterable[object], t: Translator
-) -> Generator[ChainmetaItem, None, None]:
-    if not raw_metadata:
-        return
-    for m in raw_metadata:
-        yield t.to_common_schema(m)
-
-
-def denormalize(
-    intermediate_metadata: Iterable[ChainmetaItem], t: Translator
-) -> Iterator[object]:
-    for m in intermediate_metadata:
-        yield t.from_common_schema(m)
-
+set_connection_string()
 
 __all__ = [
     "validate",
     "validates",
     "load",
     "loads",
-    "normalize",
-    "denormalize",
     "upload_chainmeta",
     "search_chainmeta",
     "ChaintoolTranslator",
-    "Translator",
-    "set_artifact_base_path",
     "set_connection_string",
 ]
