@@ -13,17 +13,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import click
-from pathlib import Path
 import logging
+from pathlib import Path
+
+import click
 
 from chainmeta_reader import load, upload_chainmeta
 
 # Set logging level
 logging.basicConfig(level=logging.DEBUG)
 
+
 @click.command()
-@click.argument('filename', type=click.Path(exists=True))
+@click.argument("filename", type=click.Path(exists=True))
 def upload(filename: str):
 
     folder_path = Path(filename).resolve().parent
@@ -32,6 +34,7 @@ def upload(filename: str):
         common_metadata = metadata["chainmetadata"]["artifact"]
         n = upload_chainmeta(common_metadata)
         click.echo(click.style(f"Added {n} items to database", fg="green"))
+
 
 if __name__ == "__main__":
     upload()
