@@ -55,4 +55,11 @@ If you want to contribute your metadata to the Open Chainmeta database, you can 
 >>> cm.upload_chainmeta(common_metadata)
 ```
 
+Alternatively, you can use the upload.py script provided by chainmeta_reader to upload chainmeta from a file. Here's an example:
+```bash
+./upload.py ./examples/coinbase_sample.json
+```
+
+This will upload the chainmeta in the ./examples/coinbase_sample.json file to the Open Chainmeta database.
+
 See the [usage.py](https://github.com/openchainmeta/chainmetareader/blob/main/usage.py) file for more details.
