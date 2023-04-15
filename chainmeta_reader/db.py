@@ -194,6 +194,7 @@ def _upload_chainmeta_single_batch(
                     total += 1
                     session.add(record)
         session.commit()
+        logger.debug(f"Uploaded {total} records to database")
         return total
 
 
