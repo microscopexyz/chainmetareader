@@ -77,13 +77,18 @@ def flatten(metadata_list: List[ChainmetaItem]) -> List[ChainmetaRecord]:
 
     flattened_records: List[ChainmetaRecord] = []
     for metadata in metadata_list:
-        address, network, source, submitted_by, submitted_on = (
+        address, network, source, submitted_by = (
             metadata.address,
             metadata.chain,
             metadata.source,
             metadata.submitted_by,
-            metadata.submitted_on,
         )
+
+        try:
+            submitted_on = parser.parse(metadata.submitted_on)
+        except Exception:
+            logger.warning("Invalid submitted_on date: %s", metadata.submitted_on)
+            continue
 
         def _build_record(tag_type: str, tag_value: Optional[str]):
             if not tag_value:
@@ -97,7 +102,7 @@ def flatten(metadata_list: List[ChainmetaItem]) -> List[ChainmetaRecord]:
                 tag=tag_value,
                 source=source,
                 submitted_by=submitted_by,
-                submitted_on=parser.parse(submitted_on),
+                submitted_on=submitted_on,
             )
 
         flattened_records.append(
