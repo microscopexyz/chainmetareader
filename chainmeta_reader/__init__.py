@@ -20,7 +20,10 @@ from chainmeta_reader.db import init_db
 from chainmeta_reader.db import search_chainmeta as search_chainmeta
 from chainmeta_reader.db import upload_chainmeta
 from chainmeta_reader.schema import resolve as schema_resolve
-from chainmeta_reader.validator import common_metadata_validator
+from chainmeta_reader.validator import (
+    common_artifact_validator,
+    common_metadata_validator,
+)
 
 
 def set_connection_string(connection_string: Optional[str] = None):
@@ -84,9 +87,9 @@ def validates(
         if isinstance(loaded_artifact, list):
             loaded_artifacts += loaded_artifact
     metadata["chainmetadata"]["raw_artifact"] = loaded_artifacts
-    metadata["chainmetadata"]["artifact"] = [
-        schema.translator.to_common_schema(a) for a in loaded_artifacts
-    ]
+    common_schema = [schema.translator.to_common_schema(a) for a in loaded_artifacts]
+    common_artifact_validator.validate([c.__dict__ for c in common_schema])
+    metadata["chainmetadata"]["artifact"] = common_schema
 
     return metadata
 
