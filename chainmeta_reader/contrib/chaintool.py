@@ -34,12 +34,26 @@ class ChaintoolTranslator(ITranslator):
         return ChaintoolTranslator.normalize_key(chain)
 
     @staticmethod
-    def normalize_source(source: str) -> str:
-        source = {
-            "third party verified": "external",
-        }.get(source, source)
+    def denormalize_chain(chain: str) -> str:
+        return {
+            "ethereum_mainnet": "ETH",
+            "bitcoin_mainnet": "BTC",
+        }.get(chain, chain)
 
-        return ChaintoolTranslator.normalize_key(source)
+    @staticmethod
+    def normalize_category(category: str) -> str:
+        category = {
+            "Financial Services": "business_or_services",
+            "Services": "business_or_services",
+        }.get(category, category)
+
+        return ChaintoolTranslator.normalize_key(category)
+
+    @staticmethod
+    def denormalize_category(category: str) -> str:
+        return {
+            "business_or_services": "Services",
+        }.get(category, category)
 
     def to_common_schema(self, raw_metadata: Dict[str, str]) -> Optional[ChainmetaItem]:
         # Translate Chaintool formatted metadata into the common schema
@@ -49,10 +63,10 @@ class ChaintoolTranslator(ITranslator):
             entity=ChaintoolTranslator.normalize_key(raw_metadata["entity"]),
             name=raw_metadata["entity_name"],
             categories=[
-                ChaintoolTranslator.normalize_key(i)
+                ChaintoolTranslator.normalize_category(i)
                 for i in raw_metadata["categories"].split(",")
             ],
-            source=ChaintoolTranslator.normalize_source(raw_metadata["source"]),
+            source=ChaintoolTranslator.normalize_key(raw_metadata["source"]),
             submitted_by=raw_metadata["submitted_by"],
             submitted_on=raw_metadata["tagged_on"],
         )
@@ -63,11 +77,18 @@ class ChaintoolTranslator(ITranslator):
         # Translate from common schema into Chaintool formatted metadata
 
         return {
-            "chain": common_schema_metadata.chain,
+            "chain": ChaintoolTranslator.denormalize_chain(
+                common_schema_metadata.chain
+            ),
             "address": common_schema_metadata.address,
             "entity": common_schema_metadata.entity,
             "entity_name": common_schema_metadata.name,
-            "categories": ",".join(common_schema_metadata.categories),
+            "categories": ",".join(
+                [
+                    ChaintoolTranslator.denormalize_category(i)
+                    for i in common_schema_metadata.categories
+                ]
+            ),
             "source": common_schema_metadata.source,
             "submitted_by": common_schema_metadata.submitted_by,
             "tagged_on": common_schema_metadata.submitted_on,
