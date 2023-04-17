@@ -11,16 +11,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import json
+from abc import ABC
 from pathlib import Path
+from typing import Optional
 
-from jsonschema import Draft7Validator, validators
+from jsonschema import Draft7Validator, TypeChecker, validators
 
-from chainmeta_reader.config import Config, default_config
+from chainmeta_reader.config import default_config
 from chainmeta_reader.constants import (
     ArtifactSchemaFile,
     Field,
     MetaSchemaFile,
-    SchemasFolder,
+    SchemaFolder,
 )
 
 
@@ -30,45 +32,39 @@ def value_checker(valid_values):
     )
 
 
-class JsonValidator(object):
-    def __init__(self, *, config: Config = default_config, schema: Path):
-        type_checker = Draft7Validator.TYPE_CHECKER.redefine_many(
-            {
-                Field.CATEGORY.value: value_checker(config.Categories),
-                Field.ENTITY.value: value_checker(config.Entities),
-                Field.SOURCE.value: value_checker(config.Sources),
-                Field.CHAIN.value: value_checker(config.Chains),
-            }
-        )
+class IValidator(ABC):
+    def validate(self, metadata: object):
+        pass
 
+
+class JsonValidator(IValidator):
+    def __init__(self, *, schema: Path, type_checker: Optional[TypeChecker] = None):
         with open(schema) as sf:
-            custom_validator = validators.extend(
-                Draft7Validator, type_checker=type_checker
-            )
-            self.validator = custom_validator(schema=json.load(sf))
+            if type_checker is None:
+                self.validator = Draft7Validator(schema=json.load(sf))
+            else:
+                custom_validator = validators.extend(
+                    Draft7Validator, type_checker=type_checker
+                )
+                self.validator = custom_validator(schema=json.load(sf))
 
     def validate(self, metadata: object):
         self.validator.validate(metadata)
 
 
-class ValidatorError(ValueError):
-    def __init__(self, msg):
-        ValueError.__init__(self, msg)
-        self.msg = msg
+common_metadata_validator = JsonValidator(
+    schema=Path(__file__).parent.resolve().joinpath(SchemaFolder, MetaSchemaFile)
+)
 
-
-class Validator:
-    def __init__(self):
-        schema_file = (
-            Path(__file__).parent.resolve().joinpath(SchemasFolder, MetaSchemaFile)
-        )
-        self._validators = [JsonValidator(config=default_config, schema=schema_file)]
-
-    def validate(self, metadata: dict):
-        for v in self._validators:
-            v.validate(metadata)
-
-
+type_checker = Draft7Validator.TYPE_CHECKER.redefine_many(
+    {
+        Field.CATEGORY.value: value_checker(default_config.Categories),
+        Field.ENTITY.value: value_checker(default_config.Entities),
+        Field.SOURCE.value: value_checker(default_config.Sources),
+        Field.CHAIN.value: value_checker(default_config.Chains),
+    }
+)
 common_artifact_validator = JsonValidator(
-    schema=Path(__file__).parent.resolve().joinpath(SchemasFolder, ArtifactSchemaFile)
+    schema=Path(__file__).parent.resolve().joinpath(SchemaFolder, ArtifactSchemaFile),
+    type_checker=type_checker,
 )

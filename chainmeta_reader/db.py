@@ -34,6 +34,9 @@ _session_maker: Optional[Callable] = None
 mapper_registry: registry = registry()
 
 
+err_msg = "Database is not initialized.Set CHAINMETA_DB_CONN environment variable or call set_connection_string() first."  # noqa: E501
+
+
 @mapper_registry.mapped
 class ChainmetaRecord:
     """Define the table schema for Chainmeta.
@@ -74,13 +77,18 @@ def flatten(metadata_list: List[ChainmetaItem]) -> List[ChainmetaRecord]:
 
     flattened_records: List[ChainmetaRecord] = []
     for metadata in metadata_list:
-        address, network, source, submitted_by, submitted_on = (
+        address, network, source, submitted_by = (
             metadata.address,
             metadata.chain,
             metadata.source,
             metadata.submitted_by,
-            metadata.submitted_on,
         )
+
+        try:
+            submitted_on = parser.parse(metadata.submitted_on)
+        except Exception:
+            logger.warning("Invalid submitted_on date: %s", metadata.submitted_on)
+            continue
 
         def _build_record(tag_type: str, tag_value: Optional[str]):
             if not tag_value:
@@ -94,7 +102,7 @@ def flatten(metadata_list: List[ChainmetaItem]) -> List[ChainmetaRecord]:
                 tag=tag_value,
                 source=source,
                 submitted_by=submitted_by,
-                submitted_on=parser.parse(submitted_on),
+                submitted_on=submitted_on,
             )
 
         flattened_records.append(
@@ -191,6 +199,7 @@ def _upload_chainmeta_single_batch(
                     total += 1
                     session.add(record)
         session.commit()
+        logger.debug(f"Uploaded {total} records to database")
         return total
 
 
@@ -207,7 +216,7 @@ def upload_chainmeta(
     """
 
     if _session_maker is None:
-        raise RuntimeError("Database is not initialized")
+        raise RuntimeError(err_msg)
 
     total, batch, tasks = 0, [], []
     for item in items:
@@ -240,7 +249,7 @@ def search_chainmeta(*, filter: dict = {}) -> Generator[ChainmetaItem, None, Non
     """
 
     if _session_maker is None:
-        raise RuntimeError("Database is not initialized")
+        raise RuntimeError(err_msg)
 
     def _apply_filter(query, filter: dict):
         """Apply filter to query."""

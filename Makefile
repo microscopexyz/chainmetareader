@@ -16,6 +16,10 @@ db:
 	docker volume create sql_data && docker run -d -e MYSQL_ROOT_PASSWORD=test -v sql_data_volume:/var/lib/mysql -p 3306:3306 mysql:8.0
 
 
-.PYONY: db-migrate
+.PHONY: db-migrate
 db-migrate:
 	alembic upgrade head
+
+.PHONY: new-contributor
+new-contributor:
+	pip install -r ./scripts/requirements.txt && ./scripts/new.py $(name)
