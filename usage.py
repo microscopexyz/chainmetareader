@@ -64,6 +64,7 @@ with open("./examples/chaintool_sample.json") as f:
 
     # Translate back to Chaintool schema
     from chainmeta_reader.contrib.chaintool import ChaintoolTranslator
+
     logging.info("3. Chaintool: Translate back to Chaintool schema")
     raw_metadata = [
         ChaintoolTranslator().from_common_schema(i) for i in common_metadata
