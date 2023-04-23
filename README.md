@@ -26,7 +26,7 @@ To filter the chainmeta based on specific attributes, you can pass a filter dict
 
 ```
 >>> filter = {"address": "0xf177aa7b0602f787f6f01c65f4b2e267336fd349", "chain": "ethereum-mainnet"}
->>> result_generator = search_chainmeta(filter=filter)
+>>> result_generator = cm.search_chainmeta(filter=filter)
 >>> list(result_generator)
 ```
 
