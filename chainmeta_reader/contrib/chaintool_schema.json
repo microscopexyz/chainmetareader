@@ -31,10 +31,10 @@
                 "format": "[a-zA-Z_]*"
             },
             "entity": {
-                "type": "string"
+                "type": ["string", "null"]
             },
             "entity_name": {
-                "type": "string"
+                "type": ["string", "null"]
             },
             "categories": {
                 "type": "string",

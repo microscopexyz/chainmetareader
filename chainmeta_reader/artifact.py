@@ -13,7 +13,7 @@
 
 import json
 from pathlib import Path
-from typing import Optional, no_type_check
+from typing import Dict, Optional, no_type_check
 
 file_prefix = "file:///"
 
@@ -51,10 +51,13 @@ def csv_parser(c: str) -> object:
             row = rows[i]
             if not row:
                 continue
-            dic = {}
+            dic: Dict[str, Optional[str]] = {}
             arr = row.split("\t")
             for j in range(0, len(filed_names)):
-                dic[filed_names[j]] = arr[j]
+                if arr[j] == "":
+                    dic[filed_names[j]] = None
+                else:
+                    dic[filed_names[j]] = arr[j]
             meta_data.append(dic)
         return meta_data
     finally:

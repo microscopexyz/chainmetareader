@@ -29,7 +29,7 @@ class ChainmetaItem:
     address: str
 
     # Entity id of the address
-    entity: str
+    entity: Optional[str]
 
     # name of the address
     name: Optional[str]
