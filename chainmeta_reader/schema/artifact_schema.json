@@ -23,10 +23,17 @@
                 "$ref": "/schemas/address"
             },
             "entity": {
-                "$ref": "/schemas/entity"
+                "anyOf": [
+                    {
+                        "nullable": true
+                    },
+                    {
+                        "$ref": "/schemas/entity"
+                    }
+                ]
             },
             "name": {
-                "type": "string"
+                "type": ["string", "null"]
             },
             "categories": {
                 "type": "array",

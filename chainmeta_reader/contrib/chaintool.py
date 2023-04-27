@@ -21,17 +21,21 @@ from chainmeta_reader.validator import JsonValidator
 
 class ChaintoolTranslator(ITranslator):
     @staticmethod
-    def normalize_key(key: str) -> str:
+    def normalize_not_none_key(key: str) -> str:
         return re.sub("[^a-zA-Z0-9_]", "_", key).lower()
 
     @staticmethod
+    def normalize_key(key: str) -> Optional[str]:
+        if key is None:
+            return None
+        return ChaintoolTranslator.normalize_not_none_key(key)
+
+    @staticmethod
     def normalize_chain(chain: str) -> str:
-        chain = {
+        return {
             "ETH": "ethereum_mainnet",
             "BTC": "bitcoin_mainnet",
         }.get(chain, chain)
-
-        return ChaintoolTranslator.normalize_key(chain)
 
     @staticmethod
     def denormalize_chain(chain: str) -> str:
@@ -47,7 +51,7 @@ class ChaintoolTranslator(ITranslator):
             "Services": "business_or_services",
         }.get(category, category)
 
-        return ChaintoolTranslator.normalize_key(category)
+        return ChaintoolTranslator.normalize_not_none_key(category)
 
     @staticmethod
     def denormalize_category(category: str) -> str:
@@ -66,7 +70,7 @@ class ChaintoolTranslator(ITranslator):
                 ChaintoolTranslator.normalize_category(i)
                 for i in raw_metadata["categories"].split(",")
             ],
-            source=ChaintoolTranslator.normalize_key(raw_metadata["source"]),
+            source=ChaintoolTranslator.normalize_not_none_key(raw_metadata["source"]),
             submitted_by=raw_metadata["submitted_by"],
             submitted_on=raw_metadata["tagged_on"],
         )
