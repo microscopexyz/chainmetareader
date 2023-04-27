@@ -8,7 +8,6 @@ from starlette.middleware.sessions import SessionMiddleware
 from starlette.responses import Response
 
 from api_server import search_chainmeta
-from api_server.router import router
 
 app = FastAPI()
 cookie_key = "chiantool_build_great_job"
@@ -37,7 +36,6 @@ async def log_request(request, call_next):
 
 
 app.add_middleware(SessionMiddleware, secret_key=cookie_key)
-app.include_router(router, prefix="/api")
 app.include_router(search_chainmeta.router, prefix="/api")
 
 
