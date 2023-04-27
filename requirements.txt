@@ -119,6 +119,10 @@ virtualenv==20.21.0
     # via pre-commit
 wheel==0.40.0
     # via pip-tools
+fastapi~=0.68.1
+uvicorn~=0.15.0
+itsdangerous
+pydantic~=1.8.2
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
