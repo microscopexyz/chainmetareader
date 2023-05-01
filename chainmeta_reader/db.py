@@ -177,36 +177,45 @@ def _upload_chainmeta_single_batch(
             """Check if the record already exists in the database."""
             if skip_check:
                 return True
-            found = (
-                session.query(ChainmetaRecord)
-                .filter_by(
-                    chain=record.chain,
-                    address=record.address,
-                    namespace=record.namespace,
-                    scope=record.scope,
-                    tag=record.tag,
-                    source=record.source,
-                    submitted_by=record.submitted_by,
+            with session.no_autoflush:
+                found = (
+                    session.query(ChainmetaRecord)
+                    .filter_by(
+                        chain=record.chain,
+                        address=record.address,
+                        namespace=record.namespace,
+                        scope=record.scope,
+                        tag=record.tag,
+                        source=record.source,
+                        submitted_by=record.submitted_by,
+                    )
+                    .first()
                 )
-                .first()
-            )
-            return found is None
+                return found is None
 
+        skipped = 0
         total = 0
         for item in items:
             for record in flatten([item]):
                 if _item_not_exist(record):
                     total += 1
                     session.add(record)
-        session.commit()
-        logger.debug(f"Uploaded {total} records to database")
+                else:
+                    skipped += 1
+        logger.debug(f"Skipped {skipped} and uploaded {total} records to database")
+        try:
+            session.commit()
+        except Exception as e:
+            session.rollback()
+            print("db commit exception =========== error")
+            logger.error(e)
         return total
 
 
 def upload_chainmeta(
     items: Iterable[ChainmetaItem],
     *,
-    batch_size: int = 50,
+    batch_size: int = 200,
     max_concurrency: int = 10,
     skip_check: bool = False,
 ) -> int:
