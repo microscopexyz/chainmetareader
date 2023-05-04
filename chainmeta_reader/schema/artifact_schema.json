@@ -9,7 +9,6 @@
         "required": [
             "chain",
             "address",
-            "entity",
             "categories",
             "source",
             "submitted_by",
