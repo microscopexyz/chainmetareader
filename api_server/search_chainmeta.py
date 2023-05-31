@@ -1,6 +1,4 @@
-from fastapi import APIRouter, Request
-from pydantic import BaseModel
-from typing import List
+from fastapi import APIRouter, Request, Query
 
 from chainmeta_reader import search_chainmeta
 
@@ -18,4 +16,23 @@ async def search(chain: str, address: str, request: Request):
         }
     )
 
+    return results
+
+
+@router.get("/search_chainmeta")
+async def search(chain: str = Query(None), address: str = Query(None)):
+    if address is None:
+        return 'missing parameter address'
+    if chain is None:
+        results = search_chainmeta(
+            filter={
+                "address": address
+            }
+        )
+    else:
+        results = search_chainmeta(
+            filter={
+                "address": address,
+                "chain": chain,
+            })
     return results
