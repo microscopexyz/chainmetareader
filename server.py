@@ -10,7 +10,7 @@ from starlette.responses import Response
 from api_server import search_api
 
 app = FastAPI()
-cookie_key = "chiantool_build_great_job"
+cookie_key = "chaintool_build_great_job"
 
 
 @app.middleware("http")
