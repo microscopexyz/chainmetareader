@@ -31,6 +31,7 @@ async def search(chain: str, address: str):
 
     return results
 
+
 @router.get("/search_chainmeta")
 async def search(chain: str = Query(None), address: str = Query(None)):
     if address is None:
