@@ -18,20 +18,6 @@ from chainmeta_reader import search_chainmeta
 router = APIRouter()
 
 
-@router.get("/search_chainmeta/{chain}/{address}")
-async def search(chain: str, address: str):
-    if address is None or chain is None:
-        return "missing parameter address or chain"
-    results = search_chainmeta(
-        filter={
-            "address": address,
-            "chain": chain,
-        }
-    )
-
-    return results
-
-
 @router.get("/search_chainmeta")
 async def search(chain: str = Query(None), address: str = Query(None)):
     if address is None:
