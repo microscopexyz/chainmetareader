@@ -27,6 +27,7 @@ import chainmeta_reader
         ("chaintool_invalid_sample.json", False),
         ("coinbase_sample.json", True),
         ("coinbase_invalid_sample.json", False),
+        ("goplus_sample.json", True),
     ],
 )
 def test_validate(input_file: str, is_valid: bool):
