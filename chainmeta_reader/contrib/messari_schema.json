@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Messari Open Chain Meta",
+    "description": "Messari's Open Chain Metadata Schema",
+    "type": "array",
+    "items": {
+        "description": "",
+        "type": "object",
+        "required": [
+            "field_name"
+        ],
+        "properties": {
+            "field_name": {
+                "type": "string"
+            }
+        }
+    }
+}
