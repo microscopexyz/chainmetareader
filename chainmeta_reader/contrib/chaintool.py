@@ -49,6 +49,13 @@ class ChaintoolTranslator(ITranslator):
         category = {
             "Financial Services": "business_or_services",
             "Services": "business_or_services",
+            "Exchange": "cex",
+            "Law Enforcement": "le",
+            "Coinswapper": "coin_swapper",
+            "Financial Crime": "financial_crime",
+            "Constrainted": "constrained_by_service",
+            "High Risk": "high_risk",
+            "Dapp": "dapp",
         }.get(category, category)
 
         return ChaintoolTranslator.normalize_not_none_key(category)
@@ -57,6 +64,13 @@ class ChaintoolTranslator(ITranslator):
     def denormalize_category(category: str) -> str:
         return {
             "business_or_services": "Services",
+            "cex": "Exchange",
+            "le": "Law Enforcement",
+            "coin_swapper": "Coinswapper",
+            "financial_crime": "Financial Crime",
+            "constrained_by_service": "Constrainted",
+            "high_risk": "High Risk",
+            "dapp": "Dapp",
         }.get(category, category)
 
     def to_common_schema(self, raw_metadata: Dict[str, str]) -> Optional[ChainmetaItem]:

@@ -156,6 +156,10 @@
         "display_name": "Bancor Network"
     },
     {
+        "key": "base_protocol",
+        "display_name": "Base Protocol"
+    },
+    {
         "key": "barbooth_bet",
         "display_name": "Barbooth.Bet"
     },
@@ -634,6 +638,10 @@
     {
         "key": "falconx",
         "display_name": "FalconX"
+    },
+    {
+        "key": "fatpay",
+        "display_name": "FaTPay"
     },
     {
         "key": "fei_protocol",
@@ -1318,6 +1326,10 @@
     {
         "key": "tagz",
         "display_name": "TAGZ"
+    },
+    {
+        "key": "tron_hi_lo",
+        "display_name": "Tron Hi-Lo"
     },
     {
         "key": "tron_up",
