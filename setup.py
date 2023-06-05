@@ -1,0 +1,41 @@
+from distutils.core import setup
+from setuptools import find_packages
+
+setup(name="chainmeta_sdk",
+      version="0.0.1",
+      keywords=("chainmeta_sdk"),
+      description='chainmeta_sdk ...',
+      long_description="""chainmeta_sdk ...""",
+      author='sky',
+      author_email='dongyi@chaintool.ai',
+      url='',
+      install_requires=["alembic==1.10.2", "attrs==22.2.0", "black==23.1.0", "build==0.10.0", "cffi==1.15.1",
+                        "cfgv==3.3.1", "click==8.1.3", "cryptography==37.0.4", "distlib==0.3.6",
+                        "exceptiongroup==1.1.1", "filelock==3.11.0", "identify==2.5.22", "iniconfig==2.0.0",
+                        "isort==5.12.0", "jsonschema==4.17.3", "mako==1.2.4", "markupsafe==2.1.2", "mypy==1.0.1",
+                        "mypy-extensions==1.0.0", "nodeenv==1.7.0", "packaging==23.1", "pathspec==0.11.1",
+                        "pip-tools==6.12.3", "platformdirs==3.2.0", "pluggy==1.0.0", "pre-commit==3.0.4",
+                        "pre-commit-hooks==4.4.0", "pycparser==2.21", "pymysql==1.0.2", "pyproject-hooks==1.0.0",
+                        "pyrsistent==0.19.3", "pytest==7.2.2", "python-dateutil==2.8.2", "pyyaml==6.0",
+                        "ruamel-yaml==0.17.21", "ruamel-yaml-clib==0.2.7", "six==1.16.0", "sqlalchemy[mypy]==2.0.9",
+                        "tomli==2.0.1", "types-jsonschema==4.17.0.7", "types-python-dateutil==2.8.19.12",
+                        "typing-extensions==4.5.0", "unsync==1.4.0", "virtualenv==20.21.0", "wheel==0.40.0",
+                        "fastapi==0.68.1", "uvicorn==0.15.0", "itsdangerous==2.1.2", "pydantic==1.8.2",
+                        "starlette==0.14.2"],
+      license='',
+      packages=find_packages(),
+      package_data={
+          'chainmeta_reader': ['config/*.json', 'schema/*.json', 'contrib/*.json'],
+      },
+      platforms=["all"],
+      classifiers=[
+          'Development Status :: 5 - Production/Stable',
+          'Intended Audience :: Developers',
+          'Operating System :: OS Independent',
+          'Natural Language :: Chinese (Simplified)',
+          'Programming Language :: Python',
+          'Programming Language :: Python :: 3.8',
+          'Programming Language :: Python :: 3.9',
+          'Topic :: Software Development :: Libraries'
+      ],
+      )
