@@ -97,7 +97,7 @@ with open("./examples/chaintool_sample.json") as f:
         logging.info(item)
 
 # Load metadata from file with GoPlus schema
-with open("./examples/goplus_sample.json.json") as f:
+with open("./examples/goplus_sample.json") as f:
     # Load artifact
     logging.info("1. Load Metadata")
     metadata = load(f, artifact_base_path="./examples")
@@ -130,6 +130,46 @@ with open("./examples/goplus_sample.json.json") as f:
     result = search_chainmeta(
         filter={
             "address": "0x333f2e9f074de56d3ed6a0518c3d0df418692b63",
+            "chain": "ethereum_mainnet",
+        }
+    )
+    for item in result:
+        logging.info(item)
+
+# Load metadata from file with Messari schema
+with open("./examples/messari_sample.json") as f:
+    # Load artifact
+    logging.info("1. Load Metadata")
+    metadata = load(f, artifact_base_path="./examples")
+
+    # Raw metadata
+    raw_metadata = metadata["chainmetadata"]["raw_artifact"]
+    for item in raw_metadata:
+        logging.info(item)
+
+    # Common schema metadata
+    common_metadata = metadata["chainmetadata"]["artifact"]
+    for item in common_metadata:
+        logging.info(item)
+
+    # Persist metadata to database
+    logging.info("2. Upload to database")
+    n = upload_chainmeta(common_metadata)
+    logging.info(f"Added {n} items to database")
+
+    # Retrieve metadata from database
+    logging.info("3. Search without filter")
+    result = search_chainmeta()
+    for i, item in enumerate(result):
+        if i >= 10:
+            break
+        logging.info(item)
+
+    # Retrieve metadata from database with filter
+    logging.info("4. Search with filter")
+    result = search_chainmeta(
+        filter={
+            "address": "0x93a62da5a14c80f265dabc077fcee437b1a0efde",
             "chain": "ethereum_mainnet",
         }
     )

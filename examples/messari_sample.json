@@ -1,19 +1,19 @@
 {
     "community": "openchainmeta",
     "provider": {
-        "provider_name": "goplus",
-        "provider_id": "ocm000003",
+        "provider_name": "messari",
+        "provider_id": "ocm000004",
         "provider_signature": ""
     },
     "version": "v1",
     "revision": 1,
-    "introduction": "https://github.com/openchainmeta/chainmetareader/doc/goplus/introduction.md",
+    "introduction": "https://github.com/openchainmeta/chainmetareader/doc/messari/introduction.md",
     "chainmetadata": {
         "schema": "https://github.com/openchainmeta/chainmetareader/chainmeta_reader/schemas/artifact_schema.json",
         "artifact": [
             {
                 "artifact_type": "local file",
-                "path": "file:///goplus_artifact_sample.json",
+                "path": "file:///messari_artifact_sample.json",
                 "fileformat": "json",
                 "signature": ""
             }

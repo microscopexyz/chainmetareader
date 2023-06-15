@@ -1,0 +1,28 @@
+[
+    {
+        "address": "0x50c1a2ea0a861a967d9d0ffe2ae4012c2e053804",
+        "chain": "ethereum_mainnet",
+        "entity": "yearn_finance",
+        "name": "Yearn V2 Registry",
+        "categories": [
+            "defi",
+            "yield"
+        ],
+        "source": "ground_truth",
+        "submitted_by": "messari",
+        "submitted_on": "2023-01-04 00:00:00"
+    },
+    {
+        "address": "0x93a62da5a14c80f265dabc077fcee437b1a0efde",
+        "chain": "ethereum_mainnet",
+        "entity": "yearn_finance",
+        "name": "Yearn Treasury",
+        "categories": [
+            "defi",
+            "yield"
+        ],
+        "source": "ground_truth",
+        "submitted_by": "messari",
+        "submitted_on": "2023-01-04 00:00:00"
+    }
+]
