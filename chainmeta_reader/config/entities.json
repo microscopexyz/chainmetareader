@@ -1758,5 +1758,225 @@
     {
         "key": "changelly",
         "display_name": "Changelly"
+    },
+    {
+        "key": "darkmarket_omg",
+        "display_name": "DarkMarket-OMG"
+    },
+    {
+        "key": "hydra_market",
+        "display_name": "Hydra Market"
+    },
+    {
+        "key": "coinpayments",
+        "display_name": "CoinPayments"
+    },
+    {
+        "key": "busha",
+        "display_name": "Busha"
+    },
+    {
+        "key": "wazirx",
+        "display_name": "WazirX"
+    },
+    {
+        "key": "phemex",
+        "display_name": "Phemex"
+    },
+    {
+        "key": "roqqu",
+        "display_name": "Roqqu"
+    },
+    {
+        "key": "coinspot",
+        "display_name": "CoinSpot"
+    },
+    {
+        "key": "quidax",
+        "display_name": "Quidax"
+    },
+    {
+        "key": "blockchain_com",
+        "display_name": "Blockchain.com"
+    },
+    {
+        "key": "gouri_io",
+        "display_name": "gouri.io"
+    },
+    {
+        "key": "60cek",
+        "display_name": "60cek"
+    },
+    {
+        "key": "coinlist",
+        "display_name": "CoinList"
+    },
+    {
+        "key": "bitclout",
+        "display_name": "BitClout"
+    },
+    {
+        "key": "poolin",
+        "display_name": "Poolin"
+    },
+    {
+        "key": "southxchange",
+        "display_name": "SouthXchange"
+    },
+    {
+        "key": "folgory",
+        "display_name": "Folgory"
+    },
+    {
+        "key": "wasabi",
+        "display_name": "Wasabi"
+    },
+    {
+        "key": "bitcoinwallet_com",
+        "display_name": "BitcoinWallet.com"
+    },
+    {
+        "key": "bitbns",
+        "display_name": "Bitbns"
+    },
+    {
+        "key": "citex",
+        "display_name": "CITEX"
+    },
+    {
+        "key": "blocktrades",
+        "display_name": "BlockTrades"
+    },
+    {
+        "key": "biki",
+        "display_name": "BiKi"
+    },
+    {
+        "key": "alterdice",
+        "display_name": "Alterdice"
+    },
+    {
+        "key": "avalanche_bridge",
+        "display_name": "Avalanche_Bridge"
+    },
+    {
+        "key": "holytransaction",
+        "display_name": "HolyTransaction"
+    },
+    {
+        "key": "aofex",
+        "display_name": "AOFEX"
+    },
+    {
+        "key": "bixin",
+        "display_name": "Bixin"
+    },
+    {
+        "key": "renrenbit",
+        "display_name": "RenrenBit"
+    },
+    {
+        "key": "idcm",
+        "display_name": "IDCM"
+    },
+    {
+        "key": "coincafe_com",
+        "display_name": "CoinCafe.com"
+    },
+    {
+        "key": "gdac",
+        "display_name": "GDAC"
+    },
+    {
+        "key": "thodex",
+        "display_name": "Thodex"
+    },
+    {
+        "key": "vindax",
+        "display_name": "VinDAX"
+    },
+    {
+        "key": "coinsuper",
+        "display_name": "Coinsuper"
+    },
+    {
+        "key": "duedex",
+        "display_name": "DueDEX"
+    },
+    {
+        "key": "moonbit_co_in",
+        "display_name": "MoonBit.co.in"
+    },
+    {
+        "key": "vebitcoin",
+        "display_name": "Vebitcoin"
+    },
+    {
+        "key": "p2pb2b",
+        "display_name": "P2PB2B"
+    },
+    {
+        "key": "bitexlive",
+        "display_name": "Bitexlive"
+    },
+    {
+        "key": "coinfloor",
+        "display_name": "Coinfloor"
+    },
+    {
+        "key": "chipmixer",
+        "display_name": "ChipMixer"
+    },
+    {
+        "key": "upex",
+        "display_name": "UPEX"
+    },
+    {
+        "key": "paritex",
+        "display_name": "Paritex"
+    },
+    {
+        "key": "bleutrade",
+        "display_name": "Bleutrade"
+    },
+    {
+        "key": "seaio",
+        "display_name": "SeaIO"
+    },
+    {
+        "key": "webmoney",
+        "display_name": "WebMoney"
+    },
+    {
+        "key": "mtgox",
+        "display_name": "MTGOX"
+    },
+    {
+        "key": "litebit",
+        "display_name": "LiteBit"
+    },
+    {
+        "key": "bitpay",
+        "display_name": "BitPay"
+    },
+    {
+        "key": "finiko",
+        "display_name": "Finiko"
+    },
+    {
+        "key": "wikileaks_donate",
+        "display_name": "WikiLeaks_Donate"
+    },
+    {
+        "key": "nairaex",
+        "display_name": "NairaEx"
+    },
+    {
+        "key": "coinegg",
+        "display_name": "CoinEgg"
+    },
+    {
+        "key": "coinmotion",
+        "display_name": "Coinmotion"
     }
 ]
