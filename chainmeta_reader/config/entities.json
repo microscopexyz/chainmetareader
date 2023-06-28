@@ -1978,5 +1978,297 @@
     {
         "key": "coinmotion",
         "display_name": "Coinmotion"
+    },
+    {
+        "key": "velodrome",
+        "display_name": "Velodrome Finance"
+    },
+    {
+        "key": "telos",
+        "display_name": "Telos"
+    },
+    {
+        "key": "cap_finance",
+        "display_name": "Cap Finance"
+    },
+    {
+        "key": "ellipsis_finance",
+        "display_name": "Ellipsis Finance"
+    },
+    {
+        "key": "euler_finance",
+        "display_name": "Euler Finance"
+    },
+    {
+        "key": "hegic",
+        "display_name": "Hegic"
+    },
+    {
+        "key": "maple_finance",
+        "display_name": "Maple Finance"
+    },
+    {
+        "key": "spookyswap",
+        "display_name": "Spookyswap"
+    },
+    {
+        "key": "biswap",
+        "display_name": "Biswap"
+    },
+    {
+        "key": "trisolaris",
+        "display_name": "Trisolaris"
+    },
+    {
+        "key": "beethoven_x",
+        "display_name": "Beethoven X"
+    },
+    {
+        "key": "hop",
+        "display_name": "Hop Protocol"
+    },
+    {
+        "key": "moonwell",
+        "display_name": "Moonwell"
+    },
+    {
+        "key": "platypus_finance",
+        "display_name": "Platypus Finance"
+    },
+    {
+        "key": "trader_joe",
+        "display_name": "Trader Joe"
+    },
+    {
+        "key": "vesta_finance",
+        "display_name": "Vesta Finance"
+    },
+    {
+        "key": "stakedao",
+        "display_name": "StakeDAO"
+    },
+    {
+        "key": "badgerdao",
+        "display_name": "BadgerDAO"
+    },
+    {
+        "key": "arrakis_finance",
+        "display_name": "Arrakis Finance"
+    },
+    {
+        "key": "dforce",
+        "display_name": "DForce"
+    },
+    {
+        "key": "geist",
+        "display_name": "Geist Finance"
+    },
+    {
+        "key": "keeperdao",
+        "display_name": "KeeperDAO"
+    },
+    {
+        "key": "mcdex",
+        "display_name": "MCDEX"
+    },
+    {
+        "key": "nftx",
+        "display_name": "NFTX"
+    },
+    {
+        "key": "solarbeam",
+        "display_name": "Solarbeam"
+    },
+    {
+        "key": "truefi",
+        "display_name": "TrueFi"
+    },
+    {
+        "key": "volmex",
+        "display_name": "Volmex"
+    },
+    {
+        "key": "ubeswap",
+        "display_name": "Ubeswap"
+    },
+    {
+        "key": "babyswap",
+        "display_name": "Babyswap"
+    },
+    {
+        "key": "alpha_finance",
+        "display_name": "Alpha Finance"
+    },
+    {
+        "key": "cryptex",
+        "display_name": "Cryptex"
+    },
+    {
+        "key": "goldfinch",
+        "display_name": "Goldfinch"
+    },
+    {
+        "key": "ironbank",
+        "display_name": "Ironbank"
+    },
+    {
+        "key": "qidao",
+        "display_name": "Qidao"
+    },
+    {
+        "key": "ampleforth",
+        "display_name": "Ampleforth"
+    },
+    {
+        "key": "bastion_protocol",
+        "display_name": "Bastion Protocol"
+    },
+    {
+        "key": "dydx",
+        "display_name": "dydx"
+    },
+    {
+        "key": "ousd",
+        "display_name": "ousd"
+    },
+    {
+        "key": "ens",
+        "display_name": "ENS"
+    },
+    {
+        "key": "radicle",
+        "display_name": "Radicle"
+    },
+    {
+        "key": "beefy_finance",
+        "display_name": "Beefy Finance"
+    },
+    {
+        "key": "silo",
+        "display_name": "Silo"
+    },
+    {
+        "key": "threshold_network",
+        "display_name": "Threshold Network"
+    },
+    {
+        "key": "unlock_protocol",
+        "display_name": "Unlock Protocol"
+    },
+    {
+        "key": "x2y2",
+        "display_name": "x2y2"
+    },
+    {
+        "key": "uwu_lend",
+        "display_name": "UwU Lend"
+    },
+    {
+        "key": "aurigami",
+        "display_name": "Aurigami"
+    },
+    {
+        "key": "indexed_finance",
+        "display_name": "Indexed Finance"
+    },
+    {
+        "key": "mm_finance",
+        "display_name": "MM Finance"
+    },
+    {
+        "key": "pangolin",
+        "display_name": "Pangolin"
+    },
+    {
+        "key": "gamma_strategies",
+        "display_name": "Gamma Strategies"
+    },
+    {
+        "key": "flare",
+        "display_name": "flare"
+    },
+    {
+        "key": "radiant",
+        "display_name": "Radiant"
+    },
+    {
+        "key": "saddle_finance",
+        "display_name": "Saddle Finance"
+    },
+    {
+        "key": "the_graph",
+        "display_name": "The Graph"
+    },
+    {
+        "key": "vvs_finance",
+        "display_name": "VVS Finance"
+    },
+    {
+        "key": "tectonic",
+        "display_name": "Tectonic"
+    },
+    {
+        "key": "liquity",
+        "display_name": "Liquity"
+    },
+    {
+        "key": "notional_finance",
+        "display_name": "Notional Finance"
+    },
+    {
+        "key": "alpaca_finance",
+        "display_name": "Alpaca Finance"
+    },
+    {
+        "key": "aura_finance",
+        "display_name": "Aura Finance"
+    },
+    {
+        "key": "quickswap",
+        "display_name": "Quickswap"
+    },
+    {
+        "key": "reflexer",
+        "display_name": "Reflexer"
+    },
+    {
+        "key": "tokemak",
+        "display_name": "Tokemak"
+    },
+    {
+        "key": "angle",
+        "display_name": "Angle"
+    },
+    {
+        "key": "benqi",
+        "display_name": "BENQI"
+    },
+    {
+        "key": "cryptopunks",
+        "display_name": "Cryptopunks"
+    },
+    {
+        "key": "enzyme_finance",
+        "display_name": "Enzyme Finance"
+    },
+    {
+        "key": "pancakeswap",
+        "display_name": "Pancakeswap"
+    },
+    {
+        "key": "spiritswap",
+        "display_name": "Spiritswap"
+    },
+    {
+        "key": "tornado_cash",
+        "display_name": "Tornado Cash"
+    },
+    {
+        "key": "venus",
+        "display_name": "Venus"
+    },
+    {
+        "key": "yield_yak",
+        "display_name": "Yield Yak"
     }
 ]
