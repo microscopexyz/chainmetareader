@@ -1,15 +1,15 @@
 [
     {
         "key": "ethereum_mainnet",
-        "display_name": "Ethereum Mainnet"
+        "display_name": "Ethereum"
     },
     {
         "key": "bitcoin_mainnet",
-        "display_name": "Bitcoin Mainnet"
+        "display_name": "Bitcoin"
     },
     {
         "key": "optimism_mainnet",
-        "display_name": "Optimism Mainnet"
+        "display_name": "Optimism"
     },
     {
         "key": "arbitrum_one",
@@ -21,23 +21,23 @@
     },
     {
         "key": "fantom_mainnet",
-        "display_name": "Fantom Mainnet"
+        "display_name": "Fantom"
     },
     {
         "key": "polygon_mainnet",
-        "display_name": "Polygon Mainnet"
+        "display_name": "Polygon"
     },
     {
         "key": "bnb_chain_mainnet",
-        "display_name": "BNB Chain Mainnet"
+        "display_name": "BNB Chain"
     },
     {
         "key": "telos_evm_mainnet",
-        "display_name": "Telos EVM Mainnet"
+        "display_name": "Telos EVM"
     },
     {
         "key": "aurora_mainnet",
-        "display_name": "Aurora Mainnet"
+        "display_name": "Aurora"
     },
     {
         "key": "avalanche_c_chain",
@@ -45,7 +45,7 @@
     },
     {
         "key": "celo_mainnet",
-        "display_name": "Celo Mainnet"
+        "display_name": "Celo"
     },
     {
         "key": "harmony_mainnet_shard_0",
@@ -53,7 +53,7 @@
     },
     {
         "key": "gnosis_mainnet",
-        "display_name": "Gnosis Mainnet"
+        "display_name": "Gnosis"
     },
     {
         "key": "moonbeam",
@@ -73,35 +73,35 @@
     },
     {
         "key": "boba_network",
-        "display_name": "Boba Network"
+        "display_name": "Boba"
     },
     {
         "key": "metis_andromeda_mainnet",
-        "display_name": "Metis Andromeda Mainnet"
+        "display_name": "Metis Andromeda"
     },
     {
         "key": "iotex_mainnet",
-        "display_name": "IoTeX Network Mainnet"
+        "display_name": "IoTeX"
     },
     {
         "key": "syscoin_mainnet",
-        "display_name": "Syscoin Mainnet"
+        "display_name": "Syscoin"
     },
     {
         "key": "milkomeda_c1_mainnet",
-        "display_name": "Milkomeda C1 Mainnet"
+        "display_name": "Milkomeda C1"
     },
     {
         "key": "klaytn_mainnet_cypress",
-        "display_name": "Klaytn Mainnet Cypress"
+        "display_name": "Klaytn Cypress"
     },
     {
         "key": "syscoin_mainnet",
-        "display_name": "Syscoin Mainnet"
+        "display_name": "Syscoin"
     },
     {
         "key": "dogechain_mainnet",
-        "display_name": "Dogechain Mainnet"
+        "display_name": "Dogechain"
     },
     {
         "key": "flow",
@@ -113,19 +113,19 @@
     },
     {
         "key": "near_mainnet",
-        "display_name": "NEAR Mainet"
+        "display_name": "NEAR"
     },
     {
         "key": "heco_mainnet",
-        "display_name": "Huobi ECO Chain Mainnet"
+        "display_name": "Huobi ECO Chain"
     },
     {
         "key": "flare_mainnet",
-        "display_name": "Flare Mainnet"
+        "display_name": "Flare"
     },
     {
         "key": "fuse_mainnet",
-        "display_name": "Fuse Mainnet"
+        "display_name": "Fuse"
     },
     {
         "key": "starknet",
