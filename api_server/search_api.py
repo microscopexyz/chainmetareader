@@ -10,16 +10,22 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+from typing import Optional
 
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Query, Header
 
+from api_server.token_loader import is_token_valid
 from chainmeta_reader import search_chainmeta
 
 router = APIRouter()
 
 
 @router.get("/search_chainmeta")
-async def search(chain: str = Query(None), address: str = Query(None)):
+async def search(chain: str = Query(None), address: str = Query(None), token: Optional[str] = Header(None)):
+    if token is None:
+        return "missing required header [TOKEN]"
+    if not is_token_valid(token):
+        return "header [TOKEN] is not exist or invalid"
     if address is None:
         return "missing parameter address"
     if chain is None:
