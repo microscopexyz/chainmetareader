@@ -21,7 +21,11 @@ router = APIRouter()
 
 
 @router.get("/search_chainmeta")
-async def search(chain: str = Query(None), address: str = Query(None), token: Optional[str] = Header(None)):
+async def search(
+        chain: str = Query(None),
+        address: str = Query(None),
+        token: Optional[str] = Header(None)
+):
     if token is None:
         return "missing required header [TOKEN]"
     if not is_token_valid(token):
