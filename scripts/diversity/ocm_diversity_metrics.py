@@ -57,7 +57,7 @@ def calc_diversity_metircs(ocm_count_by_entity_csv_file):
         data_frame["cumulative_percentage"] / data_frame["percentage_of_total"].sum()
     )
 
-    # Calculate the Lorenz curve; represents the cumulative proportion of 
+    # Calculate the Lorenz curve; represents the cumulative proportion of
     # the total on the y-axis and the cumulative proportion of tags on the x-axis
     data_frame["lorenz_curve"] = data_frame["cumulative_proportion"]
 
@@ -74,7 +74,7 @@ def calc_diversity_metircs(ocm_count_by_entity_csv_file):
 
     shannon_df = data_frame.copy()
 
-    # create entropy column by calling the entropy_calc() function 
+    # create entropy column by calling the entropy_calc() function
     # on the proportion_of_total column which represents 'probability'
     shannon_df["entropy"] = shannon_df["proportion_of_total"].apply(entropy_calc)
 
