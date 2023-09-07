@@ -1,7 +1,3 @@
-"""
-ocm_diversity_metrics.py
-This module provides functions for calculating diversity metrics in the OCM dataset.
-"""
 #!/usr/bin/env python3
 
 # Copyright 2023 The chainmetareader Authors. All rights reserved.
@@ -25,8 +21,8 @@ def entropy_calc(x_dist):
     """
     Takes in probability and calculates the entropy value
     Args:
-        x_dist: numpy array which is a float vlaue array 
-    Returns: entropy for distribution x 
+        x_dist: numpy array which is a float vlaue array
+    Returns: entropy for distribution x
     """
     return -x_dist * np.log(x_dist)
 
@@ -35,14 +31,16 @@ def calc_diversity_metircs(ocm_count_by_entity_csv_file):
     """
     Takes in probability and calculates the entropy value
     Args:
-        x_dist: numpy array which is a float vlaue array 
-    Returns: 
-        top_3: Categories Concentratio of OCM entities who contribute the labeled data 
-        gini_coefficient: Gini coefficient: of OCM entities who contribute the labeled data 
+        x_dist: numpy array which is a float vlaue array
+    Returns:
+        top_3: Categories Concentratio of OCM entities who contribute the labeled data
+        gini_coefficient: Gini coefficient: of OCM entities who contribute the labeled data
         shannon_entropy: Shannon entropy of OCM entities who contribute the labeled data
     """
     data_frame = pd.read_csv(ocm_count_by_entity_csv_file)
-    top_3_df = data_frame.sort_values(by=["percentage_of_total"], ascending=False).head(3)
+    top_3_df = data_frame.sort_values(by=["percentage_of_total"], ascending=False).head(
+        3
+    )
     top_3 = top_3_df["percentage_of_total"].sum()
 
     # Sort the DataFrame by percentage_of_total in descending order
@@ -59,8 +57,8 @@ def calc_diversity_metircs(ocm_count_by_entity_csv_file):
         data_frame["cumulative_percentage"] / data_frame["percentage_of_total"].sum()
     )
 
-    # Calculate the Lorenz curve; represents the cumulative proportion of the total on the y-axis
-    # and the cumulative proportion of tags on the x-axis
+    # Calculate the Lorenz curve; represents the cumulative proportion of 
+    # the total on the y-axis and the cumulative proportion of tags on the x-axis
     data_frame["lorenz_curve"] = data_frame["cumulative_proportion"]
 
     # Calculate the area under the Lorenz curve
@@ -76,8 +74,8 @@ def calc_diversity_metircs(ocm_count_by_entity_csv_file):
 
     shannon_df = data_frame.copy()
 
-    # create entropy column by calling the entropy_calc() function on the proportion_of_total column
-    # which represents 'probability'
+    # create entropy column by calling the entropy_calc() function 
+    # on the proportion_of_total column which represents 'probability'
     shannon_df["entropy"] = shannon_df["proportion_of_total"].apply(entropy_calc)
 
     # sum the entropy column to get the Shannon entropy value
@@ -87,8 +85,9 @@ def calc_diversity_metircs(ocm_count_by_entity_csv_file):
 
 
 COUNT_BY_ENTITY_CSV = "ocm_count_by_entity.csv"
-metric_top_3, metric_gini_coefficient, metric_shannon_entropy \
-    = calc_diversity_metircs(COUNT_BY_ENTITY_CSV)
+metric_top_3, metric_gini_coefficient, metric_shannon_entropy = calc_diversity_metircs(
+    COUNT_BY_ENTITY_CSV
+)
 
 print("Top 3 Categories Concentration: ", metric_top_3)
 print("Gini coefficient:", metric_gini_coefficient)
