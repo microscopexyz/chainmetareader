@@ -16,9 +16,11 @@
 import pandas as pd
 import numpy as np
 
+
 def entropy_calc(x):
     """Takes in probability and calculates the entropy value"""
     return -x * np.log(x)
+
 
 def get_diversity_metircs(ocm_count_by_entity_csv_file):
     
@@ -36,7 +38,8 @@ def get_diversity_metircs(ocm_count_by_entity_csv_file):
     df["proportion_of_total"] = df["percentage_of_total"] / df["percentage_of_total"].sum()
     df["cumulative_proportion"] = df["cumulative_percentage"] / df["percentage_of_total"].sum()
 
-    # Calculate the Lorenz curve; represents the cumulative proportion of the total on the y-axis and the cumulative proportion of tags on the x-axis
+    # Calculate the Lorenz curve; represents the cumulative proportion of the total on the y-axis 
+    # and the cumulative proportion of tags on the x-axis
     df["lorenz_curve"] = df["cumulative_proportion"]
 
     # Calculate the area under the Lorenz curve
@@ -50,14 +53,16 @@ def get_diversity_metircs(ocm_count_by_entity_csv_file):
 
     shannon_df = df.copy()
 
-    # create entropy column by calling the entropy_calc() function on the proportion_of_total column which represents 'probability'
+    # create entropy column by calling the entropy_calc() function on the proportion_of_total column 
+    # which represents 'probability'
     shannon_df['entropy'] = shannon_df['proportion_of_total'].apply(entropy_calc)
 
     # sum the entropy column to get the Shannon entropy value
     shannon_entropy = shannon_df['entropy'].sum()
     
     return top_3, gini_coefficient, shannon_entropy
-    
+
+
 count_by_entity_csv = "ocm_count_by_entity.csv"
 top_3, gini_coefficient, shannon_entropy = get_diversity_metircs(count_by_entity_csv)
 
