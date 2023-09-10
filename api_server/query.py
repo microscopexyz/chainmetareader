@@ -22,9 +22,9 @@ router = APIRouter()
 
 @router.get("/v1/query")
 async def search(
-        chain: str = Query(None),
-        address: str = Query(None),
-        token: Optional[str] = Header(None),
+    chain: str = Query(None),
+    address: str = Query(None),
+    token: Optional[str] = Header(None),
 ):
     if token is None:
         return "missing required header [TOKEN]"
