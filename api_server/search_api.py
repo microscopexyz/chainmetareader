@@ -42,4 +42,3 @@ async def search(
             }
         )
     return results
-
