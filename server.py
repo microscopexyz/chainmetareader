@@ -21,7 +21,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.middleware.sessions import SessionMiddleware
 from starlette.responses import Response
 
-from api_server import kya_search, search_api
+from api_server import search_api, query
 
 app = FastAPI()
 cookie_key = "chaintool_build_great_job"
@@ -51,7 +51,8 @@ async def log_request(request, call_next):
 
 app.add_middleware(SessionMiddleware, secret_key=cookie_key)
 app.include_router(search_api.router, prefix="/api")
-app.include_router(kya_search.router, prefix="/kya")
+app.include_router(query.router, prefix="")
+
 
 
 @app.get("/", response_class=PlainTextResponse)
