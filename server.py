@@ -54,6 +54,7 @@ app.include_router(search_api.router, prefix="/api")
 app.include_router(query.router, prefix="")
 
 
+
 @app.get("/", response_class=PlainTextResponse)
 async def app_check():
     return "ok"
