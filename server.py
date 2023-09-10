@@ -21,7 +21,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.middleware.sessions import SessionMiddleware
 from starlette.responses import Response
 
-from api_server import search_api, kya_search
+from api_server import kya_search, search_api
 
 app = FastAPI()
 cookie_key = "chaintool_build_great_job"
