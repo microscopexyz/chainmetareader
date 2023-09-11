@@ -25,6 +25,11 @@
         "description": "A smart contract-based system that automatically invests cryptocurrency funds to generate yield for users, commonly used in decentralized finance (DeFi) applications and managed by the protocol or community."
     },
     {
+        "key": "vault_user",
+        "display_name": "Vault User",
+        "description": "An address that interacted with a smart contract-based system that automatically invests cryptocurrency funds to generate yield for users, commonly used in decentralized finance (DeFi) applications and managed by the protocol or community."
+    },
+    {
         "key": "vulnerable",
         "display_name": "Vulnerable",
         "description": "An address whose private keys have been compromised or are publicly available, exposing it to the risk of unauthorized access or theft."
@@ -43,6 +48,11 @@
         "key": "dex",
         "display_name": "DEX",
         "description": "An address or wallet used in decentralized exchanges to facilitate peer-to-peer trading of cryptocurrencies without a central authority."
+    },
+    {
+        "key": "dex_user",
+        "display_name": "DEX User",
+        "description": "An address that interacted with a smart contract for a decentralized exchange used to facilitate peer-to-peer trading of cryptocurrencies without a central authority."
     },
     {
         "key": "cex",
@@ -78,6 +88,11 @@
         "key": "lending",
         "display_name": "Lending",
         "description": "Related to lending or borrowing activities in the crypto space, such as those belonging to lending platforms or peer-to-peer lending services."
+    },
+    {
+        "key": "lending_user",
+        "display_name": "Lending User",
+        "description": "An address that interacted with a smart contract belonging to lending platforms or peer-to-peer lending services."
     },
     {
         "key": "merchant",
@@ -255,6 +270,11 @@
         "description": "Addresses used for yield farming strategies where users can deposit cryptocurrencies to earn rewards and/or fees on a decentralized platform"
     },
     {
+        "key": "yield_aggregator_user",
+        "display_name": "Yield Aggregator User",
+        "description": "An address that interacted with a smart contract used for yield farming strategies where users can deposit cryptocurrencies to earn rewards and/or fees on a decentralized platform"
+    },
+    {
         "key": "ico",
         "display_name": "ICO",
         "description": "Addresses used to receive funds during an initial coin offering (ICO) or other crowdfunding mechanisms"
@@ -278,6 +298,11 @@
         "key": "defi",
         "display_name": "Defi",
         "description": "Addresses used for decentralized finance (DeFi) projects, including decentralized exchanges, yield farming, lending, and more"
+    },
+    {
+        "key": "defi_user",
+        "display_name": "Defi User",
+        "description": "An address that interacted with a smart contract used for decentralized finance (DeFi) projects, including decentralized exchanges, yield farming, lending, and more"
     },
     {
         "key": "advertising",
@@ -408,6 +433,11 @@
         "key": "bridging",
         "display_name": "Bridging",
         "description": "Addresses used by platforms or projects that provide interoperability solutions to connect different blockchain networks"
+    },
+    {
+        "key": "bridge_user",
+        "display_name": "Bridge User",
+        "description": "An address that interacted with a smart contract used by platforms or projects that provide interoperability solutions to connect different blockchain networks"
     },
     {
         "key": "multichain",
