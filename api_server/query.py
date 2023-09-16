@@ -20,7 +20,7 @@ from chainmeta_reader import search_chainmeta
 router = APIRouter()
 
 
-@router.get("/search_chainmeta")
+@router.get("/v1/query")
 async def search(
     chain: str = Query(None),
     address: str = Query(None),

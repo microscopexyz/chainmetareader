@@ -1,10 +1,134 @@
 [
     {
         "key": "ethereum_mainnet",
-        "display_name": "Ethereum Mainnet"
+        "display_name": "Ethereum"
     },
     {
         "key": "bitcoin_mainnet",
-        "display_name": "Bitcoin Mainnet"
+        "display_name": "Bitcoin"
+    },
+    {
+        "key": "optimism_mainnet",
+        "display_name": "Optimism"
+    },
+    {
+        "key": "arbitrum_one",
+        "display_name": "Arbitrum One"
+    },
+    {
+        "key": "arbitrum_nova",
+        "display_name": "Arbitrum Nova"
+    },
+    {
+        "key": "fantom_mainnet",
+        "display_name": "Fantom"
+    },
+    {
+        "key": "polygon_mainnet",
+        "display_name": "Polygon"
+    },
+    {
+        "key": "bnb_chain_mainnet",
+        "display_name": "BNB Chain"
+    },
+    {
+        "key": "telos_evm_mainnet",
+        "display_name": "Telos EVM"
+    },
+    {
+        "key": "aurora_mainnet",
+        "display_name": "Aurora"
+    },
+    {
+        "key": "avalanche_c_chain",
+        "display_name": "Avalanche C Chain"
+    },
+    {
+        "key": "celo_mainnet",
+        "display_name": "Celo"
+    },
+    {
+        "key": "harmony_mainnet_shard_0",
+        "display_name": "Harmony Mainnet Shard 0"
+    },
+    {
+        "key": "gnosis_mainnet",
+        "display_name": "Gnosis"
+    },
+    {
+        "key": "moonbeam",
+        "display_name": "Moonbeam"
+    },
+    {
+        "key": "moonriver",
+        "display_name": "Moonriver"
+    },
+    {
+        "key": "solana",
+        "display_name": "Solana"
+    },
+    {
+        "key": "cronos",
+        "display_name": "Cronos"
+    },
+    {
+        "key": "boba_network",
+        "display_name": "Boba"
+    },
+    {
+        "key": "metis_andromeda_mainnet",
+        "display_name": "Metis Andromeda"
+    },
+    {
+        "key": "iotex_mainnet",
+        "display_name": "IoTeX"
+    },
+    {
+        "key": "syscoin_mainnet",
+        "display_name": "Syscoin"
+    },
+    {
+        "key": "milkomeda_c1_mainnet",
+        "display_name": "Milkomeda C1"
+    },
+    {
+        "key": "klaytn_mainnet_cypress",
+        "display_name": "Klaytn Cypress"
+    },
+    {
+        "key": "syscoin_mainnet",
+        "display_name": "Syscoin"
+    },
+    {
+        "key": "dogechain_mainnet",
+        "display_name": "Dogechain"
+    },
+    {
+        "key": "flow",
+        "display_name": "Flow"
+    },
+    {
+        "key": "tezos",
+        "display_name": "Tezos"
+    },
+    {
+        "key": "near_mainnet",
+        "display_name": "NEAR"
+    },
+    {
+        "key": "heco_mainnet",
+        "display_name": "Huobi ECO Chain"
+    },
+    {
+        "key": "flare_mainnet",
+        "display_name": "Flare"
+    },
+    {
+        "key": "fuse_mainnet",
+        "display_name": "Fuse"
+    },
+    {
+        "key": "starknet",
+        "display_name": "Starknet"
     }
 ]
