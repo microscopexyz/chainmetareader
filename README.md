@@ -1,5 +1,10 @@
-# ChainMeta Reader
+# Microscope ChainMeta Reader
 `chainmeta_reader` is a Python module that loads, validates, and parses chainmeta from Open Chainmeta participants.
+
+## What is Microsocope?
+* [Microscope Whitepaper](https://github.com/openchainmeta/chainmetareader/blob/main/Microscope_Whitepaper_V1.pdf)
+* [Microscope Taxonomy](https://docs.google.com/document/d/1Y0KminLU9xVGocVoIFHIVfyRS1Nz4tWDjq4RJhVXMW0/edit)
+* [Protocol Notion drafts](https://leozc.notion.site/leozc/438374dfd880436eaf996e5897e5ff93)
 
 ## Read Chainmeta from Database
 Before accessing the Open Chainmeta database, you need to obtain database credentials. Once you have the connection string, you can export it as an environment variable as follows:
