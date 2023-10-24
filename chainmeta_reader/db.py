@@ -332,7 +332,7 @@ def search_chainmeta(*, filter: dict = {}) -> Generator[ChainmetaItem, None, Non
             return
 
 
-def add_api_token(token: str, belongs_to: str) -> None:
+def add_api_token(token: str, belongs_to: str):
     with _session_maker() as session:
         # create two players
         # player 1: id is "1", has only 100 coins.
@@ -345,7 +345,7 @@ def add_api_token(token: str, belongs_to: str) -> None:
         session.commit()
 
 
-def find_valid_token(query_token: str):
+def find_valid_token(query_token: str) -> dict:
     with _session_maker() as session:
         tokens = session.query(ApiToken).filter(ApiToken.token.__eq__(query_token)).all()
         session.commit()

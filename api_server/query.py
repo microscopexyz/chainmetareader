@@ -57,7 +57,7 @@ async def find_token(token: str = Query(None)):
     return api_token
 
 
-def is_token_valid(token):
+def is_token_valid(token) -> bool:
     api_token: dict = db.find_valid_token(token)
     if not api_token:
         return False
