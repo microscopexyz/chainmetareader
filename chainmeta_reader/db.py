@@ -345,7 +345,7 @@ def add_api_token(token: str, belongs_to: str):
         session.commit()
 
 
-def find_valid_token(query_token: str) -> Optional[dict]:
+def find_valid_token(query_token: str) -> dict:
     if _session_maker is None:
         raise RuntimeError(err_msg)
 
@@ -355,5 +355,5 @@ def find_valid_token(query_token: str) -> Optional[dict]:
         )
         session.commit()
         if not tokens:
-            return None
+            return {}
         return {"token": tokens[0].token, "belongs_to": tokens[0].belongs_to}
