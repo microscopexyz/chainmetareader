@@ -334,9 +334,6 @@ def search_chainmeta(*, filter: dict = {}) -> Generator[ChainmetaItem, None, Non
 
 def add_api_token(token: str, belongs_to: str):
     with _session_maker() as session:
-        # create two players
-        # player 1: id is "1", has only 100 coins.
-        # player 2: id is "2", has 114514 coins, and 20 goods.
         t = ApiToken()
         t.token = token
         t.belongs_to = belongs_to
