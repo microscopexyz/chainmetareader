@@ -14,8 +14,7 @@ from typing import Optional
 
 from fastapi import APIRouter, Header, Query
 
-from chainmeta_reader import search_chainmeta
-from chainmeta_reader import db
+from chainmeta_reader import db, search_chainmeta
 
 router = APIRouter()
 
@@ -24,9 +23,9 @@ router = APIRouter()
 @router.get("/search_chainmeta")
 @router.get("/api/search")
 async def search(
-        chain: str = Query(None),
-        address: str = Query(None),
-        token: Optional[str] = Header(None),
+    chain: str = Query(None),
+    address: str = Query(None),
+    token: Optional[str] = Header(None),
 ):
     if token is None:
         return "missing required header [TOKEN]"

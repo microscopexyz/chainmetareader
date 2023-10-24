@@ -174,7 +174,7 @@ def reduce(record_list: List[ChainmetaRecord]) -> List[ChainmetaItem]:
 
 @unsync
 def _upload_chainmeta_single_batch(
-        session_maker: Callable, items: Iterable[ChainmetaItem], *, skip_check: bool
+    session_maker: Callable, items: Iterable[ChainmetaItem], *, skip_check: bool
 ) -> int:
     """Upload a single batch of chain metadata to database."""
 
@@ -187,7 +187,7 @@ def _upload_chainmeta_single_batch(
             with session.no_autoflush:
                 found = (
                     session.query(ChainmetaRecord)
-                        .filter_by(
+                    .filter_by(
                         chain=record.chain,
                         address=record.address,
                         namespace=record.namespace,
@@ -196,7 +196,7 @@ def _upload_chainmeta_single_batch(
                         source=record.source,
                         submitted_by=record.submitted_by,
                     )
-                        .first()
+                    .first()
                 )
                 return found is None
 
@@ -219,11 +219,11 @@ def _upload_chainmeta_single_batch(
 
 
 def upload_chainmeta(
-        items: Iterable[ChainmetaItem],
-        *,
-        batch_size: int = 200,
-        max_concurrency: int = 10,
-        skip_check: bool = False,
+    items: Iterable[ChainmetaItem],
+    *,
+    batch_size: int = 200,
+    max_concurrency: int = 10,
+    skip_check: bool = False,
 ) -> int:
     """Upload chain metadata to database.
 
@@ -280,7 +280,7 @@ def search_chainmeta(*, filter: dict = {}) -> Generator[ChainmetaItem, None, Non
         return query
 
     def _key(r: ChainmetaRecord):
-        return (r.chain, r.address, r.source, r.submitted_by)
+        return r.chain, r.address, r.source, r.submitted_by
 
     with _session_maker() as session:
         page_size = 100
@@ -299,8 +299,8 @@ def search_chainmeta(*, filter: dict = {}) -> Generator[ChainmetaItem, None, Non
                     ChainmetaRecord.submitted_by,
                     ChainmetaRecord.id,
                 )
-                    .limit(page_size)
-                    .all()
+                .limit(page_size)
+                .all()
             )
             if not batch_results:
                 break
@@ -344,11 +344,10 @@ def add_api_token(token: str, belongs_to: str):
 
 def find_valid_token(query_token: str) -> dict:
     with _session_maker() as session:
-        tokens = session.query(ApiToken).filter(ApiToken.token.__eq__(query_token)).all()
+        tokens = (
+            session.query(ApiToken).filter(ApiToken.token.__eq__(query_token)).all()
+        )
         session.commit()
         if not tokens:
             return None
-        return {
-            'token': tokens[0].token,
-            'belongs_to': tokens[0].belongs_to
-        }
+        return {"token": tokens[0].token, "belongs_to": tokens[0].belongs_to}
