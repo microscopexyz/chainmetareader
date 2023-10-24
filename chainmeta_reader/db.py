@@ -28,11 +28,9 @@ from chainmeta_reader.metadata import ChainmetaItem
 """This module defines the database schema and provides the functions to interact with the database.
 """
 
-
 # Define the database connection
 _session_maker: Optional[Callable] = None
 mapper_registry: registry = registry()
-
 
 err_msg = "Database is not initialized.Set CHAINMETA_DB_CONN environment variable or call set_connection_string() first."  # noqa: E501
 
@@ -56,6 +54,15 @@ class ChainmetaRecord:
     source: Mapped[str] = Column(String(64), nullable=False)
     submitted_by: Mapped[str] = Column(String(64), nullable=False)
     submitted_on: Mapped[date] = Column(Date, nullable=False)
+
+
+@mapper_registry.mapped
+class ApiToken:
+    __tablename__ = "api_token"
+
+    token = Column(String, primary_key=True)  # token value
+    belongs_to = Column(String)  # the company/org/person who the token belongs to
+    status = Column(Integer)  # 0 = valid ,1 = expired
 
 
 def init_db(connection_string: str) -> None:
@@ -273,7 +280,7 @@ def search_chainmeta(*, filter: dict = {}) -> Generator[ChainmetaItem, None, Non
         return query
 
     def _key(r: ChainmetaRecord):
-        return (r.chain, r.address, r.source, r.submitted_by)
+        return r.chain, r.address, r.source, r.submitted_by
 
     with _session_maker() as session:
         page_size = 100
@@ -323,3 +330,30 @@ def search_chainmeta(*, filter: dict = {}) -> Generator[ChainmetaItem, None, Non
 
         if is_empty:
             return
+
+
+def add_api_token(token: str, belongs_to: str):
+    if _session_maker is None:
+        raise RuntimeError(err_msg)
+
+    with _session_maker() as session:
+        t = ApiToken()
+        t.token = token
+        t.belongs_to = belongs_to
+        t.status = 0
+        session.add(t)
+        session.commit()
+
+
+def find_valid_token(query_token: str) -> dict:
+    if _session_maker is None:
+        raise RuntimeError(err_msg)
+
+    with _session_maker() as session:
+        tokens = (
+            session.query(ApiToken).filter(ApiToken.token.__eq__(query_token)).all()
+        )
+        session.commit()
+        if not tokens:
+            return {}
+        return {"token": tokens[0].token, "belongs_to": tokens[0].belongs_to}
