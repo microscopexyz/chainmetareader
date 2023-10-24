@@ -52,7 +52,7 @@ async def add_token(token: str = Query(None), belongs_to: str = Query(None)):
 
 
 @router.get("/find_valid_token")
-async def add_token(token: str = Query(None)):
+async def find_token(token: str = Query(None)):
     api_token: dict = db.find_valid_token(token)
     return api_token
 
