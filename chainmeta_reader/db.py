@@ -333,6 +333,9 @@ def search_chainmeta(*, filter: dict = {}) -> Generator[ChainmetaItem, None, Non
 
 
 def add_api_token(token: str, belongs_to: str):
+    if _session_maker is None:
+        raise RuntimeError(err_msg)
+
     with _session_maker() as session:
         t = ApiToken()
         t.token = token
@@ -342,7 +345,10 @@ def add_api_token(token: str, belongs_to: str):
         session.commit()
 
 
-def find_valid_token(query_token: str) -> dict:
+def find_valid_token(query_token: str) -> Optional[dict]:
+    if _session_maker is None:
+        raise RuntimeError(err_msg)
+
     with _session_maker() as session:
         tokens = (
             session.query(ApiToken).filter(ApiToken.token.__eq__(query_token)).all()
