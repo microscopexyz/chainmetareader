@@ -14,17 +14,19 @@ from typing import Optional
 
 from fastapi import APIRouter, Header, Query
 
-from api_server.token_loader import is_token_valid
 from chainmeta_reader import search_chainmeta
+from chainmeta_reader import db
 
 router = APIRouter()
 
 
 @router.get("/v1/query")
+@router.get("/search_chainmeta")
+@router.get("/api/search")
 async def search(
-    chain: str = Query(None),
-    address: str = Query(None),
-    token: Optional[str] = Header(None),
+        chain: str = Query(None),
+        address: str = Query(None),
+        token: Optional[str] = Header(None),
 ):
     if token is None:
         return "missing required header [TOKEN]"
@@ -42,3 +44,21 @@ async def search(
             }
         )
     return results
+
+
+# @router.get("/add_token")
+async def add_token(token: str = Query(None), belongs_to: str = Query(None)):
+    db.add_api_token(token, belongs_to)
+
+
+@router.get("/find_valid_token")
+async def add_token(token: str = Query(None)):
+    api_token: dict = db.find_valid_token(token)
+    return api_token
+
+
+def is_token_valid(token):
+    api_token: dict = db.find_valid_token(token)
+    if not api_token:
+        return False
+    return True

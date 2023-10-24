@@ -28,11 +28,9 @@ from chainmeta_reader.metadata import ChainmetaItem
 """This module defines the database schema and provides the functions to interact with the database.
 """
 
-
 # Define the database connection
 _session_maker: Optional[Callable] = None
 mapper_registry: registry = registry()
-
 
 err_msg = "Database is not initialized.Set CHAINMETA_DB_CONN environment variable or call set_connection_string() first."  # noqa: E501
 
@@ -56,6 +54,15 @@ class ChainmetaRecord:
     source: Mapped[str] = Column(String(64), nullable=False)
     submitted_by: Mapped[str] = Column(String(64), nullable=False)
     submitted_on: Mapped[date] = Column(Date, nullable=False)
+
+
+@mapper_registry.mapped
+class ApiToken:
+    __tablename__ = "api_token"
+
+    token = Column(String, primary_key=True)  # token value
+    belongs_to = Column(String)  # the company/org/person who the token belongs to
+    status = Column(Integer)  # 0 = valid ,1 = expired
 
 
 def init_db(connection_string: str) -> None:
@@ -167,7 +174,7 @@ def reduce(record_list: List[ChainmetaRecord]) -> List[ChainmetaItem]:
 
 @unsync
 def _upload_chainmeta_single_batch(
-    session_maker: Callable, items: Iterable[ChainmetaItem], *, skip_check: bool
+        session_maker: Callable, items: Iterable[ChainmetaItem], *, skip_check: bool
 ) -> int:
     """Upload a single batch of chain metadata to database."""
 
@@ -180,7 +187,7 @@ def _upload_chainmeta_single_batch(
             with session.no_autoflush:
                 found = (
                     session.query(ChainmetaRecord)
-                    .filter_by(
+                        .filter_by(
                         chain=record.chain,
                         address=record.address,
                         namespace=record.namespace,
@@ -189,7 +196,7 @@ def _upload_chainmeta_single_batch(
                         source=record.source,
                         submitted_by=record.submitted_by,
                     )
-                    .first()
+                        .first()
                 )
                 return found is None
 
@@ -212,11 +219,11 @@ def _upload_chainmeta_single_batch(
 
 
 def upload_chainmeta(
-    items: Iterable[ChainmetaItem],
-    *,
-    batch_size: int = 200,
-    max_concurrency: int = 10,
-    skip_check: bool = False,
+        items: Iterable[ChainmetaItem],
+        *,
+        batch_size: int = 200,
+        max_concurrency: int = 10,
+        skip_check: bool = False,
 ) -> int:
     """Upload chain metadata to database.
 
@@ -292,8 +299,8 @@ def search_chainmeta(*, filter: dict = {}) -> Generator[ChainmetaItem, None, Non
                     ChainmetaRecord.submitted_by,
                     ChainmetaRecord.id,
                 )
-                .limit(page_size)
-                .all()
+                    .limit(page_size)
+                    .all()
             )
             if not batch_results:
                 break
@@ -323,3 +330,28 @@ def search_chainmeta(*, filter: dict = {}) -> Generator[ChainmetaItem, None, Non
 
         if is_empty:
             return
+
+
+def add_api_token(token: str, belongs_to: str) -> None:
+    with _session_maker() as session:
+        # create two players
+        # player 1: id is "1", has only 100 coins.
+        # player 2: id is "2", has 114514 coins, and 20 goods.
+        t = ApiToken()
+        t.token = token
+        t.belongs_to = belongs_to
+        t.status = 0
+        session.add(t)
+        session.commit()
+
+
+def find_valid_token(query_token: str):
+    with _session_maker() as session:
+        tokens = session.query(ApiToken).filter(ApiToken.token.__eq__(query_token)).all()
+        session.commit()
+        if not tokens:
+            return None
+        return {
+            'token': tokens[0].token,
+            'belongs_to': tokens[0].belongs_to
+        }
