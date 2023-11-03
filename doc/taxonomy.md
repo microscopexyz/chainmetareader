@@ -142,4 +142,3 @@ The protocol has a fixed list of values defined at the data model (as shown belo
 |MEV Bot|Addresses used by MEV bots for transaction extraction and prioritization|
 |Proxy|Contract that acts as a proxy to another contract and is used to upgrade the logic of the target contract without changing its address|
 |Exchange|Addresses used by centralized or decentralized exchanges to interact with smart contracts and blockchain networks|
-

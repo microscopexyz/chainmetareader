@@ -37,7 +37,7 @@ repos:
   rev: v1.2.0
   hooks:
   - id: mypy
-    exclude: ^tests/
+    exclude: (^tests/|^scripts/)
     additional_dependencies:
     - 'sqlalchemy[mypy]==2.0.9'
     - 'types-python-dateutil'

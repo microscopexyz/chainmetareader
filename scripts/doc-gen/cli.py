@@ -13,9 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import json
+
 import click
 import jinja2
-import json
 
 
 @click.command()
@@ -26,11 +27,14 @@ def taxonomy():
     )
     taxonomy_template = environment.get_template("taxonomy.md.jinja")
 
-    with open("chainmeta_reader/config/categories.json", "r") as categories_file, open("doc/taxonomy.md", "w+") as taxonomy_file:
+    with open("chainmeta_reader/config/categories.json", "r") as categories_file, open(
+        "doc/taxonomy.md", "w+"
+    ) as taxonomy_file:
         categories = json.load(categories_file)
         taxonomy_file.write(taxonomy_template.render(categories=categories))
 
     click.echo(click.style("doc/taxonomy.md updated", fg="green"))
+
 
 if __name__ == "__main__":
     taxonomy()
