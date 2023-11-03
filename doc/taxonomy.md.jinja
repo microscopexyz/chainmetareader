@@ -1,0 +1,52 @@
+# Microscope Protocol Taxonomy
+
+<div style="text-align: center;">
+
+[feedback.microscope@gmail.com](mailto:feedback.microscope@gmail.com)
+
+[https://microscopeprotocol.xyz](https://microscopeprotocol.xyz/)
+
+September 2023
+
+</div>
+
+## Introduction
+
+Current protocol design covers blockchain metadata at the address level, including key information of the addresses' *name, source, entity, chain, and category*. Apart from the blockchain address name, our data model defines a limited set of values for the rest of the schemas.
+
+The taxonomy document provides additional information of these schemas, including the limited set of values defined in the data model and their detailed descriptions. The objective is to help our users to better understand the metadata dataset.
+
+## Source
+There are many different ways to generate blockchain metadata and the 'Source' value provides information about how the given data entry was collected. We have five source values set at the data model and they are:
+
+**Ground Truth.** This method relies on conducting real life transactions on chain to identify blockchain addresses that belong to a specific entity - it is especially useful for identifying addresses that are owned by crypto platforms and applications. For example, if we want to find out which addresses are owned by Exchange A on Ethereum, we can deposit a small amount of ETH or ERC20 token to Exchange A.
+
+**Heuristic.** This method clusterize blockchain addresses using data models built from publicly available information. The widely adopted approach is the rule-based heuristic using historical transaction data on chains - i.e. labelling addresses based on transaction patterns. The two most common rule-based heuristics are Commonspend heuristic for UTXO chains and the Core-address heuristics for the account-based chains.
+
+**Machine Learning.** This method utilised machine learning algorithms with on/off-chain data to train the address clusterisation models.
+
+**Research.** This method relies on labellers to conduct thorough research over publicly available information. It is especially useful when there are significant events happening in the space - either good or bad.
+
+**External.** This methods collects metadata from other open sources such as Etherscan.
+
+## Chain
+
+The blockchain or the network where the given address is resided. The protocol has a fixed list of values defined at the data model but new chain values can be added to accommodate metadata from new blockchain networks.
+
+## Entity
+
+The entity-level owner of a given address. For example, Uniswap addresses may be named slightly differently as they are used for different purposes - e.g. Uniswap V2: Myh, Uniswap V3 SUDT-BSFC, etc. These addresses will share the same entity name as 'Uniswap'.
+
+The protocol has a fixed list of values defined at the data model but new entity values can be added to accommodate metadata from new blockchain networks.
+
+## Category
+
+The 'Category' value provides the additional information about the purpose or the sector of the address. For example, weather the address belongs to a centralised exchange, or whether the address is used by a DeFi project.
+
+The protocol has a fixed list of values defined at the data model (as shown below) but new category values can be added to accommodate metadata from new blockchain networks.
+
+|Category|Description|
+|--------|-----------|
+{% for category in categories -%}
+|{{ category.display_name }}|{{ category.description }}|
+{% endfor %}
