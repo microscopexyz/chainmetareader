@@ -22,7 +22,7 @@ import jinja2
 @click.command()
 def taxonomy():
     environment = jinja2.Environment(
-        loader=jinja2.FileSystemLoader(searchpath="doc"),
+        loader=jinja2.FileSystemLoader(searchpath="templates"),
         keep_trailing_newline=True,
     )
     taxonomy_template = environment.get_template("taxonomy.md.jinja")
