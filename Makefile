@@ -22,4 +22,8 @@ db-migrate:
 
 .PHONY: new-contributor
 new-contributor:
-	pip install -r ./scripts/requirements.txt && ./scripts/new.py $(name)
+	pip install -r ./scripts/new-contributor/requirements.txt && ./scripts/new-contributor/cli.py $(name)
+
+.PHONY: doc-gen
+doc-gen:
+	pip install -r ./scripts/doc-gen/requirements.txt && ./scripts/doc-gen/cli.py $(name)

@@ -2,8 +2,8 @@
 `chainmeta_reader` is a Python module that loads, validates, and parses chainmeta from Microscope protocol participants.
 
 ## What is Microsocope?
-* [Microscope Whitepaper](https://github.com/openchainmeta/chainmetareader/blob/main/Microscope_Whitepaper_V1.pdf)
-* [Microscope Taxonomy](https://github.com/openchainmeta/chainmetareader/blob/main/Microsope%20Taxonomy.pdf)
+* [Microscope Whitepaper](https://www.dropbox.com/scl/fi/j9v63ohdyl16hkcijyou8/Microscope_whitepaper_v1.pdf?rlkey=ph7qvna47i9r6tyd6mwxv9hb6&dl=0)
+* [Microscope Taxonomy](https://github.com/microscopexyz/chainmetareader/blob/main/doc/taxonomy.md)
 * [Protocol Website](http://microscopeprotocol.xyz/)
 
 ## Read Chainmeta from Database
