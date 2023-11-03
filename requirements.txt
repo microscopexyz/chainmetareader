@@ -6,41 +6,52 @@
 #
 alembic==1.10.2
     # via -r requirements.in
-attrs==22.2.0
+asgiref==3.7.2
+    # via uvicorn
+attrs==23.1.0
     # via
     #   jsonschema
     #   pytest
 black==23.1.0
     # via -r requirements.in
-build==0.10.0
+build==1.0.3
     # via pip-tools
-cffi==1.15.1
+cffi==1.16.0
     # via cryptography
-cfgv==3.3.1
+cfgv==3.4.0
     # via pre-commit
-click==8.1.3
+click==8.1.7
     # via
     #   black
     #   pip-tools
+    #   uvicorn
 cryptography==37.0.4
     # via -r requirements.in
-distlib==0.3.6
+distlib==0.3.7
     # via virtualenv
-exceptiongroup==1.1.1
+exceptiongroup==1.1.3
     # via pytest
-filelock==3.11.0
+fastapi==0.68.2
+    # via -r requirements.in
+filelock==3.13.1
     # via virtualenv
-identify==2.5.22
+h11==0.14.0
+    # via uvicorn
+identify==2.5.31
     # via pre-commit
+importlib-metadata==6.8.0
+    # via build
 iniconfig==2.0.0
     # via pytest
 isort==5.12.0
+    # via -r requirements.in
+itsdangerous==2.1.2
     # via -r requirements.in
 jsonschema==4.17.3
     # via -r requirements.in
 mako==1.2.4
     # via alembic
-markupsafe==2.1.2
+markupsafe==2.1.3
     # via mako
 mypy==1.0.1
     # via
@@ -50,22 +61,22 @@ mypy-extensions==1.0.0
     # via
     #   black
     #   mypy
-nodeenv==1.7.0
+nodeenv==1.8.0
     # via pre-commit
-packaging==23.1
+packaging==23.2
     # via
     #   black
     #   build
     #   pytest
-pathspec==0.11.1
+pathspec==0.11.2
     # via black
 pip-tools==6.12.3
     # via -r requirements.in
-platformdirs==3.2.0
+platformdirs==3.11.0
     # via
     #   black
     #   virtualenv
-pluggy==1.0.0
+pluggy==1.3.0
     # via pytest
 pre-commit==3.0.4
     # via -r requirements.in
@@ -73,21 +84,25 @@ pre-commit-hooks==4.4.0
     # via -r requirements.in
 pycparser==2.21
     # via cffi
+pydantic==1.8.2
+    # via
+    #   -r requirements.in
+    #   fastapi
 pymysql==1.0.2
     # via -r requirements.in
 pyproject-hooks==1.0.0
     # via build
-pyrsistent==0.19.3
+pyrsistent==0.20.0
     # via jsonschema
 pytest==7.2.2
     # via -r requirements.in
 python-dateutil==2.8.2
     # via -r requirements.in
-pyyaml==6.0
+pyyaml==6.0.1
     # via pre-commit
-ruamel-yaml==0.17.21
+ruamel-yaml==0.18.4
     # via pre-commit-hooks
-ruamel-yaml-clib==0.2.7
+ruamel-yaml-clib==0.2.8
     # via ruamel-yaml
 six==1.16.0
     # via python-dateutil
@@ -95,6 +110,10 @@ sqlalchemy[mypy]==2.0.9
     # via
     #   -r requirements.in
     #   alembic
+starlette==0.14.2
+    # via
+    #   -r requirements.in
+    #   fastapi
 tomli==2.0.1
     # via
     #   black
@@ -107,23 +126,24 @@ types-jsonschema==4.17.0.7
     # via -r requirements.in
 types-python-dateutil==2.8.19.12
     # via -r requirements.in
-typing-extensions==4.5.0
+typing-extensions==4.8.0
     # via
     #   alembic
+    #   asgiref
     #   black
     #   mypy
+    #   pydantic
     #   sqlalchemy
 unsync==1.4.0
     # via -r requirements.in
-virtualenv==20.21.0
+uvicorn==0.15.0
+    # via -r requirements.in
+virtualenv==20.24.6
     # via pre-commit
-wheel==0.40.0
+wheel==0.41.3
     # via pip-tools
-fastapi~=0.68.1
-uvicorn~=0.15.0
-itsdangerous
-pydantic~=1.8.2
-starlette~=0.14.2
+zipp==3.17.0
+    # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
