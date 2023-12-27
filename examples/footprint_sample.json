@@ -1,0 +1,22 @@
+{
+    "community": "openchainmeta",
+    "provider": {
+        "provider_name": "footprint",
+        "provider_id": "ocm0000_fp",
+        "provider_signature": ""
+    },
+    "version": "v1",
+    "revision": 1,
+    "introduction": "https://github.com/openchainmeta/chainmetareader/doc/footprint/introduction.md",
+    "chainmetadata": {
+        "schema": "https://github.com/openchainmeta/chainmetareader/chainmeta_reader/schemas/artifact_schema.json",
+        "artifact": [
+            {
+                "artifact_type": "local file",
+                "path": "file:///footprint_artifact_sample.json",
+                "fileformat": "json",
+                "signature": ""
+            }
+        ]
+    }
+}

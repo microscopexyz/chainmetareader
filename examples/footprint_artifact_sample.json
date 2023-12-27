@@ -1,0 +1,89 @@
+[
+    {
+        "address": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+        "chain": "ethereum_mainnet",
+        "entity": "bored-ape-yacht-club",
+        "name": "BoredApeYachtClub",
+        "categories": [
+            "NFT"
+        ],
+        "source": "ground_truth",
+        "submitted_by": "footprint",
+        "submitted_on": "2023-12-27 00:00:00"
+    },
+    {
+        "address": "0x00799bbc833d5b168f0410312d2a8fd9e0e3079c",
+        "chain": "ethereum_mainnet",
+        "entity": "binance",
+        "name": "Binance 31",
+        "categories": [
+            "CEX",
+            "Exchange"
+        ],
+        "source": "ground_truth",
+        "submitted_by": "footprint",
+        "submitted_on": "2023-12-27 00:00:00"
+    },
+    {
+        "address": "0xaba7161a7fb69c88e16ed9f455ce62b791ee4d03",
+        "chain": "ethereum_mainnet",
+        "entity": "bored-ape-yacht-club",
+        "name": "Bored Ape Yacht Club: Depolyer",
+        "categories": [
+            "Deployer"
+        ],
+        "source": "ground_truth",
+        "submitted_by": "footprint",
+        "submitted_on": "2023-12-27 00:00:00"
+    },
+    {
+        "address": "0xc0a47dfe034b400b47bdad5fecda2621de6c4d95",
+        "chain": "ethereum_mainnet",
+        "entity": "uniswap",
+        "name": "Uniswap: Factory Contract",
+        "categories": [
+            "Factory Contract"
+        ],
+        "source": "ground_truth",
+        "submitted_by": "footprint",
+        "submitted_on": "2023-12-27 00:00:00"
+    },
+    {
+        "address": "0x3fc91a3afd70395cd496c647d5a6cc9d4b2b7fad",
+        "chain": "ethereum_mainnet",
+        "entity": "uniswap",
+        "name": "Uniswap: Universal Router",
+        "categories": [
+            "Defi",
+            "DEX",
+            "Dapp"
+        ],
+        "source": "ground_truth",
+        "submitted_by": "footprint",
+        "submitted_on": "2023-12-27 00:00:00"
+    },
+    {
+        "address": "0x0f50d31b3eaefd65236dd3736b863cffa4c63c4e",
+        "chain": "ethereum_mainnet",
+        "entity": "a16z",
+        "name": "a16z",
+        "categories": [
+            "Company Funds"
+        ],
+        "source": "ground_truth",
+        "submitted_by": "footprint",
+        "submitted_on": "2023-12-27 00:00:00"
+    },
+    {
+        "address": "0x0000000000007f150bd6f54c40a34d7c3d5e9f56",
+        "chain": "ethereum_mainnet",
+        "entity": "mev bot",
+        "name": "mev bot",
+        "categories": [
+            "MEV Bot"
+        ],
+        "source": "ground_truth",
+        "submitted_by": "footprint",
+        "submitted_on": "2023-12-27 00:00:00"
+    }
+]
