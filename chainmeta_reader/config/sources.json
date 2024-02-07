@@ -14,5 +14,9 @@
     {
         "key": "external",
         "display_name": "External"
+    },
+    {
+        "key": "research",
+        "display_name": "Research"
     }
 ]
