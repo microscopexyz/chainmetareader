@@ -100,7 +100,7 @@ python-dateutil==2.8.2
     # via -r requirements.in
 pyyaml==6.0.1
     # via pre-commit
-ruamel-yaml==0.18.4
+ruamel-yaml==0.18.5
     # via pre-commit-hooks
 ruamel-yaml-clib==0.2.8
     # via ruamel-yaml
