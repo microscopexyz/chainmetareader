@@ -367,7 +367,7 @@
     {
         "key": "sanctioned",
         "display_name": "Sanctioned",
-        "description": "Addresses that have been sanctioned by some government in the world (excluding the US)."
+        "description": "Addresses that have been sanctioned by some governments in the world."
     },
     {
         "key": "phishing",
