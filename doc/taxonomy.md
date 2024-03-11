@@ -143,3 +143,137 @@ The protocol has a fixed list of values defined at the data model (as shown belo
 |Proxy|Contract that acts as a proxy to another contract and is used to upgrade the logic of the target contract without changing its address|
 |Exchange|Addresses used by centralized or decentralized exchanges to interact with smart contracts and blockchain networks|
 
+## Schema
+
+### Label Level Schema
+
+```json
+{
+  "address": "string",
+  "name": "string",
+  "source": {
+    "type": "string",
+    "enum": ["Ground Truth", "Heuristic", "Machine Learning", "Research", "External"]
+  },
+  "chain": "string",
+  "entity": "string",
+  "category": {
+    "type": "string",
+    "enum": [
+      "Cold Storage",
+      "Hot wallet",
+      "Deprecated",
+      "Multisig",
+      "Vault",
+      "Vault User",
+      "Vulnerable",
+      "Smart Contract",
+      "NFT",
+      "DEX",
+      "DEX User",
+      "CEX",
+      "ATM",
+      "Auction",
+      "Gambling",
+      "Gaming",
+      "LE (Law Enforcement)",
+      "Lending",
+      "Lending User",
+      "Merchant",
+      "Mixer",
+      "Payment Processor",
+      "Business or Services, Other",
+      "Token Team",
+      "Weapons",
+      "Marketplace Aggregator",
+      "L2",
+      "Insurance",
+      "Asset Management",
+      "Streaming",
+      "Infra",
+      "Oracle",
+      "DAO",
+      "Yield",
+      "Wallet",
+      "Fund",
+      "Derivatives",
+      "E-Commerce",
+      "Identity",
+      "Mining Pool",
+      "Liquid Staking",
+      "Payments",
+      "Sidechain",
+      "Router",
+      "Coin Swapper",
+      "Sport",
+      "Privacy (not Mixer)",
+      "Validator",
+      "Charity",
+      "Donation",
+      "Deployer",
+      "Company Funds",
+      "Eth 2 staker",
+      "Yield Farming",
+      "Yield Aggregator User",
+      "ICO",
+      "Stablecoin",
+      "Staking",
+      "Token Sale",
+      "Defi",
+      "Defi User",
+      "Advertising",
+      "Energy",
+      "FIAT",
+      "KYC",
+      "NO KYC",
+      "Darknet",
+      "Money Laundering",
+      "Malware",
+      "Ransom",
+      "Scam",
+      "Terrorism",
+      "Theft",
+      "Sanctioned",
+      "Phishing",
+      "Ponzi",
+      "Spam",
+      "Fake KYC",
+      "Malicious Mining Activities",
+      "Financial Crime, Other",
+      "Cybercrime",
+      "Honeypot",
+      "Black Mail Activities",
+      "Constrained by Service",
+      "High Risk, Other",
+      "Dapp, Other",
+      "Bridging",
+      "Bridge User",
+      "Multichain",
+      "Factory Contract",
+      "Fraud Proof",
+      "Genesis",
+      "MEV Bot",
+      "Proxy",
+      "Exchange"
+    ]
+  },
+  "sourcing_timestamp": {
+    "type": "string",
+    "format": "date-time",
+    "description": "The ISO timestamp of when the data was sourced, in the format YYYY-MM-DD HH:MM:SS"
+  },
+  "description": {
+    "type": "string",
+    "description": "A human-readable description of the address or entity"
+  },
+  "evidence_uri": {
+    "type": "string",
+    "format": "uri",
+    "description": "The multimedia link of the evidence"
+  },
+  "operator_code": {
+    "type": "string",
+    "description": "The code of the operator, in the format 'operator:workflow', e.g., 'coinbase:workflowA' or 'circle:laberB'"
+  }
+}
+```
