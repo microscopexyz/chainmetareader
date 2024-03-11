@@ -257,7 +257,7 @@ The protocol has a fixed list of values defined at the data model (as shown belo
       "Exchange"
     ]
   },
-  "sourcing_timestamp": {
+  "submit_on": {
     "type": "string",
     "format": "date-time",
     "description": "The ISO timestamp of when the data was sourced, in the format YYYY-MM-DD HH:MM:SS"
@@ -271,7 +271,7 @@ The protocol has a fixed list of values defined at the data model (as shown belo
     "format": "uri",
     "description": "The multimedia link of the evidence"
   },
-  "operator_code": {
+  "submit_by": {
     "type": "string",
     "description": "The code of the operator, in the format 'operator:workflow', e.g., 'coinbase:workflowA' or 'circle:laberB'"
   }
