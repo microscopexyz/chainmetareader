@@ -120,7 +120,7 @@ The protocol has a fixed list of values defined at the data model (as shown belo
 |Scam|Addresses that have been identified as being involved in fraudulent activities or scams.|
 |Terrorism|Addresses that have been identified as being involved in financing terrorism.|
 |Theft|Addresses that have been identified as being involved in theft or hacking of cryptocurrencies.|
-|Sanctioned|Addresses that have been sanctioned by some government in the world (excluding the US).|
+|Sanctioned|Addresses that have been sanctioned by some governments in the world.|
 |Phishing|Addresses related to phishing scams|
 |Ponzi|Addresses related to Ponzi schemes|
 |Spam|Addresses related to spamming|
