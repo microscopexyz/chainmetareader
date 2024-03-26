@@ -32,7 +32,7 @@ class MessariTranslator(ITranslator):
 class MessariValidator(IValidator):
     def validate(self, metadata: object):
         # Add your implementation here
-        return True
+        return
 
 
 schema_path = "_schema.json"

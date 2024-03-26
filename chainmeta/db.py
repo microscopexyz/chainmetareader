@@ -17,8 +17,14 @@ from functools import reduce as functional_reduce
 from typing import Callable, Generator, Iterable, List, Optional
 
 from dateutil import parser
-from sqlalchemy import Column, Date, Integer, String, create_engine
-from sqlalchemy.orm import Mapped, registry, scoped_session, sessionmaker
+from sqlalchemy import Date, Integer, String, create_engine
+from sqlalchemy.orm import (
+    DeclarativeBase,
+    Mapped,
+    mapped_column,
+    scoped_session,
+    sessionmaker,
+)
 from unsync import unsync  # type: ignore
 
 from chainmeta.constants import Namespace
@@ -30,13 +36,15 @@ from chainmeta.metadata import ChainmetaItem
 
 # Define the database connection
 _session_maker: Optional[Callable] = None
-mapper_registry: registry = registry()
 
 err_msg = "Database is not initialized.Set CHAINMETA_DB_CONN environment variable or call set_connection_string() first."  # noqa: E501
 
 
-@mapper_registry.mapped
-class ChainmetaRecord:
+class Base(DeclarativeBase):
+    pass
+
+
+class ChainmetaRecord(Base):
     """Define the table schema for Chainmeta.
 
     Chainmeta is stored in the database as a flattened list of records, where
@@ -45,24 +53,15 @@ class ChainmetaRecord:
 
     __tablename__ = "chainmeta"
 
-    id = Column(Integer, primary_key=True)
-    chain: Mapped[str] = Column(String(64), nullable=False)
-    address: Mapped[str] = Column(String(256), nullable=False)
-    namespace: Mapped[str] = Column(String(64), nullable=False)
-    scope: Mapped[str] = Column(String(64), nullable=False)
-    tag: Mapped[str] = Column(String(64), nullable=False)
-    source: Mapped[str] = Column(String(64), nullable=False)
-    submitted_by: Mapped[str] = Column(String(64), nullable=False)
-    submitted_on: Mapped[date] = Column(Date, nullable=False)
-
-
-@mapper_registry.mapped
-class ApiToken:
-    __tablename__ = "api_token"
-
-    token = Column(String, primary_key=True)  # token value
-    belongs_to = Column(String)  # the company/org/person who the token belongs to
-    status = Column(Integer)  # 0 = valid ,1 = expired
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    chain: Mapped[str] = mapped_column(String(64), nullable=False)
+    address: Mapped[str] = mapped_column(String(256), nullable=False)
+    namespace: Mapped[str] = mapped_column(String(64), nullable=False)
+    scope: Mapped[str] = mapped_column(String(64), nullable=False)
+    tag: Mapped[str] = mapped_column(String(64), nullable=False)
+    source: Mapped[str] = mapped_column(String(64), nullable=False)
+    submitted_by: Mapped[str] = mapped_column(String(64), nullable=False)
+    submitted_on: Mapped[date] = mapped_column(Date, nullable=False)
 
 
 def init_db(connection_string: str) -> None:
@@ -82,7 +81,7 @@ def flatten(metadata_list: List[ChainmetaItem]) -> List[ChainmetaRecord]:
     Function flatten() translates chain metadata in common schema to database records.
     """
 
-    flattened_records: List[ChainmetaRecord] = []
+    flattened_records: List[ChainmetaRecord | None] = []
     for metadata in metadata_list:
         address, network, source, submitted_by = (
             metadata.address,
@@ -330,30 +329,3 @@ def search_chainmeta(*, filter: dict = {}) -> Generator[ChainmetaItem, None, Non
 
         if is_empty:
             return
-
-
-def add_api_token(token: str, belongs_to: str):
-    if _session_maker is None:
-        raise RuntimeError(err_msg)
-
-    with _session_maker() as session:
-        t = ApiToken()
-        t.token = token
-        t.belongs_to = belongs_to
-        t.status = 0
-        session.add(t)
-        session.commit()
-
-
-def find_valid_token(query_token: str) -> dict:
-    if _session_maker is None:
-        raise RuntimeError(err_msg)
-
-    with _session_maker() as session:
-        tokens = (
-            session.query(ApiToken).filter(ApiToken.token.__eq__(query_token)).all()
-        )
-        session.commit()
-        if not tokens:
-            return {}
-        return {"token": tokens[0].token, "belongs_to": tokens[0].belongs_to}
