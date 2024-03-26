@@ -1,5 +1,5 @@
 # Microscope ChainMeta Reader
-`chainmeta_reader` is a Python module that loads, validates, and parses chainmeta from Microscope protocol participants.
+`chainmeta` is a Python module that loads, validates, and parses chainmeta from Microscope protocol participants.
 
 ## What is Microsocope?
 * [Microscope Whitepaper](https://www.dropbox.com/scl/fi/j9v63ohdyl16hkcijyou8/Microscope_whitepaper_v1.pdf?rlkey=ph7qvna47i9r6tyd6mwxv9hb6&dl=0)
@@ -16,7 +16,7 @@ export CHAINMETA_DB_CONN=mysql+pymysql://user:pwd@dbhost/chainmeta
 Alternatively, you can set the connection string explicitly in your code using `set_connection_string()`:
 
 ```
->>> import chainmeta_reader as cm
+>>> import chainmeta as cm
 >>> cm.set_connection_string("mysql+pymysql://user:pwd@dbhost/chainmeta")
 ```
 
@@ -41,7 +41,7 @@ This will return a list of chainmeta that match the specified filter.
 
 ### Read from Local File
 
-You can read chainmeta from a local file using the `load()` function provided by chainmeta_reader. It will load all included artifacts, validate the artifacts, and translate them to common schema. Here's an example:
+You can read chainmeta from a local file using the `load()` function provided by chainmeta. It will load all included artifacts, validate the artifacts, and translate them to common schema. Here's an example:
 
 ```
 >>> with open("./examples/coinbase_sample.json") as f:
@@ -53,14 +53,14 @@ You can access the metadata in common schema via `metadata["chainmetadata"]["art
 
 
 ## Contribute Chainmeta to Database
-If you want to contribute your metadata to the Open Chainmeta database, you can use the `upload_chainmeta()` function provided by chainmeta_reader. Here's an example:
+If you want to contribute your metadata to the Open Chainmeta database, you can use the `upload_chainmeta()` function provided by chainmeta. Here's an example:
 
 ```
 >>> common_metadata = metadata["chainmetadata"]["artifact"]
 >>> cm.upload_chainmeta(common_metadata)
 ```
 
-Alternatively, you can use the upload.py script provided by chainmeta_reader to upload chainmeta from a file. Here's an example:
+Alternatively, you can use the upload.py script provided by chainmeta to upload chainmeta from a file. Here's an example:
 ```bash
 ./upload.py ./examples/coinbase_sample.json
 ```
@@ -70,7 +70,7 @@ This will upload the chainmeta in the ./examples/coinbase_sample.json file to th
 See the [usage.py](https://github.com/openchainmeta/chainmetareader/blob/main/usage.py) file for more details.
 
 ## Adding New Categories to Taxonomy
-Only categories defined in the [taxonomy](https://github.com/openchainmeta/chainmetareader/blob/main/Microsope%20Taxonomy.pdf) can be used, and this enforcement is maintained through [chainmeta_reader/config/categories.json](https://github.com/microscopexyz/chainmetareader/blob/main/chainmeta_reader/config/categories.json).
+Only categories defined in the [taxonomy](https://github.com/openchainmeta/chainmetareader/blob/main/Microsope%20Taxonomy.pdf) can be used, and this enforcement is maintained through [chainmeta/config/categories.json](https://github.com/microscopexyz/chainmetareader/blob/main/chainmeta/config/categories.json).
 
 Follow these steps, if you need to add new categories to taxonomy:
 

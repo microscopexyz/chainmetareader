@@ -13,6 +13,6 @@
 
 
 def test_config():
-    from chainmeta_reader.config import default_config
+    from chainmeta.config import default_config
 
     assert default_config is not None

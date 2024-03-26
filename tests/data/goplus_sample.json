@@ -9,7 +9,7 @@
     "revision": 1,
     "introduction": "https://github.com/openchainmeta/chainmetareader/doc/goplus/introduction.md",
     "chainmetadata": {
-        "schema": "https://github.com/openchainmeta/chainmetareader/chainmeta_reader/schemas/artifact_schema.json",
+        "schema": "https://github.com/openchainmeta/chainmetareader/chainmeta/schemas/artifact_schema.json",
         "artifact": [
             {
                 "artifact_type": "local file",

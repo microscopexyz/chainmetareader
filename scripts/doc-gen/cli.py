@@ -27,7 +27,7 @@ def taxonomy():
     )
     taxonomy_template = environment.get_template("taxonomy.md.jinja")
 
-    with open("chainmeta_reader/config/categories.json", "r") as categories_file, open(
+    with open("chainmeta/config/categories.json", "r") as categories_file, open(
         "doc/taxonomy.md", "w+"
     ) as taxonomy_file:
         categories = json.load(categories_file)

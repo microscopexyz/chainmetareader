@@ -30,10 +30,10 @@ def newContributor(name: str):
     schema_template = environment.get_template("example_schema.json.template")
     code_template = environment.get_template("example.py.template")
 
-    with open(f"chainmeta_reader/contrib/{name_lower}_schema.json", "w+") as f:
+    with open(f"chainmeta/contrib/{name_lower}_schema.json", "w+") as f:
         f.write(schema_template.render(name=name, name_lower=name_lower))
 
-    with open(f"chainmeta_reader/contrib/{name_lower}.py", "w+") as f:
+    with open(f"chainmeta/contrib/{name_lower}.py", "w+") as f:
         f.write(code_template.render(name=name, name_lower=name_lower))
 
     click.echo(click.style("Created:", fg="green"))

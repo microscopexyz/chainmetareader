@@ -21,9 +21,9 @@ from sqlalchemy import Column, Date, Integer, String, create_engine
 from sqlalchemy.orm import Mapped, registry, scoped_session, sessionmaker
 from unsync import unsync  # type: ignore
 
-from chainmeta_reader.constants import Namespace
-from chainmeta_reader.logger import logger
-from chainmeta_reader.metadata import ChainmetaItem
+from chainmeta.constants import Namespace
+from chainmeta.logger import logger
+from chainmeta.metadata import ChainmetaItem
 
 """This module defines the database schema and provides the functions to interact with the database.
 """

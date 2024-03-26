@@ -15,8 +15,8 @@ import re
 from pathlib import Path
 from typing import Dict, Optional
 
-from chainmeta_reader.metadata import ChainmetaItem, ITranslator
-from chainmeta_reader.validator import JsonValidator
+from chainmeta.metadata import ChainmetaItem, ITranslator
+from chainmeta.validator import JsonValidator
 
 
 class ChaintoolTranslator(ITranslator):
@@ -114,7 +114,7 @@ class ChaintoolTranslator(ITranslator):
 
 
 schema_path = [
-    "https://github.com/openchainmeta/chainmetareader/chainmeta_reader/schemas/chaintool_schema.json"  # noqa: E501
+    "https://github.com/openchainmeta/chainmetareader/chainmeta/schemas/chaintool_schema.json"  # noqa: E501
 ]
 
 validator = JsonValidator(

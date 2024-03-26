@@ -19,7 +19,7 @@ from typing import List, Optional
 @dataclass
 class ChainmetaItem:
     """ChainmetaItem is the common schema for all chain metadata items.
-    Reference: /chainmeta_reader/schema/artifact_schema.json
+    Reference: /chainmeta/schema/artifact_schema.json
     """
 
     # Chain identification

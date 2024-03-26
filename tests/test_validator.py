@@ -15,7 +15,7 @@ import pathlib
 import pytest
 from jsonschema import ValidationError
 
-import chainmeta_reader
+import chainmeta
 
 
 @pytest.mark.parametrize(
@@ -36,7 +36,7 @@ def test_validate(input_file: str, is_valid: bool):
     resolved_input_file = data_folder.joinpath(input_file)
     with open(resolved_input_file) as fp:
         try:
-            chainmeta_reader.validate(fp, artifact_base_path=data_folder)
+            chainmeta.validate(fp, artifact_base_path=data_folder)
         except ValidationError as e:
             print(e)
             assert is_valid is False

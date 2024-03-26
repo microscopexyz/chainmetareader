@@ -15,12 +15,12 @@ import os
 from pathlib import Path
 from typing import Optional, Union
 
-from chainmeta_reader.artifact import load as artifact_load
-from chainmeta_reader.db import init_db
-from chainmeta_reader.db import search_chainmeta as search_chainmeta
-from chainmeta_reader.db import upload_chainmeta
-from chainmeta_reader.schema import resolve as schema_resolve
-from chainmeta_reader.validator import (
+from chainmeta.artifact import load as artifact_load
+from chainmeta.db import init_db
+from chainmeta.db import search_chainmeta as search_chainmeta
+from chainmeta.db import upload_chainmeta
+from chainmeta.schema import resolve as schema_resolve
+from chainmeta.validator import (
     common_artifact_validator,
     common_metadata_validator,
 )

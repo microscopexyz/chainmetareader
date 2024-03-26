@@ -16,10 +16,10 @@ import os
 from pathlib import Path
 from typing import Dict, Optional
 
-from chainmeta_reader.constants import ContribFolder
-from chainmeta_reader.logger import logger
-from chainmeta_reader.metadata import ITranslator, Translator
-from chainmeta_reader.validator import IValidator, common_artifact_validator
+from chainmeta.constants import ContribFolder
+from chainmeta.logger import logger
+from chainmeta.metadata import ITranslator, Translator
+from chainmeta.validator import IValidator, common_artifact_validator
 
 
 class Schema:
@@ -51,11 +51,11 @@ def register(schema_path: str, schema: Schema):
 
 common_schema = Schema(common_artifact_validator, Translator())
 register(
-    "https://github.com/openchainmeta/chainmetareader/chainmeta_reader/schemas/artifact_schema.json",  # noqa: E501
+    "https://github.com/openchainmeta/chainmetareader/chainmeta/schemas/artifact_schema.json",  # noqa: E501
     common_schema,
 )
 register(
-    "https://github.com/openchainmeta/chainmetareader/chainmeta_reader/schema/artifact_schema.json",  # noqa: E501
+    "https://github.com/openchainmeta/chainmetareader/chainmeta/schema/artifact_schema.json",  # noqa: E501
     common_schema,
 )
 
@@ -64,7 +64,7 @@ for f in os.listdir(Path(__file__).parent.parent.resolve().joinpath(ContribFolde
     filename = os.fsdecode(f)
     if f.endswith(".py"):
         try:
-            m = importlib.import_module(f"chainmeta_reader.contrib.{filename[:-3]}")
+            m = importlib.import_module(f"chainmeta.contrib.{filename[:-3]}")
             if isinstance(m.schema_path, list):
                 for p in m.schema_path:
                     register(p, Schema(m.validator, m.translator))

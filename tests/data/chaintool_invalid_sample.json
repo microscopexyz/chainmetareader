@@ -9,7 +9,7 @@
     "revision": 1,
     "introduction": "https://github.com/openchainmeta/chainmetareader/doc/chaintool/introduction.md",
     "chainmetadata": {
-        "schema": "https://github.com/openchainmeta/chainmetareader/chainmeta_reader/schemas/chaintool_schema.json",
+        "schema": "https://github.com/openchainmeta/chainmetareader/chainmeta/schemas/chaintool_schema.json",
         "artifact": [{
                 "artifact_type": "local file",
                 "path": "file:///artifacts/chaintool_invalid_artifact_sample.csv",

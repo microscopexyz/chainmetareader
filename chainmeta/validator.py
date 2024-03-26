@@ -17,8 +17,8 @@ from typing import Optional
 
 from jsonschema import Draft7Validator, TypeChecker, validators
 
-from chainmeta_reader.config import default_config
-from chainmeta_reader.constants import (
+from chainmeta.config import default_config
+from chainmeta.constants import (
     ArtifactSchemaFile,
     Field,
     MetaSchemaFile,

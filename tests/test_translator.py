@@ -14,8 +14,8 @@ import pathlib
 
 import pytest
 
-import chainmeta_reader
-from chainmeta_reader.contrib.chaintool import ChaintoolTranslator
+import chainmeta
+from chainmeta.contrib.chaintool import ChaintoolTranslator
 
 
 @pytest.mark.parametrize(
@@ -29,7 +29,7 @@ def test_chaintool_translator(input_file: str):
     resolved_input_file = data_folder.joinpath(input_file)
     with open(resolved_input_file) as f:
         # Load Chaintool artifact and translate to intermediate metadata schema
-        metadata = chainmeta_reader.load(f, artifact_base_path=data_folder)
+        metadata = chainmeta.load(f, artifact_base_path=data_folder)
         raw_metadata = metadata["chainmetadata"]["raw_artifact"]
         intermediate_metadata = metadata["chainmetadata"]["artifact"]
 

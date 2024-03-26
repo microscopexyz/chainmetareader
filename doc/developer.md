@@ -40,16 +40,16 @@ python -i usage.py
 
 ## Adding a New Participant
 
-To add a new participant to the Open Chainmeta project, you need to provide the schema definition for your custom schema and the code to translate chainmeta between the common schema and your custom schema. The chainmeta_reader module provides a convenient way to add a new participant using the `make new-contributor` command. Here's an example:
+To add a new participant to the Open Chainmeta project, you need to provide the schema definition for your custom schema and the code to translate chainmeta between the common schema and your custom schema. The chainmeta module provides a convenient way to add a new participant using the `make new-contributor` command. Here's an example:
 
 ```
 make new-contributor name=your_organization
 ```
 
-This command will generate two files in the chainmeta_reader/contrib/ directory:
+This command will generate two files in the chainmeta/contrib/ directory:
 
 - `your_organization_schema.json`: This file contains the schema definition for your custom schema. You need to complete this file by providing the appropriate field names and data types for your schema.
 
 - `your_organization.py`: This file contains the translation code to convert chainmeta between the common schema and your custom schema. You need to complete this file by implementing the from_common_schema() and to_common_schema() functions.
 
-Once you have completed these files, they will be automatically loaded by the chainmeta_reader module.
+Once you have completed these files, they will be automatically loaded by the chainmeta module.
