@@ -27,7 +27,6 @@ logging.basicConfig(level=logging.DEBUG)
 @click.command()
 @click.argument("filename", type=click.Path(exists=True))
 def upload(filename: str):
-
     folder_path = Path(filename).resolve().parent
     with open(filename) as f:
         metadata = load(f, artifact_base_path=folder_path)

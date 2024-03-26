@@ -11,6 +11,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import os
 from logging.config import fileConfig
 
 from alembic import context
@@ -20,7 +21,6 @@ from sqlalchemy import engine_from_config, pool
 # access to the values within the .ini file in use.
 config = context.config
 
-import os
 
 db_url = os.environ["DBURL"]
 config.set_main_option("sqlalchemy.url", db_url)
