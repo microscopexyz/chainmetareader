@@ -18,12 +18,7 @@ from typing import Optional
 from jsonschema import Draft7Validator, TypeChecker, validators
 
 from chainmeta.config import default_config
-from chainmeta.constants import (
-    ArtifactSchemaFile,
-    Field,
-    MetaSchemaFile,
-    SchemaFolder,
-)
+from chainmeta.constants import ArtifactSchemaFile, Field, MetaSchemaFile, SchemaFolder
 
 
 def value_checker(valid_values):

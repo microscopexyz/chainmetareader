@@ -20,10 +20,7 @@ from chainmeta.db import init_db
 from chainmeta.db import search_chainmeta as search_chainmeta
 from chainmeta.db import upload_chainmeta
 from chainmeta.schema import resolve as schema_resolve
-from chainmeta.validator import (
-    common_artifact_validator,
-    common_metadata_validator,
-)
+from chainmeta.validator import common_artifact_validator, common_metadata_validator
 
 
 def set_connection_string(connection_string: Optional[str] = None):
