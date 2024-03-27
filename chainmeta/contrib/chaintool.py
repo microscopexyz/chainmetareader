@@ -87,6 +87,7 @@ class ChaintoolTranslator(ITranslator):
             source=ChaintoolTranslator.normalize_not_none_key(raw_metadata["source"]),
             submitted_by=raw_metadata["submitted_by"],
             submitted_on=raw_metadata["tagged_on"],
+            additional_metadata={},
         )
 
     def from_common_schema(

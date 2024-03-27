@@ -58,6 +58,14 @@ register(
     "https://github.com/openchainmeta/chainmetareader/chainmeta/schema/artifact_schema.json",  # noqa: E501
     common_schema,
 )
+register(
+    "https://github.com/microscopexyz/chainmeta-core/chainmeta/schemas/artifact_schema.json",  # noqa: E501
+    common_schema,
+)
+register(
+    "https://github.com/microscopexyz/chainmeta-core/chainmeta/schema/artifact_schema.json",  # noqa: E501
+    common_schema,
+)
 
 
 for f in os.listdir(Path(__file__).parent.parent.resolve().joinpath(ContribFolder)):

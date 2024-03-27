@@ -10,6 +10,8 @@
             "chain",
             "address",
             "categories",
+            "entity",
+            "name",
             "source",
             "submitted_by",
             "submitted_on"
@@ -22,17 +24,10 @@
                 "$ref": "/schemas/address"
             },
             "entity": {
-                "anyOf": [
-                    {
-                        "nullable": true
-                    },
-                    {
-                        "$ref": "/schemas/entity"
-                    }
-                ]
+                "$ref": "/schemas/entity"
             },
             "name": {
-                "type": ["string", "null"]
+                "$ref": "/schemas/name"
             },
             "categories": {
                 "type": "array",
@@ -49,6 +44,41 @@
             "submitted_on": {
                 "type": "string",
                 "format": "date"
+            },
+            "additional_metadata": {
+                "type": "object",
+                "properties": {
+                    "valid_from": {
+                        "type": "string",
+                        "anyOf": [
+                            {
+                                "format": "date"
+                            },
+                            {
+                                "format": "date-time"
+                            }
+                        ]
+                    },
+                    "valid_to": {
+                        "type": "string",
+                        "anyOf": [
+                            {
+                                "format": "date"
+                            },
+                            {
+                                "format": "date-time"
+                            }
+                        ]
+                    },
+                    "reason": {
+                        "type": "string",
+                        "format": "uri"
+
+                    }
+                }
+            },
+            "deleted": {
+                "type": "boolean"
             }
         },
         "additionalProperties": false
@@ -56,7 +86,7 @@
     "$defs": {
         "chain": {
             "$id": "/schemas/chain",
-            "type": "chain"
+            "type": "string"
         },
         "address": {
             "$id": "/schemas/address",
@@ -64,15 +94,29 @@
         },
         "entity": {
             "$id": "/schemas/entity",
-            "type": "entity"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "category": {
             "$id": "/schemas/category",
-            "type": "category"
+            "type": "string"
+        },
+        "name": {
+            "$id": "/schemas/name",
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "source": {
             "$id": "/schemas/source",
-            "type": "source"
+            "type": "string"
+        },
+        "additional_metadata": {
+            "$id": "/schemas/additional_metadata",
+            "type": "object"
         }
     }
 }

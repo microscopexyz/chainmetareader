@@ -1,0 +1,22 @@
+{
+    "community": "openchainmeta",
+    "provider": {
+        "provider_name": "coinbase",
+        "provider_id": "ocm000002",
+        "provider_signature": ""
+    },
+    "version": "v1",
+    "revision": 1,
+    "introduction": "https://github.com/openchainmeta/chainmetareader/doc/coinbase/introduction.md",
+    "chainmetadata": {
+        "schema": "https://github.com/openchainmeta/chainmetareader/chainmeta/schemas/artifact_schema.json",
+        "artifact": [
+            {
+                "artifact_type": "local file",
+                "path": "file:///artifacts/coinbase_artifact_additional_sample.json",
+                "fileformat": "json",
+                "signature": "0fdae0be76072b2c98a098d0b2df8079"
+            }
+        ]
+    }
+}

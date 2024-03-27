@@ -26,6 +26,7 @@ import chainmeta
         ("chaintool_sample.json", True),
         ("chaintool_invalid_sample.json", False),
         ("coinbase_sample.json", True),
+        ("coinbase_additional_metadata_sample.json", True),
         ("coinbase_invalid_sample.json", False),
         ("goplus_sample.json", True),
         ("messari_sample.json", True),

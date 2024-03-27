@@ -46,6 +46,9 @@ class ChainmetaItem:
     # Last updated time
     submitted_on: str
 
+    # Additional metadata
+    additional_metadata: dict
+
 
 class ITranslator(ABC):
     def to_common_schema(self, raw_metadata) -> Optional[ChainmetaItem]:
@@ -59,6 +62,8 @@ class ITranslator(ABC):
 
 class Translator(ITranslator):
     def to_common_schema(self, raw_metadata) -> Optional[ChainmetaItem]:
+        if "additional_metadata" not in raw_metadata:
+            raw_metadata["additional_metadata"] = {}
         return ChainmetaItem(**raw_metadata)
 
     def from_common_schema(

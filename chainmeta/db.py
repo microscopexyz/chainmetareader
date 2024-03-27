@@ -147,6 +147,7 @@ def reduce(record_list: List[ChainmetaRecord]) -> List[ChainmetaItem]:
             source=group[0].source,
             submitted_by=group[0].submitted_by,
             submitted_on=str(group[0].submitted_on),
+            additional_metadata={},
         )
 
         for record in group:

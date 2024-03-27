@@ -367,7 +367,8 @@
     {
         "key": "sanctioned",
         "display_name": "Sanctioned",
-        "description": "Addresses that have been sanctioned by some governments in the world."
+        "description": "Addresses that have been sanctioned by some governments in the world.",
+        "additional_metadata_fields": ["valid_from", "valid_to", "reason"]
     },
     {
         "key": "phishing",
